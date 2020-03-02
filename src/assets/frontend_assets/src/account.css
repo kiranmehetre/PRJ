@@ -1,0 +1,1189 @@
+
+@font-face {
+    font-family: "Microsoft Tai Lee";
+    src: url(../../font/NTAILU.TTF) format("truetype");
+}
+@font-face {
+    font-family: "Microsoft Tai Lee Bold";
+    src: url(../../font/NTAILUB.TTF) format("truetype");
+}
+@font-face {
+    font-family: "Arial Rounded MT Bold";
+    src: url(../../font/ArialRoundedMTBold.TTF) format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../../font/MontserratAlternates-Bold_0.otf) format("truetype");
+}
+.panel-heading{
+    font-family:"Montserrat",sans-serif;
+}
+body{
+    font-family:"Microsoft Tai Lee",sans-serif;
+}
+.btn-success{
+    font-family:"Microsoft Tai Lee Bold",sans-serif;
+}
+.input-error{
+    color:#FF0000 !important;
+    font-weight: unset !important;
+}
+.error-message,.retype{
+    color:#FF0000;
+}
+.error-container{
+    color:#FF0000;
+}
+.gj-icon {
+    line-height:1.5 !important;
+}
+.open_model{
+   display:none;
+}
+.modal-footer {
+    justify-content: center !important;
+}
+.modal {
+    top: 20% !important;
+    /* transform: translateY(-50%) !important; */
+}
+/* .modal-title{
+    font-size:1.2rem !important;
+} */
+.hide{
+   display:none !important;
+}
+
+
+   body.home {
+    margin-top:30px !important;
+    background-color: #68bde3 !important;
+}
+.stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
+    opacity:1 !important;
+    color:#456a7c;
+}
+.stepwizard{
+    margin: 30% 0 0 25%;
+}
+.btn-circle {
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 50%;
+    -moz-border-raduis:50%;
+    -webkit-border-radius:50%;
+    margin:auto 10px auto 0;
+    background-color:#456a7c;
+    border:2px solid #fff;
+}
+h1 span:first-child{
+    color:#f36b23;
+}
+h1 span:nth-child(2){
+    color:#0d3447;
+}
+.stepWizard_Container{
+    background: url(../img/signup-bg-left.jpg) no-repeat #9fe1ff;
+    background-size: cover;
+    background-position: center;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.Steps_Container{
+    padding:0;
+    min-height:588px !important;
+    background-color:#c5edff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    min-height:506px;
+}
+.btn-sign-in{
+    padding:2px 20px !important;
+    font-size:18px !important;
+    border-radius:22px !important;
+    background-color:#0d3447 !important;
+    border:2px solid #456a7c !important;
+}
+.backBtn{
+    /* background-color:transparent !important;
+    color:#0d3447 !important; */
+}
+.backButton,.nextBtn,.login {
+    font-size: 18px;
+    color: #0d3447;
+    border: 2px solid #0d3447;
+    padding: 2px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+}
+.backButton:focus,.nextBtn:focus,.login:focus {
+    background-color:#0d3447 !important;
+    border:2px solid #456a7c !important;
+    color: #fff;
+    box-shadow: none;
+}
+.backButton:hover,.nextBtn:hover {
+    
+}
+/* .login{
+    padding: 2px 1.2rem !important;
+    border-radius: 10px;
+    background-color:#406e84 !important;
+    color:#f36b23 !important;
+    border:0 !important;
+    font-weight: bold !important;
+    font-size: 2rem !important;
+    font-family: "Microsoft Tai Lee Bold",sans-serif;
+} */
+label{
+    font-size:18px;
+    margin-bottom:0px !important;
+    color:#0d3447;
+}
+img.N{
+    height: 35px;
+    position: absolute;
+    top: 10px;
+}
+.stepwizard-step a{
+    padding:0;
+    background:none;
+    border:none;
+}
+.stepwizard-step a:hover{
+    background-color:transparent;
+    color:#000;
+}
+.btn-success{
+    color:#f36b23 !important;
+    font-weight:bold !important;
+    background-color:transparent !important;
+}
+.class_Container{
+    width: 85%;
+    /* background-color: #fff; */
+    display: grid;
+    grid: auto / auto auto auto;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+}
+.class_Container a,.gender_Container > a{
+    margin: 3px;
+    text-align: center;
+    font-weight: bold;
+    color:#d0d0d0;
+    font-size:16px;
+    cursor:pointer;
+    padding: 3px;
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    opacity: .4;
+}
+.class_Container a.active,.gender_Container > a.active{
+    color: #f36b23 !important;
+    background-color: #aee5fd !important;
+    border: none;
+    opacity: 1;
+}
+.gender_Container{
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    grid: auto / auto auto;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+}
+/* Grade Checkbox start */
+
+#step-2 .form-group.grade_Block{
+    max-width: 95%;
+}
+
+/* The container */
+.grade .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-width: auto;
+}
+
+/* Hide the browser's default checkbox */
+/* .grade .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+} */
+
+/* Create a custom checkbox */
+.grade .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    box-shadow: 0 0 0 3px #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.grade .container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.grade.active .container .checkmark {
+    background-color: #aee5fd;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.grade .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+}
+
+/* Show the checkmark when checked */
+.grade.active .container .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.grade .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 12px;
+    border: solid #f36b23;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Grade Checkbox end */
+.tabs:before, .tabs:after
+{
+    display: none;
+}
+
+input[type="text"]
+{
+    border-radius: 3px;
+}
+.photo img{
+    width:25%;
+    cursor:pointer;
+}
+.photo span{
+    margin-left: 10px;
+    color:#0d3447;
+    font-weight: bold;
+}
+.tabs{
+    display:grid;
+    grid:auto / repeat(4,20%);
+    grid-gap:10px;
+    text-align: center;
+}
+.tabs > div{
+    padding:5px;
+    background-color:#cccccc;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    font-weight: bold
+}
+.tabs .active{
+    background-color:#fff;
+}
+.Payment_info_Container{
+    border:2px solid #68bde3;
+    padding:15px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    margin-bottom: 20px;
+}
+.Payment_info_Container img{
+    height:30px;
+    margin-left:5px;
+}
+.Month,.Year{
+    padding: 7px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top:35px;
+}
+.note{
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.note span{
+    color: #f36b23;
+}
+.note small{
+    color:#0d3447;
+}
+
+.has-error .form-control {
+    border-color: #b94a48;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.has-error .help-block, .has-error .control-label {
+    color: #b94a48;
+}
+
+.fileinput
+{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 82%;
+    height: 0;
+    outline: none;
+    cursor: pointer;
+    left: 31px;
+    top: 14px;
+    height: 66px;
+}
+.verified__img{
+    height: 35px;
+    width: 35px;
+}
+
+
+/* #pascheck{
+    margin-left:5px;
+} */
+
+#pascheck.short{
+    color:#FF0000;
+}
+
+#pascheck.weak{
+    color:#E66C2C;
+}
+
+#pascheck.good{
+    color:#2D98F3;
+}
+
+#pascheck.strong{
+    color:#006400;
+}
+
+#file-name
+{
+    display: block;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: -2px;
+    color: #dc2525;
+    font-size: 13px;
+}
+
+.label-warn
+{
+    font-size: 12px;
+    display: block;
+    color: #4ab2e4 !important;
+    margin-left: 88px;
+    margin-top: -42px;
+}
+
+
+  .backbtn img
+{
+    width: 55%;
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    right: 9px;
+  }
+
+.backbtn
+{
+    float: right;
+    display: inline-block;
+    margin-top: -7%;
+}
+
+.blocka
+{
+    float: right;
+}
+
+.blocka a, .blocka span 
+{
+ display:inline-block;
+ padding: 3px;
+}
+
+.btn-circle-success{
+    background-color: #f36b23 !important;
+}
+.btn-success.focus, .btn-success:focus{
+    border: 0;
+    box-shadow: none;
+}
+.stepwizard .stepwizard-step a{
+    color: #575555;
+}
+.stepwizard .stepwizard-step a:focus{
+    border: 0 !important;
+    box-shadow: none !important;
+}
+/* step-2 CSS */
+
+#step-2 .panel-body{
+    margin-top:3em;
+}
+#step-2 .panel-body > .row:nth-child(2){
+    margin-top:.4em !important;
+    margin-bottom:.4em !important;
+}
+#step-2 .panel-body > .row:nth-child(4){
+    margin-top:3.4em !important;
+}
+#step-2 .panel-body > .row:nth-child(4) .form-group{
+    margin-bottom: 1rem;
+}
+#step-2 .form-group {
+    margin-bottom: 2.5rem;
+}
+.setup-content{
+    margin-top: 1em;
+}
+.panel-heading h1{
+    margin-bottom: .5em;
+}
+.confirmed__heading{
+    font-size: 1.6em;
+    margin-bottom: .5em !important;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+.confirmed__div{
+    font-size:18px;
+    color: #0d3447;
+}
+.confirmed__link{
+    margin-top: 6px;
+}
+#step-2 .form-group{
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Login Screen Css */
+
+.btn-forgot-password{
+    font-size: 16px;
+    float: right;
+}
+#step-5 form > div.col-md-10,#step-5 form > div.col-md-6{
+    flex-basis: 100%;
+    max-width: 70%;
+    margin-bottom: 30px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn_Container{
+    text-align: center;
+}
+.new_to_grammar{
+    grid-template-columns: auto fit-content(100%) auto;
+    grid-gap: 10px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: grid;
+}
+.line{
+    position: relative;
+}
+.line::before{
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background-color: #244b5e;
+}
+.signup__div{
+    margin-top: 20px;
+    text-align: center;
+}
+.signup__div button{
+    padding: 2px 14px !important;
+    font-size: 18px !important;
+    border-radius: 25px !important;
+    background-color: #0d3447 !important;
+    border: 2px solid #456a7c !important;
+}
+.login-stepwizard-step{
+    visibility: hidden;
+}
+.stepwizard-step{
+    pointer-events: none;
+}
+.form-group {
+    position: relative;
+}
+@media screen and (min-width: 100px) 
+and (max-width: 575px){
+    .stepWizard_Container{
+        background:none;
+    }
+    .Steps_Container{
+        border-radius:2%;
+    }
+    .stepwizard-step a{
+        font-size:13px;
+    }
+    .btn-circle{
+        width:30px;
+        height:30px;
+        margin:0 auto;
+        line-height:25px;
+    }
+    .stepwizard-step{
+        padding:0 !important;
+        text-align:center;
+    }
+    .stepwizard{
+        margin:0;
+    }
+    .stepwizard-row:before {
+        top: 15px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+        z-index: 0;
+    }
+    .field-icon {
+        position: absolute;
+        right: 20px;
+    }
+}
+@media screen and (min-width: 100px) 
+and (max-width: 767px){
+   h1{
+       font-size:30px !important;
+   }
+   .Steps_Container{
+       min-height:auto !important;
+   }
+   .tabs{
+        grid: auto / repeat(4,24%);
+        grid-gap: 3px;
+   }
+   .tabs > div{
+       padding:3px 0;
+       font-size:11px;
+   }
+   .note span{
+       font-size:14px;
+   }
+   .note small{
+       font-size:12px;
+   }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .tabs{
+        grid: auto / repeat(4,24%);
+        grid-gap: 5px;
+    }
+    .Steps_Container{
+        min-height:auto !important;
+    }
+    .panel-heading h1 {
+        font-size: 2em;
+    }
+    .photo.form-group{
+        padding-top: 20px;
+    }
+    .confirmed__heading {
+        font-size: 1.5em;
+    }
+    .login {
+        font-size: 1.5rem !important;
+        padding: 0 20px;
+    }
+    #step-5 .panel-body{
+        padding-bottom: 50px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .2rem .75rem;
+    }
+    label,.confirmed__div {
+        font-size: 16px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .photo.form-group{
+        padding-top: 10px;
+    }
+}
+
+
+/* 1920 * 1080 CSS */
+
+@media(min-width:1900px){
+    .container{
+        min-width: 1500px;
+    }
+    body{
+        font-size: 30px;
+    }
+    .panel-heading h1 {
+        font-size: 4rem;
+        /* text-align: center; */
+    }
+    label,.form-control,.backButton, .nextBtn {
+        font-size: 30px;
+    }
+    .backButton, .nextBtn {
+        border: 3px solid #0d3447;
+        padding: 2px 30px;
+    }
+    .form-group{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .field-icon {
+        margin-top: -45px;
+    }
+    .input-error{
+        font-size: 28px;
+    }
+    .btn-circle {
+        width: 25px;
+        height: 25px;
+    }
+    .stepwizard-step a{
+        font-size: 26px;
+    }
+    .stepwizard-step {
+        margin-bottom: 10px !important;
+    }
+    .Main_Container {
+        min-height: 830px;
+    }
+    .class_Container a, .gender_Container > a {
+        font-size: 30px;
+    }
+    #step-2 .panel-body > .row:nth-child(4) {
+        margin-top: 2.5em !important;
+    }
+    #file-name {
+        margin-left: 100px;
+        margin-top: -30px;
+        font-size: 24px;
+    }
+    .confirmed__div {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+    .login {
+        padding: 2px 2rem !important;
+    }
+    .photo.form-group{
+        padding-top: 20px;
+    }
+    .verified__img {
+        height: 60px;
+        width: 60px;
+    }
+    .btn-sign-in {
+        padding: 2px 25px !important;
+        font-size: 30px !important;
+        border-radius: 25px !important;
+    }
+    .gj-datepicker-md [role=right-icon] {
+        right: 5px;
+        font-size: 40px;
+    }
+    .gj-picker-md table tr td div, .gj-picker-md table tr th div {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 26px;
+    }
+    .gj-picker-md {
+        width: 345px;
+    }
+    .gj-picker div[role=navigator] div[role=period] {
+        font-size: 30px;
+    }
+    .gj-icon {
+        font-size: 40px;
+    }
+    .gj-picker-md div[role=navigator] div i.gj-icon, .gj-picker-md div[role=navigator] div i.material-icons {
+        top: -5px;
+    }
+    .gj-picker-md div[role=navigator] div:last-child i.gj-icon, .gj-picker-md div[role=navigator] div:last-child i.material-icons {
+        right: 2px;
+    }
+    .gj-picker-md div[role=navigator] div:first-child i.gj-icon, .gj-picker-md div[role=navigator] div:first-child i.material-icons {
+        left: 2px;
+    }
+    .gj-picker-md table {
+        border-collapse: collapse;
+        width: 335px;
+        margin: 0 5px;
+    }
+    .btn-forgot-password{
+        font-size: 26px;
+        float: right;
+    }
+    #step-5 form > div.col-md-10,#step-5 form > div.col-md-6{
+        flex-basis: 100%;
+        max-width: 70%;
+        margin-bottom: 40px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn_Container{
+        text-align: center;
+    }
+    .new_to_grammar{
+        grid-template-columns: auto fit-content(100%) auto;
+        grid-gap: 10px;
+        font-size: 28px;
+        padding: 0 10px;
+        display: grid;
+    }
+    .line{
+        position: relative;
+    }
+    .line::before{
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #244b5e;
+    }
+    .signup__div{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .signup__div button{
+        padding: 2px 25px !important;
+        font-size: 30px !important;
+        border-radius: 25px !important;
+        background-color: #0d3447 !important;
+        border: 2px solid #456a7c !important;
+    }
+    .modal-header h4.modal-title{
+        font-size: 3rem;
+    }
+    .modal-dialog {
+        max-width: 800px;
+    }
+    .modal-header{
+        padding-bottom: 0;
+    }
+    .modal-footer{
+        padding-bottom: 1.5rem;
+    }
+    .modal-footer .btn{
+        font-size: 2rem;
+    }
+    .modal-header .close {
+        padding: 0;
+        margin: 0;
+        font-size: 55px;
+        top: 5px;
+        right: 5px;
+        position: absolute;
+    }
+    .grade .container{
+        padding-left: 55px;
+    }
+    .grade .checkmark {
+        top: 3px;
+        left: 5px;
+        height: 35px;
+        width: 35px;
+    }
+    .grade .container .checkmark:after {
+        left: 13px;
+        top: 6px;
+        width: 10px;
+        height: 18px;
+        border-width: 0 5px 5px 0;
+    }
+}
+
+
+/* SignUp Portrait CSS */
+.portait_bg{
+    display: none;
+}
+@media(min-width:100px) and (max-width : 575px){
+    .stepWizard_Container{
+        display: none;
+    }
+    .Steps_Container {
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .panel-heading {
+        white-space: nowrap;
+    }
+    .panel-heading h1{
+        font-size: 28px !important;
+    }
+    .setup-content .panel-body{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .step-label{
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        width: 90%;
+        font-weight: bold;
+        color: #f36b23;
+        position: relative;
+        margin-left: auto;
+    }
+    .step-label::before {
+        left: -16px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #f36b23;
+        content: '';
+        position: absolute;
+        top: 8px;
+        box-shadow: 0 0 0 3px #fff;
+    }
+    #step-2 .form-group {
+        max-width: 100%;
+        order: 2;
+    }
+    #step-2 .panel-body {
+        margin-top: 1.2em;
+    }
+    #step-2 .form-group.photo{
+        order: 1;
+    }
+    .gender_Container {
+        max-width: 250px;
+    }
+    #step-2 .form-group.grade_Block {
+        max-width: 100%;
+    }
+    .grade .container .checkmark:after {
+        left: 5px;
+        top: 1px;
+        width: 7px;
+    }
+    .grade .checkmark {
+        height: 17px;
+        width: 17px;
+        top: 4px;
+    }
+    .grade .container {
+        white-space: nowrap;
+        padding-left: 25px;
+    }
+    .photo img {
+        width: 20%;
+    }
+    .class_Container {
+        width: calc(100% + 15px);
+    }
+    #step-2 .form-group {
+        padding: 0;
+    }
+    #step2 .step-label{
+        margin-left: 8%;
+    }
+    .portait_bg{
+        display: block;
+    }
+    .portait_bg img{
+        max-width: 100%;
+    }
+    .Steps_Container,.portait_bg{
+        max-width: 350px;
+    }
+}
+@media(min-width:100px) and (max-width:359px){
+    .panel-heading h1 {
+        font-size: 25px !important;
+    }
+    label {
+        font-size: 16px;
+    }
+    .grade .container {
+        padding-left: 23px;
+        padding-top: 1px;
+    }
+}
+
+@media(min-width:768px) and (orientation:portrait){
+    .stepWizard_Container{
+        display: none;
+    }
+    .Steps_Container {
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .panel-heading {
+        white-space: nowrap;
+    }
+    .panel-heading h1{
+        font-size: 28px !important;
+    }
+    .setup-content .panel-body{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .step-label{
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        width: 90%;
+        font-weight: bold;
+        color: #f36b23;
+        position: relative;
+        margin-left: auto;
+    }
+    .step-label::before {
+        left: -16px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #f36b23;
+        content: '';
+        position: absolute;
+        top: 8px;
+        box-shadow: 0 0 0 3px #fff;
+    }
+    #step-2 .form-group {
+        max-width: 100%;
+        order: 2;
+    }
+    #step-2 .panel-body {
+        margin-top: 1.2em;
+    }
+    #step-2 .form-group.photo{
+        order: 1;
+    }
+    .gender_Container {
+        max-width: 250px;
+    }
+    #step-2 .form-group.grade_Block {
+        max-width: 100%;
+    }
+    .grade .container .checkmark:after {
+        left: 10px;
+        top: 4px;
+        width: 11px;
+        height: 18px;
+        border-width: 0 5px 5px 0;
+    }
+    .grade .checkmark {
+        height: 30px;
+        width: 30px;
+        top: 4px;
+    }
+    .grade .container {
+        white-space: nowrap;
+        padding-left: 45px;
+    }
+    .photo img {
+        width: 20%;
+    }
+    .class_Container {
+        width: calc(100% + 15px);
+    }
+    #step-2 .form-group {
+        padding: 0;
+    }
+    #step2 .step-label{
+        margin-left: 8%;
+    }
+    .portait_bg{
+        display: block;
+    }
+    .Steps_Container,.portait_bg{
+        flex-basis: 100%;
+        max-width: 580px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .portait_bg img{
+        width: 100%;
+        max-width: unset;
+    }
+    label, .confirmed__div {
+        font-size: 28px;
+    }
+    .panel-heading h1 {
+        font-size: 45px !important;
+    }
+    .step-label {
+        font-size: 28px;
+    }
+    .step-label::before {
+        left: -27px;
+        height: 15px;
+        width: 15px;
+        top: 12px;
+        box-shadow: 0 0 0 5px #fff;
+    }
+    .form-control{
+        font-size: 28px;
+    }
+    .form-group{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .panel-body > .row:last-child .form-group{
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+    .backButton, .nextBtn, .login {
+        font-size: 28px !important;
+        border: 3px solid #0d3447;
+        padding: 2px 35px !important;
+    }
+    .fileinput,.photo span,.class_Container a, .gender_Container > a{
+        font-size: 28px;
+    }
+    .gender_Container {
+        max-width: 350px;
+    }
+    .grade .container {
+        padding-left: 45px;
+    }
+    .field-icon {
+        margin-top: -37px;
+        font-size: 24px;
+    }
+    .error-container {
+        font-size: 24px;
+    }
+    .confirmed__heading {
+        font-size: 38px;
+    }
+    .verified__img {
+        top: 5px;
+        height: 40px;
+        width: 40px;
+        position: relative;
+    }
+    .confirmed__div{
+        padding-left: 25px;
+    }
+}
+@media (min-width: 1024px) and (orientation: portrait){
+    .Steps_Container, .portait_bg {
+        max-width: 750px;
+    }
+    .panel-heading h1 {
+        font-size: 60px !important;
+    }
+    .step-label {
+        font-size: 35px;
+    }
+    .step-label::before {
+        left: -35px;
+        height: 18px;
+        width: 18px;
+        top: 18px;
+        box-shadow: 0 0 0 6px #fff;
+    }
+    label, .confirmed__div {
+        font-size: 35px;
+    }
+    .form-control {
+        font-size: 35px;
+    }
+    .error-container {
+        font-size: 30px;
+    }
+    .backButton, .nextBtn, .login {
+        font-size: 35px !important;
+        padding: 2px 40px !important;
+        border-radius: 35px;
+    }
+    .field-icon {
+        margin-top: -50px;
+        font-size: 32px;
+    }
+    .fileinput, .photo span, .class_Container a, .gender_Container > a {
+        font-size: 35px;
+    }
+    .photo span {
+        margin-left: 20px;
+        top: 5px;
+        position: relative;
+    }
+    .gender_Container {
+        max-width: 430px;
+    }
+    .grade .container {
+        padding-left: 50px;
+    }
+    .grade .checkmark {
+        height: 37px;
+        width: 37px;
+        top: 5px;
+    }
+    .grade .container .checkmark:after {
+        left: 12px;
+        top: 3px;
+        width: 13px;
+        height: 23px;
+        border-width: 0 6px 6px 0;
+    }
+    .confirmed__heading {
+        font-size: 45px;
+    }
+    .verified__img {
+        top: 8px;
+        height: 45px;
+        width: 45px;
+    }
+}
+@media(min-width : 576px) and (orientation : landscape){
+    .step-label{
+        display: none;
+    }
+}

@@ -1,0 +1,40 @@
+.container {
+    overflow-x: hidden;
+    position: relative;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* .Main_Container {
+        min-height: 412.39px;
+    } */
+
+    ul.dropdown li a {
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* .Main_Container {
+        min-height: 668.39px;
+    } */
+
+    .dropdown {
+        margin-left: -74px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Main_Container {
+        min-height: 507.59px;
+    }
+}
+
+@media(min-width:1200px) {
+    .Main_Container {
+        min-height: 630px;
+    }
+
+    .dropdown {
+        margin-left: -87px !important;
+    }
+}

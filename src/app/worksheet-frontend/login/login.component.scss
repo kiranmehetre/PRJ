@@ -1,0 +1,142 @@
+.loader {
+    border: 5px solid #f3f3f3;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: none;
+}
+.login_Block{
+    min-height: 100vh;
+    padding-top: 30px;
+    background-color: #68bde3;
+}
+.error-container{
+    color: #ff0000;
+}
+.panel-heading h1 {
+    text-align: center;
+}
+.login_Block .Main_Container{
+    justify-content: center;
+}
+@media (min-width: 576px) and (max-width : 767px){
+    .container {
+        max-width: 565px;
+    }
+    h1 {
+        font-size: 28px !important;
+    }
+    #step-5 form > div.col-md-10, #step-5 form > div.col-md-6 {
+        max-width: 100%;
+    }
+    .btn-forgot-password {
+        font-size: 15px;
+    }
+    .signup__div {
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    label, .confirmed__div {
+        font-size: 18px;
+    }
+    .btn-forgot-password {
+        font-size: 15px;
+    }
+}
+@media(min-width:100px) and (max-width:575px){
+    #step-5 form > div.col-md-10, #step-5 form > div.col-md-6 {
+        max-width: 100%;
+    }
+    .Steps_Container {
+        border-radius: 10px;
+    }
+}
+@media(min-width:100px) and (max-width:359px){
+    .new_to_grammar {
+        font-size: 15px;
+    }
+    .btn-forgot-password {
+        font-size: 14px;
+        top: 3px;
+        position: relative;
+    }
+}
+@media(min-width:768px) and (orientation:portrait){
+    #step-5 form > div.col-md-10, #step-5 form > div.col-md-6 {
+        max-width: 90%;
+    }
+    .panel-heading{
+        padding-top: 15px;
+    }
+    label, .confirmed__div {
+        font-size: 30px;
+    }
+    .btn-forgot-password {
+        font-size: 26px;
+        top: 5px;
+        position: relative;
+    }
+    .btn-sign-in,.signup__div button {
+        padding: 2px 27px !important;
+        font-size: 28px !important;
+        border-radius: 25px !important;
+    }
+    .signup__div button {
+        padding: 2px 20px !important;
+    }
+    .new_to_grammar {
+        font-size: 26px;
+    }
+    .Steps_Container {
+        border-radius: 10px;
+    }
+    #step-5 .panel-body {
+        padding-bottom: 50px;
+    }
+}
+@media(min-width:1024px) and (orientation:portrait){
+    label, .confirmed__div {
+        font-size: 35px;
+    }
+    .btn-forgot-password {
+        font-size: 32px;
+    }
+    .new_to_grammar {
+        font-size: 32px;
+    }
+    .btn-sign-in,.signup__div button {
+        padding: 2px 42px 4px !important;
+        font-size: 35px !important;
+        border-radius: 35px !important;
+    }
+    .signup__div button {
+        padding: 2px 30px 4px !important;
+    }
+}
+@media(min-width:1900px){
+    label, .form-control, .backButton, .nextBtn {
+        font-size: 35px;
+    }
+    .btn-forgot-password {
+        font-size: 30px;
+    }
+    .new_to_grammar {
+        font-size: 32px;
+    }
+    .btn-sign-in,.signup__div button {
+        padding: 2px 42px 4px !important;
+        font-size: 35px !important;
+        border-radius: 35px !important;
+    }
+    .signup__div button {
+        padding: 2px 30px 4px !important;
+    }
+}

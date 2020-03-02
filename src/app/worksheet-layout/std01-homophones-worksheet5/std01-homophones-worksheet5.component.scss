@@ -1,0 +1,1319 @@
+@font-face {
+    font-family: "CustomFontBold";
+    src: url(/assets/font/ntailub.ttf) format("truetype");
+}
+@font-face {
+    font-family: mt-rounded-bold;
+    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    font-weight: bold;
+}
+.bg{
+    font-family: 'CustomFontBold','Microsoft New Tai Lue','Arial';
+    color:#000;
+    font-size:25px;
+	background: url(/assets/std01-homophones-worksheet5/img/bg.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+img{
+    cursor: pointer;
+}
+h2{
+    color:#000;
+    font-family: mt-rounded-bold;
+}
+h2.heading{
+    font-weight: normal !important;
+}
+.answer
+{
+    font-family: 'CustomFontBold','Microsoft New Tai Lue','Arial';
+    color: #35b92c;
+    text-align: center;
+    -webkit-text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	-moz-text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.ans-div
+{
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #fff;
+    display: inline-block;
+    font-weight: 500;
+    display: none;
+    width: 110px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.Question-container{
+    width: 100%;
+    margin: auto;
+    // font-weight: 600;
+}
+.leftside
+{
+    display: inline-block;
+    width: 70%;
+    margin-left: 8%;
+}
+.rightside
+{
+    display: inline-block;
+    width: 22%;
+}
+.input-span{
+    border-bottom: 1px solid #000;
+}
+input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 0;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: inherit;
+}
+
+
+.heading-container{
+    margin: auto;
+}
+.text-container
+{
+    text-align: center;
+    width: 170px;
+    height: 172px;
+    padding-top: 50px;
+    background-size: 100%;
+    background: url(/assets/std01-homophones-worksheet5/img/icecream.png)  no-repeat;
+    margin: auto;
+    -webkit-filter: drop-shadow(1px 9px 5px #363939);
+    filter: drop-shadow(1px 9px 5px #363939);
+}
+
+   /* .wrong-answer{
+   
+    background: url(../img/wrong.png)  no-repeat;
+}
+.correct{
+    
+    background: url(../img/correct.png)  no-repeat;
+}  */
+.not {
+    top: 40px;
+    left: 10px;
+    width: 65%;
+    position: relative;
+}
+.wood{
+    width: 70px;
+}
+.whole {
+    margin-left: 40px;
+    top: 20px;
+    position: absolute;
+}
+.fowl
+{
+    width: 65px;
+}
+.sell{
+    width: 67px;
+}
+.threw{
+    width: 95px;
+}
+.won{
+    margin-left: 30px;
+    width: 95px;
+}
+.fowl-ans{
+    left: 70px;
+    top: -30px;
+    position: relative;
+}
+.here
+{
+    position: relative;
+    margin-left: 65px
+}
+.board
+{
+    position: absolute;
+    /* margin-top: -93px;
+    margin-left: -30px; */
+}
+.pane {
+    top: -25px;
+    width: 95px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:100px) and (max-width:320px){
+    
+}
+
+@media (min-width:100px) and (max-width:575px){
+    .bg {    
+       
+        color:#000;
+        font-size:15px;
+        background: url(/assets/std01-homophones-worksheet5/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .text-container
+    {
+        margin-top: -15px;
+        width: 90px;
+        height: 102px;
+        background-size: 90px;
+        padding-top: 27px;
+    }
+    .heading-container {
+        width: 95%;
+       
+    }
+    .Question-container{
+        width: 100%;
+    }
+
+    .leftside
+    {
+        width: 60%;
+        margin-left: 8%;
+    }
+    .rightside
+    {
+        width: 30%;
+        margin-right: 2%;
+    }
+
+
+    input{width: 62px;}
+    .ans-div {
+        /* display: inline-block; */
+        width: 62px;
+        position: absolute;
+        margin-top: -20px;
+        margin-left: -62px;
+        text-align: center;
+    }
+    img{
+        width: 52px;
+    }
+    .not{
+        width: 60px;
+        top: -30px;
+        left: 50px;
+    }
+    .wood{
+       width: 50px;
+       margin-left: -20px;
+    }
+    .whole {
+        margin-top: 60px;
+        margin-left: -17px;
+        width: 60px;
+        position: relative;
+    }
+    /* .fowl
+    {
+        width: 43px;
+        position: absolute;
+        right: 0;
+        margin-top: -41px;
+    } */
+    .sell{
+        width: 47px;
+        position: absolute;
+        margin-left: 50px;
+        z-index: 100;
+    }
+    .threw {
+        width: 70px;
+        position: absolute;
+        margin-left: 40px;
+        margin-top: -67px;
+    }
+    .won {
+        width: 65px;
+        margin-top: -60px;
+        margin-left: 46px;
+    }
+    .here {
+        width: 50px;
+        position: relative;
+        margin-left: 65px;
+        margin-top: -35px;
+    }
+    .board
+    {
+        
+        margin-left: -21px;
+        width: 50px;
+    }
+    .pane {
+        width: 65px;
+        position: unset;
+        margin-left: -25px;
+        margin-top: -40px;
+    }
+    .fowl-ans {
+        left: 0;
+        top: 6px;
+        position: relative;
+        width: 50px;
+    }
+    .Question-container .col-8
+    {
+        text-align: center;
+    }
+    .col-3 {
+        flex: 0 0 23%;
+        max-width: 21%;
+    }
+    .col-1 {
+        flex: 0 0 12%;
+        max-width: 23px;
+    }
+    .col-8 {
+        max-width: 128px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 359px){
+    .leftside {
+        margin-left: 4%;
+    }
+    .heading-container {
+        width: 100%;
+    }
+    .heading-container .col-xs-12{
+        padding: 0 !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    h2{
+        font-size: 1.3rem;
+    }
+    .container {
+        max-width: unset;
+    }
+    .bg {   font-size: 15px;}
+    .text-container
+    {
+        margin-top: -15px;
+        width: 100px;
+        height: 105px;
+        background-size: 100px;
+        padding-top: 30px;
+    }
+    .Question-container,.heading-container  {
+        width: 95%;
+       
+    }
+    input{
+        width: 60px;
+    }
+    /*  */
+    .not{
+        width: 55px;
+        top: -20px;
+        left: -23px;
+    }
+    .wood {
+        width: 45px;
+        margin-top: 20px;
+    }
+    .whole
+    {
+        position: absolute;
+        margin-left: 11px;
+        width: 55px;
+    }
+    .fowl
+    {
+        width: 40px;
+    }
+    .sell{
+        width: 38px;
+    }
+    .threw{
+        width: 65px;
+    }
+    .fowl-ans {
+        left: 50px;
+    }
+    .won {
+        width: 60px;
+        margin-left: 5px;
+    }
+    .here
+    {
+        position: relative;
+        margin-left: 25px;
+        width: 34px;
+    }
+    .board
+    {
+        width: 45px;
+    }
+    .pane {
+        width: 60px;
+        position: absolute;
+        margin-left: -25px;
+        margin-top: -30px;
+    }
+    /*  */
+    .helpbox-container{
+        position: absolute;
+        margin-top: -30px;
+    }
+    .ans-div{
+        width: 55px;
+    }
+    .mb-md-4, .my-md-4{
+        margin-bottom: 30px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    h2{
+        font-size: 1.6rem;
+    }
+    .container {
+        max-width: unset;
+    }
+    .bg {   font-size: 18px;}
+    .text-container
+    {
+        margin-top: -15px;
+        width: 103px;
+        height: 109px;
+        background-size: 103px;
+        padding-top: 30px;
+    }
+    .Question-container,.heading-container  {
+        width: 95%;
+       
+    }
+    input{width: 72px;}
+
+
+    .not {
+        top: 8px;
+        left: -28px;
+        width: 60px;
+    }
+    .wood {
+        width: 55px;
+        margin-left: -15px;
+        margin-top: 19px;
+    }
+    .whole
+    {
+        position: absolute;
+        margin-left: 11px;
+        width: 65px;
+    }
+    .fowl
+    {
+        width: 50px;
+    }
+    .sell{
+        width: 48px;
+    }
+    .threw{
+        width: 80px;
+    }
+    .won {
+        width: 70px;
+        margin-left: 0px;
+    }
+    .here
+    {
+        position: relative;
+        margin-left: 25px;
+        width: 44px;
+    }
+    .board
+    {
+        width: 55px;
+    }
+    .pane {
+        width: 60px;
+        position: absolute;
+        margin-left: -28px;
+        margin-top: -10px;
+    }
+    /*  */
+    .helpbox-container{
+        position: absolute;
+        margin-top: -30px;
+    }
+    .ans-div{
+            width: 65px;
+    }
+    .fowl-ans {
+            left: 47px;
+    }
+    .mb-md-4, .my-md-4{
+        margin-bottom: 45px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2{
+        font-size: 1.9rem;
+    }
+    .container {
+        max-width: unset;
+    }
+    .bg {   font-size: 22px;}
+    .Question-container,.heading-container  {
+        width: 95%;
+       
+    }
+
+    /* .not{
+        width: 65px;
+    }
+    .wood{
+       width: 60px;
+    }
+    .whole
+    {
+        position: absolute;
+        margin-left: 11px;
+        width: 70px;
+    }
+    .fowl
+    {
+        width: 55px;
+    }
+    .sell{
+        width: 53px;
+    }
+    .threw{
+        width: 58px;
+    }
+    .won{
+        width: 63px;
+    }
+    .here
+    {
+        position: relative;
+        margin-left: 25px;
+        width: 49px;
+    }
+    .board
+    {
+        margin-top: -120px;
+        margin-left: -35px;
+        width: 49px;
+    }
+    .pane
+    {
+        width: 65px;
+        position: absolute;
+        margin-left: 37px;
+        margin-top: -28px;
+    } */
+    /*  */
+    .helpbox-container{
+        position: absolute;
+      margin-top: -15px;
+    }
+    .leftside {
+        margin-left: 4%;
+    }
+    .ans-div{
+        width: 85px;
+    }
+    .mb-md-4, .my-md-4{
+        margin-bottom: 50px !important;
+    }
+    .btn-row {
+        margin-bottom: 12% !important;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: unset;
+    }
+    h2{
+        font-size: 2.1rem;
+    }
+    .Question-container,.heading-container  {
+        width: 90%;
+       
+    }
+    .mb-xl-5{
+        margin-bottom: 5rem!important;
+    }
+    .threw {
+        width: 110px;
+    }
+	.fowl {
+        width: 59px;
+    }
+    .board{
+        width: 70px;
+    }
+    .sell {
+        width: 60px;
+    }
+    .here{
+        width: 63px;
+    }
+}
+@media (min-width: 992px){
+}
+@media only screen and (min-width: 768px) and (orientation: portrait)
+{
+    .bg{
+        font-size: 27px;
+           background: url(/assets/std01-homophones-worksheet5/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    h2 {
+        font-size: 2.1rem;
+    }
+    .Question-container{
+        width: 100%;
+    }
+    .leftside{
+        width: 68%;
+        margin-left: 4%;
+    }
+    .rightside{
+          width: 28%;
+    }
+    .leftside .row .col-sm-6 .row .col-1
+    {
+        max-width: 11% !important;
+        margin-bottom: 8%
+    }
+    .leftside .row .col-sm-6 .row .col-3
+    {
+        max-width: 42% !important;
+        margin-bottom: 8%
+    }
+    .leftside .row .col-sm-6 .row .col-8
+    {
+        max-width: 47% !important;
+        margin-bottom: 8%
+    }
+    input {
+        width: 100px;
+    }
+    .wood {
+        width: 90px;
+    }
+    .not {
+        width: 119px;
+    }
+    .whole{
+        width: 105px;
+    }
+    .fowl {
+        width: 83px;
+    }
+    .sell {
+        width: 79px;
+    }
+    .threw {
+        width: 122px;
+    }
+    .won {
+        width: 127px;
+    }
+    .pane{
+        width: 125px;
+    }
+    .board{
+        width: 90px !important;
+    }
+    .shift_left{
+        padding-left: 25px !important;
+    }
+    .ans-div {
+        width: 100px;
+        position: absolute;
+        top: 0;
+        margin-left: -100px;
+        margin-top: -30px;
+    }
+    .fowl-ans {
+        left: 30px;
+    }
+    .not {
+        top: 8px;
+        left: -10px;
+    }
+    .mb-md-4, .my-md-4 {
+        margin-bottom: 60px !important;
+    }
+    .input-span{
+        border-width: 2px;
+    }
+}
+@media only screen and (min-width: 1024px) and (orientation: portrait) 
+{
+    .bg {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .mb-md-4 {
+        margin-bottom: 3.5rem!important;
+    }
+    input {
+        width: 140px;
+    }
+    .not {
+        width: 140px;
+    }
+
+    .wood {
+        width: 113px;
+    }
+    .whole {
+        width: 127px;
+    }
+    .fowl {
+        width: 103px;
+    }
+    .sell {
+        width: 101px;
+    }
+    .threw {
+        width: 159px;
+    }
+    .won {
+        width: 149px;
+        margin-left: -15px;
+    }
+    .board{
+        width: 113px !important;
+    }
+    .pane {
+        width: 155px;
+        margin-left: -35px;
+    }
+    .here{
+        margin-left: 35px;
+    }
+    .ans-div {
+        width: 140px;
+        position: absolute;
+        top: 0;
+        margin-left: -140px;
+        margin-top: -40px;
+    }
+    .mb-md-4, .my-md-4 {
+        margin-bottom: 90px !important;
+    }
+    .whole {
+        margin-left: -10px;
+        margin-top: 40px;
+        position: relative;
+    }
+    .Question-container {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width:1900px)
+{
+    .container
+    {
+        max-width: 1500px;
+    }
+    .bg{
+        font-size: 30px;
+    }
+    .helpbox-container img
+    {
+        transform: scale(1.3);
+        margin-bottom: 30px;
+    }
+    .input-span{
+        border-width: 2px;
+    }
+    .col-8{
+        padding-left: 5% !important;
+    }
+    input{
+        width:135px;
+    }
+}
+
+
+// External CSS End
+
+// Common CSS Start
+.loadingDiv {
+    position: fixed;;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(255,255,255,0.4);
+    background-image:url('/assets/images/loader.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:10000000;
+    background-size: 85px;
+  }
+
+.result{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:rgba(0,0,0,.8);
+    z-index:2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor:pointer;
+}
+.result .Box{
+    position: relative;
+    padding:45px 55px 30px 20px
+}
+.result .imgBox{
+    display:none;
+}
+.result img{
+    max-width:100%;
+}
+.result .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor:pointer;
+}
+.result .TextBox h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    font-family: 'mt-rounded-bold','Microsoft New Tai Lue','Arial';
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    -webkit-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	-moz-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	padding:10%;
+	max-width:800px;
+}
+@media(min-width:100px) and (max-width:575px){
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+    .result .close {
+        right: 15px;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+}
+.myButton {
+	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+	background-color:#c62d1f;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:inherit;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+	line-height: 1;
+	outline:0 !important;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.button.playAgain {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:inherit;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.button.playAgain:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.button.playAgain:active {
+	position:relative;
+	top:1px;
+}
+
+
+#toggle {
+    display: block;
+    right: 56px;
+    top: 35px;
+    background: #f3ecec;
+    border-radius: 50%;
+    border: 4px solid #3b7ee2;
+    opacity: 0.7;
+    text-align: center;
+    padding: 10px;
+    
+  }
+
+  #toggle:hover
+  {
+    opacity: 1;
+    border: 4px solid #3b7ee2;
+    
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: inline;
+  }
+  
+  #toggle span
+  {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding:0%;
+  }
+
+  #toggle span img
+  {
+    width:25px;
+    height:25px;
+    margin:0;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  
+
+  /* menu appearance*/
+#menu {
+    position: absolute;
+    color: #000;
+    width: 140px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0px 3px 11px 1px rgba(27, 24, 24, 0.24);
+    font-size: 16px;
+    left: -190%;
+    z-index: 9;
+    text-align: right;
+    top: 145%;
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;  
+}
+.change{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1; 
+}
+.notchange{
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#menu:after {
+    position: absolute;
+    top: -20px;
+    left: 107px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: normal;
+}
+li a {
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: all .2s;
+}
+li a:hover,
+li a:focus {
+    background: #1798dc;
+    color: #fff;
+    text-decoration: none;
+}
+.menu-block{
+    position: fixed;
+    right: 46px;
+    top: 35px;
+    z-index: 2147483646;
+    height: 50px;
+}
+.up {
+    transform: rotate(180deg) translateY(0%);
+}
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+} 
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,  -20%, 0);
+        transform: translate3d(0,  -20%, 0);
+        visibility: hidden;
+    }
+}
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,  -20%, 0);
+        transform: translate3d(0,  -20%, 0);
+        visibility: hidden;
+    }
+} 
+
+@media(min-width:100px) and (max-width:575px){
+    .menu-block {
+        right: 10px;
+    }
+    #toggle {
+        padding: 6px 5px;
+        height: 43px;
+        width: 43px;
+    }
+    #menu{
+        top: 123%;
+        left: -235%;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .menu-block {
+        right: 10px;
+    }
+    #toggle {
+        padding: 6px 5px 0;
+        height: 43px;
+        width: 43px;
+    }
+    #menu{
+        top: 123%;
+        left: -235%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .menu-block {
+        right: 10px;
+    }
+    #toggle {
+        padding: 5px;
+        height: 43px;
+        width: 43px;
+    }
+    #menu{
+        top: 123%;
+        left: -235%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .menu-block {
+        right: 10px;
+    }
+    #menu:after {
+        left: 140px;
+    }
+    #menu {
+        font-size: 18px;
+        left: -240%;
+        top: 140%;
+        width: 175px;
+    }
+    #toggle {
+        height: 53px;
+        width: 53px;
+        /* line-height: 48px; */
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+	#menu {
+        top: 70px;
+        left: -190px;
+        width: 250px;
+        font-size: 26px;
+    }
+    #toggle {
+        height: 60px;
+        width: 60px;
+        line-height: 1;
+        padding: 11px 5px;
+    }
+    .menu-block {
+        right: 20px;
+    }
+    #menu:after {
+        left: 205px;
+    }
+    #toggle span img {
+        width: 33px;
+        height: 33px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+	#menu {
+        top: 70px;
+        left: -190px;
+        width: 250px;
+        font-size: 30px;
+    }
+    #toggle{
+        height: 60px;
+        width: 60px;
+        /* line-height: 55px; */
+        padding: 10px;
+    }
+}
+@media(min-width:1200px){
+	#menu {
+        top: 70px;
+        left: -135px;
+        width: 180px;
+        font-size: 18px;
+    }
+    #menu:after {
+        left: 145px;
+    }
+    #toggle{
+        height: 55px;
+        width: 55px;
+        /* line-height: 50px; */
+    }
+}
+
+
+.input-span.bd {
+    border-bottom: 3px solid #35b92c;
+}
+
+.hide {
+    display: none;
+}
+
+.click {
+    -webkit-filter: drop-shadow(rgb(255, 166, 8) 4px 2px 0px) drop-shadow(rgb(255, 166, 8) -4px 0px 0px);
+    filter: drop-shadow(rgb(255, 166, 8) 4px 4px 5px) drop-shadow(rgb(255, 166, 8) -4px 0px 12px);
+}
+
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437', GradientType=0);
+    background-color: #c62d1f;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+    line-height: 1;
+    outline: 0 !important;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background: -moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f', GradientType=0);
+    background-color: #f24437;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn-row {
+    position: relative;
+
+    margin-bottom: 6% !important;
+    text-align: center;
+}

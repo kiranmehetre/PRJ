@@ -1,0 +1,493 @@
+<div class="bg" ngPreserveWhitespaces>
+  <div class='result'>
+    <div class="Box">
+      <div class="imgBox">
+        <img src="" alt="" class="Text keep-practicing hide">
+        <img src="" alt="" class="Text outstanding hide">
+        <img src="" alt="" class="Text brilliant hide">
+        <img src="" alt="" class="Text good-work hide">
+        <!-- <img src="" alt="" class="Text fabulous hide"> -->
+      </div>
+      <div class="TextBox">
+        <h1></h1>
+      </div>
+      <img src="assets/images/close.png" alt="" class="close">
+    </div>
+  </div>
+  <div class="loadingDiv">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 px-2 p-2 pt-3 mb-1">
+        <h2 class="font-weight-bold heading">
+          Click on the first blanks and then click on the Adjectives; also click on the second blanks and then
+          click on Nouns, for the given sentences.
+        </h2>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="question-container ">
+        <!-- 1 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>1)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 col-sm-8 p-0 order-1 order-sm-0 font-weight-bold position-1">
+                <span>Mr</span>.<span>Jackson</span> <span>is</span> <span>driving</span> <span>through</span>
+                <span>a</span> <span>narrow</span> <span>street</span>.</div>
+              <div class="col-sm-2 p-0 text-center font-weight-bold hide-portrait hide-show">
+                <div>
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <div class="col-sm-2 p-0 text-center font-weight-bold hide-portrait hide-show">
+                <div>
+                  <span>describes Noun</span>
+                </div>
+              </div>
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div0">
+                  <span>narrow</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div1">
+                  <span>street</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>2)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold position-1"><span>Lisa</span> <span>is</span>
+                <span>a</span> <span>skinny</span> <span>girl</span>.</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div2">
+                  <span>skinny</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div3">
+                  <span>girl/Lisa</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>3)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold"><span>That</span> <span>was</span>
+                <span>a</span> <span>delicious</span> <span>cake</span>!</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div4">
+                  <span>delicious</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7 ">
+                <div class="ans-div" id="ans-div5">
+                  <span>cake</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>4)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold position-1"><span>The</span> <span>actor</span>
+                <span>is</span> <span>very</span> <span>handsome</span>.</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div6">
+                  <span>handsome</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div7">
+                  <span>actor</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>5)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold position-1"><span>The</span>
+                <span>foolish</span> <span>boy</span> <span>did</span> <span>not</span> <span>cross</span>
+                <span>the</span> <span>road</span> <span>carefully</span>.</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun" style="white-space: nowrap;">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div8">
+                  <span>foolish</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div9">
+                  <span>boy</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 6-8  -->
+        <!-- 6 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>6)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold position-1"><span>The</span>
+                <span>hungry</span> <span>cat</span> <span>licked</span> <span>up</span> <span>all</span>
+                <span>the</span> <span>milk</span>.</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div10">
+                  <span>hungry</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div11">
+                  <span>cat</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>7)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold position-1"><span>Don’t</span> <span>sit</span>
+                <span>on</span> <span>the</span> <span>broken</span> <span>chair</span>.</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div12">
+                  <span>broken</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div13">
+                  <span>chair</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="question d-flex">
+          <div class="number font-weight-bold">
+            <span>8)</span>
+          </div>
+          <div class="text-container">
+            <div class="row m-0">
+              <div class="col-12 p-0 order-1 order-sm-0 font-weight-bold position-1"><span>The</span> <span>chef</span>
+                <span>used</span> <span>a</span> <span>sharp</span> <span>knife</span> <span>to</span> <span>cut</span>
+                <span>the</span> <span>vegetables</span>.</div>
+
+              <!-- adjective -->
+              <div class="col-4 col-sm-2 p-0 order-2 order-sm-0 position-2">
+                <div class="adjective">
+                  <span>Adjective</span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-3 order-sm-0 position-3">
+                <div class="ans-bg">
+                  <span class="input-span adjetcive-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- describe Noun -->
+              <div class="col-4 col-sm-2 p-0 order-5 order-sm-0 position-5">
+                <div class="describe-noun">
+                  <span>
+                    describes Noun
+                  </span>
+                </div>
+              </div>
+              <!-- ans -->
+              <div class="col-4 col-sm-2 p-0 order-6 order-sm-0 position-6">
+                <div class="ans-bg desc-ans">
+                  <span class="input-span describes-input-span">
+                    <input type="text" readonly="readonly" style="cursor: pointer;">
+                  </span>
+                </div>
+              </div>
+              <!-- correct ans -->
+              <div class="col-4 col-sm-2 p-0 order-4 order-sm-0 position-4">
+                <div class="ans-div" id="ans-div14">
+                  <span>sharp</span>
+                </div>
+              </div>
+              <div class="col-4 col-sm-2 p-0 order-7 order-sm-0 position-7">
+                <div class="ans-div" id="ans-div15">
+                  <span>knife</span>
+                </div>
+              </div>
+              <!-- end ans -->
+            </div>
+          </div>
+        </div>
+        <!--end  -->
+        <div class="row m-0">
+          <div class="btn-row w-100">
+            <button class="button myButton">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

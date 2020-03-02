@@ -1,0 +1,841 @@
+
+@font-face {
+    font-family: "rounded-mt-bold";
+    src: url("../src/ARLRDBD.ttf") format("truetype");
+}
+.comma{
+    font-family: rounded-mt-bold,'Microsoft New Tai Lue','Arial';
+}
+body{
+    font-family:Microsoft New Tai lue;
+    color:#000;
+    font-size:27px;
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-position: bottom;
+    
+}
+
+
+/* btn start */
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+    background-color:#c62d1f;
+    -moz-border-radius:18px;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    /*font-size:17px;*/
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+    outline:0 !important;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+    background-color:#f24437;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+.button {
+    margin-bottom: 3%;
+}
+
+
+/* btn end */
+
+
+
+
+
+
+
+
+
+
+
+.helpbox-container
+{
+     width: 768px;
+    margin: auto;
+    text-align: center;
+
+    position: fixed;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 2;
+    background: rgba(255,255,255,0.8);
+}
+.helpans
+{
+    display: inline-block;
+    width: 20%;
+  
+}
+.helpans div{
+    background: url(../img/hoock.png) no-repeat;
+     background-size: 100%;
+    width: 96%;
+    height: 69px;
+    padding: 15px;
+    cursor: pointer;
+ 
+}
+.fish-top
+{
+    margin-top: -35px;
+    
+}
+.heading-container{
+
+}
+
+h2{
+    color:#000;
+    font-family: rounded-mt-bold,'Microsoft New Tai Lue','Arial';
+}
+
+.Question-container{
+    margin: auto;
+    margin-bottom: 6%;
+    margin-top: 4% !important;
+
+}
+.hoock
+{
+    width: 50%;
+    display: inline-block;
+}
+.fish
+{
+    width: 60%;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.fish-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hoock{
+    text-align: right;
+}
+.hoock img{
+    position: relative;
+    margin-right: -15px;
+}
+.col-5
+{
+    margin-bottom: 20px;
+}
+.hoock-click
+{
+    background: url(../img/hoock.png) no-repeat;
+    background-size: 100%;
+    height: 88px;
+    width: 149px;
+    background-position: 4px 14px;
+    margin-right: -10px;
+    z-index: 1;
+    text-align: center;
+    line-height: 3.1em;
+    position: relative;
+    /* display:none; */
+    visibility: hidden;
+}
+/* 
+.btn-row{
+    position: absolute;
+    margin-top:-109px !important;
+    margin-bottom:10px !important;
+    left:50%;
+    transform:translateX(-50%);
+} */
+.shift-top{
+    margin-top: -24px;
+}
+.organswer{
+    margin-top: -5%;
+}
+.organswer span{
+    background: #fff;
+    border: 1px solid #000;
+    padding: 0 4px;
+    display: inline-block;
+    line-height: 1.2;
+}
+#flower .hoock{
+    left: 15px;
+}
+#bath .hoock {
+    left: 18px;
+    top: 18px;
+}
+#tooth .hoock {
+    left: -7px;
+    top: 7px;
+}
+#jelly .hoock{
+    left: 10px;
+    top: 7px;
+}
+#thumb .hoock{
+    top: 5px;
+}
+#your .hoock{
+    left: 20px;
+    top: 7px;
+}
+#tooth .fish{
+    width: 45%;
+}
+#thumb .fish{
+    width: 42%;
+}
+#your .fish{
+    width: 45%;
+}
+@media (min-width:100px) and (max-width:320px){
+    
+}
+
+@media (min-width:100px) and (max-width:575px){
+    body {    
+      
+        color:#000;
+        font-size:16px;
+        background: url(../img/bg_portrait.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        background-position: bottom;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .heading-container
+    {
+        width: 100%;
+    }
+    .Question-container {
+        width: 95%;
+        margin-top: 20% !important;
+    }
+    .potrait
+    {
+        content: url(../img/portrait.png);
+    }
+    .hide-portrait
+    {
+        display: none;
+    }
+    .landscape {
+        max-width: 100% !important;
+        position: unset;
+        margin-top: 5px;
+        float: unset;
+        margin: auto;
+    }
+
+    .helpbox-container{
+        width: 95%;
+    }
+    .helpans {
+     
+        margin-bottom: 6px;
+    }
+   .helpans div{
+        height: 29px;
+        padding: 2px;
+    }
+    
+    .fish-top {
+        margin-top: unset;
+    }
+
+    .hoock-click {
+        background: url(../img/hoock.png) no-repeat;
+        background-size: 95%;
+        height: 88px;
+        width: 50%;
+        background-position: 4px 30px;
+        margin-right: -8px;
+        z-index: 1;
+        text-align: center;
+        line-height: 4.8em;
+        font-size: 18px;
+    }
+    .col-5{
+        margin-bottom: 3px;
+    }
+
+    .btn-row{
+        position: absolute;
+        margin-top: -29px !important;
+        margin-bottom: 40px !important;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .button{
+        padding: 3px 17px;
+    }
+
+    #flower .hoock {
+        left: 9px;
+    }
+    #bath .hoock {
+        left: 7px;
+    }
+    #jelly .hoock {
+        left: 5px;
+        top: 5px;
+    }
+    #your .hoock {
+        left: 10px;
+        top: 2px;
+    }
+
+}
+@media (min-width:100px) and (max-width:575px) and (orientation:landscape)
+{
+    .helpbox-container {
+        width: 65%;
+    }
+    .hoock-click{
+        line-height: 5.8em;
+    }
+    #flower .hoock {
+        left: 18px;
+        top: -10px;
+    }
+    #bath .hoock {
+        left: 17px;
+    }
+    #tooth .hoock {
+        left: -2px;
+        top: 4px;
+    }
+    #jelly .hoock {
+        left: 13px;
+        top: 3px;
+    }
+    #your .hoock {
+        left: 22px;
+        top: -5px;
+    }
+    #grand .hoock{
+        top:-10px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    h2{
+        font-size: 1.3rem;
+    }
+    .container {
+        max-width: unset;
+    }
+    body {font-size: 18px;}
+  
+    .heading-container  
+    {
+        width: 95%;
+    }
+    .Question-container
+    {
+        width: 95%;
+        margin-top: 12% !important;
+    }
+ 
+  .helpbox-container{
+        width: 65%;
+        font-size: 14px;
+        position: fixed;
+        left: 50%;
+        transform: translatex(-50%);
+        z-index: 1;
+        background: rgba(255,255,255,0.8);
+    }
+    .helpans div {
+        width: 97%;
+        height: auto;
+        padding: 7px;
+    }
+    .hoock img{
+        margin-right: -7px;
+    }
+
+/*  */
+    .hoock-click {
+        background: url(../img/hoock.png) no-repeat;
+        background-size: 100%;
+        
+        background-position: 1px 13px;
+        margin-right: -10px;
+        z-index: 1;
+        text-align: center;
+        line-height: 3.2em;
+        height: 56px;
+        width: 50%;
+    }
+    .col-5 {
+        margin-bottom: 8px;
+    }
+    /*  */
+    .button{
+        padding: 3px 17px;
+    }
+    
+    #flower .hoock {
+        left: 7px;
+    }
+    #bath .hoock {
+        left: 6px;
+        top: 8px;
+    }
+    #jelly .hoock {
+        left: 5px;
+        top: 4px;
+    }
+    #play .hoock{
+        left: -3px;
+    }
+    #your .hoock {
+        left: 7px;
+        top: 2px;
+    }
+    #grand .hoock{
+        left: -3px;
+    }
+
+}
+@media (min-width: 700px) and (max-width: 767px){
+    .helpans div
+    {
+        padding: 9px;
+    }
+    
+    .hoock-click{
+        line-height: 3.5em;
+    }
+
+    .btn-row{
+        position: absolute;
+        margin-top:11px !important;
+        margin-bottom:10px !important;
+        left:50%;
+        transform:translateX(-50%);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    h2{
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: unset;
+    }
+    body {   font-size: 22px;}
+    .heading-container 
+    {
+        width: 95%;
+    }
+    .Question-container
+    {
+        width: 95%;
+        margin-top: 12% !important;
+    }
+  
+
+      .helpbox-container{
+        width: 67%;
+        font-size: 17px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+        background: rgba(255,255,255,0.8);
+        }
+        .helpans div {
+            width: 97%;
+            height: 45px;
+            padding: 10px;
+        }
+        .hoock img{
+            margin-right: -10px;
+           
+        }
+        
+    .hoock-click {
+        background: url(../img/hoock.png) no-repeat;
+        background-size: 100%;
+        height: 88px;
+        width: 50%;
+        background-position: 1px 24px;
+        margin-right: -10px;
+        line-height: 4.2em;
+    }
+
+    .col-5 {
+        margin-bottom: 8px;
+    }
+    .button{
+        padding: 3px 17px;
+    }
+    #flower .hoock {
+        left: 12px;
+    }
+    #bath .hoock {
+        left: 10px;
+        top: 12px;
+    }
+    #your .hoock {
+        left: 13px;
+        top: 6px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2{
+        font-size: 1.9rem;
+    }
+    .container {
+        max-width: unset;
+    }
+    body {   font-size: 23px;}
+    .heading-container  {
+        width: 95%;
+    }
+    .Question-container
+    {
+        width: 95%;
+        margin-top: 17% !important;
+    }
+    .helpans div {
+        padding: 5px;
+        line-height: 55px;
+    }
+    .fish-container
+    {
+        font-size: 27px;
+    }
+   .hoock-click{
+        line-height: 3.1em;
+        background-size: 98%;
+   }
+}
+@media (min-width: 1200px){
+    h2{
+        font-size: 2.2rem;
+    }
+  
+	
+}
+@media (min-width: 1900px){
+    .container {
+        max-width: 1140px;
+        transform: scale(1.35);
+        margin-top: 150px;
+    }
+}
+
+
+
+.loadingDiv {
+    position: fixed;;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(255,255,255,0.4);
+    background-image:url('/assets/images/loader.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:10000000;
+    background-size: 85px;
+  }
+
+
+.result {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+/*Portrait*/ 
+@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
+
+}
+.result{
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    background:rgba(0,0,0,.8);
+    z-index:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor:pointer;
+}
+.result .Box{
+    position: relative;
+    padding:45px 55px 30px 20px
+}
+.result .imgBox{
+    display:none;
+}
+.result img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.result .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor:pointer;
+	width: auto !important;
+	  height: auto;
+}
+.result .TextBox h1 {
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    -webkit-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	-moz-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	padding:10%;
+	max-width:800px;
+}
+@media(min-width:100px) and (max-width:575px){
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+    .result .close {
+        right: 15px;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+}
+@media(min-width:1200px) 
+{
+    .Question-container{
+         margin-top: 15% !important;
+    }
+   
+}
+
+.playagain {
+    -moz-box-shadow: 3px 4px 0px 0px #fff6af;
+    -webkit-box-shadow: 3px 4px 0px 0px #fff6af;
+    box-shadow: 3px 4px 0px 0px #fff6af;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+    -moz-border-radius:18px;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    padding:7px 25px;
+    text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+    line-height: 1;
+    outline:0 !important;
+}
+.playagain:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.playagain:active {
+    position:relative;
+    top:1px;
+}
+
+    
+.hide_btn
+{
+display: none !important ;
+}
+
+
+
+        
+        @media only screen and (min-width: 768px) and (orientation: portrait)
+        {
+            body {    
+                font-family:Microsoft New Tai lue;
+                color:#000;
+                background: url(../img/bg_portrait.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 100%;
+                background-position: bottom;
+            }
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 4%;
+            }
+            .fish {
+                width: 90%;
+                display: inline-block;
+                float: right;
+            }
+            .helpbox-container{
+                width: 65%;
+                font-size: 18px;
+                transform: scale(1.2);
+            }
+            .button{
+                font-size: 30px;
+            }
+            .menu-block {
+                
+                transform: scale(1.5);
+            }
+            .hoock-click{
+                width: 180px;
+            }
+            .helpbox-container{
+                position: unset;
+                left: unset;
+                transform: unset;
+                z-index: unset;
+                background: unset;
+            }
+           
+        }
+        @media only screen and (min-width: 1024px) and (orientation: portrait) 
+        {
+            h2 {
+                font-size: 2.4rem;
+                margin-bottom: 8%;
+            }
+            .helpbox-container {
+                width: 62%;
+                font-size: 23px;
+                transform: scale(1.5);
+            }
+            .button {
+                font-size: 40px;
+            }
+            
+          
+            .hoock-click{
+                width: 210px;
+            }
+        }
+
+
+        
+        /*Portrait*/ 
+       
+        
+        
+        .playagain {
+            -moz-box-shadow: 3px 4px 0px 0px #fff6af;
+            -webkit-box-shadow: 3px 4px 0px 0px #fff6af;
+            box-shadow: 3px 4px 0px 0px #fff6af;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+            background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+            background-color:#ffec64;
+            -moz-border-radius:18px;
+            -webkit-border-radius:18px;
+            border-radius:18px;
+            border:1px solid #ffaa22;
+            display:inline-block;
+            cursor:pointer;
+            color:#333333;
+            font-family:Arial;
+            padding:7px 25px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffee66;
+            line-height: 1;
+            outline:0 !important;
+        }
+        .playagain:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+            background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+            background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+            background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+            background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+            background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+            background-color:#ffab23;
+        }
+        .playagain:active {
+            position:relative;
+            top:1px;
+        }
+        
+            
+        .hide_btn
+        {
+        display: none !important ;
+        }
+        
+        
+       

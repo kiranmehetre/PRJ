@@ -1,0 +1,1109 @@
+@font-face 
+	{
+		font-family: "ArialRoundedMTBold";
+		src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+	}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("/assets/font/ntailu.ttf") format("truetype");
+}
+@font-face {
+    font-family: "CustomFontBold";
+    src: url("/assets/font/ntailub.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: mt-rounded-bold;
+    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    font-weight: bold;
+  }
+
+ .bg{
+    min-height:100vh;
+    background:url(/assets/std01-interrogative-pronouns-worksheet3/img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+	overflow-x:hidden;
+    /* font-family:Microsoft New Tai lue; */
+    font-family: 'ArialRoundedMTBold','Microsoft New Tai Lue','Arial';
+    color:#000;
+    font-size:22px;
+} 
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+    background-color:#c62d1f;
+    -moz-border-radius:18px;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    /* font-size:17px; */
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+    line-height: 1;
+    outline:0 !important;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+    background-color:#f24437;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+ .btn-row{
+    // position: absolute;
+     margin-top: -20px !important;
+    //  left: 50%;
+    // transform: translateX(-59%);
+    padding-bottom: 20px;
+} 
+
+.helpbox span {
+    cursor: pointer;
+}
+.Main_Container
+{
+    padding-bottom: 3%;
+}
+input{
+    border:0;
+    padding:0;
+    border-bottom:1px solid #000;
+    background:transparent;
+    color:#000;
+    text-align:center;
+    outline:0;
+    width:100px;
+    line-height:1;
+}
+.heading{
+    border:4px solid #fff;
+    -webkit-box-shadow:1px 1px 10px rgba(0,0,0,.5);
+    -moz-box-shadow:1px 1px 10px rgba(0,0,0,.5);
+    box-shadow:1px 1px 10px rgba(0,0,0,.5);
+    display: inline-block;
+}
+h2{
+    font-family: 'mt-rounded-bold','Microsoft New Tai Lue','Arial';
+    color:#000;
+    font-size: 32px;
+}
+.comma{
+    font-family: mt-rounded-bold;
+}
+.number-box {
+    margin-right: 8px;
+    background-image: url(/assets/std01-interrogative-pronouns-worksheet3/img/number.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    display: block;
+    position: relative;
+    filter: drop-shadow(0 6px 3px rgba(0,0,0,.5));
+}
+.number-box{
+    width: 50px;
+    height: 65px;
+}
+.number-box span{
+    left: 59%;
+    top: 37%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.Question{
+    grid-template-columns: fit-content(100%) fit-content(100%) auto;
+    display: grid;
+}
+.correct-ans span
+{
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px solid #000;
+    background-color: #e0dfe0;
+    border-radius: 5px;
+    color: #20bb15 !important;
+    -webkit-text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    -moz-text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-weight: bold;
+    /* padding: 2px; */
+    /* display: none; */
+}
+.correct-ans{
+    display: none;
+}
+.correct-ans {
+    font-family: 'ArialRoundedMTBold','Microsoft New Tai Lue','Arial';
+    font-size: 17px;
+    /* line-height: 1; */
+    position: absolute;
+    margin-top: -58px;
+    text-align: center;
+    width: 100px;
+}
+.Question_Body{
+    background-color:rgba(255,255,255,.7);
+    padding:10px 15px;
+	
+}
+.helpbox-container {
+	
+    background: #ffffff;
+    position: relative;
+	margin-top: -90px;
+    width: 94%;
+    margin-left: 11px;
+}
+ .helpbox{
+    width: 100%;
+    line-height: 1.9em;
+    background-size: 100%;
+    text-align: center;
+	font-size:1.3rem;
+	
+ }
+ .helpbox-container .col-3 {
+    border: 1px solid #c3b59b;
+}
+.text-container{
+    padding-left: 8px;
+}
+@media (min-width:100px) and (max-width:575px){
+    .bg{
+        min-height:100%;
+        background:url(/assets/std01-interrogative-pronouns-worksheet3/img/bg_portrait.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-position: bottom;
+        font-size:16px;	
+    }
+    .Question_Container
+    {
+        margin-top: -45px;
+    }
+    .helpbox {
+        width: 100%;
+        line-height: 2.5em;
+        background-size: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 21px;
+        padding-left: 8px;
+    }
+	.Question .row .col-1{
+		padding-left:0!important;
+	}
+	input {
+        width: 70;
+    }
+    .correct-ans {
+        /* line-height: 1; */
+        margin-top: -48px;
+        width: 70px;
+    }
+    .helpbox-container {
+        margin-bottom: 15%;
+    }
+    .Order1{
+       position: fixed;
+       z-index: 1;
+    }
+    .Question_Body{
+        margin-top: 270px;
+    }
+    .Main_Container {
+        padding-bottom: 12%;
+    }
+    .text-container {
+        padding-left: 6px;
+    }
+    .number-box {
+        width: 37px;
+        height: 51px;
+        top: -4px;
+    }
+}
+@media (min-width:400px) and (max-width:575px){
+    .Question_Body {
+        margin-top: 300px;
+    }
+}
+@media (min-width:565px) and (max-width:575px){
+
+    .Order1{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .Question_Body {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        margin-top: 44px;
+        left: 38%;
+    }
+    .helpbox {
+        width: 100%;
+        line-height: 1.7em;
+        background-size: 100%;
+        text-align: center;
+        font-size: 13px;
+    }
+    .helpbox-container {
+        background: #ffffff;
+        position: relative;
+        margin-top: -45px;
+        width: 94%;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .bg{
+        font-size:15px;
+    }
+    h2{
+        font-size:20px;
+        padding-left: 8px;
+    }
+    .Question_Body{
+        padding:10px;
+    }
+    .col-4{
+        padding:0 10px;
+    }
+    .col-8{
+        padding:0 5px;
+    }
+    .heading + h2{
+        font-size:24px;
+    }
+    .container {
+        max-width: unset;
+    }
+	.helpbox span {
+        font-size: 15px;
+    }
+	.helpbox-container {
+        margin-top: -47px;
+        width: 94%;
+        margin-left: 6px;
+    }
+  .helpbox {
+    width: 100%;
+    line-height: 1em;
+    background-size: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    }
+    input {
+        width: 70px;
+    }
+    .correct-ans {   
+        font-size: 15px;
+        margin-top: -45px;
+        width: 70px;
+    }
+    .Question_Container{
+        left: 25%;
+    }
+    .Order1{
+        position: fixed;
+        z-index: 1;
+    }    
+    .text-container {
+        padding-left: 6px;
+    }
+    .number-box {
+        width: 37px;
+        height: 51px;
+        top: -2px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .bg
+    {
+        font-size: 17px;
+    }
+    .container {
+        max-width: unset;
+    }
+    .helpbox-container {
+        margin-top: -66px;
+        width: 95%;
+        margin-left: 6px;
+    }
+    .helpbox {
+        font-size: 1rem;
+    }
+    h2 {
+        color: #000;
+        font-size: 26px;
+        padding-left: 5px;
+    }
+    input {
+        width: 70px;
+    }
+    .correct-ans {
+        margin-top: -50px;
+        width: 70px;
+    }
+    .Order1{
+        position: fixed;
+        z-index: 1;
+    }
+    .Question_Container{
+        left: 25%;
+    }
+    .text-container {
+        padding-left: 6px;
+    }
+    .number-box {
+        width: 43px;
+        height: 57px;
+        top: -4px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+    .container {
+        max-width: unset;
+    }
+    .bg
+    {
+        font-size: 22px;
+    }
+    input {
+        width: 85px;
+    }
+    .correct-ans {
+        font-size: 20px;
+        margin-top: -60px;
+        width: 85px;
+    }
+    h2 {
+        color: #000;
+        font-size: 33px;
+        padding-left: 35px;
+    }
+    .btn-row {
+        position: absolute;
+        margin-top: -141px !important;
+        left: 50%;
+        transform: translateX(-59%);
+    }
+    .Main_Container{
+        padding-bottom: 20%;
+    }
+    /* .Order1{
+        position: fixed;
+        z-index: 1;
+    }
+    .Question_Container{
+        left: 25%;
+    } */
+}
+@media (min-width: 1200px){
+    
+}
+
+@media (min-width: 992px){
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+
+    h2 {
+        color: #000;
+        font-size: 31px;
+        padding-left: 26px;
+    }
+    .col-sm-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-sm-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .bg{
+        min-height:100%;
+        background:url(/assets/std01-interrogative-pronouns-worksheet3/img/bg_portrait.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-position: bottom;
+        font-size: 27px;
+    }
+
+    .btn-row {
+        position: absolute;
+        margin-top: -135px !important;
+        left: 50%;
+        transform: translateX(-59%);
+    }
+    .helpbox-image{
+        width: 60%;
+        margin: auto;
+        margin-left: 150px;
+    }
+    .helpbox-container {
+        margin-top: -108px;
+        width: 57%;
+        margin-left: 160px;
+    }
+    .helpbox {
+        width: 100%;
+    line-height: 2em;
+    background-size: 100%;
+    text-align: center;
+    font-size: 23px;
+    }
+    .Question_Body{
+        margin-top: 15px
+    }
+    .Main_Container {
+        padding-bottom: 36%;
+    }
+    .Question_Container{
+       margin-top: 281px;
+       left: unset;
+    }
+    .correct-ans {
+        margin-top: -74px;
+        width: 120px;
+        font-size: 24px;
+    }
+    .number-box {
+        width: 70px;
+        height: 90px;
+        top: -7px;
+    }
+    input {
+        width: 120px;
+        border-width: 2px;
+    }
+
+}
+
+/*Portrait*/ 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .helpbox-container {
+        margin-top: -145px;
+    }
+    .Question_Body {
+        margin-top: 61px;
+    }
+    h2 {
+        font-size: 37px;
+        padding-left: 23px;
+    }
+    input {
+        width: 115px;
+    }
+    .correct-ans {
+        margin-top: -85px;
+        width: 115px;
+        font-size: 28px;
+    }
+    .bg {
+        font-size: 32px;
+    }
+    .helpbox{
+        width: 100%;
+        line-height: 2.4em;
+        background-size: 100%;
+        text-align: center;
+        font-size: 28px;
+    }
+    .Question_Container{
+        margin-top: unset;
+    }
+    .number-box {
+        width: 80px;
+        top: -7px;
+    }
+    .number-box {
+        width: 70px;
+        height: 90px;
+        top: -7px;
+        margin-right: 12px;
+    }
+    input,.correct-ans {
+        width: 140px;
+    }
+}
+
+/* Landscape */ 
+@media only screen and (min-width: 1366px) and (orientation: landscape) { 
+
+
+
+}
+@media (min-width: 1900px){
+    h2{
+        font-size: 40px;
+    }
+    .bg{
+        font-size: 32px;
+    }
+    input{
+        width: 130px;
+    }
+    .correct-ans {
+        font-size: 30px;
+        position: absolute;
+        margin-top: -90px;
+        text-align: center;
+        width: 130px;
+    }
+    .helpbox-container {
+        margin-top: -134px;
+        width: 95%;
+        margin-left: 15px;
+    }
+    .helpbox {
+        width: 100%;
+        line-height: 1.9em;
+        background-size: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .container {
+        max-width: 1500px;
+    }
+    .number-box {
+        width: 70px;
+        height: 90px;
+        top: -7px;
+    }
+    input {
+        border-width: 2px;
+    }
+    .Question {
+        margin-bottom: 10px;
+    }
+    .Main_Container{
+        margin-top: 30px !important;
+    }
+
+}
+
+
+
+.loadingDiv {
+    position: fixed;;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(255,255,255,0.4);
+    background-image:url('/assets/images/loader.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:10000000;
+    background-size: 85px;
+  }
+
+.result{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:rgba(0,0,0,.8);
+    z-index:2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor:pointer;
+}
+.result .Box{
+    position: relative;
+    padding:45px 55px 30px 20px
+}
+.result .imgBox{
+    display:none;
+}
+.result img{
+    max-width:100%;
+}
+.result .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor:pointer;
+}
+.result .TextBox h1 {
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+    -webkit-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	-moz-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	padding:10%;
+	max-width:800px;
+}
+@media(min-width:100px) and (max-width:575px){
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+    .result .close {
+        right: 15px;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+}
+.myButton {
+	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+	background-color:#c62d1f;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:inherit;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+	line-height: 1;
+	outline:0 !important;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.button.playAgain {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:inherit;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.button.playAgain:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.button.playAgain:active {
+	position:relative;
+	top:1px;
+}
+
+
+#toggle {
+    display: block;
+    right: 56px;
+    top: 35px;
+    background: #f3ecec;
+    border-radius: 50%;
+    border: 4px solid #3b7ee2;
+    opacity: 0.7;
+    text-align: center;
+    padding: 10px;
+    
+  }
+
+  #toggle:hover
+  {
+    opacity: 1;
+    border: 4px solid #3b7ee2;
+    
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: inline;
+  }
+  
+  #toggle span
+  {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding:0%;
+  }
+
+  #toggle span img
+  {
+    width:25px;
+    height:25px;
+    margin:0;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  
+
+  /* menu appearance*/
+#menu {
+    position: absolute;
+    color: #000;
+    width: 140px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0px 3px 11px 1px rgba(27, 24, 24, 0.24);
+    font-size: 16px;
+    left: -190%;
+    z-index: 9;
+    text-align: right;
+    top: 145%;
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;  
+}
+.change{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1; 
+}
+.notchange{
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#menu:after {
+    position: absolute;
+    top: -20px;
+    left: 107px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: normal;
+}
+li a {
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: all .2s;
+}
+li a:hover,
+li a:focus {
+    background: #1798dc;
+    color: #fff;
+    text-decoration: none;
+}
+.menu-block{
+    position: fixed;
+    right: 46px;
+    top: 35px;
+    z-index: 2147483646;
+    height: 50px;
+}
+.up {
+    transform: rotate(180deg) translateY(0%);
+}
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+} 
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,  -20%, 0);
+        transform: translate3d(0,  -20%, 0);
+        visibility: hidden;
+    }
+}
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,  -20%, 0);
+        transform: translate3d(0,  -20%, 0);
+        visibility: hidden;
+    }
+} 
+
+@media(min-width:100px) and (max-width:575px){
+    .menu-block {
+        right: 10px;
+    }
+    #toggle {
+        padding: 6px 5px;
+        height: 43px;
+        width: 43px;
+    }
+    #menu{
+        top: 123%;
+        left: -235%;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .menu-block {
+        right: 10px;
+    }
+    #toggle {
+        padding: 6px 5px 0;
+        height: 43px;
+        width: 43px;
+    }
+    #menu{
+        top: 123%;
+        left: -235%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .menu-block {
+        right: 10px;
+    }
+    #toggle {
+        padding: 5px;
+        height: 43px;
+        width: 43px;
+    }
+    #menu{
+        top: 123%;
+        left: -235%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .menu-block {
+        right: 10px;
+    }
+    #menu:after {
+        left: 140px;
+    }
+    #menu {
+        font-size: 18px;
+        left: -240%;
+        top: 140%;
+        width: 175px;
+    }
+    #toggle {
+        height: 53px;
+        width: 53px;
+        /* line-height: 48px; */
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+	#menu {
+        top: 70px;
+        left: -190px;
+        width: 250px;
+        font-size: 26px;
+    }
+    #toggle {
+        height: 60px;
+        width: 60px;
+        line-height: 1;
+        padding: 11px 5px;
+    }
+    .menu-block {
+        right: 20px;
+    }
+    #menu:after {
+        left: 205px;
+    }
+    #toggle span img {
+        width: 33px;
+        height: 33px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+	#menu {
+        top: 70px;
+        left: -190px;
+        width: 250px;
+        font-size: 30px;
+    }
+    #toggle{
+        height: 60px;
+        width: 60px;
+        /* line-height: 55px; */
+        padding: 10px;
+    }
+}
+@media(min-width:1200px){
+	#menu {
+        top: 70px;
+        left: -135px;
+        width: 180px;
+        font-size: 18px;
+    }
+    #menu:after {
+        left: 145px;
+    }
+    #toggle{
+        height: 55px;
+        width: 55px;
+        /* line-height: 50px; */
+    }
+}
+
+
+// iniine
+input
+{
+cursor:pointer;
+}
+
+.bd
+{
+    border-bottom: 2px solid #20bb15;
+}
+.white{
+    color: #2695c2;
+}
+.hide{
+display:none;
+}
+
+.result .TextBox h1 {
+    font-size: 2.5rem;
+    font-family: 'mt-rounded-bold','Microsoft New Tai Lue','Arial';
+    margin-top: 0;
+	font-weight: normal;}

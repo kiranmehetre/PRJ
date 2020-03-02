@@ -1,0 +1,92 @@
+<div class="body_div dashboard_body">
+    <div class="wrapper"></div>
+    <div class="container" ngPreserveWhitespaces>
+        <div class="row">
+            <div class="col-12 Main_Container Main-bg dashboard_Block">
+                <div class="row header">
+                    <div class="col-sm-6 col-md-5 col-lg-4 position-relative">
+                        <h3 class="title2"><span>Complete</span> <span>Grammar</span></h3>
+                        <div class="toggle"><img src="assets/frontend_assets/img/menu.png" alt=""></div>
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-8 text-right menu menu-right display-none">
+                        <div class="">
+                            <ul>
+                                <li><a href="home/">Home</a></li>
+                                <!-- <li>
+                                        <a style="cursor:pointer;" class="toggle_topic">Grade
+                                                <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow"> 
+                                        </a>
+                                        <ul class="topic_dropdown" style="display:none;">
+                                                <li><a href="dashboard/1">Grade 1</a></li>
+                                                <li><a style="color:#888">Grade 2</a></li>                               
+                                                <li><a style="color:#888">Grade 3</a></li>
+                                        </ul>
+                                </li> -->
+                                <li><a href="https://youtu.be/auYeK07yMyY">Tutorial</a></li>   
+                                <li>
+                                    <a style="cursor:pointer;" class="dropdown_toggle circleprofile">
+                                        <img class="img-fluid user" src="{{profile_picture_path}}">
+                                        <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow">
+                                    </a>
+                                    <ul class="dropdown user_dropdown">
+                                        <li><a href="update-details">Profile</a></li>
+                                        <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
+                                        <!-- <li><a href="change-password">Change Password</a></li>-->
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 dashboard-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="standard">
+                                <h1 class="">{{"GRADE " + grade}}</h1>
+                            </div>
+                            <article id="demo-default" class="demo">
+                                <div class="ref"></div>
+                                <div id="coverflow">
+                                        <div class="loader"></div>
+                                        <ul class="flip-items">
+                                            <li *ngFor="let topic of topic_list">
+                                                <div class="flip-img">
+                                                    <a href="{{topic.subtopic == 'yes' ? 'topic/' + topic.topic_id : 'subtopic/' + topic.topic_id + '/0' }}" style="text-decoration:none;">
+                                                        <img class="mx-auto d-block" src="{{topic.topic_image}}" alt="" class="topic">
+                                                    </a>
+                                                </div>
+                                            </li>  
+                                        </ul>    
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="contain-fluid" ngPreserveWhitespaces>
+        <div class="footer col-12">
+            <div class="copyright">
+                    Copyright  &copy;  2020 www.completegrammar.com. All Rights Reserved.
+            </div>
+            <div class="social_media">
+                    <ul>
+                        <li>
+                            <a href=""><img src="assets/frontend_assets/img/facebook.png" alt="" class="img-fluid facebook"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="assets/frontend_assets/img/instagram.png" alt="" class="img-fluid instagram"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="assets/frontend_assets/img/linkedin.png" alt="" class="img-fluid linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="loader1"></div>
+</div>
+

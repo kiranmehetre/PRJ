@@ -1,0 +1,44 @@
+.toggle_topic img.arrow {
+    bottom: 40%;
+}
+
+.toggle_topic img.arrow.up {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    margin-left: -67px !important;
+}
+@media (min-width:100px) and (max-width:575px) {
+    img.arrow {
+        display: unset;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .dropdown {
+        margin-left: -87px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dropdown {
+        margin-left: -72px !important;
+    }
+
+    ul.dropdown li a {
+        padding: 5px 10px;
+    }
+}
+
+@media(min-width:1200px) {
+    .menu {
+        padding-right: 35px;
+    }
+}
+
+
+.topic_container{
+    background: url(src/assets/frontend_assets/img/subtopic-bg.png) no-repeat center bottom;   
+    background-size: cover;
+}

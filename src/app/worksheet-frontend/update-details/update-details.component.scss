@@ -1,0 +1,129 @@
+.hide {
+    display: none;
+}
+
+.gj-icon {
+    line-height: 1.5 !important;
+}
+
+.error-span {
+    color: #FF0000 !important;
+}
+
+.dropdown {
+    margin-left: -97px !important;
+}
+
+.user {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topic_dropdown {
+    /* height: 30vh; */
+    max-height: 310px;
+    overflow-y: scroll;
+    left: 66% !important;   
+    position: absolute;
+    width: auto;
+    margin-top: 13px !important;
+    background: #fff;
+    display: none;
+    transform: translateX(25%);
+}
+@media(min-width:100px) and (max-width:575px){
+    .footer {
+        font-size: 10.8px !important;
+        white-space: nowrap;
+    }
+}
+@media(min-width:100px) and (max-width:359px){
+    .panel-heading h2{
+        font-size: 24px;
+    }
+    .footer {
+        font-size: 10.5px !important;
+        height: 40px;
+        line-height: 15px;
+        padding-top: 6px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .dropdown {
+        margin-left: -79px !important;
+        right: -10px;
+    }
+    .title2 {
+        line-height: 50px;
+    }
+    .user {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dropdown {
+        margin-left: -64px !important;
+        right: -5px;
+    }
+
+    ul.dropdown li a {
+        padding: 5px 10px;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .form-control{
+        font-size: 18px;
+    }
+}
+@media(min-width:1200px){
+    .form-control{
+        font-size: 20px;
+    }
+}
+@media(min-width:1900px){
+    .user {
+        width: 80px;
+        height: 80px;
+    }
+    .footer {
+        font-size: 28px;
+    }
+}
+@media(min-width:768px) and (orientation:portrait){
+    .panel-heading h2{
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .form-group {
+        padding: 0 35px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    label, .btn-update {
+        font-size: 28px;
+    }
+    .form-control{
+        font-size: 26px;
+        padding: .475rem 1rem;
+        border: 2px solid #ced4da;
+    }
+}
+@media(min-width:1024px) and (orientation:portrait){
+    .panel-heading h2{
+        font-size: 50px;
+        margin-top: 25px;
+    }
+    label, .btn-update {
+        font-size: 35px;
+    }
+    .form-control{
+        font-size: 32px;
+    }
+}

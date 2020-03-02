@@ -1,0 +1,14 @@
+<div class="menu-block">
+    <a id="toggle"><span><img src="assets/images/down_arrow.svg"></span></a>
+    <div id="menu" [ngClass]="{PrevClass: previous}" style="display:none;">
+        <ul>
+            <li><a href="update-details">Profile</a></li>
+            <!-- <li><a href="dashboard/1">Dashboard</a></li> -->
+            <!-- <li><a href="{{subtopic_url}}">Subtopic</a></li> -->
+            <li *ngIf="topic_video != '#'"><a href="{{topic_video}}">Video</a></li>
+            <li *ngIf="topic_referencelist != '#'"><a href="{{'worksheet-layout/' + topic_referencelist}}">Reference List</a></li>
+            <li *ngIf="next == true"><a href="{{next_worksheet}}">Next worksheet</a></li>
+            <li *ngIf="previous == true"><a href="{{previous_worksheet}}">Previous worksheet</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adjective 4</title>
+    <!-- <link rel="stylesheet" href="Asset/src/external.css">
+    <link rel="stylesheet" href="Asset/src/common.css"> -->
+    <style>
+    .green-color
+    {
+        color: #00f;
+        /* text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+			-webkit-text-shadow:  1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+			-moz-text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; */
+    }
+    </style>
+</head>
+<body>
+    
+ 
+        <div class='result'>
+            <div class="Box">
+              
+            <div class="imgBox">
+				<img src="" alt="" class="Text fabulous hide">
+			</div>
+                <div class="TextBox">
+                    <h1></h1>
+                </div>
+                <img src="assets/images/close.png" alt="" class="close">
+            </div>
+        </div>
+        
+        <div class="loadingDiv">
+        </div>
+            
+    <div class="container">
+        <div class="heading mt-3">
+            <h1>
+                Click on the alphabets in the word search to mark the Adjectives given in the help box.
+            </h1>
+        </div>
+        <div class="Main_Container">
+            <div class="left_side">
+                <div class="main-color-container">
+                    <div class="color-container">
+                        <div class="color-image">
+                            <img src="assets/std01-adjective-worksheet9/img/purple.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="color-text">
+                            <span class="purple p1">p</span><span class="purple u">u</span><span class="purple r">r</span><span class="purple p2">p</span><span class="purple l">l</span><span class="purple e">e</span>
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <div class="color-image">
+                            <img src="assets/std01-adjective-worksheet9/img/yellow.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="color-text">
+                            <span class="yellow y">y</span><span class="yellow e">e</span><span class="yellow l1">l</span><span class="yellow l2">l</span><span class="yellow o">o</span><span class="yellow w">w</span>
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <div class="color-image">
+                            <img src="assets/std01-adjective-worksheet9/img/green.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="color-text">
+                            <span class="green g">g</span><span class="green r">r</span><span class="green e1">e</span><span class="green e2">e</span><span class="green n">n</span>
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <div class="color-image">
+                            <img src="assets/std01-adjective-worksheet9/img/red.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="color-text">
+                            <span class="red r">r</span><span class="red e">e</span><span class="red d">d</span>
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <div class="color-image">
+                            <img src="assets/std01-adjective-worksheet9/img/blue.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="color-text">
+                            <span class="blue b">b</span><span class="blue l">l</span><span class="blue u">u</span><span class="blue e">e</span>
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <div class="color-image">
+                            <img src="assets/std01-adjective-worksheet9/img/pink.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="color-text">
+                            <span class="pink p">p</span><span class="pink i">i</span><span class="pink n">n</span><span class="pink k">k</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smiley">
+                <div class="options">
+                    <img src="assets/std01-adjective-worksheet9/img/smiley.png" alt="" class="img_smiley">
+                    <!-- first Row -->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option">Y</div>
+                        <div class="option">B</div>
+                        <div class="option">H</div>
+                        <div class="option">L</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                    </div>
+                    <!-- second row -->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option">E</div>
+                        <div class="option active first" word-click="square" data-text="S">S</div>
+                        <div class="option active first" word-click="square" data-text="Q">Q</div>
+                        <div class="option active first" word-click="square" data-text="U">U</div>
+                        <div class="option active first" word-click="square" data-text="A">A</div>
+                        <div class="option active first" word-click="square" data-text="R">R</div>
+                        <div class="option active first" word-click="square" data-text="E">E</div>
+                        <div class="option">W</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="line square_line"></div>
+                    </div>
+                    <!-- third row -->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option">Z</div>
+                        <div class="option">P</div>
+                        <div class="option">U</div>
+                        <div class="option">V</div>
+                        <div class="option">R</div>
+                        <div class="option">I</div>
+                        <div class="option">N</div>
+                        <div class="option">G</div>
+                        <div class="option">D</div>
+                        <div class="option active tenth" word-click="green" data-text="G">G</div>
+                        <div class="option"></div>
+                    </div>
+                    <!-- fourth row-->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option active second" word-click="triangular" data-text="T">T</div>
+                        <div class="option active second r1" word-click="triangular" data-text="R">R</div>
+                        <div class="option active second" word-click="triangular" data-text="I">I</div>
+                        <div class="option active second a1" word-click="triangular" data-text="A">A</div>
+                        <div class="option active second" word-click="triangular" data-text="N">N</div>
+                        <div class="option active second" word-click="triangular" data-text="G">G</div>
+                        <div class="option active second" word-click="triangular" data-text="U">U</div>
+                        <div class="option active second" word-click="triangular" data-text="L">L</div>
+                        <div class="option active second a2" word-click="triangular" data-text="A">A</div>
+                        <div class="option active second tenth r"  word-click="triangular,green" data-text="R">R</div>
+                        <div class="option"></div>
+                        <div class="line triangular_line"></div>
+                    </div>
+                    <!-- fifth row-->
+                    <div class="option_row">
+                        <div class="option">A</div>
+                        <div class="option">J</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option active third" word-click="red" data-text="R">R</div>
+                        <div class="option active third" word-click="red" data-text="E">E</div>
+                        <div class="option active third" word-click="red" data-text="D">D</div>
+                        <div class="option">S</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option active tenth e1" word-click="green" data-text="E">E</div>
+                        <div class="option">M</div>
+                        <div class="line red_line"></div>
+                    </div>
+                    <!-- sixth row-->
+                    <div class="option_row">
+                        <div class="option">B</div>
+                        <div class="option active seventh" word-click="round" data-text="R">R</div>
+                        <div class="option">D</div>
+                        <div class="option active eighth" word-click="yellow" data-text="Y">Y</div>
+                        <div class="option">D</div>
+                        <div class="option">C</div>
+                        <div class="option">A</div>
+                        <div class="option">O</div>
+                        <div class="option">R</div>
+                        <div class="option active nineth p1" word-click="purple" data-text="P">P</div>
+                        <div class="option active tenth  e2" word-click="green" data-text="E">E</div>
+                        <div class="option">U</div>
+                    </div>
+                    <!-- seventh row-->
+                    <div class="option_row">
+                        <div class="option">T</div>
+                        <div class="option active seventh" word-click="round" data-text="O">O</div>
+                        <div class="option">O</div>
+                        <div class="option active eighth" word-click="yellow" data-text="E">E</div>
+                        <div class="option">S</div>
+                        <div class="option active fourth" word-click="blue" data-text="B">B</div>
+                        <div class="option active fourth" word-click="blue" data-text="L">L</div>
+                        <div class="option active fourth" word-click="blue" data-text="U">U</div>
+                        <div class="option active fourth" word-click="blue" data-text="E">E</div>
+                        <div class="option active nineth" word-click="purple" data-text="U">U</div>
+                        <div class="option active tenth" word-click="green" data-text="N">N</div>
+                        <div class="option">K</div>
+                        <div class="line blue_line"></div>
+                    </div>
+                    <!-- eighth row-->
+                    <div class="option_row">
+                        <div class="option">O</div>
+                        <div class="option active seventh" word-click="round" data-text="U">U</div>
+                        <div class="option">M</div>
+                        <div class="option active eighth l1" word-click="yellow" data-text="L">L</div>
+                        <div class="option">X</div>
+                        <div class="option">D</div>
+                        <div class="option">I</div>
+                        <div class="option">S</div>
+                        <div class="option">M</div>
+                        <div class="option active nineth" word-click="purple" data-text="R">R</div>
+                        <div class="option">W</div>
+                        <div class="option">J</div>
+                    </div>
+                    <!-- nineth row-->
+                    <div class="option_row">
+                        <div class="option">V</div>
+                        <div class="option active seventh" word-click="round" data-text="N">N</div>
+                        <div class="option">Z</div>
+                        <div class="option active eighth l2" word-click="yellow" data-text="L">L</div>
+                        <div class="option">W</div>
+                        <div class="option active fifth" word-click="pink" data-text="P">P</div>
+                        <div class="option active fifth" word-click="pink" data-text="I">I</div>
+                        <div class="option active fifth" word-click="pink" data-text="N">N</div>
+                        <div class="option active fifth" word-click="pink" data-text="K">K</div>
+                        <div class="option active nineth p2" word-click="purple" data-text="P">P</div>
+                        <div class="option">X</div>
+                        <div class="option">Z</div>
+                        <div class="line pink_line"></div>
+                    </div>
+                    <!-- tenth row-->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option active seventh" word-click="round" data-text="D">D</div>
+                        <div class="option">J</div>
+                        <div class="option active sixth eighth" word-click="oval,yellow" data-text="O">O</div>
+                        <div class="option active sixth" word-click="oval" data-text="V">V</div>
+                        <div class="option active sixth" word-click="oval" data-text="A">A</div>
+                        <div class="option active sixth" word-click="oval" data-text="L">L</div>
+                        <div class="option">K</div>
+                        <div class="option">H</div>
+                        <div class="option active nineth" word-click="purple" data-text="L" >L</div>
+                        <div class="option">S</div>
+                        <div class="option"></div>
+                        <div class="line oval_line"></div>
+                    </div>
+                    <!-- eleventh row-->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option">E</div>
+                        <div class="option active eighth" word-click="yellow" data-text="W">W</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option">N</div>
+                        <div class="option active nineth" word-click="purple" data-text="E">E</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                    </div>
+                    <!-- twelveth row-->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option">M</div>
+                        <div class="option">L</div>
+                        <div class="option">C</div>
+                        <div class="option">P</div>
+                        <div class="option">T</div>
+                        <div class="option">M</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                    </div>
+                    <!-- thirteenth row-->
+                    <div class="option_row">
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option">E</div>
+                        <div class="option">Q</div>
+                        <div class="option">L</div>
+                        <div class="option">P</div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                        <div class="option"></div>
+                    </div>
+                    <div class="line round_line"></div>
+                    <div class="line yellow_line"></div>
+                    <div class="line purple_line"></div>
+                    <div class="line green_line"></div>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="main-shape-container">
+                    <div class="round-container">
+                        <div class="round-image">
+                            <img src="assets/std01-adjective-worksheet9/img/round.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="round-text">
+                            <span class="round r">r</span><span class="round o">o</span><span class="round u">u</span><span class="round n">n</span><span class="round d">d</span>
+                        </div>
+                    </div>
+                    <div class="round-container">
+                        <div class="round-image">
+                            <img src="assets/std01-adjective-worksheet9/img/oval.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="round-text">
+                            <span class="oval o">o</span><span class="oval v">v</span><span class="oval a">a</span><span class="oval l">l</span>
+                        </div>
+                    </div>
+                    <div class="round-container square-container">
+                        <div class="round-image">
+                            <img src="assets/std01-adjective-worksheet9/img/square.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="round-text">
+                            <span class="square s">s</span><span class="square q">q</span><span class="square u">u</span><span class="square a">a</span><span class="square r">r</span><span class="square e">e</span>
+                        </div>
+                    </div>
+                    <div class="round-container triangle-container">
+                        <div class="round-image">
+                            <img src="assets/std01-adjective-worksheet9/img/triangle.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="round-text triangle-text">
+                            <span class="triangular t">t</span><span class="triangular r1">r</span><span class="triangular i">i</span><span class="triangular a1">a</span><span class="triangular n">n</span><span class="triangular g">g</span><span class="triangular u">u</span><span class="triangular l">l</span><span class="triangular a2">a</span><span class="triangular r">r</span>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+		</div>
+        <div class="btn-row">
+            <button class="button myButton">Submit</button>
+        </div>
+       
+    </div>
+  
+</body>
+</html>

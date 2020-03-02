@@ -1,0 +1,1612 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(/assets/font/ntailu.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CustomFontBold";
+    src: url(/assets/font/ntailub.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: mt-rounded-bold;
+    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+    float: left;
+}
+
+.col-xs-1 {
+    width: 8.33333333%;
+}
+
+.col-xs-2 {
+    width: 16.66666667%;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-4 {
+    width: 33.33333333%;
+}
+
+.col-xs-5 {
+    width: 41.66666667%;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-7 {
+    width: 58.33333333%;
+}
+
+.col-xs-8 {
+    width: 66.66666667%;
+}
+
+.col-xs-9 {
+    width: 75%;
+}
+
+.col-xs-10 {
+    width: 83.33333333%;
+}
+
+.col-xs-11 {
+    width: 91.66666667%;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bg {
+    font-family: CustomFont, 'Microsoft New Tai Lue';
+    color: #000;
+    font-size: 22px;
+    min-height: 100vh;
+    line-height: 1.3;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.heading h1 {
+    font-size: 31px;
+    font-weight: normal;
+    padding: 15px;
+    margin-bottom: 0;
+    color: #FFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: mt-rounded-bold;
+}
+
+.Main_Container {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.Main_Container>* {
+    margin: auto 0;
+}
+
+.header {
+    padding: 5px 18px;
+    background-color: #9fd4dd;
+    font-size: inherit;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    white-space: nowrap;
+    font-family: CustomFontBold, sans-serif;
+}
+
+.Main_Row {
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.Feminine {
+    background-color: #db4e97;
+    text-align: center;
+}
+
+.Column {
+    text-align: center;
+    padding: 0;
+}
+
+.Column>.row {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.list-item {
+    background: url("/assets/std02-gender-nouns-worksheet1/img/list-item-bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 100%;
+    height: 35px;
+    width: 45px;
+    text-align: center;
+}
+
+.list-item span {
+    position: relative;
+    top: 5px;
+}
+
+.Question {
+    display: inline-block;
+    width: 185px;
+    background-color: #9fd4dd;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.Question_Row,
+.Answer_Row {
+    margin-bottom: 10px;
+    display: flex;
+    text-align: left;
+}
+
+.Question_Row>*,
+.Answer_Row>* {
+    margin: auto 0;
+}
+
+.Answer {
+    display: inline-block;
+    width: 175px;
+    background-color: #db4e97;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.Correct_Answer {
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display:none;
+}
+
+.Correct_Answer span {
+    padding: 0 5px;
+    border: 1px solid #000;
+    background-color: #e0dfe0;
+    color: #20bb15 !important;
+    -webkit-text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    -moz-text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-family: CustomFontBold, 'Microsoft New Tai Lue';
+}
+
+.left {
+    text-align: left;
+    margin-left: -6%;
+}
+
+.Option {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-family: CustomFontBold, sans-serif;
+}
+
+.Option span {
+    position: relative;
+    top: 32px;
+    cursor: pointer;
+}
+
+.first,
+.fourth,
+.fifth,
+.eightth {
+    background: url("/assets/std02-gender-nouns-worksheet1/img/Answer-bg-blue.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 100%;
+}
+
+.second,
+.third,
+.sixth,
+.seventh {
+    background: url("/assets/std02-gender-nouns-worksheet1/img/Answer-bg-pink.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 100%;
+}
+
+.second span,
+.third span,
+.sixth span,
+.seventh span {
+    top: 20px;
+}
+
+.Option_Container>.row {
+    margin-bottom: 5px;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 568px)and (orientation: landscape) {
+    .Correct_Answer {
+        font-size: 11px !important;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 356px)and (orientation: portrait) {
+    .header {
+        font-size: 13px !important;
+    }
+
+    .column {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) and (orientation: portrait) {
+    .bg {
+        font-size: 14px;
+    }
+
+    .heading h1 {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .Main_Container {
+        display: grid;
+    }
+
+    .Option_Container {
+        order: 1;
+        width: 100%;
+        transform: translate(-50%, 0) scale(0.9);
+        position: fixed;
+        left: 50%;
+        z-index: 2;
+
+
+    }
+
+    .Question_Container {
+        order: 2;
+        width: 100%;
+        margin-top: 275px;
+    }
+
+    .Option_Container .col-xs-6 {
+        padding: 0;
+    }
+
+    .Option {
+        height: 63px;
+        width: 125px;
+    }
+
+    .first,
+    .third,
+    .fifth,
+    .seventh {
+        margin: 0 3px 0 auto;
+    }
+
+    .second,
+    .fourth,
+    .sixth,
+    .eightth {
+        margin: 0 auto 0 3px;
+    }
+
+    .Option span {
+        top: 26px;
+        font-size: 15px;
+    }
+
+    .second span,
+    .third span,
+    .sixth span,
+    .seventh span {
+        top: 20px;
+    }
+
+    .Question_Container>.row>* {
+        width: 50%;
+        text-align: center;
+    }
+
+    .header {
+        width: auto;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .Question_Row>* {
+        padding: 0;
+    }
+
+    .list-item {
+        width: 30px;
+        height: 27px;
+    }
+
+    .Question,
+    .Answer {
+        width: 100px;
+        margin-left: 5px;
+    }
+
+    .Question_Row {
+        padding-left: 0px;
+    }
+
+    .Correct_Answer {
+        width: 100px;
+        margin-left: -100px;
+        margin-top: -25px;
+    }
+
+    .Answer_Row {
+        margin-bottom: 5px;
+    }
+
+    .Main_Row {
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+
+    .column {
+        padding: 0 15px;
+    }
+
+    .Main_Row>.column:nth-child(2) .Answer_Row {
+        text-align: center;
+    }
+
+    .Main_Row>.column:nth-child(2) .Answer_Row .Answer {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 568px)and (orientation: landscape) {
+    .header {
+        margin-left: 0 !important;
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px)and (orientation: landscape) {
+    .heading h1 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .header {
+        padding: 5px 15px;
+        font-size: 14px;
+        width: auto;
+        margin-left: 5px;
+    }
+
+    .Column>.row>* {
+        padding: 0;
+    }
+
+    .left {
+        margin-left: 0;
+    }
+
+    .col-xs-2 {
+        width: 35px;
+    }
+
+    .list-item {
+        height: 25px;
+        width: 35px;
+    }
+
+    .Question {
+        width: 95%;
+    }
+
+    .Question_Row,
+    .Answer_Row {
+        font-size: 14px;
+        margin: 0 0 10px 0px !important;
+    }
+
+    .Answer {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .Question_Container {
+        padding-right: 0;
+    }
+
+    .Correct_Answer {
+        font-size: 13px;
+        margin-left: 0 !important;
+    }
+
+    .Option_Container {
+        padding: 0;
+        width: 40%;
+        font-size: 17px;
+        transform: translate(120%, 0) scale(0.8);
+        position: fixed;
+        right: 50%;
+        z-index: 2;
+        top: 21%;
+    }
+
+    .Option_Container>.row {
+        margin: 0;
+    }
+
+    .Option_Container .col-xs-6 {
+        padding: 0;
+    }
+
+    .Option {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .Option span {
+        top: 23px;
+    }
+
+    .second span,
+    .third span,
+    .sixth span,
+    .seventh span {
+        top: 16px;
+    }
+
+    .Main_Row {
+        padding-left: 15px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bg {
+        font-size: 17px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .header {
+        padding: 5px 20px;
+        font-size: 16px;
+        width: auto;
+        margin-left: 5px;
+    }
+
+    .left {
+        margin-left: 0;
+    }
+
+    .col-xs-2 {
+        width: 45px;
+    }
+
+    .Column>.row>* {
+        padding: 0;
+    }
+
+    .Question {
+        width: 100%;
+    }
+
+    .Question_Row,
+    .Answer_Row {
+        margin: 0 0 10px 5px !important;
+    }
+
+    .Answer {
+        width: 65%;
+    }
+
+    .Correct_Answer {
+        font-size: 14px;
+        margin-left: 0 !important;
+    }
+
+    .Option_Container {
+        padding: 0;
+        width: 40%;
+        font-size: 18px;
+        transform: translate(120%, 0) scale(0.7);
+        position: fixed;
+        right: 50%;
+        z-index: 2;
+        top: 21%;
+    }
+
+    .Answer {
+        margin-left: 13%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .col-xs-2 {
+        width: 45px;
+    }
+
+    .Column>.row>* {
+        padding: 0;
+    }
+
+    .Question {
+        width: 100%;
+    }
+
+    .Question_Row,
+    .Answer_Row {
+        margin: 0 0 10px 5px !important;
+    }
+
+    .Answer {
+        width: 50%;
+        margin-left: 5px;
+    }
+
+    .Correct_Answer {
+        font-size: 15px;
+        margin-left: 0 !important;
+    }
+
+    .Option_Container {
+        padding: 0;
+        width: 40%;
+        font-size: 17px;
+    }
+}
+
+@media(min-width:100px) and (max-width:575px) {
+    .Question_Container {
+        margin-top: 275px !important;
+    }
+
+    .Correct_Answer {
+        z-index: unset;
+    }
+
+    .Answer {
+        width: 125px;
+        margin-left: 0;
+    }
+
+    .Question {
+        margin-left: -25px;
+    }
+
+    .Correct_Answer {
+        margin-left: -112px;
+    }
+}
+
+@media(min-width:100px) and (max-width:359px) {
+    .Correct_Answer {
+        margin-left: -50px;
+    }
+
+    .Question {
+        width: 90px;
+    }
+}
+
+@media(min-width:100px) and (max-width:575px) and (orientation:landscape) {
+    .Question_Container {
+        margin-top: 0 !important;
+    }
+
+    .Question_Row .col-xs-10 {
+        width: 70%;
+    }
+
+    .Question {
+        margin-left: -5px;
+    }
+
+    .Correct_Answer {
+        z-index: 3;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .container {
+        max-width: unset;
+    }
+
+    .Question_Row .col-xs-10 {
+        width: 70%;
+    }
+
+    .Answer {
+        margin-left: -6%;
+    }
+
+    .Option_Container {
+        width: 44%;
+        font-size: 21px;
+    }
+
+    .Option {
+        font-size: 15px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .container {
+        max-width: unset;
+    }
+
+    .Question_Row .col-xs-10 {
+        width: 70%;
+    }
+
+    .Correct_Answer,
+    .Option_Container {
+        font-size: inherit;
+    }
+
+    .Answer {
+        width: 55%;
+        margin-left: 0;
+    }
+
+    .Option_Container {
+        width: 46%;
+        font-size: 21px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .Answer {
+        margin-left: 6%;
+    }
+
+    .Question_Row .col-xs-10 {
+        width: 80%;
+    }
+
+    .Question {
+        width: 90%;
+    }
+
+    .Correct_Answer,
+    .Option_Container {
+        font-size: inherit;
+    }
+}
+
+@media(min-width:1200px) {
+
+    .Correct_Answer,
+    .Option_Container {
+        font-size: inherit;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+
+    .Main_Container>* {
+        font-size: 30px;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+
+    .Question_Container {
+        order: 2;
+        width: 100%;
+        margin-top: 500px !important;
+    }
+
+    .Option_Container {
+        order: 1;
+        width: 100%;
+        padding: 0;
+        transform: translate(-50%, 0) scale(0.9);
+        position: fixed;
+        left: 50%;
+        z-index: 2;
+
+    }
+
+	.Option.first span,.Option.fourth span,.Option.fifth span,.Option.eightth span{
+		top: 40px;
+	}
+    .Option span {
+        top: 26px;
+    }
+
+    .Main_Container {
+        display: grid;
+    }
+
+    .Main_Row {
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .Question_Container>.row>* {
+        width: 50%;
+        text-align: center;
+    }
+
+    .Answer {
+        width: 80%;
+        margin-left: 5px;
+    }
+
+    .header {
+        width: auto;
+    }
+
+    .Option {
+        height: 63px;
+        width: 125px;
+    }
+
+    .Option {
+        height: 102px;
+        width: 290px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .myButton {
+
+        font-size: 35px !important;
+    }
+
+    .list-item span {
+        position: relative;
+        top: 0px;
+    }
+
+    .heading h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+
+    .Correct_Answer {
+        font-size: 28px;
+        margin-left: -80% !important;
+        width: 80%;
+        text-align: center;
+        margin-top: -43px;
+        z-index: unset;
+    }
+
+    .Main_Row {
+        padding-left: 15px;
+        margin: 30px 0;
+    }
+
+    .Question_Row .col-xs-10 {
+        width: 63%;
+        margin-left: 20px;
+    }
+
+    .list-item {
+        height: 40px;
+        width: 55px;
+    }
+
+}
+
+/*Portrait*/
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+	.heading h1{
+		font-size: 45px;
+	}
+	.Main_Container > * {
+		font-size: 35px;
+	}
+	.Option {
+		height: 125px;
+		width: 320px;
+		margin-right: auto;
+		margin-left: 10px;
+	}
+	.Option_Container > .row .col-xs-6:nth-child(1) .Option{
+		margin-left: auto;
+		margin-right: 10px;
+	}
+	.Option.first span,.Option.fourth span,.Option.fifth span,.Option.eightth span{
+		top: 52px;
+	}
+	.Option span {
+		top: 35px;
+	}
+	.header {
+		font-size: 36px;
+		padding: 12px 35px 5px;
+	}
+	.list-item {
+		height: 50px;
+		width: 75px;
+	}
+	.Correct_Answer {
+		font-size: 32px;
+	}
+	.Correct_Answer span {
+		padding: 0 15px;
+	}
+	.Main_Row {
+		margin: 30px 0 40px;
+	}
+
+}
+
+@media(min-width:1900px) {
+    .container {
+        max-width: 1500px;
+        width: 1500px;
+    }
+
+    .bg {
+        font-size: 30px;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .Answer {
+        width: 260px;
+    }
+
+    .Question {
+        width: 235px;
+    }
+
+    .list-item {
+        height: 49px;
+        width: 65px;
+    }
+
+    .header {
+        width: 310px;
+        font-size: inherit;
+    }
+
+    .Option {
+        height: 95px;
+    }
+
+    .Option_Container {
+        left: 8%;
+    }
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+// External CSS End
+
+// Common CSS Start
+.loadingDiv {
+    position: fixed;
+    ;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url('/assets/images/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10000000;
+    background-size: 85px;
+}
+
+.result {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+.result .Box {
+    position: relative;
+    padding: 45px 55px 30px 20px
+}
+
+.result .imgBox {
+    display: none;
+}
+
+.result img {
+    max-width: 100%;
+}
+
+.result .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.result .TextBox h1 {
+    font-size: 2.5rem;
+    font-family: 'mt-rounded-bold', 'Microsoft New Tai Lue', 'Arial';
+    margin-top: 0;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    -webkit-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    -moz-text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    padding: 10%;
+    max-width: 800px;
+}
+
+@media(min-width:100px) and (max-width:575px) {
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+
+    .result .close {
+        right: 15px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .result .Box {
+        padding: 45px 20px 30px 20px;
+    }
+}
+
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437', GradientType=0);
+    background-color: #c62d1f;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: inherit;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+    line-height: 1;
+    outline: 0 !important;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background: -moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f', GradientType=0);
+    background-color: #f24437;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.button.playAgain {
+    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.button.playAgain:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+}
+
+.button.playAgain:active {
+    position: relative;
+    top: 1px;
+}
+
+
+#toggle {
+    display: block;
+    right: 56px;
+    top: 35px;
+    background: #f3ecec;
+    border-radius: 50%;
+    border: 4px solid #3b7ee2;
+    opacity: 0.7;
+    text-align: center;
+    padding: 10px;
+
+}
+
+#toggle:hover {
+    opacity: 1;
+    border: 4px solid #3b7ee2;
+
+}
+
+#toggle span:after,
+#toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+}
+
+#toggle span:after {
+    top: 9px;
+}
+
+#toggle span {
+    position: relative;
+    display: inline;
+}
+
+#toggle span {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0%;
+}
+
+#toggle span img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+/* on activation */
+#toggle.on span {
+    background-color: transparent;
+}
+
+#toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#toggle.on+#menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+/* menu appearance*/
+#menu {
+    position: absolute;
+    color: #000;
+    width: 140px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0px 3px 11px 1px rgba(27, 24, 24, 0.24);
+    font-size: 16px;
+    left: -190%;
+    z-index: 9;
+    text-align: right;
+    top: 145%;
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.change {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+.notchange {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#menu:after {
+    position: absolute;
+    top: -20px;
+    left: 107px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+
+ul,
+li,
+li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+li a {
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+li a:hover,
+li a:focus {
+    background: #1798dc;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-block {
+    position: fixed;
+    right: 46px;
+    top: 35px;
+    z-index: 2147483646;
+    height: 50px;
+}
+
+.up {
+    transform: rotate(180deg) translateY(0%);
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+        visibility: hidden;
+    }
+}
+
+@media(min-width:100px) and (max-width:575px) {
+    .menu-block {
+        right: 10px;
+    }
+
+    #toggle {
+        padding: 5px;
+    }
+
+    #menu {
+        top: 123%;
+        left: -235%;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .menu-block {
+        right: 10px;
+    }
+
+    #toggle {
+        padding: 5px;
+    }
+
+    #menu {
+        top: 123%;
+        left: -235%;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .menu-block {
+        right: 10px;
+    }
+
+    #toggle {
+        padding: 5px;
+    }
+
+    #menu {
+        top: 123%;
+        left: -235%;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .menu-block {
+        right: 10px;
+    }
+
+    #menu:after {
+        left: 140px;
+    }
+
+    #menu {
+        font-size: 18px;
+        left: -240%;
+        top: 140%;
+        width: 175px;
+    }
+
+    #toggle {
+        height: 53px;
+        width: 53px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    #menu {
+        top: 70px;
+        left: -190px;
+        width: 250px;
+        font-size: 26px;
+    }
+
+    #toggle {
+        height: 60px;
+        width: 60px;
+        line-height: 55px;
+        padding: 10px;
+    }
+
+    .menu-block {
+        right: 20px;
+    }
+
+    #menu:after {
+        left: 205px;
+    }
+
+    #toggle span img {
+        width: 33px;
+        height: 33px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    #menu {
+        top: 70px;
+        left: -190px;
+        width: 250px;
+        font-size: 30px;
+    }
+}
+
+@media(min-width:1200px) {
+    #menu {
+        top: 70px;
+        left: -135px;
+        width: 180px;
+        font-size: 18px;
+    }
+
+    #menu:after {
+        left: 145px;
+    }
+
+    #toggle {
+        height: 55px;
+        width: 55px;
+        line-height: 50px;
+    }
+}
+
+
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437', GradientType=0);
+    background-color: #c62d1f;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: inherit;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+    line-height: 1;
+    outline: 0 !important;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background: -moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: -ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f', GradientType=0);
+    background-color: #f24437;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn-row {
+    position: relative;
+    margin-top: 10px !important;
+    padding-bottom: 20px !important;
+    text-align: center;
+}
+
+.bd {
+    border-bottom: 3px solid #20bb15;
+
+}
+
+.click {
+    color: #2b59ad;
+}
+
+.hide {
+    display: none;
+}
+
+@media (orientation:landscape) {
+    .bg {
+        background: url(/assets/std02-gender-nouns-worksheet1/img/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (orientation:portrait) {
+    .bg {
+        background: url(/assets/std02-gender-nouns-worksheet1/img/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

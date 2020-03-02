@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Action Verb 5</title>
+	<!-- <link rel="stylesheet" href="Asset/src/bootstrap.min.css"> -->
+ 
+</head>
+<body>
+    
+    <div class='result'>
+		<div class="Box">
+            <div class="imgBox">
+				<img src="" alt="" class="Text keep-practicing hide">
+				<img src="" alt="" class="Text outstanding hide">
+				<img src="" alt="" class="Text brilliant hide">
+				<img src="" alt="" class="Text good-work hide">
+				<!-- <img src="" alt="" class="Text fabulous hide"> -->
+			</div>
+			<div class="TextBox">
+				<h1></h1>
+			</div>
+			<img src="assets/images/close.png" alt="" class="close">
+		</div>
+	</div>
+    
+    <div class="loadingDiv">
+	</div>
+	
+    <div class="container">
+        <div class="row">
+            <div class="heading mt-3">
+                <h1>Click on the blank and then click on the correct Action Verb from the help box to complete the sentences.</h1>
+            </div>
+        </div>
+        <div class="row Main_Container">
+            <div class="col-12 Question_Container">
+                <div class="Question_Row">
+                    <div class="number">1)</div>
+                    <div class="content">
+                            Sarah <div class="input_div"><input type="text"><div class="correct_answer"><span>washes</span></div></div> the dishes after dinner.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">2)</div>
+                    <div class="content">
+                            You can <div class="input_div"><input type="text"><div class="correct_answer"><span>tell</span></div></div> your story to the class.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">3)</div>
+                    <div class="content">
+                            Mrs. Wilson <div class="input_div"><input type="text"><div class="correct_answer"><span>bakes</span></div></div> delicious cakes.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">4)</div>
+                    <div class="content">
+                            Please <div class="input_div"><input type="text"><div class="correct_answer"><span>open</span></div></div> the door.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">5)</div>
+                    <div class="content">
+                            Alia <div class="input_div"><input type="text"><div class="correct_answer"><span>knows</span></div></div> her spellings very well.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">6)</div>
+                    <div class="content">
+                            Children <div class="input_div"><input type="text"><div class="correct_answer"><span>make</span></div></div> sandcastles at the beach.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">7)</div>
+                    <div class="content">
+                            It <div class="input_div"><input type="text"><div class="correct_answer"><span>rains</span></div></div> every evening in Thailand.
+                    </div>
+                </div>
+                <div class="Question_Row">
+                    <div class="number">8)</div>
+                    <div class="content">
+                            Babies <div class="input_div"><input type="text"><div class="correct_answer"><span>cry</span></div></div> loudly when they are hungry.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 Option_Container">
+                <div class="options">
+                    <div class="option h1"><img src="assets/std01-action-verb-worksheet5/img/h1.png" alt=""><span>tell</span></div>
+                    <div class="option h2"><img src="assets/std01-action-verb-worksheet5/img/h2.png" alt=""><span>washes</span></div>
+                    <div class="option h3"><img src="assets/std01-action-verb-worksheet5/img/h3.png" alt=""><span>knows</span></div>
+                    <div class="option h4"><img src="assets/std01-action-verb-worksheet5/img/h4.png" alt=""><span>open</span></div>
+
+                    <div class="option h5"><img src="assets/std01-action-verb-worksheet5/img/h4.png" alt=""><span>bakes</span></div>
+                    <div class="option h6"><img src="assets/std01-action-verb-worksheet5/img/h5.png" alt=""><span>cry</span></div>
+                    <div class="option h7"><img src="assets/std01-action-verb-worksheet5/img/h6.png" alt=""><span>make</span></div>
+                    <div class="option h8"><img src="assets/std01-action-verb-worksheet5/img/h2.png" alt=""><span>rains</span></div>
+                </div>
+            </div>
+		</div>
+		<div class="btn-row">
+			<button class="button myButton">Submit</button>
+		</div>
+       
+    </div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="Asset/src/common.js"></script>
+	<script>
+        $(document).ready(function(){
+			var inputField;
+            var inputValue="";
+            var ClickAnswer=[];
+			var HelpBox=[];
+            var Text="";
+            var Correct_Answers_Count=0;
+            var inputs=$('input');
+            $(inputs).attr('readonly','readonly');
+			$(inputs).css('cursor','pointer');
+
+            $(inputs).click(function(){
+                inputField=$(this);
+                $(inputs).removeClass('bd');
+                $(this).addClass('bd');
+				inputValue=$(inputField).val();
+				ClickAnswer = jQuery.grep(ClickAnswer, function(value) {
+									return value != inputValue;
+								});
+				$(".option").filter(function() {
+					return $(this).text().trim() === inputValue;
+				}).removeClass('click');
+				$(this).val("");
+            });
+			$('.option').click(function(){
+                if(inputField !== undefined){
+                    inputValue=$(inputField).val();
+					Text=$(this).text().trim();
+					HelpBox.push(Text);
+					if(HelpBox.indexOf(inputValue) > -1 && ClickAnswer.indexOf(Text) < 0){
+						$(".option").filter(function() {
+							return $(this).text().trim() === inputValue;
+						}).removeClass('click');
+					}
+					$(this).addClass('click');
+                    if(ClickAnswer.indexOf(Text) > -1){
+
+                    }
+                    else{
+                        ClickAnswer = jQuery.grep(ClickAnswer, function(value) {
+                                        return value != inputValue;
+                                    });
+                        $(inputField).val(Text);
+                        ClickAnswer.push(Text);
+                    }
+                }
+            });
+			
+			$('.button').click(function(){
+				if($(this).hasClass('playAgain')){
+					window.location.href=window.location.href;
+				}
+				else{
+					var Correct_Answers_Count=0;
+					var inputCount=$('input[type="text"]').filter(function () {
+										return !!this.value;
+									}).length;
+					if(inputCount >= 4){
+						$(inputs).removeClass('bd');
+						var Correct_Answers=["washes","tell","bakes","open","knows","make","rains","cry"];
+						$(inputs).each(function(i){
+							if($.trim($(this).val()) !== Correct_Answers[i]){
+								$(this).css({'color':'#ed1a1a','border-color':'#000'});
+								$(this).siblings('.correct_answer').css('visibility','visible');
+							}
+							else{
+								Correct_Answers_Count++;
+							}
+						});
+						var percentage=	(Correct_Answers_Count * 100) / 8;
+						var DisplayResult="";
+						if(percentage > 80){
+							DisplayResult='.outstanding';
+						}
+						else if(percentage > 60){
+							DisplayResult='.brilliant';
+						}
+						else if(percentage >= 50){
+							DisplayResult='.good-work';
+						}
+						else if(percentage < 50){
+							DisplayResult='.keep-practicing';
+						}
+						setTimeout(function(){
+							$('.result').css('display','flex');
+							$('.result .TextBox').hide();
+							$(DisplayResult).removeClass('hide');
+							$('.result .imgBox').show();
+							$('.result').delay(2000).fadeOut('slow');
+							$('.close').hide();
+						},500);
+						setTimeout(function(){
+							$('.button').addClass('playAgain');
+							$('.button.playAgain').text('solve again');
+						},500);
+						$('input,.option').css('pointer-events','none');
+					}
+					else{
+						setTimeout(function(){
+							$('.result').css('display','flex');
+							$('.result .TextBox h1').text('Please solve at least 4 sentences before submitting');
+						},500);
+					}
+				}
+				$('.result,.close').click(function(){
+					$('.result').fadeOut();
+					$('.close').show();
+				});
+			});
+			
+        });
+		function setImages(){
+			var AllImages = ['assets/images/keep-practicing.gif', 'assets/images/outstanding.gif', 'assets/images/brilliant.gif',
+				'assets/images/good-work.gif', 'assets/images/fabulous.gif'];
+			$('.imgBox img').each(function(i){
+                var t=new Date().getTime();
+                $(this).attr("src", AllImages[i]+'?'+t);
+			});
+		}
+	</script>
+</body>
+</html>

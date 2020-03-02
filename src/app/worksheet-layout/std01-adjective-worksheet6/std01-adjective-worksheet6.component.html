@@ -1,0 +1,471 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Adjective 1</title>
+
+	
+	<style>
+		.myButton {
+			-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+			-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+			box-shadow: 3px 4px 0px 0px #8a2a21;
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+			background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+			background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+			background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+			background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+			background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+			background-color:#c62d1f;
+			-moz-border-radius:18px;
+			-webkit-border-radius:18px;
+			border-radius:18px;
+			border:1px solid #d02718;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Arial;
+			/*font-size:17px;*/
+			padding:7px 25px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #810e05;
+			line-height: 1;
+			outline:0 !important;
+		}
+		.myButton:hover {
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+			background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+			background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+			background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+			background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+			background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+			background-color:#f24437;
+		}
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}
+		.btn-row{
+			position: absolute;
+			margin-top: 20px !important;
+			margin-bottom:10px !important;
+			left: 50%;
+			transform: translateX(-59%);
+		}
+		
+		h2 
+		{
+		padding-left: 1%;
+    padding-right: 1%
+		}
+		
+		input
+		{
+		cursor:pointer;
+		}
+		
+		.bd
+		{
+		    border-bottom: 3px solid #20bb15;
+		}
+		.hide{
+			display:none;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+<div class='result'>
+<div class="Box">
+	<div class="imgBox">
+		<img src="" alt="" class="Text keep-practicing hide">
+		<img src="" alt="" class="Text outstanding hide">
+		<img src="" alt="" class="Text brilliant hide">
+		<img src="" alt="" class="Text good-work hide">
+		<!-- <img src="" alt="" class="Text fabulous hide"> -->
+	</div>
+	<div class="TextBox">
+		<h1></h1>
+	</div>
+	<img src="assets/images/close.png" alt="" class="close">
+</div>
+</div>
+
+<div class="loadingDiv">
+</div>
+
+	<div class="container innerbg">
+		<div class="row">
+			<div class="col-xs-12 px-2 mb-1 mb-sm-5">
+				<!--  <div class="heading my-3 p-2">
+                        <h2 class="font-weight-bold mb-0">Under the correct noun from the brackets to complete each sentence. </h2>
+                    </div> -->
+				<h2 class="font-weight-bold">
+				Click on the blanks and then click on the correct Adjectives from the help box, that can be used before the 
+				given Nouns.
+				</h2>
+			</div>
+		</div>
+
+		<div class="col-12 helpbox">
+			<div class="row mb-2">
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">brave</span></div>
+				</div>
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">colourful</span></div>
+				</div>
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">tasty</span></div>
+				</div>
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">big</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">pretty</span></div>
+				</div>
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">deep</span></div>
+				</div>
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">bright</span></div>
+				</div>
+				<div class="col-3">
+					<div class="helpbox-ans"><span class="font-weight-bold">juicy</span></div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div class="Main_Container">
+
+			<div class="row m-0">
+
+
+				<div class="row col-12 col-sm-6 p-1 p-sm-2 ml-1">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">1)</span>
+						</div>
+					</div>
+
+					<div class="col-7">
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> corn <div class="correct-ans"><span>tasty</span></div>
+							</div>					
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p1.png" class="img-fluid"></div>
+
+					</div>
+
+
+				</div>
+
+
+
+
+				<div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-4">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">2)</span>
+						</div>
+					</div>
+
+					<div class="col-7">					
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> sun<div class="correct-ans"><span>bright</span></div>
+							</div>					
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p2.png" class="img-fluid"></div>
+
+					</div>
+					<div class="col-1">
+
+
+					</div>
+
+				</div>
+
+		 <div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-1">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">3)</span>
+						</div>
+					</div>
+
+					<div class="col-7">					
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> pear<div class="correct-ans"><span>juicy</span></div>
+							</div>					
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p3.png" class="img-fluid"></div>
+
+					</div>
+					<div class="col-1">
+
+
+					</div>
+
+				</div>
+
+				<div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-4">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">4)</span>
+						</div>
+					</div>
+
+					<div class="col-7">
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> dress<div class="correct-ans"><span>pretty</span></div>
+							</div>					
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p4.png" class="img-fluid"></div>
+
+					</div>
+					<div class="col-1">
+
+
+					</div>
+
+				</div>
+
+				<div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-1">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">5)</span>
+						</div>
+					</div>
+					<div class="col-7">				
+
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> kite<div class="correct-ans"><span>colourful</span></div>
+							</div>				
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p5.png" class="img-fluid"></div>
+					</div>
+					<div class="col-1">
+					</div>
+				</div>
+
+				<div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-4">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">6)</span>
+						</div>
+					</div>
+
+					<div class="col-7">
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> soldier<div class="correct-ans"><span>brave</span></div>
+							</div>
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p6.png" class="img-fluid"></div>
+					</div>
+					<div class="col-1">
+					</div>
+				</div>
+				<div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-1">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">7)</span>
+						</div>
+					</div>
+					<div class="col-7">
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> jar<div class="correct-ans"><span>big</span></div>
+							</div>
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p7.png" class="img-fluid"></div>
+					</div>
+					<div class="col-1">
+					</div>
+
+				</div>
+
+				<div class="row  col-12 col-sm-6 p-1 p-sm-2 ml-4">
+					<div class="col-1 p-1">
+						<div class="list-item">
+							<span class="number-color orange-box">8)</span>
+						</div>
+					</div>
+					<div class="col-7">
+							<div class="content"><span class="input-span"><input type="text" class="" id=""></span> lake<div class="correct-ans"><span>deep</span></div>
+							</div>
+					</div>
+					<div class="col-3 p-1 p-sm-0 p-lg-1 pencil-content">
+						<div class="pencil-img"><img src="/assets/std01-adjective-worksheet6/img/p8.png" class="img-fluid"></div>
+					</div>
+					<div class="col-1">
+					</div>
+
+				</div>
+			</div>
+
+
+				<div class="row mb-3">
+					<div class="col-12 text-center">
+						<button class="button myButton">Submit</button>
+					</div>
+				</div>
+
+		</div>
+
+
+		<!-- <div class="row btn-row">
+			<button class="button myButton">Submit</button>
+		</div> -->
+
+		
+
+
+
+
+
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="Asset/src/common.js"></script>
+	<script>
+        $(document).ready(function(){
+			var inputField;
+            var inputValue="";
+            var ClickAnswer=[];
+			var HelpBox=[];
+            var Text="";
+            var Correct_Answers_Count=0;
+            var inputs=$('input');
+            $(inputs).attr('readonly','readonly');
+			$(inputs).css('cursor','pointer');
+
+            $(inputs).click(function(){
+                inputField=$(this);
+                $(inputs).removeClass('bd');
+                $(this).addClass('bd');
+				inputValue=$(inputField).val();
+				ClickAnswer = jQuery.grep(ClickAnswer, function(value) {
+									return value != inputValue;
+								});
+				$(".helpbox-ans span").filter(function() {
+					return $(this).text().trim() === inputValue;
+				}).removeClass('click');
+				$(this).val("");
+            });
+			$('.helpbox-ans').click(function(){
+                if(inputField !== undefined){
+                    inputValue=$(inputField).val();
+					Text=$(this).find('span').text().trim();
+					HelpBox.push(Text);
+					if(HelpBox.indexOf(inputValue) > -1 && ClickAnswer.indexOf(Text) < 0){
+						$(".helpbox-ans span").filter(function() {
+							return $(this).text().trim() === inputValue;
+						}).removeClass('click');
+					}
+					$(this).find('span').addClass('click');
+                    if(ClickAnswer.indexOf(Text) > -1){
+
+                    }
+                    else{
+                        ClickAnswer = jQuery.grep(ClickAnswer, function(value) {
+                                        return value != inputValue;
+                                    });
+                        $(inputField).val(Text);
+                        ClickAnswer.push(Text);
+                    }
+                }
+            });
+			
+			$('.button').click(function(){
+				if($(this).hasClass('playAgain')){
+					window.location.href=window.location.href;
+				}
+				else{
+					var Correct_Answers_Count=0;
+					var inputCount=$('input[type="text"]').filter(function () {
+										return !!this.value;
+									}).length;
+					if(inputCount >= 4){
+						$(inputs).removeClass('bd');
+						var Correct_Answers=["tasty","bright","juicy","pretty","colourful","brave","big","deep"];
+						$(inputs).each(function(i){
+							if($.trim($(this).val()) !== Correct_Answers[i]){
+								$(this).css({'color':'#ed1a1a','border-color':'#000'});
+								$(this).parent().siblings('.correct-ans').css('display','inline-block');
+							}
+							else{
+								Correct_Answers_Count++;
+							}
+						});
+						var percentage=	(Correct_Answers_Count * 100) / 8;
+						var ImgURL="";
+						var DisplayResult="";
+						if(percentage > 80){
+							DisplayResult='.outstanding';
+						}
+						else if(percentage > 60){
+							DisplayResult='.brilliant';
+						}
+						else if(percentage >= 50){
+							DisplayResult='.good-work';
+						}
+						else if(percentage < 50){
+							DisplayResult='.keep-practicing';
+						}
+						setTimeout(function(){
+							$('.result').css('display','flex');
+							$('.result .TextBox').hide();
+							$(DisplayResult).removeClass('hide');
+							$('.result .imgBox').show();
+							$('.result').delay(2500).fadeOut('slow');
+							$('.close').hide();
+						},500);
+						$('input,.helpbox-ans').css('pointer-events','none');
+						setTimeout(function(){
+							$('.button').addClass('playAgain');
+							$('.button.playAgain').text('solve again');
+						},500);
+					}
+					else{
+						setTimeout(function(){
+							$('.result').css('display','flex');
+							$('.result .TextBox h1').text('Please solve at least 4 blanks before submitting');
+						},500);
+					}
+					
+					$('.result,.close').click(function(){
+						$('.result').fadeOut();
+						$('.close').show();
+					});
+				}
+			});
+			
+        });
+		function setImages(){
+			var AllImages = ['assets/images/keep-practicing.gif', 'assets/images/outstanding.gif', 'assets/images/brilliant.gif',
+				'assets/images/good-work.gif', 'assets/images/fabulous.gif'];
+			$('.imgBox img').each(function(i){
+                var t=new Date().getTime();
+                $(this).attr("src", AllImages[i]+'?'+t);
+			});
+		}
+	</script>
+
+
+
+</body>
+
+</html>

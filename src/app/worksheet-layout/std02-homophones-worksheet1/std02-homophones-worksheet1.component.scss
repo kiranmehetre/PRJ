@@ -1,0 +1,333 @@
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+
+.col-xs-1 {
+    width: 8.33333333%;
+}
+.col-xs-2 {
+    width: 16.66666667%;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("/assets/font/ntailu.ttf") format("truetype");
+}
+@font-face {
+    font-family: "CustomFontBold";
+    src: url("/assets/font/ntailub.ttf") format("truetype");	
+}
+@font-face {
+    font-family: mt-rounded-bold;
+    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    font-weight: bold;
+  }
+  .result .TextBox h1 {
+    font-size: 2.5rem;
+    font-family: 'mt-rounded-bold','Microsoft New Tai Lue','Arial';
+    margin-top: 0;
+	font-weight: normal;
+	}
+.bg{
+    font-family: CustomFont,'Microsoft New Tai Lue';
+    color:#000;
+	background: url(/assets/std02-homophones-worksheet1/img/background.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+}
+.no-padding{padding:0;}
+
+.no-margin{margin:0}
+.margin-top-3{margin-top:3%;}
+.max-width-100{max-width:100%}
+.padding-right-10{padding-right:15px;}
+.margin-bottom-5{   margin-bottom: 5%;}
+
+.heading{
+	font-weight:600 ;
+	font-size:30px;
+	padding:10px;
+	width: fit-content;
+    padding: 20px auto;
+    font-family: mt-rounded-bold;
+}
+ .question-container span
+ {
+	    padding: 2px;
+    border: 1px solid;
+    border-radius: 5px;
+	background: #fff;
+	cursor:pointer;
+}
+
+.col-xs-2 .row div
+{
+    margin: auto;
+	text-align:center;
+	margin-top:5%;
+}
+.knight_m_t{
+    margin-top: 8% !important;
+}
+
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+    background-color:#c62d1f;
+    -moz-border-radius:18px;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    /*font-size:17px;*/
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+    line-height: 1;
+    outline:0 !important;
+    margin: auto;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+    background-color:#f24437;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+.btn-row{
+    position: relative;
+    margin-top:20px !important;
+    padding-bottom:10px !important;
+    text-align:center;
+}
+.click{
+    background-color:#2bab3e !important;
+    color: #fff;
+}
+.wrong-click{
+    background-color: #ab2323 !important;
+}
+.hide{
+    display:none;
+}
+@media screen and (orientation: landscape)
+{
+	
+}
+
+@media screen and (orientation: portrait)
+{
+	.bg{ 
+	background:url("/assets/std02-homophones-worksheet1/img/potrait_background.jpg"); 
+	background-size:100% 100%;;
+	background-position:bottom right;
+  }
+ .width-30{width:30%}
+ .width-5{width:5%}
+ .one{
+	 position: absolute;
+    margin-top: -37%;
+    margin-left: 66%;
+ }
+ .margin-top-5{ margin-top: 5%;}
+ .hare
+ {
+	 margin-left:5%;
+	  position: absolute;
+    margin-top: 37%;
+ }
+ 
+ 
+}
+
+@media only screen and (max-width: 600px)
+{
+	.heading{font-size:23px;}
+	.question-container{font-size:15px}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  {
+	
+	.heading{font-size:25px;}
+	.question-container{font-size:16px}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.heading{font-size:27px;}
+	.question-container{font-size:18px}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.heading{font-size:30px;}
+	.question-container{font-size:22px}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.heading{font-size:30px;}
+	.question-container{font-size:25px}
+	.margin-bottom-5{
+		margin:2% 0 6%;
+	}
+	.btn-row {
+		margin-top: 5% !important;
+	}
+}
+
+/**/
+
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+	
+		.myButton
+	{
+		
+		font-size: 35px !important;
+	}
+	
+	.hare {
+    margin-left: 5%;
+    position: absolute;
+    margin-top: 34%;
+}
+
+.one {
+    position: absolute;
+    margin-top: -31%;
+    margin-left: 34%;
+}
+
+
+.question-container span {
+    padding: 2px;
+    /* border: 1px solid; */
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+
+.cock
+{
+	left: 30%;
+}
+
+.hare {
+    margin-left: 5%;
+    position: absolute;
+    margin-top: 37%;
+}
+
+.one {
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 34%;
+}
+
+
+}
+
+/* Landscape */ 
+@media only screen and (min-width: 1366px) and (orientation: landscape) { 
+
+
+
+}
+
+/*Portrait*/ 
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+	
+
+	.myButton
+	{
+		
+		font-size: 35px !important;
+	}
+	
+	.hare {
+    margin-left: 5%;
+    position: absolute;
+    margin-top: 34%;
+}
+
+.one {
+    position: absolute;
+    margin-top: -33%;
+    margin-left: 34%;
+}
+
+
+.question-container span {
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.cock
+{
+	left: 0%;
+}
+
+
+}
+
+
+@media only screen and (min-device-width: 1112px) and (orientation: landscape) {
+
+	
+}
+
+/*Portrait*/ 
+@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
+
+}
+@media(min-width:320px) and (max-width:575px){
+	.col-xs-2 .row div {
+		white-space: nowrap;
+	}
+}
+
+
+
+/*Portrait*/ 
+@media only screen and (min-device-width: 834px) and (orientation: portrait) { 
+
+}
+
+
+// common

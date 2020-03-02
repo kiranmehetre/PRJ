@@ -1,0 +1,163 @@
+<div class="body_div update-details-block" ngPreserveWhitespaces>
+    <div class="wrapper"></div>
+    <div class="container" >
+        <div class="row">
+            <div class="col-12 Main_Container Main-bg" style="background: #fff;">
+                <div class="row header">
+                    <div class="col-sm-6 col-md-5 col-lg-4 position-relative">
+                        <h3 class="title2"><span>Complete</span> <span>Grammar</span></h3>
+                        <div class="toggle"><img src="assets/frontend_assets/img/menu.png" alt=""></div>
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-8 text-right menu menu-right display-none">
+                        <div class="">
+                            <ul>
+                                <li><a href="/home">Home</a></li>
+                                <!-- <li class="grade_list">
+                                        <a style="cursor:pointer;" class="standard_dropdown_toggle">Grade
+                                                <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow"> 
+                                        </a>
+                                        <ul class="standard_dropdown" style="display:none;">
+                                                <li><a href="dashboard/1">Grade 1</a></li>
+                                                <li><a href="dashboard/2">Grade 2</a></li>                               
+                                                <li><a href="dashboard/3">Grade 3</a></li>
+                                        </ul>
+                                </li> -->
+                                <!-- <li><a href="#">How</a></li> -->
+                                <li>
+                                    <a style="cursor:pointer;" class="dropdown_toggle circleprofile">
+                                        <img class="img-fluid user" src="{{profile_picture_path}}">
+                                        <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow">
+                                    </a>
+                                    <ul class="dropdown user_dropdown">
+                                        <li><a href="change-password">Change Password</a></li>
+                                        <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 update-details">
+                    <div class=" setup-content" id="step-1">
+                        <div class="panel-heading mt-3">
+                            <div class="m-auto font-weight-bold" style="width: fit-content;">
+                                <h2><span>Update Details</span></h2>
+                            </div>
+                        </div>
+                        <div class="panel-body update-form-content">
+                            <form [formGroup]="updateForm" (ngSubmit)="updateForm.valid" autocomplete="off">
+                                <div class="row mb-2">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">First Name</label>
+                                        <input maxlength="100" type="text" formControlName="first_name"  required="required"
+                                            class="form-control FirstName" placeholder="rob" value="{{user_details.first_name}}"/>
+
+                                            <div *ngIf="updateForm.controls['first_name'].hasError('required') &&
+                                            (updateForm.controls['first_name'].touched || submitted)" class="error-container">
+                                            </div>
+            
+                                        <span class="FirstName hide error-span">Enter First Name</span>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">Last Name</label>
+                                        <input maxlength="100" type="text" formControlName="last_name"  required="required"
+                                            class="form-control LastName" placeholder="lenon" value="{{user_details.last_name}}"/>
+
+                                        <div *ngIf="updateForm.controls['last_name'].hasError('required') &&
+                                            (updateForm.controls['last_name'].touched || submitted)" class="error-container">
+                                        </div>
+
+                                        <span class="LastName hide error-span">Enter Last Name</span>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">Country</label>
+                                        <input maxlength="100" type="text" required="required" formControlName="country" 
+                                            class="form-control Country" placeholder="India"  value={{user_details.country}}/>
+                                        <span class="Country hide error-span">Enter Country</span>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">City</label>
+                                        <input maxlength="100" type="text" required="required" formControlName="city" 
+                                            class="form-control City" placeholder="Mumbai"  value={{user_details.city}}/>
+                                        <span class="City hide error-span">Enter City</span>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">Child Name</label>
+                                        <input maxlength="100" type="text" required="required" formControlName="child_name" 
+                                            class="form-control child_name" placeholder="Child Name"  value={{user_details.child_name}}/>
+                                        <span class="child_name hide error-span">Enter Child Name</span>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">Birthday</label>
+                                        <!-- <input id="datepicker" width="276" /> -->
+                                        <input maxlength="100" type="text" id="datepicker" required="required"
+                                        formControlName="birth_day" class="form-control BirthDay" placeholder="MM/DD/YY"  value={{user_details.birth_day}} />
+                                        <span class="BirthDay hide error-span">Enter Birth Date</span>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">Class</label>
+                                        <input maxlength="100" type="text" required="required" formControlName="class"
+                                            class="form-control class" placeholder="Class" readonly  value={{user_details.class}}/>
+                                        <span class="class hide error-span">Enter Class</span>
+                                    </div> -->
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">Gender</label>
+                                        <!-- <input id="datepicker" width="276" /> -->
+                                        <input maxlength="100" type="text" required="required" formControlName="gender"
+                                            class="form-control gender" placeholder="Gender"  value={{user_details.gender}}/>
+                                        <span class="gender hide error-span">Enter Gender</span>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-2" *ngIf="displayMessage == true">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
+                                        <label class="control-label">User Profile Successfully Updated.</label>
+                                    </div>                                  
+                                </div>
+
+                                <div class="row text-center mt-2 mt-lg-4 mb-2">
+                                    <div class="col-12 form-group">
+                                        <div class="m-auto font-weight-bold" style="width: fit-content;">
+                                            <button class="btn btn-primary btn-update" type="submit" (click)="onSubmit()">
+                                            Update
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contain-fluid">
+        <div class="footer col-12" ngPreserveWhitespaces>
+            <div class="copyright">
+                Copyright  &copy;  2020 www.completegrammar.com. All Rights Reserved.
+            </div>
+            <div class="social_media">
+            <ul>
+                <li>
+                    <a href=""><img src="assets/frontend_assets/main_dashboard/img/facebook.png" alt="" class="img-fluid facebook"></a>
+                </li>
+                <li>
+                    <a href=""><img src="assets/frontend_assets/main_dashboard/img/instagram.png" alt="" class="img-fluid instagram"></a>
+                </li>
+                <li>
+                    <a href=""><img src="assets/frontend_assets/main_dashboard/img/linkedin.png" alt="" class="img-fluid linkedin"></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="loader1"></div>
+</div>
+

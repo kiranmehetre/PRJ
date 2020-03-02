@@ -1,0 +1,49 @@
+.hide {
+    display: none;
+}
+
+.gj-icon {
+    line-height: 1.5 !important;
+}
+
+.error-span {
+    color: #FF0000 !important;
+}
+
+.dropdown {
+    margin-left: -97px !important;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .dropdown {
+        margin-left: -79px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dropdown {
+        margin-left: -64px !important;
+    }
+
+    ul.dropdown li a {
+        padding: 5px 10px;
+    }
+}
+
+.dropdown{
+    display:none;
+    position: absolute;
+    background: #fff;
+}
+.topic_dropdown {
+    /* height: 30vh; */
+    max-height: 310px;
+    overflow-y: scroll;
+    left: 66% !important;   
+    position: absolute;
+    width: auto;
+    margin-top: 13px !important;
+    background: #fff;
+    display: none;
+    transform: translateX(25%);
+}

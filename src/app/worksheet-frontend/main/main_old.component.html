@@ -1,0 +1,39 @@
+<div class="bgcontainer">  
+    <div class="contain-fluid p-4">
+        <div class="row">
+            <div class="col-sm-5"><img src="assets/frontend_assets/img/logo.png" class="logo">
+                <div class="toggle"><img src="assets/frontend_assets/img/menu.png" alt=""></div>
+            </div>
+
+            <div class="col-sm-7 text-right menu menu-right display-none home_page_menu">
+                <ul>
+                    <li><a href="#">Why us?</a></li>
+                    <li>
+                        <a style="cursor:pointer;" class="toggle_topic">Grade
+                                <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow"> 
+                        </a>
+                        <ul class="topic_dropdown" style="display:none;">
+                                <li><a href="dashboard/1">Grade 1</a></li>
+                                <li><a style="color:#888">Grade 2</a></li>                               
+                                <li><a style="color:#888">Grade 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">How</a></li>                 
+                    <li *ngIf="this.menu == false"><a href="login">Login</a></li>            
+
+                    <li *ngIf="this.menu == true">
+                        <a style="cursor:pointer;" class="dropdown_toggle circleprofile">
+                            <img class="img-fluid user" src="{{profile_picture_path}}">
+                            <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow">
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="dashboard/1">Dashboard</a></li>
+                            <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
+                           
+                            <li><a href="change-password">Change Password</a></li>
+                        </ul>
+                    </li>                  
+                </ul>
+            </div>
+        </div>
+    </div>

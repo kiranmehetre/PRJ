@@ -1,0 +1,125 @@
+<div class="login_Block pb-4">
+
+    <div class="container" ngPreserveWhitespaces>
+        <!--<div class="message"><?php if(isset($message)) echo $message; ?></div>-->
+        <div class="row Main_Container mb-4">    
+            <div class="col-12 col-sm-5 col-md-4 col-lg-5 stepWizard_Container" id="stepWizard_Container">
+                <!-- <img src="../Asset/img/N.png" class="N d-none d-sm-block"/> -->
+                <div class="stepwizard">
+                    <!-- <div class="stepwizard-row setup-panel row">
+                        <div class="stepwizard-step col-3 col-sm-12 d-sm-flex mb-1 ">
+                            <span class="btn-circle d-block btn-circle-success"><span
+                                    class="d-block d-sm-none text-white">1</span></span>
+                            <a href="#step-1" class="btn btn-success rdo-profile">Parent Profile</a>
+                        </div>
+                        <div class="stepwizard-step col-3 col-sm-12 d-sm-flex mb-1">
+                            <span class="btn-circle d-block"><span class="d-block d-sm-none text-white">2</span></span>
+                            <a href="#step-2" class="btn btn-default" disabled="disabled">Student Profile</a>
+                        </div>
+                        <div class="stepwizard-step col-3 col-sm-12 d-sm-flex mb-1 hide">
+                            <span class="btn-circle d-block"><span class="d-block d-sm-none text-white">3</span></span>
+                            <a href="#step-3" class="btn btn-default" disabled="disabled">Payment</a>
+                        </div>
+                        <div class="stepwizard-step col-3 col-sm-12 d-sm-flex mb-1">
+                            <span class="btn-circle d-block"><span class="d-block d-sm-none text-white">4</span></span>
+                            <a href="#step-4" class="btn btn-default btn-confirm" disabled="disabled">Confirmed</a>
+                        </div>
+                        <div class="stepwizard-step col-3 col-sm-12 d-sm-flex mb-1 login-stepwizard-step">
+                            <span class="btn-circle d-block"><span class="d-block d-sm-none text-white">5</span></span>
+                            <a href="#step-5" class="btn btn-default rdo-login" disabled="disabled">Login</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-11 col-sm-7 col-md-8 col-lg-7 Steps_Container px-3 py-2 px-lg-4 m-3 m-sm-0">
+            <!-- /////////////////////////Start Login Form//////////////////////////// -->
+            <div class="setup-contents" id="step-5">
+                <div class="panel-heading">
+                    <h1><span>Complete</span> <span>Grammar</span> </h1>                 
+                </div>
+                <div class="panel-body">
+
+                        <form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && onSubmit()" autocomplete="off">
+                        <div class="mb-2 col-md-6">
+                            <span class="forgot-password error-message" *ngIf="loginError == true">
+                                You have entered an invalid Username or Password.
+                            </span>
+                        </div>
+                        <div class="mb-3 col-md-10">
+                            <label class="control-label">Email</label>
+                            <input type="text" class="form-control" placeholder="johnfensi@gmail.com" formControlName="email_id" />                           
+                            <div *ngIf="loginForm.controls['email_id'].hasError('required') && (loginForm.controls['email_id'].touched || submitted)" class="error-container">
+                                    <p>This field is required</p>
+                            </div>
+                            <div *ngIf="loginForm.controls['email_id'].hasError('pattern') && (loginForm.controls['email_id'].touched || submitted)" class="error-container">
+                                <p>Email Address is invalid</p>
+                            </div>
+                        </div>
+                        <div class="mb-2 col-md-10">
+                            <label class="control-label">Password</label><a style="cursor:pointer;"><span class="btn-forgot-password">Forgot Password?</span></a>
+                            <input type="password" class="form-control" placeholder="*************" id="password1" formControlName="password" />
+
+                            <div *ngIf="loginForm.controls['password'].hasError('required') && (loginForm.controls['password'].touched || submitted)" class="error-container">
+                                    <p>Password is required</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 col-md-10 btn_Container" style="margin-top:3%;">
+                                <button class="btn btn-primary btn-sign-in" type="submit" (click)="submitted = true">Login</button>                            
+                        </div>
+
+                        <div class="new_to_grammar">
+                            <div class="left_side line"></div>
+                            <div class="content">New to Complete Grammar?</div>
+                            <div class="right_side line"></div>
+                        </div>
+                        <div class="signup__div">
+                            <a href="signup"><button class="btn btn-primary" type="button">Signup</button></a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        <!-- /////////////////////////End Login Form//////////////////////////// -->    
+    </div>
+    </div>
+        <!--model-->
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary open_model" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
+    </div>
+    <!-- The Modal -->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal" ngPreserveWhitespaces>
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title m-auto">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body hide">
+                    <div class="form-group">
+                        <input maxlength="100" required="required" type="email" name="forgot-email" class="form-control"
+                            placeholder="Enter your email id" />
+                        <span class="input-get-password input-error hide">Please Enter Email id</span>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary  sign-in hide">Sign In</button>
+                    <button type="button" class="btn btn-primary  try-again hide">Try Again</button>
+                    <button type="button" class="btn btn-primary  get-password hide">Get Password</button>
+                    <button type="button" class="btn btn-primary  signup-now hide">Sign Up Now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
