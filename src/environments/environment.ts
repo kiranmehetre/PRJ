@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_END_POINT : 'http://172.16.2.67:8000/api/',
+  API_END_POINT : 'http://142.93.250.61:3000/',
   pageLength: 25
 };
 

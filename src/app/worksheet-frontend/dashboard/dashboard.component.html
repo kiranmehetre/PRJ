@@ -11,7 +11,7 @@
                     <div class="col-sm-6 col-md-7 col-lg-8 text-right menu menu-right display-none">
                         <div class="">
                             <ul>
-                                <li><a href="home/">Home</a></li>
+                                <li><a [routerLink]="['/home']"  >Home</a></li>
                                 <!-- <li>
                                         <a style="cursor:pointer;" class="toggle_topic">Grade
                                                 <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow"> 
@@ -51,7 +51,8 @@
                                         <ul class="flip-items">
                                             <li *ngFor="let topic of topic_list">
                                                 <div class="flip-img">
-                                                    <a href="{{topic.subtopic == 'yes' ? 'topic/' + topic.topic_id : 'subtopic/' + topic.topic_id + '/0' }}" style="text-decoration:none;">
+                                                    <!-- <a [routerLink]="['/routePath']"  href="{{topic.subtopic == 'yes' ? 'topic/' + topic.topic_id : 'subtopic/' + topic.topic_id + '/0' }}" style="text-decoration:none;"> -->
+                                                        <a (click)="navigateToTopic(topic)" style="text-decoration:none;">
                                                         <img class="mx-auto d-block" src="{{topic.topic_image}}" alt="" class="topic">
                                                     </a>
                                                 </div>

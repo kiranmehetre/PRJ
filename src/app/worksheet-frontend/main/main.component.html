@@ -2371,14 +2371,14 @@
                                 <!-- <li><a href="dashboard/1">Grade 1</a></li>
                                 <li><a style="color:#888">Grade 2</a></li>
                                 <li><a style="color:#888">Grade 3</a></li> -->
-                                <li><a href="dashboard/1" data-text="1" [class]="grade1Active">Grade 1</a></li>
-                                <li><a href="dashboard/2" data-text="1" [class]=grade2Active>Grade 2</a></li>
-                                <li><a href="dashboard/3" data-text="1" [class]="grade3Active">Grade 3</a></li>
+                                <li><a [routerLink]="['/dashboard/1']" routerLinkActive="router-link-active"  data-text="1" [class]="grade1Active">Grade 1</a></li>
+                                <li><a [routerLink]="['/dashboard/2']" data-text="1" [class]=grade2Active>Grade 2</a></li>
+                                <li><a [routerLink]="['/dashboard/3']" data-text="1" [class]="grade3Active">Grade 3</a></li>
                                 <!-- <li *ngFor="let grade of gradeArray"> <a href="{{'dashboard/' + grade}}"> {{"Grade " + grade}}</a></li> -->
                             </ul>
                         </li>
                         <li><a href="https://youtu.be/auYeK07yMyY">Tutorial</a></li>
-                        <li *ngIf="this.menu == false"><a href="login">Login</a></li> 
+                        <li *ngIf="this.menu == false"><a [routerLink]="['/login']"  >Login</a></li> 
                         <li *ngIf="this.menu == true">
                             <a style="cursor:pointer;" class="dropdown_toggle circleprofile">
                                 <img class="img-fluid user" src="{{profile_picture_path}}">

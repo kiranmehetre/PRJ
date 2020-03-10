@@ -44,7 +44,7 @@ onLoggedout() {
   localStorage.removeItem('isLoggedin');  
   this.router.navigate(['/']);
   // location.reload()
-  window.location.href = "/home";
+  //window.location.href = "/home";
   // this.menu = true;
   // console.log(this.menu);
  }

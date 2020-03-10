@@ -62,6 +62,12 @@ export class DashboardComponent implements OnInit {
       });    
 
   } 
+
+  navigateToTopic(topic)
+  {
+   let url =  topic.subtopic == 'yes' ? 'topic/' + topic.topic_id : 'subtopic/' + topic.topic_id + '/0';
+   this.router.navigate([url]);
+  }
   ngAfterViewInit(){
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
