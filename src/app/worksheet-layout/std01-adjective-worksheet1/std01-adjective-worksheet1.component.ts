@@ -8,7 +8,9 @@ import * as $ from 'jquery';
 })
 export class Std01AdjectiveWorksheet1Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+      console.log("done")
+   }
 
   ngOnInit() {
         
