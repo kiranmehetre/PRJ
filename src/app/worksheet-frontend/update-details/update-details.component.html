@@ -11,7 +11,7 @@
                     <div class="col-sm-6 col-md-7 col-lg-8 text-right menu menu-right display-none">
                         <div class="">
                             <ul>
-                                <li><a href="/home">Home</a></li>
+                                <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
                                 <!-- <li class="grade_list">
                                         <a style="cursor:pointer;" class="standard_dropdown_toggle">Grade
                                                 <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow"> 
@@ -29,7 +29,7 @@
                                         <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow">
                                     </a>
                                     <ul class="dropdown user_dropdown">
-                                        <li><a href="change-password">Change Password</a></li>
+                                        <li><a [routerLink]="['/change-password']" routerLinkActive="router-link-active" >Change Password</a></li>
                                         <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
                                     </ul>
                                 </li>

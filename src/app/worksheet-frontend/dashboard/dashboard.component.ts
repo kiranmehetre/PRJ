@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
   constructor(private renderer: Renderer2,  public apiRequest : AppRequestService, private route: ActivatedRoute, private router: Router) {
     this.renderer.setStyle(document.body, 'background', 'url("assets/frontend_assets/img/topic-body-background.jpg")');
     this.route.params.subscribe( params => this.grade = params.grade );
+    
    }
 
   ngOnInit() {
@@ -34,7 +35,8 @@ export class DashboardComponent implements OnInit {
         this.profile_picture_path = profile_pic[0].photo_url;
         var Grades = profile_pic[0].class.split(',',3);
         if(Grades.indexOf(this.grade) < 0 ){ 
-          window.location.href = "/home";
+         // window.location.href = "/home";
+         this.router.navigate(["/home"]);
         }
         
  
@@ -49,9 +51,13 @@ export class DashboardComponent implements OnInit {
       localStorage.setItem('gradeSelection',this.grade);
       this.apiRequest.getRequest('api/student/topic/all/' + this.grade).then( (res) => {            
           if(res['status'] == 'OK'){     
-            $('.loader').hide();   
+            $('.loader').hide();  
+            setTimeout(() => {
               this.topic_list = res['body'];
-              console.log(res['body']);              
+            this.loadScript(); 
+
+            }, 2000);
+                           
           }else {
           
           }
@@ -70,7 +76,10 @@ export class DashboardComponent implements OnInit {
   }
   ngAfterViewInit(){
     this.loadAPI = new Promise((resolve) => {
-      this.loadScript();
+      setTimeout(() => {
+     
+        
+      }, 3000);
       resolve(true);
     });
   }

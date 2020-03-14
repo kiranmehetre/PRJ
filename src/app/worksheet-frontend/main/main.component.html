@@ -2385,7 +2385,7 @@
                                 <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow profile_arrow">
                             </a>
                             <ul class="dropdown user_dropdown">
-                                <li><a href="update-details">Profile</a></li>
+                                <li><a [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
                                 <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
                             </ul>
                         </li>    

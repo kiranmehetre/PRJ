@@ -119,7 +119,10 @@ export class SubtopicComponent implements OnInit {
         $('img.prev').css("pointer-events","unset");
       }      
   }
-
+  fetchData(data)
+  {
+    console.log(data)
+  }
   public ButtonToggle(type : string){ 
       var screenWidth,constNumber;
       screenWidth=$(document).width();

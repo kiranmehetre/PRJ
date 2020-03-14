@@ -2,7 +2,7 @@
     <a id="toggle"><span><img src="assets/images/down_arrow.svg"></span></a>
     <div id="menu" [ngClass]="{PrevClass: previous}" style="display:none;">
         <ul>
-            <li><a href="update-details">Profile</a></li>
+            <li><a [routerLink]="['/update-detail']"  >Profile</a></li>
             <!-- <li><a href="dashboard/1">Dashboard</a></li> -->
             <!-- <li><a href="{{subtopic_url}}">Subtopic</a></li> -->
             <li *ngIf="topic_video != '#'"><a href="{{topic_video}}">Video</a></li>

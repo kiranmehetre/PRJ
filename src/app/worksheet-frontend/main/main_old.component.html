@@ -13,13 +13,13 @@
                                 <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow"> 
                         </a>
                         <ul class="topic_dropdown" style="display:none;">
-                                <li><a href="dashboard/1">Grade 1</a></li>
+                                <li><a [routerLink]="['/dashboard/1']"  >Grade 1</a></li>
                                 <li><a style="color:#888">Grade 2</a></li>                               
                                 <li><a style="color:#888">Grade 3</a></li>
                         </ul>
                     </li>
                     <li><a href="#">How</a></li>                 
-                    <li *ngIf="this.menu == false"><a href="login">Login</a></li>            
+                    <li *ngIf="this.menu == false"><a [routerLink]="['/login']">Login</a></li>            
 
                     <li *ngIf="this.menu == true">
                         <a style="cursor:pointer;" class="dropdown_toggle circleprofile">
@@ -27,10 +27,10 @@
                             <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow">
                         </a>
                         <ul class="dropdown">
-                            <li><a href="dashboard/1">Dashboard</a></li>
+                            <li><a [routerLink]="['/dashboard/1']"  >Dashboard</a></li>
                             <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
                            
-                            <li><a href="change-password">Change Password</a></li>
+                            <li><a [routerLink]="['/change-password']"  >Change Password</a></li>
                         </ul>
                     </li>                  
                 </ul>
