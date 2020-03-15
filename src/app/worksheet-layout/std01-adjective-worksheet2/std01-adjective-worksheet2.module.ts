@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std01AdjectiveWorksheet2RoutingModule } from './std01-adjective-worksheet2-routing.module';
+import { Routes, RouterModule } from '@angular/router';
+import { Std01AdjectiveWorksheet2Component } from './std01-adjective-worksheet2.component';
+const routes: Routes = [
+  { path: '', component: Std01AdjectiveWorksheet2Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std01AdjectiveWorksheet2Component],
   imports: [
     CommonModule,
-    Std01AdjectiveWorksheet2RoutingModule
+    RouterModule.forChild(routes)
   ]
 })
-export class Std01AdjectiveWorksheet2Module { }
+export class Std01AdjectiveWorksheet2Module {
+  constructor( ) {
+    console.log("*************************************************std01/adjective/worksheet2: APUn Aa gya idhar std1 worksheet 2",);
+  }
+ }
