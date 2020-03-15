@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
 
-      
+    this.loadScript(); 
     // if (typeof $ != 'undefined') {
     //   // jQuery is loaded => print the version
     //   alert($.fn.jquery);

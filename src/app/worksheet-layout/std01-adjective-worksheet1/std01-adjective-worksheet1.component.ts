@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-std01-adjective-worksheet1',
@@ -8,16 +9,17 @@ import * as $ from 'jquery';
 })
 export class Std01AdjectiveWorksheet1Component implements OnInit {
 
-  constructor() {
+  constructor(private router:Router) {
       console.log("done")
    }
 
   ngOnInit() {
-        
+        let globleThis = this;
       window.onload = function () { 
-          $('.loadingDiv').hide();
-          setImages();
+         
       }
+      $('.loadingDiv').hide();
+      setImages();
       var theToggle = document.getElementById('toggle');
       // hasClass
       function hasClass(elem, className) {
@@ -72,7 +74,9 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       
       $('.button').click(function(){
            if($(this).hasClass('playAgain')){
-              window.location.href=window.location.href;
+            //globleThis.router.navigate([""])
+            globleThis.ngOnInit();
+              //window.location.href=window.location.href;
            }
            else{
               if($('.click').length >= 6){
