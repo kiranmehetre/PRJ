@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-std01-adjective-worksheet1',
@@ -9,11 +9,19 @@ import { Router } from '@angular/router';
 })
 export class Std01AdjectiveWorksheet1Component implements OnInit {
 
-  constructor(private router:Router) {
-      console.log("done")
+  constructor(private router:Router, private route: ActivatedRoute) {
    }
 
   ngOnInit() {
+   this.router.routeReuseStrategy.shouldReuseRoute = function(){
+      return false;
+    };
+    this.router.events.subscribe((evt) => {
+        if (evt instanceof NavigationEnd) {
+            this.router.navigated = false;
+        }
+    });
+
         let globleThis = this;
       window.onload = function () { 
          
@@ -75,7 +83,8 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       $('.button').click(function(){
            if($(this).hasClass('playAgain')){
             //globleThis.router.navigate([""])
-            globleThis.ngOnInit();
+            // globleThis.ngOnInit();
+            reloadComponent();
               //window.location.href=window.location.href;
            }
            else{
@@ -116,6 +125,12 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       var t=new Date().getTime();
       $('.imgBox img').attr('src','assets/images/fabulous.gif'+'?'+t);
     }
+
+    const reloadComponent = () => {
+      // this.location.path
+      console.log("this.location", this.route);
+      this.router.navigate([`${this.route.url}`]);
+    };
   }
 
 }
