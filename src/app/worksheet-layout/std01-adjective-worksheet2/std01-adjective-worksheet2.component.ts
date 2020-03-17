@@ -1,3 +1,4 @@
+import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as $ from 'jquery';
 
@@ -8,7 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01AdjectiveWorksheet2Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2,
+    private router: Router,
+    private route: ActivatedRoute
+    ) {
     this.renderer.setStyle(document.body, 'background-color','#505050');
    }
 
@@ -64,7 +68,8 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
 
       $('.button').click(function () {
         if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          reloadComponent();
+          // window.location.href = window.location.href;
         }
         else {
           if ($('.click').length >= 8) {
@@ -102,6 +107,12 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
       var t = new Date().getTime();
       $('.imgBox img').attr("src", 'assets/images/fabulous.gif' + '?' + t);
     }
+
+    const reloadComponent = () => {
+      this.router.onSameUrlNavigation = 'reload';
+      const url = this.route.snapshot['_routerState'].url;
+      this.router.navigate([`${url}`])
+    };
   }
 
 }

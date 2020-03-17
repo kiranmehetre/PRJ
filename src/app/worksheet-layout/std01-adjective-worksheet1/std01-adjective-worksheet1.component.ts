@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+// import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet1',
@@ -9,18 +10,19 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 })
 export class Std01AdjectiveWorksheet1Component implements OnInit {
 
-  constructor(private router:Router, private route: ActivatedRoute) {
+  constructor(private commonWorksheet: CommonWorksheetService
+    ) {
    }
 
   ngOnInit() {
-   this.router.routeReuseStrategy.shouldReuseRoute = function(){
-      return false;
-    };
-    this.router.events.subscribe((evt) => {
-        if (evt instanceof NavigationEnd) {
-            this.router.navigated = false;
-        }
-    });
+  //  this.router.routeReuseStrategy.shouldReuseRoute = function(){
+  //     return false;
+  //   };
+  //   this.router.events.subscribe((evt) => {
+  //       if (evt instanceof NavigationEnd) {
+  //           this.router.navigated = false;
+  //       }
+  //   });
 
         let globleThis = this;
       window.onload = function () { 
@@ -84,7 +86,7 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
            if($(this).hasClass('playAgain')){
             //globleThis.router.navigate([""])
             // globleThis.ngOnInit();
-            reloadComponent();
+            
               //window.location.href=window.location.href;
            }
            else{
@@ -126,11 +128,11 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       $('.imgBox img').attr('src','assets/images/fabulous.gif'+'?'+t);
     }
 
-    const reloadComponent = () => {
-      // this.location.path
-      console.log("this.location", this.route);
-      this.router.navigate([`${this.route.url}`]);
-    };
+    // const reloadComponent = () => {
+    //   this.router.onSameUrlNavigation = 'reload';
+    //   const url = this.route.snapshot['_routerState'].url;
+    //   this.router.navigate([`${url}`])
+    // };
   }
 
 }
