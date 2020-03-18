@@ -67,9 +67,9 @@
                 </div>
                 
                 <div class="col-8 reference_list" *ngIf="subtopic_reference == true">
-                    <h3><span>REFERENCE </span> <span>LIST</span>{{ subtopic_details ? subtopic_details[0].subtopic_referencelist : "" | json}} </h3>
+                    <h3><span>REFERENCE </span> <span>LIST</span> </h3>
                         <span class="thumbnail_icon">                 
-                            <a class="referencelink" routerLink="worksheet-layout/{{subtopic_details ? subtopic_details[0].subtopic_referencelist : ''}}">       
+                            <a class="referencelink" routerLink="../../../worksheet-layout/{{subtopic_details ? subtopic_details[0].subtopic_referencelist : ''}}">       
                                     <img src="assets/frontend_assets/img/referenceList_icon.png" alt="">                           
                              </a>     
                         </span>        
