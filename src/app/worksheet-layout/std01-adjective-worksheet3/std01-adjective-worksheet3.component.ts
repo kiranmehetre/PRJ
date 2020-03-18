@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as $ from 'jquery';
 import { CommonWorksheetService } from '../common-worksheet.service';
@@ -12,12 +11,16 @@ export class Std01AdjectiveWorksheet3Component implements OnInit {
 
     constructor(
 	private commonWorksheet: CommonWorksheetService,
-	private router: Router
-  ) {}
+	private renderer: Renderer2
+  ) {
+   }
+   
+   isLoader: true;
+
   ngOnInit() {
-	  
-	this.commonWorksheet.reuseRoute();
+
     const globalThis = this;
+	this.commonWorksheet.reuseRoute();
 	
 	$('.loadingDiv').hide();
 	setImages();
@@ -86,7 +89,7 @@ export class Std01AdjectiveWorksheet3Component implements OnInit {
 			});
 			$('.button').click(function(){
 				if($(this).hasClass('playAgain')){
-					globalThis.commonWorksheet.reloadComponent(globalThis.router);
+					globalThis.commonWorksheet.reloadComponent();
 					// window.location.href=window.location.href;
 				}
 				else{
