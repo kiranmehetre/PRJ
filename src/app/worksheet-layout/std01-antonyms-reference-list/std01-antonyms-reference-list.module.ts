@@ -12,7 +12,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [Std01AntonymsReferenceListComponent],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
