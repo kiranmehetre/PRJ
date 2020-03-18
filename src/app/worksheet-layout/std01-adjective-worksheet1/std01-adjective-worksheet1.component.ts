@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
-import { Router } from '@angular/router';
+// import { Router, ActivatedRoute } from '@angular/router';
+import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet1',
@@ -9,12 +10,14 @@ import { Router } from '@angular/router';
 })
 export class Std01AdjectiveWorksheet1Component implements OnInit {
 
-  constructor(private router:Router) {
-      console.log("done")
+  constructor(private commonWorksheet: CommonWorksheetService
+    ) {
    }
 
   ngOnInit() {
-        let globleThis = this;
+   this.commonWorksheet.reuseRoute();
+
+        let globalThis = this;
       window.onload = function () { 
          
       }
@@ -74,8 +77,10 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       
       $('.button').click(function(){
            if($(this).hasClass('playAgain')){
+            globalThis.commonWorksheet.reloadComponent();
             //globleThis.router.navigate([""])
-            globleThis.ngOnInit();
+            // globleThis.ngOnInit();
+            
               //window.location.href=window.location.href;
            }
            else{

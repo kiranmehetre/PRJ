@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as $ from 'jquery';
+import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet3',
@@ -8,13 +10,18 @@ import * as $ from 'jquery';
 })
 export class Std01AdjectiveWorksheet3Component implements OnInit {
 
-  constructor() { }
-
+    constructor(
+	private commonWorksheet: CommonWorksheetService,
+	private router: Router
+  ) {}
   ngOnInit() {
-        
+	  
+	this.commonWorksheet.reuseRoute();
+    const globalThis = this;
+	
+	$('.loadingDiv').hide();
+	setImages();
     window.onload = function () { 
-        $('.loadingDiv').hide();
-        setImages();
     }
     var theToggle = document.getElementById('toggle');
     // hasClass
@@ -79,7 +86,8 @@ export class Std01AdjectiveWorksheet3Component implements OnInit {
 			});
 			$('.button').click(function(){
 				if($(this).hasClass('playAgain')){
-					window.location.href=window.location.href;
+					globalThis.commonWorksheet.reloadComponent(globalThis.router);
+					// window.location.href=window.location.href;
 				}
 				else{
 					var Correct_Answers_Count=0;
