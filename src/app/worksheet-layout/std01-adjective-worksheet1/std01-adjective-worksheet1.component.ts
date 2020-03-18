@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
-// import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+// import { Router, ActivatedRoute } from '@angular/router';
 import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
@@ -15,16 +15,9 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
    }
 
   ngOnInit() {
-  //  this.router.routeReuseStrategy.shouldReuseRoute = function(){
-  //     return false;
-  //   };
-  //   this.router.events.subscribe((evt) => {
-  //       if (evt instanceof NavigationEnd) {
-  //           this.router.navigated = false;
-  //       }
-  //   });
+   this.commonWorksheet.reuseRoute();
 
-        let globleThis = this;
+        let globalThis = this;
       window.onload = function () { 
          
       }
@@ -84,6 +77,7 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       
       $('.button').click(function(){
            if($(this).hasClass('playAgain')){
+            globalThis.commonWorksheet.reloadComponent();
             //globleThis.router.navigate([""])
             // globleThis.ngOnInit();
             
@@ -127,12 +121,6 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
       var t=new Date().getTime();
       $('.imgBox img').attr('src','assets/images/fabulous.gif'+'?'+t);
     }
-
-    // const reloadComponent = () => {
-    //   this.router.onSameUrlNavigation = 'reload';
-    //   const url = this.route.snapshot['_routerState'].url;
-    //   this.router.navigate([`${url}`])
-    // };
   }
 
 }

@@ -15,6 +15,5 @@ const routes: Routes = [
 })
 export class Std01AdjectiveWorksheet2Module {
   constructor( ) {
-    console.log("*************************************************std01/adjective/worksheet2: APUn Aa gya idhar std1 worksheet 2",);
   }
  }

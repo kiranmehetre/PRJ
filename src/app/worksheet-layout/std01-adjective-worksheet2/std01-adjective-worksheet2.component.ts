@@ -1,6 +1,7 @@
-import { Router, ActivatedRoute } from '@angular/router';
+// import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as $ from 'jquery';
+import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet2',
@@ -10,13 +11,16 @@ import * as $ from 'jquery';
 export class Std01AdjectiveWorksheet2Component implements OnInit {
 
   constructor(private renderer: Renderer2,
-    private router: Router,
-    private route: ActivatedRoute
+    private commonWorksheet: CommonWorksheetService
     ) {
     this.renderer.setStyle(document.body, 'background-color','#505050');
    }
 
   ngOnInit() {
+
+    this.commonWorksheet.reuseRoute();
+    let globalThis = this;
+
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -68,7 +72,7 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
 
       $('.button').click(function () {
         if ($(this).hasClass('playAgain')) {
-          reloadComponent();
+          globalThis.commonWorksheet.reloadComponent();
           // window.location.href = window.location.href;
         }
         else {
@@ -107,12 +111,6 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
       var t = new Date().getTime();
       $('.imgBox img').attr("src", 'assets/images/fabulous.gif' + '?' + t);
     }
-
-    const reloadComponent = () => {
-      this.router.onSameUrlNavigation = 'reload';
-      const url = this.route.snapshot['_routerState'].url;
-      this.router.navigate([`${url}`])
-    };
   }
 
 }
