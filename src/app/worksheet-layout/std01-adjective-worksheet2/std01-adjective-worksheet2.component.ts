@@ -1,5 +1,7 @@
+// import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as $ from 'jquery';
+import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet2',
@@ -8,11 +10,17 @@ import * as $ from 'jquery';
 })
 export class Std01AdjectiveWorksheet2Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2,
+    private commonWorksheet: CommonWorksheetService
+    ) {
     this.renderer.setStyle(document.body, 'background-color','#505050');
    }
 
   ngOnInit() {
+
+    this.commonWorksheet.reuseRoute();
+    let globalThis = this;
+
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -64,7 +72,8 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
 
       $('.button').click(function () {
         if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
+          // window.location.href = window.location.href;
         }
         else {
           if ($('.click').length >= 8) {

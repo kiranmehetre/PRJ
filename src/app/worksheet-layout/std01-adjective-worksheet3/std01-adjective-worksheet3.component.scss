@@ -540,6 +540,10 @@ body{
 
 // Common CSS Start
 
+.hideLoader {
+    display: none !important;
+}
+
 .loadingDiv {
     position: fixed;;
     top:0px;

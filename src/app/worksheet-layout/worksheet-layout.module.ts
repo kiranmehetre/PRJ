@@ -711,6 +711,7 @@ import { FooterComponent } from 'src/app/worksheet-layout/component/footer/foote
 // import { Std03AbstractNounWorksheet4Component } from './std03-abstract-noun-worksheet4/std03-abstract-noun-worksheet4.component';
 // import { Std03AbstractNounWorksheet5Component } from './std03-abstract-noun-worksheet5/std03-abstract-noun-worksheet5.component';
 // import { Std03AbstractNounWorksheet3Component } from './std03-abstract-noun-worksheet3/std03-abstract-noun-worksheet3.component';
+import { CommonWorksheetService } from './common-worksheet.service';
 
 @NgModule({
   declarations: [WorksheetLayoutComponent, HeaderComponent, FooterComponent],
@@ -724,6 +725,9 @@ import { FooterComponent } from 'src/app/worksheet-layout/component/footer/foote
   imports: [ 
     CommonModule,
     WorksheetLayoutRoutingModule,
+  ],
+  providers: [
+    CommonWorksheetService
   ]
 })
 export class WorksheetLayoutModule { }

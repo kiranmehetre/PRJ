@@ -721,11 +721,12 @@ const routes: Routes = [
       // { path: 'noun', component: NounComponent},
       // { path: 'std01/adjective/worksheet1', component: Std01AdjectiveWorksheet1Component},
        { path: 'std01/adjective/worksheet1', loadChildren: () => import('./std01-adjective-worksheet1/std01-adjective-worksheet1.module').then(m => m.Std01AdjectiveWorksheet1Module)},
+       // { path: 'std01/adjective/worksheet2', component: Std01AdjectiveWorksheet2Component},
        { path: 'std01/adjective/worksheet2', loadChildren: () => import('./std01-adjective-worksheet2/std01-adjective-worksheet2.module').then(m => m.Std01AdjectiveWorksheet2Module)},
-
-      // { path: 'std01/adjective/worksheet2', component: Std01AdjectiveWorksheet2Component},
       // { path: 'std01/adjective/worksheet3', component: Std01AdjectiveWorksheet3Component},
+      { path: 'std01/adjective/worksheet3', loadChildren: () => import('./std01-adjective-worksheet3/std01-adjective-worksheet3.module').then(m => m.Std01AdjectiveWorksheet3Module)},
       // { path: 'std01/adjective/worksheet4', component: Std01AdjectiveWorksheet4Component},
+      { path: 'std01/adjective/worksheet4', loadChildren: () => import('./std01-adjective-worksheet4/std01-adjective-worksheet4.module').then(m => m.Std01AdjectiveWorksheet4Module)},
       // { path: 'std01/adjective/worksheet5', component: Std01AdjectiveWorksheet5Component},
 
       // { path: 'std01/action-verb/worksheet1', component: Std01ActionVerbWorksheet1Component},
