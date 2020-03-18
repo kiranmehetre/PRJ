@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02SingularPluralNounsWorksheet8RoutingModule } from './std02-singular-plural-nouns-worksheet8-routing.module';
+import { Std02SingularPluralNounsWorksheet8Component } from './std02-singular-plural-nouns-worksheet8.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02SingularPluralNounsWorksheet8Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02SingularPluralNounsWorksheet8Component],
   imports: [
-    CommonModule,
-    Std02SingularPluralNounsWorksheet8RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02SingularPluralNounsWorksheet8Module { }

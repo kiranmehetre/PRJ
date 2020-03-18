@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02ApostropheWorksheet2RoutingModule } from './std02-apostrophe-worksheet2-routing.module';
+import { Std02ApostropheWorksheet2Component } from './std02-apostrophe-worksheet2.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02ApostropheWorksheet2Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02ApostropheWorksheet2Component],
   imports: [
-    CommonModule,
-    Std02ApostropheWorksheet2RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02ApostropheWorksheet2Module { }

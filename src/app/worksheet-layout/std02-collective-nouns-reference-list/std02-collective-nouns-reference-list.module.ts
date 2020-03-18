@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02CollectiveNounsReferenceListRoutingModule } from './std02-collective-nouns-reference-list-routing.module';
+import { Std02CollectiveNounsReferenceListComponent } from './std02-collective-nouns-reference-list.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02CollectiveNounsReferenceListComponent }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02CollectiveNounsReferenceListComponent],
   imports: [
-    CommonModule,
-    Std02CollectiveNounsReferenceListRoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02CollectiveNounsReferenceListModule { }

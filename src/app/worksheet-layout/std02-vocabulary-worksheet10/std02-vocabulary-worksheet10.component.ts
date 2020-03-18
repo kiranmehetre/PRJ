@@ -10,10 +10,10 @@ export class Std02VocabularyWorksheet10Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-        
-	window.onload = function () { 
     $('.loadingDiv').hide();
-    setImages();
+    setImages();  
+	window.onload = function () { 
+ 
 }
 var theToggle = document.getElementById('toggle');
 // hasClass

@@ -11,9 +11,9 @@ export class Std02ConjunctionsWorksheet5Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    $('.loadingDiv').hide();
     window.onload = function () {
-      $('.loadingDiv').hide();
+      
     }
     var theToggle = document.getElementById('toggle');
     // hasClass
