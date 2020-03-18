@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02HelpingVerbsWorksheet3RoutingModule } from './std02-helping-verbs-worksheet3-routing.module';
+import { Std02HelpingVerbsWorksheet3Component } from './std02-helping-verbs-worksheet3.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02HelpingVerbsWorksheet3Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02HelpingVerbsWorksheet3Component],
   imports: [
-    CommonModule,
-    Std02HelpingVerbsWorksheet3RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02HelpingVerbsWorksheet3Module { }

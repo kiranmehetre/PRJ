@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02HomophonesReferenceListRoutingModule } from './std02-homophones-reference-list-routing.module';
+import { Std02HomophonesReferenceListComponent } from './std02-homophones-reference-list.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02HomophonesReferenceListComponent }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02HomophonesReferenceListComponent],
   imports: [
-    CommonModule,
-    Std02HomophonesReferenceListRoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02HomophonesReferenceListModule { }

@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02CollectiveNounWorksheet2RoutingModule } from './std02-collective-noun-worksheet2-routing.module';
+import { Std02CollectiveNounWorksheet2Component } from './std02-collective-noun-worksheet2.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02CollectiveNounWorksheet2Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02CollectiveNounWorksheet2Component],
   imports: [
-    CommonModule,
-    Std02CollectiveNounWorksheet2RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02CollectiveNounWorksheet2Module { }

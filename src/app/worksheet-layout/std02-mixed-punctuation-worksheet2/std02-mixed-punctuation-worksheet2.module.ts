@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02MixedPunctuationWorksheet2RoutingModule } from './std02-mixed-punctuation-worksheet2-routing.module';
+import { Std02MixedPunctuationWorksheet2Component } from './std02-mixed-punctuation-worksheet2.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02MixedPunctuationWorksheet2Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02MixedPunctuationWorksheet2Component],
   imports: [
-    CommonModule,
-    Std02MixedPunctuationWorksheet2RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02MixedPunctuationWorksheet2Module { }

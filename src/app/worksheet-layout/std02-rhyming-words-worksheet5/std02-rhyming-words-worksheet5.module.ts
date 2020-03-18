@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02RhymingWordsWorksheet5RoutingModule } from './std02-rhyming-words-worksheet5-routing.module';
+import { Std02RhymingWordsWorksheet5Component } from './std02-rhyming-words-worksheet5.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02RhymingWordsWorksheet5Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02RhymingWordsWorksheet5Component],
   imports: [
-    CommonModule,
-    Std02RhymingWordsWorksheet5RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02RhymingWordsWorksheet5Module { }

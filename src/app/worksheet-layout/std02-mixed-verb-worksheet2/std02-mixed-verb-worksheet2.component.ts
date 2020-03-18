@@ -10,10 +10,10 @@ export class Std02MixedVerbWorksheet2Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-        
+	$('.loadingDiv').hide();
+	setImages();
 	window.onload = function () { 
-		$('.loadingDiv').hide();
-			setImages();
+		
 	}
 	var theToggle = document.getElementById('toggle');
     // hasClass

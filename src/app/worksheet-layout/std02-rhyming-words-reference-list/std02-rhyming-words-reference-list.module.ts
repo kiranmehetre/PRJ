@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02RhymingWordsReferenceListRoutingModule } from './std02-rhyming-words-reference-list-routing.module';
+import { Std02RhymingWordsReferenceListComponent } from './std02-rhyming-words-reference-list.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02RhymingWordsReferenceListComponent }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02RhymingWordsReferenceListComponent],
   imports: [
-    CommonModule,
-    Std02RhymingWordsReferenceListRoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02RhymingWordsReferenceListModule { }

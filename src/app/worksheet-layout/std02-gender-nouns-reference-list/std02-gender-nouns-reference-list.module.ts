@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02GenderNounsReferenceListRoutingModule } from './std02-gender-nouns-reference-list-routing.module';
+import { Std02GenderNounsReferenceListComponent } from './std02-gender-nouns-reference-list.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02GenderNounsReferenceListComponent }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02GenderNounsReferenceListComponent],
   imports: [
-    CommonModule,
-    Std02GenderNounsReferenceListRoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02GenderNounsReferenceListModule { }

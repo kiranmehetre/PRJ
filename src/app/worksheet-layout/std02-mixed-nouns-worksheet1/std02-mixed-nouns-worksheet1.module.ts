@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02MixedNounsWorksheet1RoutingModule } from './std02-mixed-nouns-worksheet1-routing.module';
+import { Std02MixedNounsWorksheet1Component } from './std02-mixed-nouns-worksheet1.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02MixedNounsWorksheet1Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02MixedNounsWorksheet1Component],
   imports: [
-    CommonModule,
-    Std02MixedNounsWorksheet1RoutingModule
+    CommonModule,RouterModule.forChild(routes)
   ]
 })
 export class Std02MixedNounsWorksheet1Module { }

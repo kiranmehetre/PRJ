@@ -13,10 +13,10 @@ export class Std02CollectiveNounWorksheet10Component implements OnInit {
   }
 
   ngOnInit() {
-
+    $('.loadingDiv').hide();
+    setImages();
     window.onload = function () {
-      $('.loadingDiv').hide();
-      setImages();
+     
     }
     var theToggle = document.getElementById('toggle');
     // hasClass

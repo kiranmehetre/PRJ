@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std02AntonymsWorksheet4RoutingModule } from './std02-antonyms-worksheet4-routing.module';
+import {Std02AntonymsWorksheet4Component } from './std02-antonyms-worksheet4.component';
+import { Routes, RouterModule } from '@angular/router';
+const routes: Routes = [
+  { path: '', component: Std02AntonymsWorksheet4Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std02AntonymsWorksheet4Component],
   imports: [
-    CommonModule,
-    Std02AntonymsWorksheet4RoutingModule
+    CommonModule, RouterModule.forChild(routes) 
   ]
 })
 export class Std02AntonymsWorksheet4Module { }
