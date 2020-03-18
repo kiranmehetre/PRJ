@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-adjective-worksheet6',
   templateUrl: './std01-adjective-worksheet6.component.html',
@@ -7,15 +8,19 @@ import * as $ from 'jquery';
 })
 export class Std01AdjectiveWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
 
-        
-	window.onload = function () { 
+   let globalThis = this;
+   this.commonWorksheet.reuseRoute();
+
     $('.loadingDiv').hide();
     setImages();
+
+	window.onload = function () {
 }
+
 var theToggle = document.getElementById('toggle');
 // hasClass
 function hasClass(elem, className) {
@@ -106,7 +111,8 @@ $(document).ready(function(){
   
   $('.button').click(function(){
     if($(this).hasClass('playAgain')){
-      window.location.href=window.location.href;
+      // window.location.href=window.location.href;
+      globalThis.commonWorksheet.reloadComponent();
     }
     else{
       var Correct_Answers_Count=0;

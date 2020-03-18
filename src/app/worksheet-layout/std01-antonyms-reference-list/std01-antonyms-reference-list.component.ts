@@ -31,7 +31,7 @@ export class Std01AntonymsReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    $('.loadingDiv').hide();
   }
 
 }

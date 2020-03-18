@@ -725,9 +725,10 @@ const routes: Routes = [
        { path: 'std01/adjective/worksheet2', loadChildren: () => import('./std01-adjective-worksheet2/std01-adjective-worksheet2.module').then(m => m.Std01AdjectiveWorksheet2Module)},
       // { path: 'std01/adjective/worksheet3', component: Std01AdjectiveWorksheet3Component},
       { path: 'std01/adjective/worksheet3', loadChildren: () => import('./std01-adjective-worksheet3/std01-adjective-worksheet3.module').then(m => m.Std01AdjectiveWorksheet3Module)},
-      // { path: 'std01/adjective/worksheet4', component: Std01AdjectiveWorksheet4Component},
+      // { path: '5, component: Std01AdjectiveWorksheet4Component},
       { path: 'std01/adjective/worksheet4', loadChildren: () => import('./std01-adjective-worksheet4/std01-adjective-worksheet4.module').then(m => m.Std01AdjectiveWorksheet4Module)},
       // { path: 'std01/adjective/worksheet5', component: Std01AdjectiveWorksheet5Component},
+      { path: 'std01/adjective/worksheet5', loadChildren: () => import('./std01-adjective-worksheet5/std01-adjective-worksheet5.module').then(m => m.Std01AdjectiveWorksheet5Module)},
 
       // { path: 'std01/action-verb/worksheet1', component: Std01ActionVerbWorksheet1Component},
       // { path: 'std01/action-verb/worksheet2', component: Std01ActionVerbWorksheet2Component},
@@ -770,11 +771,17 @@ const routes: Routes = [
       // { path: 'std01/homophones/worksheet7', component: Std01HomophonesWorksheet7Component},
       // { path: 'std01/homophones/worksheet8', component: Std01HomophonesWorksheet8Component},
 
+      { path: 'std01/adjective/worksheet10', loadChildren: () => import('./std01-adjective-worksheet10/std01-adjective-worksheet10.module').then(m => m.Std01AdjectiveWorksheet10Module)},
       // { path: 'std01/adjective/worksheet10', component: Std01AdjectiveWorksheet10Component},
+      { path: 'std01/adjective/worksheet9', loadChildren: () => import('./std01-adjective-worksheet9/std01-adjective-worksheet9.module').then(m => m.Std01AdjectiveWorksheet9Module)},
       // { path: 'std01/adjective/worksheet9', component: Std01AdjectiveWorksheet9Component},
+      { path: 'std01/adjective/worksheet8', loadChildren: () => import('./std01-adjective-worksheet8/std01-adjective-worksheet8.module').then(m => m.Std01AdjectiveWorksheet8Module)},
       // { path: 'std01/adjective/worksheet8', component: Std01AdjectiveWorksheet8Component},
+      { path: 'std01/adjective/worksheet7', loadChildren: () => import('./std01-adjective-worksheet7/std01-adjective-worksheet7.module').then(m => m.Std01AdjectiveWorksheet7Module)},
       // { path: 'std01/adjective/worksheet7', component: Std01AdjectiveWorksheet7Component},
+      { path: 'std01/adjective/worksheet6', loadChildren: () => import('./std01-adjective-worksheet6/std01-adjective-worksheet6.module').then(m => m.Std01AdjectiveWorksheet6Module)},
       // { path: 'std01/adjective/worksheet6', component: Std01AdjectiveWorksheet6Component},
+      
       // { path: 'std01/antonyms/worksheet1', component: Std01AntonymsWorksheet1Component},
       // { path: 'std01/antonyms/worksheet2', component: Std01AntonymsWorksheet2Component},
       // { path: 'std01/antonyms/worksheet3', component: Std01AntonymsWorksheet3Component},
@@ -948,7 +955,9 @@ const routes: Routes = [
       // { path: 'std01/comprehensions/worksheet9', component: Std01ComprehensionsWorksheet9Component},
       // { path: 'std01/comprehensions/worksheet10', component: Std01ComprehensionsWorksheet10Component},
 
+      { path: 'std01/reference-list/antonyms', loadChildren: () => import('./std01-antonyms-reference-list/std01-antonyms-reference-list.module').then(m => m.Std01AntonymsReferenceListModule)},
       // { path: 'std01/reference-list/antonyms', component: Std01AntonymsReferenceListComponent},
+
       // { path: 'std01/reference-list/collective-nouns', component: Std01CollectiveNounsReferenceListComponent},
       // { path: 'std01/reference-list/compound-words', component: Std01CompoundWordsReferenceListComponent},
       // { path: 'std01/reference-list/gender-nouns', component: Std01GenderNounsReferenceListComponent},
