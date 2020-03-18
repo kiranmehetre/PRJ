@@ -11,7 +11,7 @@ export class CommonWorksheetService {
     private route: ActivatedRoute
   ) { }
 
-  reloadComponent = () => {
+  reloadComponent(router?: any) {
     this.router.onSameUrlNavigation = 'reload';
     const url = this.route.snapshot['_routerState'].url;
     console.log("CommonWorksheetService -> reloadComponent -> url", url);
