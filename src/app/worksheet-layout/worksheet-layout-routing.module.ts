@@ -902,10 +902,15 @@ const routes: Routes = [
       // { path: 'std01/rhyming-words/worksheet8', component: Std01RhymingWordsWorksheet8Component},
       // { path: 'std01/rhyming-words/worksheet9', component: Std01RhymingWordsWorksheet9Component},
 
+      { path: 'std01/common-noun/worksheet1', loadChildren: () => import('./std01-common-noun-worksheet1/std01-common-noun-worksheet1.module').then(m => m.Std01CommonNounWorksheet1Module)},
       // { path: 'std01/common-noun/worksheet1', component: Std01CommonNounWorksheet1Component},
+      { path: 'std01/common-noun/worksheet2', loadChildren: () => import('./std01-common-noun-worksheet2/std01-common-noun-worksheet2.module').then(m => m.Std01CommonNounWorksheet2Module)},
       // { path: 'std01/common-noun/worksheet2', component: Std01CommonNounWorksheet2Component},
+      { path: 'std01/common-noun/worksheet3', loadChildren: () => import('./std01-common-noun-worksheet3/std01-common-noun-worksheet3.module').then(m => m.Std01CommonNounWorksheet3Module)},
       // { path: 'std01/common-noun/worksheet3', component: Std01CommonNounWorksheet3Component},
+      { path: 'std01/common-noun/worksheet4', loadChildren: () => import('./std01-common-noun-worksheet4/std01-common-noun-worksheet4.module').then(m => m.Std01CommonNounWorksheet4Module)},
       // { path: 'std01/common-noun/worksheet4', component: Std01CommonNounWorksheet4Component},
+      { path: 'std01/common-noun/worksheet5', loadChildren: () => import('./std01-common-noun-worksheet5/std01-common-noun-worksheet5.module').then(m => m.Std01CommonNounWorksheet5Module)},
       // { path: 'std01/common-noun/worksheet5', component: Std01CommonNounWorksheet5Component},
 
       // { path: 'std01/mixed-noun/worksheet1', component: Std01MixedNounWorksheet1Component},
