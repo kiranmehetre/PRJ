@@ -14,9 +14,9 @@ export class Std01CompoundWordWorksheet3Component implements OnInit {
 
 
 
+    $('.loadingDiv').hide();
+    setImages();
     window.onload = function () {
-      $('.loadingDiv').hide();
-      setImages();
     }
     var theToggle = document.getElementById('toggle');
     // hasClass

@@ -766,15 +766,27 @@ const routes: Routes = [
       { path: 'std01/articles/worksheet10', loadChildren: () => import('./std01-articles-worksheet10/std01-articles-worksheet10.module').then(m => m.Std01ArticlesWorksheet10Module)},
       // { path: 'std01/articles/worksheet10', component: Std01ArticlesWorksheet10Component},
 
+      { path: 'std01/compound-word/worksheet1', loadChildren: () => import('./std01-compound-word-worksheet1/std01-compound-word-worksheet1.module').then(m => m.Std01CompoundWordWorksheet1Module)},
       // { path: 'std01/compound-word/worksheet1', component: Std01CompoundWordWorksheet1Component},
+      { path: 'std01/compound-word/worksheet2', loadChildren: () => import('./std01-compound-word-worksheet2/std01-compound-word-worksheet2.module').then(m => m.Std01CompoundWordWorksheet2Module)},
       // { path: 'std01/compound-word/worksheet2', component: Std01CompoundWordWorksheet2Component},
+      { path: 'std01/compound-word/worksheet3', loadChildren: () => import('./std01-compound-word-worksheet3/std01-compound-word-worksheet3.module').then(m => m.Std01CompoundWordWorksheet3Module)},
       // { path: 'std01/compound-word/worksheet3', component: Std01CompoundWordWorksheet3Component},
+      { path: 'std01/compound-word/worksheet4', loadChildren: () => import('./std01-compound-word-worksheet4/std01-compound-word-worksheet4.module').then(m => m.Std01CompoundWordWorksheet4Module)},
       // { path: 'std01/compound-word/worksheet4', component: Std01CompoundWordWorksheet4Component},
+      { path: 'std01/compound-word/worksheet5', loadChildren: () => import('./std01-compound-word-worksheet5/std01-compound-word-worksheet5.module').then(m => m.Std01CompoundWordWorksheet5Module)},
       // { path: 'std01/compound-word/worksheet5', component: Std01CompoundWordWorksheet5Component},
+      { path: 'std01/compound-word/worksheet6', loadChildren: () => import('./std01-compound-word-worksheet6/std01-compound-word-worksheet6.module').then(m => m.Std01CompoundWordWorksheet6Module)},
       // { path: 'std01/compound-word/worksheet6', component: Std01CompoundWordWorksheet6Component},
+      { path: 'std01/compound-word/worksheet7', loadChildren: () => import('./std01-compound-word-worksheet7/std01-compound-word-worksheet7.module').then(m => m.Std01CompoundWordWorksheet7Module)},
       // { path: 'std01/compound-word/worksheet7', component: Std01CompoundWordWorksheet7Component},
+      { path: 'std01/compound-word/worksheet8', loadChildren: () => import('./std01-compound-word-worksheet8/std01-compound-word-worksheet8.module').then(m => m.Std01CompoundWordWorksheet8Module)},
       // { path: 'std01/compound-word/worksheet8', component: Std01CompoundWordWorksheet8Component},
+      { path: 'std01/compound-word/worksheet9', loadChildren: () => import('./std01-compound-word-worksheet9/std01-compound-word-worksheet9.module').then(m => m.Std01CompoundWordWorksheet9Module)},
       // { path: 'std01/compound-word/worksheet9', component: Std01CompoundWordWorksheet9Component},
+      { path: 'std01/compound-word/worksheet10', loadChildren: () => import('./std01-compound-words-worksheet10/std01-compound-words-worksheet10.module').then(m => m.Std01CompoundWordsWorksheet10Module)},
+      // { path: 'std01/compound-word/worksheet10', component: Std01CompoundWordsWorksheet10Component},
+
 
       // { path: 'std01/homophones/worksheet1', component: Std01HomophonesWorksheet1Component},
       // { path: 'std01/homophones/worksheet2', component: Std01HomophonesWorksheet2Component},
@@ -808,7 +820,8 @@ const routes: Routes = [
       // { path: 'std01/antonyms/worksheet5', component: Std01AntonymsWorksheet5Component},
       { path: 'std01/antonyms/worksheet6', loadChildren: () => import('./std01-antonyms-worksheet6/std01-antonyms-worksheet6.module').then(m => m.Std01AntonymsWorksheet6Module)},
       // { path: 'std01/antonyms/worksheet6', component: Std01AntonymsWorksheet6Component},     
-      // { path: 'std01/compound-word/worksheet10', component: Std01CompoundWordsWorksheet10Component},
+
+
       // { path: 'std01/conjunctions/worksheet1', component: Std01ConjunctionsWorksheet1Component},
       // { path: 'std01/conjunctions/worksheet2', component: Std01ConjunctionsWorksheet2Component},
       // { path: 'std01/conjunctions/worksheet3', component: Std01ConjunctionsWorksheet3Component},

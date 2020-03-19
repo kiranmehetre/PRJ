@@ -31,6 +31,7 @@ export class Std01CompoundWordsReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
   }
 
 }
