@@ -31,6 +31,7 @@ export class Std01CollectiveNounsReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
   }
 
 }

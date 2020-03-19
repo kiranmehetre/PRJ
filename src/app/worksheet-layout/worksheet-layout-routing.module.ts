@@ -977,7 +977,9 @@ const routes: Routes = [
       // { path: 'std01/present-tense/worksheet3', component: Std01PresentTenseWorksheet3Component},
       // { path: 'std01/present-tense/worksheet4', component: Std01PresentTenseWorksheet4Component},
 
+      { path: 'std01/comma/worksheet1', loadChildren: () => import('./std01-comma-worksheet1/std01-comma-worksheet1.module').then(m => m.Std01CommaWorksheet1Module)},
       // { path: 'std01/comma/worksheet1', component: Std01CommaWorksheet1Component},
+      { path: 'std01/comma/worksheet2', loadChildren: () => import('./std01-comma-worksheet2/std01-comma-worksheet2.module').then(m => m.Std01CommaWorksheet2Module)},
       // { path: 'std01/comma/worksheet2', component: Std01CommaWorksheet2Component},
 
       // { path: 'std01/mixed-verb/worksheet1', component: Std01MixedVerbWorksheet1Component},
@@ -991,11 +993,17 @@ const routes: Routes = [
       { path: 'std01/reference-list/antonyms', loadChildren: () => import('./std01-antonyms-reference-list/std01-antonyms-reference-list.module').then(m => m.Std01AntonymsReferenceListModule)},
       // { path: 'std01/reference-list/antonyms', component: Std01AntonymsReferenceListComponent},
 
+      { path: 'std01/reference-list/collective-nouns', loadChildren: () => import('./std01-collective-nouns-reference-list/std01-collective-nouns-reference-list.module').then(m => m.Std01CollectiveNounsReferenceListModule)},
       // { path: 'std01/reference-list/collective-nouns', component: Std01CollectiveNounsReferenceListComponent},
+      { path: 'std01/reference-list/compound-words', loadChildren: () => import('./std01-compound-words-reference-list/std01-compound-words-reference-list.module').then(m => m.Std01CompoundWordsReferenceListModule)},
       // { path: 'std01/reference-list/compound-words', component: Std01CompoundWordsReferenceListComponent},
+      { path: 'std01/reference-list/gender-nouns', loadChildren: () => import('./std01-gender-nouns-reference-list/std01-gender-nouns-reference-list.module').then(m => m.Std01GenderNounsReferenceListModule)},
       // { path: 'std01/reference-list/gender-nouns', component: Std01GenderNounsReferenceListComponent},
+      { path: 'std01/reference-list/homophones', loadChildren: () => import('./std01-homophones-reference-list/std01-homophones-reference-list.module').then(m => m.Std01HomophonesReferenceListModule)},
       // { path: 'std01/reference-list/homophones', component: Std01HomophonesReferenceListComponent},
+      { path: 'std01/reference-list/rhyming-words', loadChildren: () => import('./std01-rhyming-words-reference-list/std01-rhyming-words-reference-list.module').then(m => m.Std01RhymingWordsReferenceListModule)},
       // { path: 'std01/reference-list/rhyming-words', component: Std01RhymingWordsReferenceListComponent},
+      { path: 'std01/reference-list/synonyms', loadChildren: () => import('./std01-synonyms-reference-list/std01-synonyms-reference-list.module').then(m => m.Std01SynonymsReferenceListModule)},
       // { path: 'std01/reference-list/synonyms', component: Std01SynonymsReferenceListComponent},
 
       
