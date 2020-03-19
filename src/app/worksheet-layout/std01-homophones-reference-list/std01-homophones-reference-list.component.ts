@@ -31,6 +31,7 @@ export class Std01HomophonesReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+  $('.loadingDiv').hide();
   }
 
 }
