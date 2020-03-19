@@ -821,13 +821,19 @@ const routes: Routes = [
       { path: 'std01/antonyms/worksheet6', loadChildren: () => import('./std01-antonyms-worksheet6/std01-antonyms-worksheet6.module').then(m => m.Std01AntonymsWorksheet6Module)},
       // { path: 'std01/antonyms/worksheet6', component: Std01AntonymsWorksheet6Component},     
 
-
+      { path: 'std01/conjunctions/worksheet1', loadChildren: () => import('./std01-conjunctions-worksheet1/std01-conjunctions-worksheet1.module').then(m => m.Std01ConjunctionsWorksheet1Module)},
       // { path: 'std01/conjunctions/worksheet1', component: Std01ConjunctionsWorksheet1Component},
+      { path: 'std01/conjunctions/worksheet2', loadChildren: () => import('./std01-conjunctions-worksheet2/std01-conjunctions-worksheet2.module').then(m => m.Std01ConjunctionsWorksheet2Module)},
       // { path: 'std01/conjunctions/worksheet2', component: Std01ConjunctionsWorksheet2Component},
+      { path: 'std01/conjunctions/worksheet3', loadChildren: () => import('./std01-conjunctions-worksheet3/std01-conjunctions-worksheet3.module').then(m => m.Std01ConjunctionsWorksheet3Module)},
       // { path: 'std01/conjunctions/worksheet3', component: Std01ConjunctionsWorksheet3Component},
+      { path: 'std01/conjunctions/worksheet4', loadChildren: () => import('./std01-conjunctions-worksheet4/std01-conjunctions-worksheet4.module').then(m => m.Std01ConjunctionsWorksheet4Module)},
       // { path: 'std01/conjunctions/worksheet4', component: Std01ConjunctionsWorksheet4Component},
+      { path: 'std01/conjunctions/worksheet5', loadChildren: () => import('./std01-conjunctions-worksheet5/std01-conjunctions-worksheet5.module').then(m => m.Std01ConjunctionsWorksheet5Module)},
       // { path: 'std01/conjunctions/worksheet5', component: Std01ConjunctionsWorksheet5Component},
+      { path: 'std01/conjunctions/worksheet6', loadChildren: () => import('./std01-conjunctions-worksheet6/std01-conjunctions-worksheet6.module').then(m => m.Std01ConjunctionsWorksheet6Module)},
       // { path: 'std01/conjunctions/worksheet6', component: Std01ConjunctionsWorksheet6Component},
+
       // { path: 'std01/gender-nouns/worksheet1', component: Std01GenderNounsWorksheet1Component},
       // { path: 'std01/gender-nouns/worksheet2', component: Std01GenderNounsWorksheet2Component},
       // { path: 'std01/gender-nouns/worksheet3', component: Std01GenderNounsWorksheet3Component},
@@ -953,10 +959,15 @@ const routes: Routes = [
       // { path: 'std01/proper-noun/worksheet4', component: Std01ProperNounWorksheet4Component},
       // { path: 'std01/proper-noun/worksheet5', component: Std01ProperNounWorksheet5Component},
 
+      { path: 'std01/demonstrative-pronoun/worksheet1', loadChildren: () => import('./std01-demostrative-pronoun-worksheet1/std01-demostrative-pronoun-worksheet1.module').then(m => m.Std01DemostrativePronounWorksheet1Module)},
       // { path: 'std01/demonstrative-pronoun/worksheet1', component: Std01DemostrativePronounWorksheet1Component},
+      { path: 'std01/demonstrative-pronoun/worksheet2', loadChildren: () => import('./std01-demostrative-pronoun-worksheet2/std01-demostrative-pronoun-worksheet2.module').then(m => m.Std01DemostrativePronounWorksheet2Module)},
       // { path: 'std01/demonstrative-pronoun/worksheet2', component: Std01DemostrativePronounWorksheet2Component},
+      { path: 'std01/demonstrative-pronoun/worksheet3', loadChildren: () => import('./std01-demostrative-pronoun-worksheet3/std01-demostrative-pronoun-worksheet3.module').then(m => m.Std01DemostrativePronounWorksheet3Module)},
       // { path: 'std01/demonstrative-pronoun/worksheet3', component: Std01DemostrativePronounWorksheet3Component},
+      { path: 'std01/demonstrative-pronoun/worksheet4', loadChildren: () => import('./std01-demostrative-pronoun-worksheet4/std01-demostrative-pronoun-worksheet4.module').then(m => m.Std01DemostrativePronounWorksheet4Module)},
       // { path: 'std01/demonstrative-pronoun/worksheet4', component: Std01DemostrativePronounWorksheet4Component},
+      { path: 'std01/demonstrative-pronoun/worksheet5', loadChildren: () => import('./std01-demostrative-pronoun-worksheet5/std01-demostrative-pronoun-worksheet5.module').then(m => m.Std01DemostrativePronounWorksheet5Module)},
       // { path: 'std01/demonstrative-pronoun/worksheet5', component: Std01DemostrativePronounWorksheet5Component},
 
       { path: 'std01/collective-noun/worksheet1', loadChildren: () => import('./std01-collective-noun-worksheet1/std01-collective-noun-worksheet1.module').then(m => m.Std01CollectiveNounWorksheet1Module)},
