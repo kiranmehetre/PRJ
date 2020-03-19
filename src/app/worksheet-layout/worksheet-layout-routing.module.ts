@@ -941,8 +941,11 @@ const routes: Routes = [
       // { path: 'std01/question-mark/worksheet2', component: Std01QuestionMarkWorksheet2Component},
       // { path: 'std01/question-mark/worksheet3', component: Std01QuestionMarkWorksheet3Component},
 
+      { path: 'std01/capital-letter/worksheet1', loadChildren: () => import('./std01-capital-letter-worksheet1/std01-capital-letter-worksheet1.module').then(m => m.Std01CapitalLetterWorksheet1Module)},
       // { path: 'std01/capital-letter/worksheet1', component: Std01CapitalLetterWorksheet1Component},
+      { path: 'std01/capital-letter/worksheet2', loadChildren: () => import('./std01-capital-letter-worksheet2/std01-capital-letter-worksheet2.module').then(m => m.Std01CapitalLetterWorksheet2Module)},
       // { path: 'std01/capital-letter/worksheet2', component: Std01CapitalLetterWorksheet2Component},
+      { path: 'std01/capital-letter/worksheet3', loadChildren: () => import('./std01-capital-letter-worksheet3/std01-capital-letter-worksheet3.module').then(m => m.Std01CapitalLetterWorksheet3Module)},
       // { path: 'std01/capital-letter/worksheet3', component: Std01CapitalLetterWorksheet3Component},
 
       // { path: 'std01/future-tense/worksheet1', component: Std01FutureTenseWorksheet1Component},
