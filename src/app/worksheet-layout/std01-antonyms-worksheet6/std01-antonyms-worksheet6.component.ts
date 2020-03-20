@@ -13,9 +13,9 @@ export class Std01AntonymsWorksheet6Component implements OnInit {
   ngOnInit() {
 
         
-	window.onload = function () { 
     $('.loadingDiv').hide();
     setImages();
+	window.onload = function () { 
 }
 var theToggle = document.getElementById('toggle');
 // hasClass

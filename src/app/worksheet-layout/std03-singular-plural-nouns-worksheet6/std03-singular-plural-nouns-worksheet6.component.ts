@@ -13,9 +13,9 @@ export class Std03SingularPluralNounsWorksheet6Component implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
+    setImages();
     window.onload = function () {
-      $('.loadingDiv').hide();
-      setImages();
     }
     var theToggle = document.getElementById('toggle');
     // hasClass

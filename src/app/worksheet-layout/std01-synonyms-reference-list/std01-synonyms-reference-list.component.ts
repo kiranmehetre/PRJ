@@ -31,6 +31,7 @@ export class Std01SynonymsReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
   }
 
 }

@@ -31,6 +31,7 @@ export class Std03PrefixReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
   }
 
 }

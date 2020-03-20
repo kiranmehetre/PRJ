@@ -2,11 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std01ComprehensionsWorksheet4RoutingModule } from './std01-comprehensions-worksheet4-routing.module';
 
+import { RouterModule, Routes } from '@angular/router';
+import { Std01ComprehensionsWorksheet4Component } from './std01-comprehensions-worksheet4.component';
+
+
+const routes: Routes = [
+  {
+    path: "",
+    component: Std01ComprehensionsWorksheet4Component
+  }
+]
+
 @NgModule({
-  declarations: [],
+  declarations: [Std01ComprehensionsWorksheet4Component],
   imports: [
     CommonModule,
-    Std01ComprehensionsWorksheet4RoutingModule
+    RouterModule.forChild(routes)
   ]
 })
 export class Std01ComprehensionsWorksheet4Module { }
