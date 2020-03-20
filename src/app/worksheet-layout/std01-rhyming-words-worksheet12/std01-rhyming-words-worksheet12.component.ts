@@ -11,9 +11,9 @@ export class Std01RhymingWordsWorksheet12Component implements OnInit {
 
   ngOnInit() {
         
-	window.onload = function () { 
     $('.loadingDiv').hide();
     setImages();
+	window.onload = function () { 
 }
 var theToggle = document.getElementById('toggle');
 // hasClass

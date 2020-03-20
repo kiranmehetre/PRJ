@@ -31,6 +31,7 @@ export class Std01RhymingWordsReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
   }
 
 }

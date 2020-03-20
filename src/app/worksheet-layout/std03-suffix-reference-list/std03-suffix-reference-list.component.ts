@@ -31,6 +31,7 @@ export class Std03SuffixReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('.loadingDiv').hide();
   }
 
 }

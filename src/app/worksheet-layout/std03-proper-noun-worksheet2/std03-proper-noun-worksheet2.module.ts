@@ -2,11 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std03ProperNounWorksheet2RoutingModule } from './std03-proper-noun-worksheet2-routing.module';
 
+import { RouterModule, Routes } from "@angular/router";
+import { Std03ProperNounWorksheet2Component } from './std03-proper-noun-worksheet2.component';
+
+const routes: Routes = [
+    {
+        path: "",
+        component: Std03ProperNounWorksheet2Component
+    }
+];
+
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    Std03ProperNounWorksheet2RoutingModule
-  ]
+    declarations: [Std03ProperNounWorksheet2Component],
+    imports: [CommonModule, RouterModule.forChild(routes)]
 })
 export class Std03ProperNounWorksheet2Module { }

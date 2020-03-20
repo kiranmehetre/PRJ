@@ -2,11 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std01PresentTenseWorksheet1RoutingModule } from './std01-present-tense-worksheet1-routing.module';
 
+import { RouterModule, Routes } from "@angular/router";
+import { Std01PresentTenseWorksheet1Component } from './std01-present-tense-worksheet1.component';
+
+const routes: Routes = [
+    {
+        path: "",
+        component: Std01PresentTenseWorksheet1Component
+    }
+];
+
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    Std01PresentTenseWorksheet1RoutingModule
-  ]
+    declarations: [Std01PresentTenseWorksheet1Component],
+    imports: [CommonModule, RouterModule.forChild(routes)]
 })
 export class Std01PresentTenseWorksheet1Module { }

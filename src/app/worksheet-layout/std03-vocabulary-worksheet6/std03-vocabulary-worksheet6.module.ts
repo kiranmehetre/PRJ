@@ -2,11 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std03VocabularyWorksheet6RoutingModule } from './std03-vocabulary-worksheet6-routing.module';
 
+import { RouterModule, Routes } from "@angular/router";
+import { Std03VocabularyWorksheet6Component } from './std03-vocabulary-worksheet6.component';
+
+const routes: Routes = [
+    {
+        path: "",
+        component: Std03VocabularyWorksheet6Component
+    }
+];
+
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    Std03VocabularyWorksheet6RoutingModule
-  ]
+    declarations: [Std03VocabularyWorksheet6Component],
+    imports: [CommonModule, RouterModule.forChild(routes)]
 })
+
 export class Std03VocabularyWorksheet6Module { }

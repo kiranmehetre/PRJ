@@ -2,11 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std03PrefixWorksheet3RoutingModule } from './std03-prefix-worksheet3-routing.module';
 
+import { RouterModule, Routes } from "@angular/router";
+import { Std03PrefixWorksheet3Component } from './std03-prefix-worksheet3.component';
+
+const routes: Routes = [
+    {
+        path: "",
+        component: Std03PrefixWorksheet3Component
+    }
+];
+
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    Std03PrefixWorksheet3RoutingModule
-  ]
+    declarations: [Std03PrefixWorksheet3Component],
+    imports: [CommonModule, RouterModule.forChild(routes)]
 })
 export class Std03PrefixWorksheet3Module { }
