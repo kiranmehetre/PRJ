@@ -38,7 +38,7 @@
                     <h1><span>Complete</span> <span>Grammar</span> </h1>                 
                 </div>
                 <div class="panel-body">
-
+                    <!-- <button id="rzp-button1">Pay</button> -->
                         <form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && onSubmit()" autocomplete="off">
                         <div class="mb-2 col-md-6">
                             <span class="forgot-password error-message" *ngIf="loginError == true">
@@ -63,8 +63,9 @@
                                     <p>Password is required</p>
                             </div>
                         </div>
-
+                        
                         <div class="mb-2 col-md-10 btn_Container" style="margin-top:3%;">
+                         
                                 <button class="btn btn-primary btn-sign-in" type="submit" (click)="submitted = true">Login</button>                            
                         </div>
 
