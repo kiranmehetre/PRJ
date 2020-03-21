@@ -12,10 +12,8 @@ export class Std03MixedTenseWorksheet2Component implements OnInit {
 
   ngOnInit() {
 
-    window.onload = function () {
-      $('.loadingDiv').hide();
+     $('.loadingDiv').hide();
       setImages();
-    }
     var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {

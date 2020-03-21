@@ -54,7 +54,7 @@
                                             class="form-control FirstName" placeholder="rob" value="{{user_details.first_name}}"/>
 
                                             <div *ngIf="updateForm.controls['first_name'].hasError('required') &&
-                                            (updateForm.controls['first_name'].touched || submitted)" class="error-container">
+                                            (updateForm.controls['first_name'].touched )" class="error-container">
                                             </div>
             
                                         <span class="FirstName hide error-span">Enter First Name</span>
@@ -65,7 +65,7 @@
                                             class="form-control LastName" placeholder="lenon" value="{{user_details.last_name}}"/>
 
                                         <div *ngIf="updateForm.controls['last_name'].hasError('required') &&
-                                            (updateForm.controls['last_name'].touched || submitted)" class="error-container">
+                                            (updateForm.controls['last_name'].touched )" class="error-container">
                                         </div>
 
                                         <span class="LastName hide error-span">Enter Last Name</span>

@@ -6,16 +6,14 @@ import * as $ from 'jquery';
   templateUrl: './std03-abstract-noun-worksheet1.component.html',
   styleUrls: ['./std03-abstract-noun-worksheet1.component.scss']
 })
-export class Std03AbstractNounWorksheet1Component implements OnInit {
+export class  Std03AbstractNounWorksheet1Component implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
 
-    window.onload = function () {
-      $('.loadingDiv').hide();
+     $('.loadingDiv').hide();
       setImages();
-    }
     var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {

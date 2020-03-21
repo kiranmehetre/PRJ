@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03DegressOfComparisonWorksheet6RoutingModule } from './std03-degress-of-comparison-worksheet6-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03DegressOfComparisonWorksheet6Component} from './std03-degress-of-comparison-worksheet6.component'
+const routes: Routes = [
+  { path: '', component: Std03DegressOfComparisonWorksheet6Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03DegressOfComparisonWorksheet6Component],
   imports: [
     CommonModule,
-    Std03DegressOfComparisonWorksheet6RoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03DegressOfComparisonWorksheet6Module { }

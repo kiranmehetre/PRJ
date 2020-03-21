@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03GenderNounsWorksheet6RoutingModule } from './std03-gender-nouns-worksheet6-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03GenderNounsWorksheet6Component} from './std03-gender-nouns-worksheet6.component'
+const routes: Routes = [
+  { path: '', component: Std03GenderNounsWorksheet6Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03GenderNounsWorksheet6Component],
   imports: [
     CommonModule,
-    Std03GenderNounsWorksheet6RoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03GenderNounsWorksheet6Module { }

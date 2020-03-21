@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03AntonymsReferenceListRoutingModule } from './std03-antonyms-reference-list-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03AntonymsReferenceListComponent} from './std03-antonyms-reference-list.component'
+const routes: Routes = [
+  { path: '', component:Std03AntonymsReferenceListComponent  }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03AntonymsReferenceListComponent],
   imports: [
     CommonModule,
-    Std03AntonymsReferenceListRoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03AntonymsReferenceListModule { }

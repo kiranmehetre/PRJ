@@ -11,10 +11,8 @@ export class Std03HomophonesWorksheet6Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.onload = function () {
-      $('.loadingDiv').hide();
+     $('.loadingDiv').hide();
       setImages();
-    }
     var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {

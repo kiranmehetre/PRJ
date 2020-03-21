@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03AntonymsWorksheet5RoutingModule } from './std03-antonyms-worksheet5-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03AntonymsWorksheet5Component} from './std03-antonyms-worksheet5.component'
+const routes: Routes = [
+  { path: '', component: Std03AntonymsWorksheet5Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03AntonymsWorksheet5Component],
   imports: [
     CommonModule,
-    Std03AntonymsWorksheet5RoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03AntonymsWorksheet5Module { }

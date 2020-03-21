@@ -16,6 +16,5 @@ const routes: Routes = [
     declarations: [Std03RhymingWordsWorksheet9Component],
     imports: [CommonModule, RouterModule.forChild(routes)]
 })
-expor
 
 export class Std03RhymingWordsWorksheet9Module { }

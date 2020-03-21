@@ -10,10 +10,10 @@ export class Std02AdjectivesWorksheet3Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-        
-	window.onload = function () { 
     $('.loadingDiv').hide();
     setImages();
+	window.onload = function () { 
+   
 }
 var theToggle = document.getElementById('toggle');
 // hasClass

@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03MixedAdjectivesWorksheet3RoutingModule } from './std03-mixed-adjectives-worksheet3-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03MixedAdjectivesWorksheet3Component} from './std03-mixed-adjectives-worksheet3.component'
+const routes: Routes = [
+  { path: '', component: Std03MixedAdjectivesWorksheet3Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03MixedAdjectivesWorksheet3Component],
   imports: [
     CommonModule,
-    Std03MixedAdjectivesWorksheet3RoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03MixedAdjectivesWorksheet3Module { }

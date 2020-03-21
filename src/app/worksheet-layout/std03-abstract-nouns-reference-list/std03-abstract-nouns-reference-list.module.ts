@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03AbstractNounsReferenceListRoutingModule } from './std03-abstract-nouns-reference-list-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03AbstractNounsReferenceListComponent} from './std03-abstract-nouns-reference-list.component'
+const routes: Routes = [
+  { path: '', component: Std03AbstractNounsReferenceListComponent }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03AbstractNounsReferenceListComponent],
   imports: [
     CommonModule,
-    Std03AbstractNounsReferenceListRoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03AbstractNounsReferenceListModule { }

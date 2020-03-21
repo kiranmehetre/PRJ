@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03RhymingWordsWorksheet5RoutingModule } from './std03-rhyming-words-worksheet5-routing.module';
-
 import { RouterModule, Routes } from "@angular/router";
 import { Std03RhymingWordsWorksheet5Component } from './std03-rhyming-words-worksheet5.component';
 

@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Std03DemonstrativePronounWorksheet1RoutingModule } from './std03-demonstrative-pronoun-worksheet1-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {Std03DemonstrativePronounWorksheet1Component} from './std03-demonstrative-pronoun-worksheet1.component'
+const routes: Routes = [
+  { path: '', component: Std03DemonstrativePronounWorksheet1Component }, 
 
+];
 @NgModule({
-  declarations: [],
+  declarations: [Std03DemonstrativePronounWorksheet1Component],
   imports: [
     CommonModule,
-    Std03DemonstrativePronounWorksheet1RoutingModule
+    RouterModule.forChild(routes),
   ]
 })
 export class Std03DemonstrativePronounWorksheet1Module { }
