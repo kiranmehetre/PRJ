@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-rhyming-words-worksheet5',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01RhymingWordsWorksheet5Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
     $('.loadingDiv').hide();
     setImages();
@@ -71,7 +73,7 @@ export class Std01RhymingWordsWorksheet5Component implements OnInit {
         $(Questions).removeClass('shadow');
         $(this).addClass('shadow');
         QuestionValue = $(Question).attr('data-text');
-        console.log(QuestionValue);
+        //console.log(QuestionValue);
         ClickAnswer = $.grep(ClickAnswer, function (value) {
           return value != QuestionValue;
         });
@@ -121,12 +123,12 @@ export class Std01RhymingWordsWorksheet5Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;
-          console.log($('.click').length);
+          //console.log($('.click').length);
           if ($('.click').length >= 3) {
             $(Questions).removeClass('shadow');
             var Correct_Answers = ["get", "gap", "fin", "cake", "dot"];

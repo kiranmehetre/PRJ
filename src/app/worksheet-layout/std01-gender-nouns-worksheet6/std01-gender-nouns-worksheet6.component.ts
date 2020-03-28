@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-gender-nouns-worksheet6',
   templateUrl: './std01-gender-nouns-worksheet6.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std01GenderNounsWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -117,7 +119,7 @@ $(document).ready(function(){
                         inputCount++;
                     }
                 }
-                console.log(inputCount);
+                //console.log(inputCount);
       if(inputCount >= 5){
         setTimeout(function(){
           $('.result').css('display','flex');

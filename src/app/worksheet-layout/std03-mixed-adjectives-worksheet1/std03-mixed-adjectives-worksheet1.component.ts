@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-mixed-adjectives-worksheet1',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std03MixedAdjectivesWorksheet1Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+   constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background','url(assets/std03-mixed-adjectives-worksheet1/img/bg.jpg) no-repeat top center fixed');
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -71,9 +73,9 @@ export class Std03MixedAdjectivesWorksheet1Component implements OnInit {
     });
 
     $('.button').click(function () {
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
 
         var underlinedCount = $('.click').length;

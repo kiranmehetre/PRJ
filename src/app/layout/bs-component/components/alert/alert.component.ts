@@ -27,7 +27,8 @@ export class AlertComponent implements OnInit {
         });
     }
 
-    ngOnInit() { }
+    ngOnInit() {
+}
 
     public closeAlert(alert: any) {
         const index: number = this.alerts.indexOf(alert);

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-collective-noun-worksheet9',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01CollectiveNounWorksheet9Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
     $('.loadingDiv').hide();
@@ -99,7 +101,7 @@ export class Std01CollectiveNounWorksheet9Component implements OnInit {
             ClickAnswer = $.grep(ClickAnswer, function (value) {
               return value != inputValue;
             });
-            console.log(inputValue);
+            //console.log(inputValue);
             $(inputField).find('.Answer_Block > span').text(Text);
             $(inputField).find('.Answer_Block img').css('display', 'block');
             $(inputField).find('.Answer_Block img').attr('src', ImgURL);
@@ -109,8 +111,8 @@ export class Std01CollectiveNounWorksheet9Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;

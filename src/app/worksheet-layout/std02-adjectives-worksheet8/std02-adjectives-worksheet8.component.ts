@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-adjectives-worksheet8',
   templateUrl: './std02-adjectives-worksheet8.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02AdjectivesWorksheet8Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     window.onload = function () { 
       $('.loadingDiv').hide();
       setImages();
@@ -102,9 +104,9 @@ export class Std02AdjectivesWorksheet8Component implements OnInit {
           });
     
     $('.button').click(function(){
-      if($(this).hasClass('playAgain')){
-        window.location.href=window.location.href;
-      }
+      if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else{
         var Correct_Answers_Count=0;
         var inputCount=$('input[type="text"]').filter(function () {
@@ -151,7 +153,7 @@ export class Std02AdjectivesWorksheet8Component implements OnInit {
                               Correct_Answers[i].filter(function(el) {
                                 if ($.inArray(el, inputRowValues) == -1) Wrong_Answers.push(el);
                                });		
-                              console.log(Wrong_Answers);
+                              //console.log(Wrong_Answers);
                               for(var i=0; i< Wrong_Answers.length;i++){
                                   $(inputField_Array[i]).css({'color':'#ed1a1a','border-color':'#000'});
                                   if(Wrong_Answers[i] == "old,new"){

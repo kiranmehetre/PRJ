@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-comma-worksheet2',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01CommaWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
     $('.loadingDiv').hide();
@@ -87,9 +89,9 @@ export class Std01CommaWorksheet2Component implements OnInit {
       }
     });
     $('.button').click(function () {
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var inputCount = 0;
         $('.question').each(function () {
@@ -102,8 +104,8 @@ export class Std01CommaWorksheet2Component implements OnInit {
           $('input').removeClass('bd');
 
           var Correct_Answers = [",", ",", ",", ",", ",", ",", ",", ","];
-          console.log('input');
-          console.log(Correct_Answers);
+          //console.log('input');
+          //console.log(Correct_Answers);
 
           $('.question').each(function (i) {
             if (i == 6 || i == 7) {

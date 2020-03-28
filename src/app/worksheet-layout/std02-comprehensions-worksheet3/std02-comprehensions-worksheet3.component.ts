@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std02-comprehensions-worksheet3',
@@ -9,7 +10,7 @@ import * as $ from 'jquery';
 export class Std02ComprehensionsWorksheet3Component implements OnInit {
 
   loadAPI: Promise<any>;
-  constructor() { 
+  constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
@@ -30,6 +31,7 @@ export class Std02ComprehensionsWorksheet3Component implements OnInit {
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -193,7 +195,7 @@ export class Std02ComprehensionsWorksheet3Component implements OnInit {
 
       $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var inputCount = 0;
@@ -209,7 +211,7 @@ export class Std02ComprehensionsWorksheet3Component implements OnInit {
               }
             }
           });
-          console.log(inputCount);
+          //console.log(inputCount);
           if (inputCount >= 4) {
             $(inputs).removeClass('bd');
             var Correct_Answers_Count = 0;

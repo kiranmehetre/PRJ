@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-rhyming-words-worksheet5',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std03RhymingWordsWorksheet5Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+   constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background-color','#bae4f0');
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -109,7 +111,7 @@ export class Std03RhymingWordsWorksheet5Component implements OnInit {
       $('.myButton').click(function () {
 
         if ($('.myButton').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_answers_count = 0;
@@ -130,8 +132,8 @@ export class Std03RhymingWordsWorksheet5Component implements OnInit {
             // $('.option').not('.disabled').css('background-color','#20bb15');
             $('.line').show();
             var percentage = (Correct_answers_count * 100) / 8;
-            console.log(Correct_answers_count);
-            console.log(percentage);
+            //console.log(Correct_answers_count);
+            //console.log(percentage);
             var DisplayResult = "";
             if (percentage > 80) {
               DisplayResult = '.outstanding';

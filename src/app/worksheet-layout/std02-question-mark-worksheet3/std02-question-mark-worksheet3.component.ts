@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std02-question-mark-worksheet3',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std02QuestionMarkWorksheet3Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+   constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background','url(assets/std02-question-mark-worksheet3/img/bg.jpg) no-repeat center bottom fixed');
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -118,9 +120,9 @@ export class Std02QuestionMarkWorksheet3Component implements OnInit {
     });
     $('.button').click(function () {
 
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var Correct_Answers_Count = 0;
         var inputRectangleCount = $('.input_div.rectangle input').filter(function () {

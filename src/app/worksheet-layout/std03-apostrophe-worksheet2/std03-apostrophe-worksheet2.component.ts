@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-apostrophe-worksheet2',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03ApostropheWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
      $('.loadingDiv').hide();
       setImages();
@@ -82,8 +84,8 @@ export class Std03ApostropheWorksheet2Component implements OnInit {
         });
         $('.option-container span').click(function () {
             optionNumber = $(this).parents().eq(1).find('.number-box').text().trim();
-            console.log(inputNumber);
-            console.log(optionNumber);
+            //console.log(inputNumber);
+            //console.log(optionNumber);
             if (inputField !== undefined && optionNumber === inputNumber) {
                 inputValue = $(inputField).val();
                 Text = $(this).text().trim();
@@ -110,7 +112,7 @@ export class Std03ApostropheWorksheet2Component implements OnInit {
         $('.button').click(function () {
     
             if ($('.button').hasClass('playAgain')) {
-                window.location.href = window.location.href;
+                globalThis.commonWorksheet.reloadComponent();
             }
             else {
                 var Correct_Answers_Count = 0;

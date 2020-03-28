@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-comprehensions-worksheet9',
@@ -9,7 +10,7 @@ import * as $ from 'jquery';
 export class Std01ComprehensionsWorksheet9Component implements OnInit {
 
   loadAPI: Promise<any>;
-  constructor() { 
+  constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
@@ -30,6 +31,7 @@ export class Std01ComprehensionsWorksheet9Component implements OnInit {
   } 
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
     $('.loadingDiv').hide();
@@ -208,7 +210,7 @@ export class Std01ComprehensionsWorksheet9Component implements OnInit {
       $('.button').click(function () {
 
         if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var inputCount = 0;
@@ -224,7 +226,7 @@ export class Std01ComprehensionsWorksheet9Component implements OnInit {
               }
             }
           });
-          console.log(inputCount)
+          //console.log(inputCount)
           if (inputCount >= 4) {
 
             var Single_Correct_Answers = ["ninety - four", "night", "town"];

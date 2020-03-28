@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std02-singular-plural-nouns-worksheet6',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std02SingularPluralNounsWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
-  ngOnInit() {    
+  ngOnInit() {
+ this.commonWorksheet.reuseRoute();    
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () { 
@@ -106,8 +108,8 @@ export class Std02SingularPluralNounsWorksheet6Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;
@@ -140,7 +142,7 @@ export class Std02SingularPluralNounsWorksheet6Component implements OnInit {
             else if (percentage <= 50) {
               DisplayResult = '.keep-practicing';
             }
-            console.log(DisplayResult);
+            //console.log(DisplayResult);
             setTimeout(function () {
               $('.result').css('display', 'flex');
               $('.result .TextBox').hide();

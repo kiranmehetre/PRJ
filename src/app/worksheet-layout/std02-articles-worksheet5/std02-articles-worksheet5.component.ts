@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-articles-worksheet5',
   templateUrl: './std02-articles-worksheet5.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02ArticlesWorksheet5Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages(); 
 	window.onload = function () { 
@@ -80,7 +82,7 @@ $(document).ready(function () {
 
   $('.button').click(function () {
       if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
       }
       else {
           // var inputCount = $('input[type="text"]').filter(function () {
@@ -96,7 +98,7 @@ $(document).ready(function () {
               }
           });
 
-          console.log(inputCount);
+          //console.log(inputCount);
           if (inputCount >= 4) {
               $(inputs).removeClass('bd');
               var Correct_Answers = ["an", "a", "an", "a", "an", "an", "a", "a", "a"];

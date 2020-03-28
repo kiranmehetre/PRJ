@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-adjectives-worksheet2',
   templateUrl: './std02-adjectives-worksheet2.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02AdjectivesWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -146,8 +148,8 @@ $(this).removeClass('underlined');
                   }
               });
               var percentage=	(Correct_Answers_Count * 100) / 10;
-              console.log(Correct_Answers_Count);
-              console.log(percentage);
+              //console.log(Correct_Answers_Count);
+              //console.log(percentage);
               var DisplayResult="";
               if(percentage > 80){
                   DisplayResult='.outstanding';

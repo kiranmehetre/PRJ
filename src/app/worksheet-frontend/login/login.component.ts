@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
 import { Router } from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 import { routerTransition } from '../../router.animations';
@@ -65,19 +65,19 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){    
-    console.log(this.loginForm.value);     
+    //console.log(this.loginForm.value);     
     this.apiRequest.postRequest('api/student/login', { 'email_id' : this.loginForm.value.email_id, 'password' : this.loginForm.value.password}).then( (res) => {
        
       if(res['status'] == "OK"){
         this.apiRequest.config.headers.Authorization = "Bearer " + res['body'][0]['token'];
         this.apiRequest.token = res['body'][0]['token'];
         var photo_url = res['body'][0]['photo_url'];
-        console.log(photo_url.indexOf("apinone"));
+        //console.log(photo_url.indexOf("apinone"));
         if(photo_url.indexOf("apinone") > -1){
           photo_url = "assets/frontend_assets/img/user_icon.png";
         }
         res['body'][0]['photo_url'] = photo_url;
-        console.log("Edit photo_url :- " + res['body'][0]['photo_url']);
+        //console.log("Edit photo_url :- " + res['body'][0]['photo_url']);
         localStorage.setItem('isLoggedin', 'true');
         localStorage.setItem('token', res['body'][0]['token']);
         localStorage.setItem('user', JSON.stringify(res['body']));

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-singular-plural-nouns-worksheet7',
   templateUrl: './std01-singular-plural-nouns-worksheet7.component.html',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std01SingularPluralNounsWorksheet7Component implements OnInit {
 
-  constructor(private titleService:Title) {
+  constructor(private titleService:Title,private commonWorksheet: CommonWorksheetService) {
     this.titleService.setTitle("singular-plural-nouns 7");
    }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -109,7 +111,7 @@ export class Std01SingularPluralNounsWorksheet7Component implements OnInit {
   
                   if($('.button').hasClass('playAgain'))
           {
-            window.location.href = window.location.href;
+            globalThis.commonWorksheet.reloadComponent();
           }
           else
           {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-comprehensions-worksheet2',
   templateUrl: './std01-comprehensions-worksheet2.component.html',
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 export class Std01ComprehensionsWorksheet2Component implements OnInit {
 
   loadAPI: Promise<any>;
-  constructor() { 
+  constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
@@ -29,6 +30,7 @@ export class Std01ComprehensionsWorksheet2Component implements OnInit {
 }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -199,7 +201,7 @@ theToggle.onclick = function() {
               inputValue = $(inputField).val();
               Text = $(this).find('.alpha').text().trim().replace(')', '');
               HelpBox.push(Text);
-              console.log(Text);
+              //console.log(Text);
               if (HelpBox.indexOf(inputValue) > -1 && ClickAnswer.indexOf(Text) < 0) {
                   $(".Option_Row").filter(function () {
                       return $(this).find('.alpha').text().trim().replace(')', '') === inputValue;
@@ -221,7 +223,7 @@ theToggle.onclick = function() {
 
       $('.button').click(function () {
           if ($('.button').hasClass('playAgain')) {
-              window.location.href = window.location.href;
+              globalThis.commonWorksheet.reloadComponent();
           }
           else {
               var inputCount = 0;

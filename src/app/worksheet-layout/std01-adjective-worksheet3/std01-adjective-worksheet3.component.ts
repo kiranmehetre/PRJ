@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
-import { CommonWorksheetService } from '../common-worksheet.service';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet3',

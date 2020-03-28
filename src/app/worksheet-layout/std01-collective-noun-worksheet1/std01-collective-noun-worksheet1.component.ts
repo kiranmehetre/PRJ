@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-collective-noun-worksheet1',
@@ -8,12 +9,13 @@ import * as $ from 'jquery';
 })
 export class Std01CollectiveNounWorksheet1Component implements OnInit {
 
-  // constructor() { }
-  constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.body, 'background-color','#74b646');
-   }
+  // constructor(private commonWorksheet: CommonWorksheetService){}
+  constructor(private commonWorksheet: CommonWorksheetService, private renderer: Renderer2) {
+    this.renderer.setStyle(document.body, 'background-color','#dcd7cc');
+  }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
     $('.loadingDiv').hide();
@@ -110,9 +112,9 @@ export class Std01CollectiveNounWorksheet1Component implements OnInit {
     });
 
     $('.button').click(function () {
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var Correct_Answers_Count = 0;
         var inputCount = $('input[type="text"]').filter(function () {

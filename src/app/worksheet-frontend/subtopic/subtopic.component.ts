@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
 import {ActivatedRoute, Router} from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 
@@ -85,7 +85,7 @@ export class SubtopicComponent implements OnInit {
             this.subtopic_details = res['subtopic_data'];    
             this.worksheet_list = res['body']; 
 
-             console.log(this.subtopic_details)
+             //console.log(this.subtopic_details)
        
             
             if(res['subtopic_data'][0]['subtopic_video'] == '#'){
@@ -122,7 +122,7 @@ export class SubtopicComponent implements OnInit {
   fetchData(data)
   {
     let c = "worksheet-layout/" + data.worksheet_link;
-    console.log(c)
+    //console.log(c)
     this.router.navigate([c])
   }
   public ButtonToggle(type : string){ 
@@ -156,11 +156,11 @@ export class SubtopicComponent implements OnInit {
             this.calculatedWidth = this.calculatedWidth + this.worksheet_width;
             this.Totalwidth = this.Totalwidth + this.worksheet_width;
             this.calculationCheck = true;
-            console.log('Prev -' + this.Totalwidth + '/' + this.calculatedWidth + '/' + this.FixedWidth);
+            //console.log('Prev -' + this.Totalwidth + '/' + this.calculatedWidth + '/' + this.FixedWidth);
             this.translateX = "translateX(" + this.calculatedWidth + "px)";
             $('.worksheet_list').css('transform',this.translateX);       
       }
-     console.log(this.nxtClickCount);
+     //console.log(this.nxtClickCount);
       if(this.nxtClickCount == this.worksheet_length){
         $('img.next').css({'pointer-events':'none','opacity':'.3'});
       }

@@ -10,5 +10,6 @@ import { routerTransition } from '../../router.animations';
 export class TablesComponent implements OnInit {
     constructor() {}
 
-    ngOnInit() {}
+    ngOnInit() {
+}
 }

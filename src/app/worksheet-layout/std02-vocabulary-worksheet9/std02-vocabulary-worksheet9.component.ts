@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-vocabulary-worksheet9',
   templateUrl: './std02-vocabulary-worksheet9.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02VocabularyWorksheet9Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -96,7 +98,7 @@ $(document).ready(function(){
                     ClickAnswer = $.grep(ClickAnswer, function(value) {
                                     return value != inputValue;
                                 });
-                    console.log(inputValue);
+                    //console.log(inputValue);
                     $(inputField).find('.Answer_Block > span').text(Text);
                     $(inputField).find('.Answer_Block img').css('display','block');
                     $(inputField).find('.Answer_Block img').attr('src',ImgURL);

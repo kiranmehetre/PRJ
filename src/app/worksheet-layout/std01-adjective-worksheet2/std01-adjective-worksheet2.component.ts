@@ -1,7 +1,7 @@
 // import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
-import { CommonWorksheetService } from '../common-worksheet.service';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet2',
@@ -73,7 +73,6 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
       $('.button').click(function () {
         if ($(this).hasClass('playAgain')) {
           globalThis.commonWorksheet.reloadComponent();
-          // window.location.href = window.location.href;
         }
         else {
           if ($('.click').length >= 8) {

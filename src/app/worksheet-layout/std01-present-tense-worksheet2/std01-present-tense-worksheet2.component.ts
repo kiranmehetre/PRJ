@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-present-tense-worksheet2',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01PresentTenseWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
     $('.loadingDiv').hide();
@@ -77,9 +79,9 @@ export class Std01PresentTenseWorksheet2Component implements OnInit {
     $('.button').click(function () {
 
 
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var underlinedCount=0;
         $('.text-container').each(function(){
@@ -101,9 +103,9 @@ export class Std01PresentTenseWorksheet2Component implements OnInit {
           // $('.right').addClass('correct');
           var Correct_Answers_Count = $('.correct.underlined').length;
           var Correct_Answers = [["walk"], ["is", "rotates"], ["float"], ["is", "has"], ["see", "is"], ["has"], ["yawn", "are"], ["eat"], ["drink"], ["makes"]];
-          console.log(Correct_Answers_Count);
+          //console.log(Correct_Answers_Count);
           var percentage = (Correct_Answers_Count * 100) / 14;
-          console.log(percentage);
+          //console.log(percentage);
 
           $('.text-container span').css('pointer-events', 'none');
 

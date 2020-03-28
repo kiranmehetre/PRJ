@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-mixed-punctuation-worksheet2',
   templateUrl: './std01-mixed-punctuation-worksheet2.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std01MixedPunctuationWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -94,7 +96,7 @@ $('.helpbox-ans').on('click', function (event) {
 $('.button').click(function(){
     if($('.button').hasClass('playAgain'))
 {
-  window.location.href = window.location.href;
+  globalThis.commonWorksheet.reloadComponent();
 }
 else
 {
@@ -109,8 +111,8 @@ else
                 $('.input-span').removeClass('bd');
                // var Correct_Answers=["!",".","?",".","!","?","!","."];
                 var  Correct_Answers = [".", "!", "?", ".", "!", "?",".","."];
-                console.log('input');
-                 console.log(Correct_Answers);
+                //console.log('input');
+                 //console.log(Correct_Answers);
                 // $(inputs).each(function(i){
                 //     if($.trim($(this).val()) !== Correct_Answers[i]){
                 //         $(this).css({'color':'#ed1a1a','border-color':'#000'});

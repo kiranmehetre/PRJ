@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-comprehensions-worksheet8',
   templateUrl: './std01-comprehensions-worksheet8.component.html',
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 export class Std01ComprehensionsWorksheet8Component implements OnInit {
 
   loadAPI: Promise<any>;
-  constructor() { 
+  constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
@@ -29,6 +30,7 @@ export class Std01ComprehensionsWorksheet8Component implements OnInit {
 }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
       $('.loadingDiv').hide();
       setImages();
 	window.onload = function () { 
@@ -192,7 +194,7 @@ x++;
 $('.button').click(function(){
       if($('.button').hasClass('playAgain'))
 {
-window.location.href = window.location.href;
+globalThis.commonWorksheet.reloadComponent();
 }
 else
 {

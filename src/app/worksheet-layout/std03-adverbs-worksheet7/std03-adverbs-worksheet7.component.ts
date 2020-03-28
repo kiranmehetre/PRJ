@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-adverbs-worksheet7',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03AdverbsWorksheet7Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
      $('.loadingDiv').hide();
       setImages();
@@ -105,7 +107,7 @@ export class Std03AdverbsWorksheet7Component implements OnInit {
     
     
             if ($('.button').hasClass('playAgain')) {
-                window.location.href = window.location.href;
+                globalThis.commonWorksheet.reloadComponent();
             }
             else {
                 var inputCount = $('input[type="text"]').filter(function () {
@@ -212,7 +214,7 @@ export class Std03AdverbsWorksheet7Component implements OnInit {
                         }
                     });
                     var percentage = (Correct_Answers_Count * 100) / 24;
-                    console.log(Correct_Answers_Count);
+                    //console.log(Correct_Answers_Count);
                     var ImgURL = "";
     
                     var DisplayResult = "";

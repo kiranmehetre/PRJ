@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-mixed-punctuation-worksheet3',
   templateUrl: './std02-mixed-punctuation-worksheet3.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02MixedPunctuationWorksheet3Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -80,7 +82,7 @@ $(document).ready(function () {
 
   $('.button').click(function () {
     if ($('.button').hasClass('playAgain')) {
-      window.location.href = window.location.href;
+      globalThis.commonWorksheet.reloadComponent();
     }
     else {
       var Correct_Answers_Count = 0;
@@ -119,8 +121,8 @@ $(document).ready(function () {
         }
         $('input,.options span,.help-box span span').css('pointer-events', 'none');
         var percentage = (Correct_Answers_Count * 100) / 10;
-        console.log(percentage);
-        console.log(Correct_Answers_Count);
+        //console.log(percentage);
+        //console.log(Correct_Answers_Count);
         var DisplayResult = "";
         if (percentage > 80) {
           DisplayResult = '.outstanding';

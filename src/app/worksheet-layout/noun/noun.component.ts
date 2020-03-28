@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-noun',
   templateUrl: './noun.component.html',
@@ -7,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class NounComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
 
@@ -103,7 +104,7 @@ export class NounComponent implements OnInit {
                                   ClickAnswer = $.grep(ClickAnswer, function(value) {
                                                   return value != inputValue;
                                               });
-                                  console.log(inputValue);
+                                  //console.log(inputValue);
                                   $(inputField).find('.Answer_Block > span').text(Text);
                                   $(inputField).find('.Answer_Block img').css('display','block');
                                   $(inputField).find('.Answer_Block img').attr('src',ImgURL);

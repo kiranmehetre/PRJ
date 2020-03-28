@@ -18,6 +18,6 @@ const routes: Routes = [
 })
 export class Std01AdjectiveWorksheet3Module {
   constructor() {
-    console.log("Std01AdjectiveWorksheet3Component");
+    //console.log("Std01AdjectiveWorksheet3Component");
   }
  }

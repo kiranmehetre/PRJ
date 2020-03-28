@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-personal-pronouns-worksheet5',
   templateUrl: './std01-personal-pronouns-worksheet5.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std01PersonalPronounsWorksheet5Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
 	  $('.loadingDiv').hide();
 		  setImages();
@@ -113,7 +115,7 @@ export class Std01PersonalPronounsWorksheet5Component implements OnInit {
 
 				if($('.button').hasClass('playAgain'))
 				{
-					window.location.href = window.location.href;
+					globalThis.commonWorksheet.reloadComponent();
 				}
 				else
 				{
@@ -121,7 +123,7 @@ export class Std01PersonalPronounsWorksheet5Component implements OnInit {
 					var inputCount=$('input').filter(function () {
 										return !!$(this).val();
 									}).length;
-									console.log(inputCount);
+									//console.log(inputCount);
 					if(inputCount >= 4){
 						$(inputs).removeClass('bd');
 						var Correct_Answers=["her","you","them","it","him","us","it","me"];

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-action-verb-worksheet4',
   templateUrl: './std01-action-verb-worksheet4.component.html',
@@ -7,9 +8,11 @@ import * as $ from 'jquery';
 })
 export class Std01ActionVerbWorksheet4Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService) {
+  }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
 	 $('.loadingDiv').hide();
     setImages();

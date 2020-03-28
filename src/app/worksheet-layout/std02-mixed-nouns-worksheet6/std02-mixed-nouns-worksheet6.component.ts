@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-mixed-nouns-worksheet6',
   templateUrl: './std02-mixed-nouns-worksheet6.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02MixedNounsWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages(); 
 	window.onload = function () { 
@@ -139,7 +141,7 @@ $(document).ready(function(){
         else if(percentage < 50){
           DisplayResult='.keep-practicing';
         }
-                    console.log(DisplayResult);
+                    //console.log(DisplayResult);
         setTimeout(function(){
           $('.result').css('display','flex');
           $('.result .TextBox').hide();

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-semicolon-colon-worksheet1',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03SemicolonColonWorksheet1Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
       $('.loadingDiv').hide();
       setImages();
@@ -111,7 +113,7 @@ export class Std03SemicolonColonWorksheet1Component implements OnInit {
                         sentenceCount++;
                     }
                 });
-                console.log(sentenceCount);
+                //console.log(sentenceCount);
                 if(sentenceCount >= 5){
                     $('.Block-1 .Question').each(function(i){
                         if(i==1 || i==4){

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerErrorComponent implements OnInit {
 
-  constructor() { }
+  constructor(){}
 
   ngOnInit() {
   }

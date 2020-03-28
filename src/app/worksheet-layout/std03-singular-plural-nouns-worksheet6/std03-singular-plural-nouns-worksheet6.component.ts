@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-singular-plural-nouns-worksheet6',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std03SingularPluralNounsWorksheet6Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+   constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background','linear-gradient(180deg,#81d4f7,#e0e6e9) fixed');
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -105,8 +107,8 @@ export class Std03SingularPluralNounsWorksheet6Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;

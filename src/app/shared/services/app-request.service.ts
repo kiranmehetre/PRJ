@@ -46,7 +46,7 @@ onLoggedout() {
   // location.reload()
   //window.location.href = "/home";
   // this.menu = true;
-  // console.log(this.menu);
+  // //console.log(this.menu);
  }
 
 
@@ -79,7 +79,7 @@ putRequest(pageUrl, data) {
 }
 
 postFileRequest(pageUrl,data){
-  console.log(this.token);
+  //console.log(this.token);
   return new Promise((resolve,reject) => {
 
       this.http.post(Constants.AppConst.API_END_POINT+pageUrl, data,  {

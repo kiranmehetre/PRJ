@@ -11,5 +11,6 @@ export class PageHeaderComponent implements OnInit {
     @Input() icon: string;
     constructor() {}
 
-    ngOnInit() {}
+    ngOnInit() {
+    }
 }

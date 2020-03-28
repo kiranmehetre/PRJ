@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-conjunctions-worksheet5',
   templateUrl: './std01-conjunctions-worksheet5.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std01ConjunctionsWorksheet5Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -83,7 +85,7 @@ $(document).ready(function () {
 
   $('.button').click(function () {
       if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
       }
       else {
           var Correct_Answers_Count = 0;
@@ -93,8 +95,8 @@ $(document).ready(function () {
           if (inputCount >= 4) {
               $(inputs).removeClass('bd');
               var Correct_Answers = ["and", "and", "and", "but", "and", "after", "and"];
-              console.log(inputs);
-              console.log(Correct_Answers);
+              //console.log(inputs);
+              //console.log(Correct_Answers);
 
               $(inputs).each(function (i) {
                   if ($.trim($(this).val().toString()) !== Correct_Answers[i]) {

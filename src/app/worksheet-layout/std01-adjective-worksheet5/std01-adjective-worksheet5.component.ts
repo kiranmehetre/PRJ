@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
-import { CommonWorksheetService } from '../common-worksheet.service';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-adjective-worksheet5',
@@ -12,7 +12,6 @@ export class Std01AdjectiveWorksheet5Component implements OnInit {
 	constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
-
 	this.commonWorksheet.reuseRoute();
 	let globalThis = this;
 	

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-past-tense-worksheet1',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03PastTenseWorksheet1Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
       $('.loadingDiv').hide();
       setImages();
@@ -63,12 +65,12 @@ export class Std03PastTenseWorksheet1Component implements OnInit {
     
     $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-            window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
     
             var countClick = $('.text-container.click').length;
-            console.log(countClick);
+            //console.log(countClick);
             if (countClick >= 5) {
                 $('.text-container').not('.wrong').addClass('correct');
                 $('.text-container.wrong').addClass('wrong-ans');

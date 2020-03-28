@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-antonyms-worksheet1',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std03AntonymsWorksheet1Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background-color','#d4effd');
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -66,8 +68,8 @@ export class Std03AntonymsWorksheet1Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           if ($('.click').length >= 5) {
@@ -75,8 +77,8 @@ export class Std03AntonymsWorksheet1Component implements OnInit {
             $('.option.right').addClass('correct');
             $('.option.click').not('.right').addClass('wrong');
             var percentage = (Correct_Answers_Count * 100) / 10;
-            console.log(Correct_Answers_Count);
-            console.log(percentage);
+            //console.log(Correct_Answers_Count);
+            //console.log(percentage);
             var DisplayResult = "";
             if (percentage > 80) {
               DisplayResult = '.outstanding';

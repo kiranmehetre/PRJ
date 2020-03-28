@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
 import { Router } from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 
@@ -25,7 +25,7 @@ export class MainComponent implements OnInit {
     });
   }
 
-  ngOnInit() {      
+  ngOnInit() {
        if(localStorage.getItem('isLoggedin')){
           this.menu = true;
        }

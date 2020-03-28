@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-compound-words',
@@ -8,9 +9,12 @@ import * as $ from 'jquery';
 })
 export class CompoundWordsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService) {
+  }
+
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
 
@@ -108,7 +112,7 @@ var theToggle = document.getElementById('toggle');
             }
         }
         var clickLen=$('.helpbox-container').find('.click').length;
-        console.log(clickLen)
+        //console.log(clickLen)
         if(clickLen==10)
         {
           $('.helpbox-container').addClass('hide');
@@ -129,7 +133,7 @@ var theToggle = document.getElementById('toggle');
 
   $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-            window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;

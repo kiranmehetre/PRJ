@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-prepositions-worksheet8',
   templateUrl: './std01-prepositions-worksheet8.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std01PrepositionsWorksheet8Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -105,8 +107,8 @@ $(document).ready(function () {
 
   $('.button').click(function () {
       if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
-      }
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
           var Correct_Answers_Count = 0;
           var inputCount = $('input[type="text"]').filter(function () {

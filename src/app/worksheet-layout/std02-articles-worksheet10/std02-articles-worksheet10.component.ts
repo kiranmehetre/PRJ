@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-articles-worksheet10',
   templateUrl: './std02-articles-worksheet10.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02ArticlesWorksheet10Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 

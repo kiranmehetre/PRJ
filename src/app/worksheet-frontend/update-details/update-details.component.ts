@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
 import {ActivatedRoute, Router} from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -69,7 +69,7 @@ export class UpdateDetailsComponent implements OnInit {
     this.apiRequest.getRequest('api/student/details/' + profile_pic[0].user_name).then( (res) => {            
       if(res['status'] == 'OK'){           
           this.user_details = res['body'][0];
-          console.log(this.user_details.first_name);           
+          //console.log(this.user_details.first_name);           
       }else {
         //  this.toastr.error(res['error']);
       }
@@ -125,7 +125,7 @@ export class UpdateDetailsComponent implements OnInit {
     // this.updateForm.value.class =  this.user_details.class;
     this.updateForm.value.gender =  this.updateForm.value.gender ? this.updateForm.value.gender : this.user_details.gender;
    
-    console.log(this.updateForm.value);
+    //console.log(this.updateForm.value);
 
       
     

@@ -73,7 +73,7 @@ export class ChangePasswordComponent implements OnInit {
     let options = {'Authorization': Authorization, 'user_name': user_name[0].user_name, 'new_password': password }; 
    
     this.apiRequest.putRequest('api/student/reset/password', options).then( (res) => {
-      console.log(res['status']);
+      //console.log(res['status']);
       if(res['status'] == "OK"){
        // this.router.navigate(['/dashboard']);
      }else{

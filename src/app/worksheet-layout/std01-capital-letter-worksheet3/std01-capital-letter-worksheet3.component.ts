@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-capital-letter-worksheet3',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01CapitalLetterWorksheet3Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
     $('.loadingDiv').hide();
     setImages();
@@ -89,9 +91,9 @@ export class Std01CapitalLetterWorksheet3Component implements OnInit {
     });
     $('.button').click(function () {
 
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var i = 0;
         var underlinedCount = 0;
@@ -134,8 +136,8 @@ export class Std01CapitalLetterWorksheet3Component implements OnInit {
 
           $('input,.text-container span,.helpbox-ans').css('pointer-events', 'none');
           var percentage = (Correct_Answers_Count * 100) / 6;
-          console.log(Correct_Answers_Count);
-          console.log(percentage);
+          //console.log(Correct_Answers_Count);
+          //console.log(percentage);
           var DisplayResult = "";
 
           DisplayResult = '.fabulous';

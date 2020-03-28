@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-homophones-worksheet4',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std01HomophonesWorksheet4Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2 ,private commonWorksheet: CommonWorksheetService,) {
     this.renderer.setStyle(document.body, 'background-color','#c6563e');
    }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
     $('.loadingDiv').hide();
     setImages();
@@ -112,9 +114,9 @@ export class Std01HomophonesWorksheet4Component implements OnInit {
     });
 
     $('.button').click(function () {
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var Correct_Answers_Count = 0;
         var Correct_answer = ["doe", "roll", "stare", "plane", "sail", "know", "blue", "eight", "flour", "red", "waste", "meat"];

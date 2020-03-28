@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-homophones-worksheet6',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01HomophonesWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
     $('.loadingDiv').hide();
     setImages();
@@ -111,9 +113,9 @@ export class Std01HomophonesWorksheet6Component implements OnInit {
 
     $('.button').click(function () {
 
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var inputCount = $('input[type="text"]').filter(function () {
           return !!$(this).val();

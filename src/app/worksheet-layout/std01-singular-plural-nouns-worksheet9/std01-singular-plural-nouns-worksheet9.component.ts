@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-singular-plural-nouns-worksheet9',
   templateUrl: './std01-singular-plural-nouns-worksheet9.component.html',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std01SingularPluralNounsWorksheet9Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body,'background','#fee684')
    }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -107,7 +109,7 @@ $(document).ready(function(){
   $('.button').click(function(){
             if($('.button').hasClass('playAgain'))
     {
-      window.location.href = window.location.href;
+      globalThis.commonWorksheet.reloadComponent();
     }
     else
     {
@@ -145,7 +147,7 @@ $(document).ready(function(){
                         var strClass=$(inputField_Array[i]).attr('class');
                         var Block=inputBlock[j];
                         var strBlock=Block+' .correct_answer.'+strClass;
-                        console.log(strBlock);
+                        //console.log(strBlock);
                         $(inputField_Array[i]).css({'color':'#ed1a1a','border-color':'#000'});
                         $(strBlock).find('span').text(Wrong_Answers[i]);
                         $(strBlock).css('display','inline-block');

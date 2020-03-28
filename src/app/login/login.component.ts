@@ -13,7 +13,8 @@ export class LoginComponent implements OnInit {
       public router: Router
     ) {}
 
-    ngOnInit() {}
+    ngOnInit() {
+}
 
     onLoggedin() {
         localStorage.setItem('isLoggedin', 'true');

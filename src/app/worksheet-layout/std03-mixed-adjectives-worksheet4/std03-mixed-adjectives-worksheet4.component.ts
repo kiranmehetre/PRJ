@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-mixed-adjectives-worksheet4',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03MixedAdjectivesWorksheet4Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -108,7 +110,7 @@ export class Std03MixedAdjectivesWorksheet4Component implements OnInit {
       $('.myButton').click(function () {
 
         if ($('.myButton').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;
@@ -143,8 +145,8 @@ export class Std03MixedAdjectivesWorksheet4Component implements OnInit {
               }
             });
             var percentage = (Correct_Answers_Count * 100) / 20;
-            console.log(Correct_Answers_Count);
-            console.log(percentage);
+            //console.log(Correct_Answers_Count);
+            //console.log(percentage);
             var DisplayResult = "";
             if (percentage > 80) {
               DisplayResult = '.outstanding';

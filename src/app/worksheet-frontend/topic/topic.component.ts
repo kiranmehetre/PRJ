@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
 import { AppRequestService} from '../../shared/services/app-request.service';
 
 @Component({

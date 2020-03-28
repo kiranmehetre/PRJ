@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-prefix-reference-list',
@@ -9,15 +10,12 @@ import * as $ from 'jquery';
 })
 export class Std03PrefixReferenceListComponent implements OnInit {
 
-  loadAPI: Promise<any>;
-  constructor() {
+  loadAPI: Promise<any>;constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
       resolve(true);
-    });
-
-  }
+  });}
   public loadScript() {
     var dynamicScripts = ["https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js","assets/js/swipe.js","assets/js/common.js"];
     for (var i = 0; i < dynamicScripts.length; i++) {
@@ -31,6 +29,7 @@ export class Std03PrefixReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
   }
 

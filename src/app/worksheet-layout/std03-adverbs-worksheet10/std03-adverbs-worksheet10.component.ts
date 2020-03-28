@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-adverbs-worksheet10',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03AdverbsWorksheet10Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
      $('.loadingDiv').hide();
       setImages();
@@ -109,7 +111,7 @@ export class Std03AdverbsWorksheet10Component implements OnInit {
     
         $('.button').click(function () {
             if ($('.button').hasClass('playAgain')) {
-                window.location.href = window.location.href;
+                globalThis.commonWorksheet.reloadComponent();
             }
             else {
                 var Correct_Answers_Count = 0;
@@ -122,7 +124,7 @@ export class Std03AdverbsWorksheet10Component implements OnInit {
                         "walked", "obediently", "welcomed", "joyfully", "held", "proudly", "looked", "lovingly", "injured", "Fortunately"];
                     $(inputs).each(function (i) {
                         if ($.trim($(this).val().toString()) !== Correct_Answers[i]) {
-                            console.log(i);
+                            //console.log(i);
                             $(this).css({ 'color': '#ed1a1a', 'border-color': '#000' });
                             // $(this).siblings('.correct_answer').css('display','inline-block');
                             $('.show-answer' + i).css('visibility', 'visible');

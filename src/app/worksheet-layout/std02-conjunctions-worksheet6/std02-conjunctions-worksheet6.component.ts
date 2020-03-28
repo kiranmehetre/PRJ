@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std02-conjunctions-worksheet6',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std02ConjunctionsWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
     $('.loadingDiv').hide();
     setImages();
@@ -110,8 +112,8 @@ export class Std02ConjunctionsWorksheet6Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var inputCount = 0;
@@ -121,7 +123,7 @@ export class Std02ConjunctionsWorksheet6Component implements OnInit {
               inputCount++;
             }
           }
-          console.log(inputCount);
+          //console.log(inputCount);
           if (inputCount >= 5) {
             setTimeout(function () {
               $('.result').css('display', 'flex');

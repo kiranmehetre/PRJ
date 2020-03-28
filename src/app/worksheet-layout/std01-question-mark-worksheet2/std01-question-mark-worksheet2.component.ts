@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-question-mark-worksheet2',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std01QuestionMarkWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
     $('.loadingDiv').hide();
     setImages();
@@ -83,7 +85,7 @@ export class Std01QuestionMarkWorksheet2Component implements OnInit {
           optionClass = $(this).parent().attr('class');
           if (inputField !== undefined && optionClass.indexOf(inputClass) > -1) {
             Text = $(this).text().trim();
-            // console.log(Text);
+            // //console.log(Text);
             $(inputField).val(Text);
             var Option = $(this).parent();
             $(Option).find('.helpans').removeClass('click');
@@ -94,7 +96,7 @@ export class Std01QuestionMarkWorksheet2Component implements OnInit {
 
       $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var inputCount = $('input[type="text"]').filter(function () {

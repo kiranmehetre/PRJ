@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-mixed-tense-worksheet4',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03MixedTenseWorksheet4Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -107,7 +109,7 @@ export class Std03MixedTenseWorksheet4Component implements OnInit {
         $('.button').click(function () {
     
             if ($('.button').hasClass('playAgain')) {
-                window.location.href = window.location.href;
+                globalThis.commonWorksheet.reloadComponent();
             }
             else {
                 var Correct_Answers_Count = 0;
@@ -191,8 +193,8 @@ export class Std03MixedTenseWorksheet4Component implements OnInit {
                     });
                     $('input,.option').css('pointer-events', 'none');
                     var percentage = (Correct_Answers_Count * 100) / 18;
-                    console.log(Correct_Answers_Count);
-                    console.log(percentage);
+                    //console.log(Correct_Answers_Count);
+                    //console.log(percentage);
                     var ImgURL = "";
                     var DisplayResult = "";
                     if (percentage > 80) {

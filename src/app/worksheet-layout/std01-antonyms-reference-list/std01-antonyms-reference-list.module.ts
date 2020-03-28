@@ -20,6 +20,6 @@ const routes: Routes = [
 })
 export class Std01AntonymsReferenceListModule { 
   constructor() {
-    console.log("Std01AntonymsReferenceListModule");
+    //console.log("Std01AntonymsReferenceListModule");
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-antonyms-worksheet2',
@@ -8,11 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std03AntonymsWorksheet2Component implements OnInit {
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background','linear-gradient(#59a7dc 70%,#59a7dc,#fff) fixed');
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -74,9 +76,9 @@ export class Std03AntonymsWorksheet2Component implements OnInit {
 
     $('.button').click(function () {
 
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var Correct_Answers_Count = 0;
         if ($('.click').length >= 5) {

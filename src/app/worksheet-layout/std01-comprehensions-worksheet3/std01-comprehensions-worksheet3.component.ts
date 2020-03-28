@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std01-comprehensions-worksheet3',
   templateUrl: './std01-comprehensions-worksheet3.component.html',
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 export class Std01ComprehensionsWorksheet3Component implements OnInit {
 
     loadAPI: Promise<any>;
-    constructor() { 
+    constructor(private commonWorksheet: CommonWorksheetService,) { 
   
       this.loadAPI = new Promise((resolve) => {
         this.loadScript();
@@ -28,6 +29,7 @@ export class Std01ComprehensionsWorksheet3Component implements OnInit {
           }
   }
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
         
       $('.loadingDiv').hide();
       setImages();
@@ -181,7 +183,7 @@ $('.button').click(function(){
 
       if($('.button').hasClass('playAgain'))
 {
-window.location.href = window.location.href;
+globalThis.commonWorksheet.reloadComponent();
 }
 else
 {
@@ -203,7 +205,7 @@ if(inputCount >= 3){
 $(inputs).parent().removeClass('bd');
 var Correct_Answers=["down","dead","started","behind"];
           var firstValue=$('.question.one input').val();
-          console.log(firstValue);
+          //console.log(firstValue);
           if(firstValue !== "grazing"){
     $('.question.one input').css({'color':'#ed1a1a','border-color':'#000'});
     $('.question.one input').siblings('.answer').addClass('inlineBlock');

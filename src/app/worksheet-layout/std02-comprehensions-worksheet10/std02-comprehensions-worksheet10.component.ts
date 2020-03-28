@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-comprehensions-worksheet10',
   templateUrl: './std02-comprehensions-worksheet10.component.html',
@@ -8,7 +9,7 @@ import * as $ from 'jquery';
 export class Std02ComprehensionsWorksheet10Component implements OnInit {
 
   loadAPI: Promise<any>;
-  constructor() { 
+  constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
@@ -29,6 +30,7 @@ export class Std02ComprehensionsWorksheet10Component implements OnInit {
 }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -241,7 +243,7 @@ $(document).ready(function () {
   $('.button').click(function () {
       if($('.button').hasClass('playAgain'))
 {
-window.location.href = window.location.href;
+globalThis.commonWorksheet.reloadComponent();
 }
 else
 {
@@ -260,7 +262,7 @@ else
                   }
               }
           });
-          console.log(inputCount);
+          //console.log(inputCount);
           if (inputCount >= 3) {
               var Correct_Answers_Count = 0;
               $(inputs).parent().removeClass('bd');
@@ -294,7 +296,7 @@ else
               if( q4Text.toString().trim()  != 'farming')
               {
                   var check='in if';
-                  console.log(check);
+                  //console.log(check);
                   $('.q4-right-answer').css('display','inline-block');
                   $('.main-input-container input').css('color','#ed1a1a')
                   // if($('.page3 .input-text').hasClass('setAnswer'))
@@ -305,7 +307,7 @@ else
               }
               else{
                   var check='in else';
-                  console.log(check);
+                  //console.log(check);
               }
               $('.option.green .circle').not('.correct').css('background-color', '#ab2323');
               $('.option .circle.correct').css('background-color', '#20bb15');

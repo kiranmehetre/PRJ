@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-articles-worksheet7',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03ArticlesWorksheet7Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $(document).ready(function () {
       window.onload = function () {
         $('.loadingDiv').hide();
@@ -78,8 +80,8 @@ export class Std03ArticlesWorksheet7Component implements OnInit {
       });
 
       $('.button').click(function () {
-        if ($(this).hasClass('playAgain')) {
-          window.location.href = window.location.href;
+        if ($('.button').hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;
@@ -112,8 +114,8 @@ export class Std03ArticlesWorksheet7Component implements OnInit {
               }
             });
             var percentage = (Correct_Answers_Count * 100) / 10;
-            console.log(percentage);
-            console.log(Correct_Answers_Count);
+            //console.log(percentage);
+            //console.log(Correct_Answers_Count);
             var DisplayResult = "";
             if (percentage > 80) {
               DisplayResult = '.outstanding';

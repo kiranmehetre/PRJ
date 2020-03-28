@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std01-articles-worksheet3',
@@ -8,12 +9,13 @@ import * as $ from 'jquery';
 })
 export class Std01ArticlesWorksheet3Component implements OnInit {
 
-  // constructor() { }
-  constructor(private renderer: Renderer2) {
+  // constructor(private commonWorksheet: CommonWorksheetService){}
+   constructor(private renderer: Renderer2,private commonWorksheet: CommonWorksheetService) {
     this.renderer.setStyle(document.body, 'background-color','#ffbb74');
    }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
 
     window.onload = function () {
@@ -108,7 +110,7 @@ export class Std01ArticlesWorksheet3Component implements OnInit {
     });
     $('.button').click(function () {
       if ($(this).hasClass('playAgain')) {
-        window.location.href = window.location.href;
+        globalThis.commonWorksheet.reloadComponent();
       }
       else {
         var inputCount = $('input[type="text"]').filter(function () {

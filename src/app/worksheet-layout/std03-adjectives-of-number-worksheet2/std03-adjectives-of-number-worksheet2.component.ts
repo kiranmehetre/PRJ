@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-adjectives-of-number-worksheet2',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03AdjectivesOfNumberWorksheet2Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -78,7 +80,7 @@ export class Std03AdjectivesOfNumberWorksheet2Component implements OnInit {
       inputField = $(this);
       inputValue=$(inputField).val();
       QuestionNumber = $(this).parent().parent().attr('id');
-      console.log(QuestionNumber);
+      //console.log(QuestionNumber);
       var OptionNumber = QuestionNumber[QuestionNumber.length - 1];
       question_number_check = QuestionNumber;
       OptionList = $('#options-container' + OptionNumber).text();
@@ -104,7 +106,7 @@ export class Std03AdjectivesOfNumberWorksheet2Component implements OnInit {
 
 
       if ($('.myButton').hasClass('playAgain')) {
-        window.location.href = window.location.href;
+        globalThis.commonWorksheet.reloadComponent();
       }
       else {
         $('input').removeClass('bd');

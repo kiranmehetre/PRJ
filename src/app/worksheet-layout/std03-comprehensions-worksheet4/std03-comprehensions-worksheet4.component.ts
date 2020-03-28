@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-comprehensions-worksheet4',
@@ -8,15 +9,12 @@ import * as $ from 'jquery';
 })
 export class Std03ComprehensionsWorksheet4Component implements OnInit {
 
-  loadAPI: Promise<any>;
-  constructor() {
+  loadAPI: Promise<any>;constructor(private commonWorksheet: CommonWorksheetService){
 
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
       resolve(true);
-    });
-
-  }
+  });}
   public loadScript() {
     var dynamicScripts = ["https://code.jquery.com/jquery-3.3.1.min.js", "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"];
     for (var i = 0; i < dynamicScripts.length; i++) {
@@ -30,6 +28,7 @@ export class Std03ComprehensionsWorksheet4Component implements OnInit {
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -174,7 +173,7 @@ export class Std03ComprehensionsWorksheet4Component implements OnInit {
       });
       $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var QuestionCount = 0;
@@ -189,7 +188,7 @@ export class Std03ComprehensionsWorksheet4Component implements OnInit {
           if ($('.Question_Block.seventh input').filter(function () { return !!$(this).val(); }).length > 0) {
             QuestionCount++;
           }
-          console.log(QuestionCount);
+          //console.log(QuestionCount);
           if (QuestionCount >= 4) {
             $(inputs).removeClass('bd');
             var Correct_Answers = ["similarity", "difference"];

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-degress-of-comparison-worksheet6',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03DegressOfComparisonWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -69,7 +71,7 @@ export class Std03DegressOfComparisonWorksheet6Component implements OnInit {
       $('.button').click(function () {
 
         if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var TotalClickCount = 0;
@@ -93,7 +95,7 @@ export class Std03DegressOfComparisonWorksheet6Component implements OnInit {
             $('.click').find('.answer').addClass('correct-ans');
             $('.answer').not('.correct-ans').addClass('correct_white');
             $('.answer-image').show();
-            console.log(Correct_Answers_Count);
+            //console.log(Correct_Answers_Count);
             var percentage = (Correct_Answers_Count * 100) / 6;
             var ImgURL = "";
             var DisplayResult = "";

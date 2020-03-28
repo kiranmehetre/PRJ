@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2, NgZone } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
 import { Router } from '@angular/router';
 import { AppRequestService } from '../../shared/services/app-request.service';
 import { routerTransition } from '../../router.animations';
@@ -68,7 +68,7 @@ export class SignupComponent implements OnInit {
       else {
         $(this).addClass('active');
       }
-      console.log("Grade Selected :- "+$('.grade.active').length);
+      //console.log("Grade Selected :- "+$('.grade.active').length);
       if ($('.grade.active').length == 0) {
         $('.class_Container').siblings('span.error-container').addClass('input-error');
         $('.class_Container').siblings('span.error-container').removeClass('hide');
@@ -290,7 +290,7 @@ export class SignupComponent implements OnInit {
       }
     });
     errorCount = errorCount + $('.Main_Container #step-1 .input-error').length;
-    console.log("Errors : " + errorCount);
+    //console.log("Errors : " + errorCount);
     if(errorCount > 0){
       this.displayFirstSteps = true;
       this.displaySecondSteps = false;
@@ -324,7 +324,7 @@ export class SignupComponent implements OnInit {
       this.displayFirstSteps = false;
       const fd = new FormData();
       //this.displaySecondSteps = false;
-      // console.log(this.signupForm.value);
+      // //console.log(this.signupForm.value);
 
       this.strGender = $('#gender').val();
       this.strClass = $('#Class').val();
@@ -357,7 +357,7 @@ export class SignupComponent implements OnInit {
       //this.signupForm.value.append('photo', this.selectedFile, this.selectedFile.name);
 
       this.apiRequest.postFileRequest('api/student/signup', fd).then((res) => {
-        console.log(res['status']);
+        //console.log(res['status']);
         if (res['status'] == "OK") {
           this.displaySecondSteps = false;
           this.displayThirdSteps = true;
@@ -394,12 +394,12 @@ export class SignupComponent implements OnInit {
       this.selectedFile = null;
       this.filename = "no file selected";
     }
-    console.log(this.selectedFile);
+    //console.log(this.selectedFile);
   }
 
 
   onSubmit() {
-    // console.log(this.loginForm.value);     
+    // //console.log(this.loginForm.value);     
     // this.apiRequest.postRequest('api/student/login', { 'email_id' : this.loginForm.value.email_id, 'password' : this.loginForm.value.password}).then( (res) => {
 
     //   if(res['status'] == "OK"){

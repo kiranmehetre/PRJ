@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 @Component({
   selector: 'app-std02-articles-worksheet8',
   templateUrl: './std02-articles-worksheet8.component.html',
@@ -7,9 +8,10 @@ import * as $ from 'jquery';
 })
 export class Std02ArticlesWorksheet8Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -100,7 +102,7 @@ $('.Option_Container img').click(function(){
 $('.button').click(function(){
     if($('.button').hasClass('playAgain'))
     {
-      window.location.href = window.location.href;
+      globalThis.commonWorksheet.reloadComponent();
     }
     else
     {
@@ -133,7 +135,7 @@ $('.button').click(function(){
                   if ($.inArray(el, inputRowValues) == -1) Wrong_Answers.push(el);
           });
 
-          console.log(Wrong_Answers.length);
+          //console.log(Wrong_Answers.length);
           for(var i=0; i< Wrong_Answers.length;i++){
             $(inputField_Array[i]).css({'color':'#ed1a1a',});
             $(inputField_Array[i]).next('.correct_answer').find('span').text(Wrong_Answers[i]);
@@ -161,7 +163,7 @@ $('.button').click(function(){
         //$('.button,.Option_Container img,input').css('pointer-events','none');
         
         var percentage=	(Correct_answers_count * 100) / 10;
-        console.log(percentage);
+        //console.log(percentage);
         var DisplayResult="";    
         if(percentage > 80){
           DisplayResult='.outstanding';

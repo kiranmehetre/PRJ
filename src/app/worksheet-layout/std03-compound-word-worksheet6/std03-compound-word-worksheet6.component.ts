@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 
 @Component({
   selector: 'app-std03-compound-word-worksheet6',
@@ -8,9 +9,10 @@ import * as $ from 'jquery';
 })
 export class Std03CompoundWordWorksheet6Component implements OnInit {
 
-  constructor() { }
+  constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -110,14 +112,14 @@ export class Std03CompoundWordWorksheet6Component implements OnInit {
 
       $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-          window.location.href = window.location.href;
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;
           var inputCount = $('input').filter(function () {
             return !!$(this).val();
           }).length;
-          console.log(inputCount);
+          //console.log(inputCount);
           if (inputCount >= 5) {
             $(inputs).removeClass('bd');
             var Correct_Answers = ["woodcutter", "staircase", "grassland", "rattlesnake", "jackpot", "overflow", "eyesight", "somebody", "daylight", "bathtub"];

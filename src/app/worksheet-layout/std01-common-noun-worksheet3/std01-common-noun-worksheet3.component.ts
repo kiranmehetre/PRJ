@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import * as $ from 'jquery';  
+ import { CommonWorksheetService } from '../common-worksheet.service';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -9,13 +10,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class Std01CommonNounWorksheet3Component implements OnInit {
 
-  // constructor() { }
+  // constructor(private commonWorksheet: CommonWorksheetService){}
   
-  public constructor(private titleService: Title ) {
+  public constructor(private titleService: Title ,private commonWorksheet: CommonWorksheetService,) {
     this.titleService.setTitle( "Common Noun 3" );
   }
 
   ngOnInit() {
+ this.commonWorksheet.reuseRoute();
 
     $('.loadingDiv').hide();
     setImages();
@@ -130,9 +132,9 @@ export class Std01CommonNounWorksheet3Component implements OnInit {
 
     $('.button').click(function () {
 
-      if ($('.button').hasClass('playAgain')) {
-        window.location.href = window.location.href;
-      }
+      if ($(this).hasClass('playAgain')) {
+          globalThis.commonWorksheet.reloadComponent();
+        }
       else {
         var inputCount = $('input[type="text"]').filter(function () {
           return !!$(this).val();

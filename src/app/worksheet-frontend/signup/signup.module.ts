@@ -5,7 +5,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SignupComponent } from './signup.component';
 import { RouterModule } from '@angular/router';
 @NgModule({
-  declarations: [SignupComponent],
+  declarations: [],
   imports: [
     CommonModule,    
     FormsModule,RouterModule,
