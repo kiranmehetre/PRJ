@@ -30,6 +30,7 @@ export class Std01GenderNounsReferenceListComponent implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
   }
 

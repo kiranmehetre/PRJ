@@ -12,6 +12,7 @@ export class Std01ConjunctionsWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
         
     $('.loadingDiv').hide();

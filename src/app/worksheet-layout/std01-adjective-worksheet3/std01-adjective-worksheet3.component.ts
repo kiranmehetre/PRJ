@@ -87,7 +87,7 @@ export class Std01AdjectiveWorksheet3Component implements OnInit {
 			$('.button').click(function(){
 				if($(this).hasClass('playAgain')){
 					globalThis.commonWorksheet.reloadComponent(globalThis.router);
-					// window.location.href=window.location.href;
+					// globalThis.commonWorksheet.reloadComponent();
 				}
 				else{
 					var Correct_Answers_Count=0;

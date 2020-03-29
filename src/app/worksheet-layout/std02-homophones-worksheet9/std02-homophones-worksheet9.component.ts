@@ -12,6 +12,7 @@ export class Std02HomophonesWorksheet9Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -182,7 +183,7 @@ $('.'+clickHelpbox+'_span.'+checkHelpBoxText).removeClass('word-select');
 $('.button').click(function () {
 if ($('.button').hasClass('playAgain')) {
 // alert('click');
-window.location.reload();
+globalThis.commonWorksheet.reloadComponent();
 }
 else {
 var inputCount = 0;

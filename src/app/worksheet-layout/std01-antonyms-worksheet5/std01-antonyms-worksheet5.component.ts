@@ -12,6 +12,7 @@ export class Std01AntonymsWorksheet5Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
         
 	  $('.loadingDiv').hide();
@@ -108,7 +109,7 @@ theToggle.onclick = function() {
 			
 			$('.button').click(function(){
 				if($(this).hasClass('playAgain')){
-					window.location.href=window.location.href;
+					globalThis.commonWorksheet.reloadComponent();
 				}
 				else{
 					var Correct_Answers_Count=0;

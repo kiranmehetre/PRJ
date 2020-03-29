@@ -12,6 +12,7 @@ export class Std02HomophonesWorksheet3Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -107,7 +108,7 @@ export class Std02HomophonesWorksheet3Component implements OnInit {
       $('.button').click(function(){
         if($('.button').hasClass('playAgain'))
         {
-          window.location.reload();
+          globalThis.commonWorksheet.reloadComponent();
         }
         else
         {

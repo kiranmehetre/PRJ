@@ -115,7 +115,7 @@ export class NounComponent implements OnInit {
 			
             $('.button').click(function(){
               if($(this).hasClass('playAgain')){
-                window.location.href=window.location.href;
+                globalThis.commonWorksheet.reloadComponent();
               }
               else{
                           let Correct_Answers_Count=0;

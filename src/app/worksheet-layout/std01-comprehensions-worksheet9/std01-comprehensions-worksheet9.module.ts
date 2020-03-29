@@ -5,9 +5,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { Std01ComprehensionsWorksheet9Component } from './std01-comprehensions-worksheet9.component';
 
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01ComprehensionsWorksheet9Component
   }
 ]

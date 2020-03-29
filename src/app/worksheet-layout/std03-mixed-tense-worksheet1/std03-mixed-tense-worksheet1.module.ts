@@ -2,8 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {Std03MixedTenseWorksheet1Component} from './std03-mixed-tense-worksheet1.component'
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-  { path: '', component: Std03MixedTenseWorksheet1Component }, 
+  { path: '', canActivate: [ClassThreeAuth], component: Std03MixedTenseWorksheet1Component }, 
 
 ];
 @NgModule({

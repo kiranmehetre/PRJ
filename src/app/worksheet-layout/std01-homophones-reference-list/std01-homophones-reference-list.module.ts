@@ -6,9 +6,9 @@ import { Std01HomophonesReferenceListRoutingModule } from './std01-homophones-re
 import { RouterModule, Routes } from "@angular/router";
 import { Std01HomophonesReferenceListComponent } from './std01-homophones-reference-list.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01HomophonesReferenceListComponent
     }
 ];

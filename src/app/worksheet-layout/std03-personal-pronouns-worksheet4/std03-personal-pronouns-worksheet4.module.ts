@@ -4,9 +4,9 @@ import { Std03PersonalPronounsWorksheet4RoutingModule } from './std03-personal-p
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PersonalPronounsWorksheet4Component } from './std03-personal-pronouns-worksheet4.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PersonalPronounsWorksheet4Component
     }
 ];

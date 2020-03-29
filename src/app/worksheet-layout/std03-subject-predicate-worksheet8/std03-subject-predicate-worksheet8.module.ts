@@ -6,9 +6,9 @@ import { Std03SubjectPredicateWorksheet8RoutingModule } from './std03-subject-pr
 import { RouterModule, Routes } from "@angular/router";
 import { Std03SubjectPredicateWorksheet8Component } from './std03-subject-predicate-worksheet8.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03SubjectPredicateWorksheet8Component
     }
 ];

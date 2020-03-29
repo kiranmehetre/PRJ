@@ -6,9 +6,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { Std01CompoundWordWorksheet2Component } from './std01-compound-word-worksheet2.component';
 
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01CompoundWordWorksheet2Component
   }
 ]

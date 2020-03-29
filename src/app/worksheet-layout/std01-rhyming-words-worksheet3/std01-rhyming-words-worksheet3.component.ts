@@ -13,6 +13,7 @@ export class Std01RhymingWordsWorksheet3Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
 
     $('.loadingDiv').hide();
@@ -77,7 +78,7 @@ export class Std01RhymingWordsWorksheet3Component implements OnInit {
 
 
         if ($('.button').hasClass('playAgain')) {
-          window.location.reload();
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;

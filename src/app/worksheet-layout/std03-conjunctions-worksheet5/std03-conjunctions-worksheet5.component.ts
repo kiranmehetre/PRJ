@@ -13,6 +13,7 @@ export class Std03ConjunctionsWorksheet5Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -156,7 +157,7 @@ export class Std03ConjunctionsWorksheet5Component implements OnInit {
     $('.button').click(function () {
       if ($('.button').hasClass('playAgain')) {
         // alert('click');
-        window.location.reload();
+        globalThis.commonWorksheet.reloadComponent();
       }
       else {
         var inputCount = 0;

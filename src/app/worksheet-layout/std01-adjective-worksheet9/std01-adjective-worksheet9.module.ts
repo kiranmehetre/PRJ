@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Std01AdjectiveWorksheet9RoutingModule } from './std01-adjective-worksheet9-routing.module';
 import { RouterModule } from '@angular/router';
 import { Std01AdjectiveWorksheet9Component } from './std01-adjective-worksheet9.component';
+import { ClassOneAuth } from '../Auth/ClassOneAuth';
 const routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01AdjectiveWorksheet9Component
   }
 ]

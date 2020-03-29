@@ -12,6 +12,7 @@ export class Std01SynonymsWorksheet1Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
         
     $('.loadingDiv').hide();
     setImages();
@@ -73,7 +74,7 @@ $(document).ready(function () {
   $('.button').click(function () {
       if($('.button').hasClass('playAgain'))
 {
-window.location.reload();
+    globalThis.commonWorksheet.reloadComponent();
 }
 else
 {

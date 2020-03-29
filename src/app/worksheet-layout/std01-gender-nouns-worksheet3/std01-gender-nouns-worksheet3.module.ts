@@ -5,9 +5,9 @@ import { Std01GenderNounsWorksheet3RoutingModule } from './std01-gender-nouns-wo
 import { RouterModule, Routes } from "@angular/router";
 import { Std01GenderNounsWorksheet3Component } from './std01-gender-nouns-worksheet3.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01GenderNounsWorksheet3Component
     }
 ];

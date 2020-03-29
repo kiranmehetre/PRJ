@@ -5,9 +5,9 @@ import { Std01SynonymsWorksheet6RoutingModule } from './std01-synonyms-worksheet
 import { RouterModule, Routes } from "@angular/router";
 import { Std01SynonymsWorksheet6Component } from './std01-synonyms-worksheet6.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01SynonymsWorksheet6Component
     }
 ];

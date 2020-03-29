@@ -2,8 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {Std03ConjunctionsWorksheet7Component} from './std03-conjunctions-worksheet7.component'
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-  { path: '', component: Std03ConjunctionsWorksheet7Component }, 
+  { path: '', canActivate: [ClassThreeAuth], component: Std03ConjunctionsWorksheet7Component }, 
 
 ];
 @NgModule({

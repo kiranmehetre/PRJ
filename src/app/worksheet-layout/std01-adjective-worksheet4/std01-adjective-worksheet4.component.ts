@@ -15,7 +15,6 @@ export class Std01AdjectiveWorksheet4Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
-
     const globalThis = this;
 
     $('.loadingDiv').hide();
@@ -113,7 +112,7 @@ export class Std01AdjectiveWorksheet4Component implements OnInit {
           $('.button').click(function(){
             if($(this).hasClass('playAgain')){
               globalThis.commonWorksheet.reloadComponent();
-              // window.location.href=window.location.href;
+              // globalThis.commonWorksheet.reloadComponent();
             }
             else{
               var underlinedCount=0;

@@ -5,9 +5,9 @@ import { Std01ProperNounWorksheet4RoutingModule } from './std01-proper-noun-work
 import { RouterModule, Routes } from "@angular/router";
 import { Std01ProperNounWorksheet4Component } from './std01-proper-noun-worksheet4.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01ProperNounWorksheet4Component
     }
 ];

@@ -12,6 +12,7 @@ export class Std01GenderNounsWorksheet7Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     
       $('.loadingDiv').hide();
       setImages();
@@ -107,7 +108,7 @@ var theToggle = document.getElementById('toggle');
 			
 			$('.button').click(function(){
 				if($(this).hasClass('playAgain')){
-					window.location.href=window.location.href;
+					globalThis.commonWorksheet.reloadComponent();
 				}
 				else{
 					var Correct_Answers_Count=0;

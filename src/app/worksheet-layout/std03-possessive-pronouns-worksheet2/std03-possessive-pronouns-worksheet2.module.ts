@@ -5,9 +5,9 @@ import { Std03PossessivePronounsWorksheet2RoutingModule } from './std03-possessi
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PossessivePronounsWorksheet2Component } from './std03-possessive-pronouns-worksheet2.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PossessivePronounsWorksheet2Component
     }
 ];

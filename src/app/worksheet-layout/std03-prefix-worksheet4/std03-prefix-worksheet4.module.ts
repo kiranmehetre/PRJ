@@ -5,9 +5,9 @@ import { Std03PrefixWorksheet4RoutingModule } from './std03-prefix-worksheet4-ro
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PrefixWorksheet4Component } from './std03-prefix-worksheet4.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PrefixWorksheet4Component
     }
 ];

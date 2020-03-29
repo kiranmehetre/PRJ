@@ -5,9 +5,9 @@ import { Std03SuffixReferenceListRoutingModule } from './std03-suffix-reference-
 import { RouterModule, Routes } from "@angular/router";
 import { Std03SuffixReferenceListComponent } from './std03-suffix-reference-list.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03SuffixReferenceListComponent
     }
 ];

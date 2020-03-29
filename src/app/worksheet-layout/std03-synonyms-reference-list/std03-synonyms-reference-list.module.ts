@@ -6,9 +6,9 @@ import { Std03SynonymsReferenceListRoutingModule } from './std03-synonyms-refere
 import { RouterModule, Routes } from "@angular/router";
 import { Std03SynonymsReferenceListComponent } from './std03-synonyms-reference-list.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03SynonymsReferenceListComponent
     }
 ];

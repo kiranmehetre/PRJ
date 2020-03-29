@@ -5,9 +5,9 @@ import { Std01SynonymsReferenceListRoutingModule } from './std01-synonyms-refere
 import { RouterModule, Routes } from "@angular/router";
 import { Std01SynonymsReferenceListComponent } from './std01-synonyms-reference-list.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01SynonymsReferenceListComponent
     }
 ];

@@ -5,9 +5,9 @@ import { Std01SingularPluralNounsWorksheet6RoutingModule } from './std01-singula
 import { RouterModule, Routes } from "@angular/router";
 import { Std01SingularPluralNounsWorksheet6Component } from './std01-singular-plural-nouns-worksheet6.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01SingularPluralNounsWorksheet6Component
     }
 ];

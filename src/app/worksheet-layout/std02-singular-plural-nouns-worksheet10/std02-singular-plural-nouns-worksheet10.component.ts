@@ -12,7 +12,8 @@ export class Std02SingularPluralNounsWorksheet10Component implements OnInit {
   constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
- this.commonWorksheet.reuseRoute();  
+ this.commonWorksheet.reuseRoute();
+    const globalThis = this;  
     $('.loadingDiv').hide();
     setImages();  
 	window.onload = function () { 

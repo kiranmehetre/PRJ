@@ -13,6 +13,7 @@ export class Std03MixedNounWorksheet1Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');
@@ -104,7 +105,7 @@ export class Std03MixedNounWorksheet1Component implements OnInit {
 
       $('.button').click(function () {
         if ($('.button').hasClass('playAgain')) {
-          window.location.reload();
+          globalThis.commonWorksheet.reuseRoute();
         }
         else {
           var Correct_Answers_Count = 0;

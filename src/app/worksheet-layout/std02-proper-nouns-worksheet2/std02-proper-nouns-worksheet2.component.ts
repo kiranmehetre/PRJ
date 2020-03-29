@@ -12,6 +12,7 @@ export class Std02ProperNounsWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -105,8 +106,8 @@ $('.option span').each(function() {
 
 $('.button').click(function () {
       if($(this).hasClass('playAgain')){
-           window.location.href=window.location.href;
-          // window.location.reload();
+           globalThis.commonWorksheet.reloadComponent();
+          // this.commonWorksheet.reuseRoute();
           // $(inputs).val("");
       //    $('.imgBox img').attr('src','');
       }

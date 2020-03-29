@@ -4,6 +4,7 @@ import { Std01HomophonesWorksheet2RoutingModule } from './std01-homophones-works
 import { RouterModule, Routes } from "@angular/router";
 import { Std01HomophonesWorksheet2Component } from './std01-homophones-worksheet2.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
       path: "",

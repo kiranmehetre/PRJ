@@ -13,6 +13,7 @@ export class Std02AdverbsWorksheet6Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {
@@ -132,7 +133,7 @@ export class Std02AdverbsWorksheet6Component implements OnInit {
     $('.button').click(function () {
       if ($('.button').hasClass('playAgain')) {
         // alert('click');
-        window.location.reload();
+        globalThis.commonWorksheet.reuseRoute();
       }
       else {
         var inputCount = 0;

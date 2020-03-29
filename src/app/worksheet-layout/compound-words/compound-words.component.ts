@@ -15,6 +15,7 @@ export class CompoundWordsComponent implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
 
 

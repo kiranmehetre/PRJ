@@ -13,6 +13,7 @@ export class Std03HomophonesWorksheet9Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');

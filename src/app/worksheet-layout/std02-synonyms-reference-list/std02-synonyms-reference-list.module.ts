@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std02SynonymsReferenceListComponent } from './std02-synonyms-reference-list.component';
 import { Routes, RouterModule } from '@angular/router';
+import {  ClassTwoAuth} from "../Auth/ClassTwoAuth"
 const routes: Routes = [
-  { path: '', component: Std02SynonymsReferenceListComponent }, 
+  { path: '',  canActivate: [ClassTwoAuth], component: Std02SynonymsReferenceListComponent }, 
 
 ];
 @NgModule({

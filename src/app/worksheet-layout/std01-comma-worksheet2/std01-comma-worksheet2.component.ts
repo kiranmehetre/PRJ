@@ -13,6 +13,7 @@ export class Std01CommaWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
 
     $('.loadingDiv').hide();

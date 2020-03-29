@@ -30,6 +30,7 @@ export class Std02RhymingWordsReferenceListComponent implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
   }
 

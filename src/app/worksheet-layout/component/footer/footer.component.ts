@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+import { CommonWorksheetService } from '../../common-worksheet.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(){}
+  constructor(@Inject(forwardRef(() => CommonWorksheetService)) public ms: CommonWorksheetService) {
+    console.log(ms);
+  }
 
   ngOnInit() {
   }

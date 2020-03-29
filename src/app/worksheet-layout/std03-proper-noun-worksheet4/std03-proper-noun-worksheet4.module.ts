@@ -5,9 +5,9 @@ import { Std03ProperNounWorksheet4RoutingModule } from './std03-proper-noun-work
 import { RouterModule, Routes } from "@angular/router";
 import { Std03ProperNounWorksheet4Component } from './std03-proper-noun-worksheet4.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03ProperNounWorksheet4Component
     }
 ];

@@ -12,9 +12,7 @@ export class Std01AdjectiveWorksheet6Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
-
-   let globalThis = this;
-   this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
     $('.loadingDiv').hide();
     setImages();
@@ -112,7 +110,7 @@ $(document).ready(function(){
   
   $('.button').click(function(){
     if($(this).hasClass('playAgain')){
-      // window.location.href=window.location.href;
+      // globalThis.commonWorksheet.reloadComponent();
       globalThis.commonWorksheet.reloadComponent();
     }
     else{

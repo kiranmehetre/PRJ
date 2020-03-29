@@ -19,8 +19,7 @@ export class Std01AdjectiveWorksheet2Component implements OnInit {
   ngOnInit() {
 
     this.commonWorksheet.reuseRoute();
-    let globalThis = this;
-
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {

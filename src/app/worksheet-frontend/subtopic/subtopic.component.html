@@ -12,16 +12,16 @@
                 <div class="col-sm-6 col-md-7 col-lg-8 text-right menu menu-right display-none">
                     <div class="">
                         <ul>
-                        <li><a [routerLink]="['/home']" >Home</a></li>  
+                        <li><a style="cursor: pointer;" [routerLink]="['/home']" >Home</a></li>  
                             <!-- <li *ngIf="subtopic_id != 0">
                                 <a href="">How</a>
                             </li> -->
                             <li><a href="https://youtu.be/auYeK07yMyY">Tutorial</a></li>   
                             <li *ngIf="subtopic_id != 0">
-                                <a [routerLink]="['/topic',id]" routerLinkActive="router-link-active"  > Back</a>
+                                <a style="cursor: pointer;" [routerLink]="['/topic',id]" routerLinkActive="router-link-active"  > Back</a>
                             </li> 
                             <li *ngIf="subtopic_id == 0">
-                                <a routerLink="/{{localStorageGrade}}" routerLinkActive="router-link-active"  >  Back</a>
+                                <a style="cursor: pointer;" routerLink="/{{localStorageGrade}}" routerLinkActive="router-link-active"  >  Back</a>
                             </li> 
                        
                             <li>
@@ -31,7 +31,7 @@
                                 </a>
                                 <ul class="dropdown user_dropdown">
                                     <!-- <li><a href="dashboard/1">Dashboard</a></li>  -->
-                                    <li><a [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
+                                    <li><a style="cursor: pointer;" [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
                                     <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
                                     <!-- <li><a href="change-password">Change Password</a></li> -->
                                 </ul>
@@ -58,7 +58,7 @@
                     <h3>VIDEO</h3>
                    
                         <span class="thumbnail_icon">  
-                                <a class="videolink" routerLink="{{subtopic_details ? subtopic_details[0]?.subtopic_video : ''}}">                     
+                                <a class="videolink" style="cursor: pointer;" routerLink="{{subtopic_details ? subtopic_details[0]?.subtopic_video : ''}}">                     
                                     <img src="assets/frontend_assets/img/video_icon.png" alt="">
                                     <!-- <div class="thumbnail" *ngFor="let subtopic of subtopic_details">   </div>    -->                      
                                 </a>    
@@ -69,7 +69,7 @@
                 <div class="col-8 reference_list" *ngIf="subtopic_reference == true">
                     <h3><span>REFERENCE </span> <span>LIST</span> </h3>
                         <span class="thumbnail_icon">                 
-                            <a class="referencelink" routerLink="../../../worksheet-layout/{{subtopic_details ? subtopic_details[0].subtopic_referencelist : ''}}">       
+                            <a style="cursor: pointer;" class="referencelink" routerLink="../../../worksheet-layout/{{subtopic_details ? subtopic_details[0].subtopic_referencelist : ''}}">       
                                     <img src="assets/frontend_assets/img/referenceList_icon.png" alt="">                           
                              </a>     
                         </span>        
@@ -86,7 +86,7 @@
 
                                         <div class="thumbnail"  *ngFor="let worksheet of worksheet_list; index as i">
                                            
-                                            <a (click)="fetchData(worksheet)">
+                                            <a style="cursor: pointer;" (click)="fetchData(worksheet)">
                                                 <h1>{{i+1}}</h1>
                                             </a>
                                             <!-- <a routerLink="/worksheet-layout/{{worksheet.worksheet_link}}">

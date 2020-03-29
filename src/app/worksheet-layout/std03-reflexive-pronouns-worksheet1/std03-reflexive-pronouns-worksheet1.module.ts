@@ -5,9 +5,9 @@ import { Std03ReflexivePronounsWorksheet1RoutingModule } from './std03-reflexive
 import { RouterModule, Routes } from "@angular/router";
 import { Std03ReflexivePronounsWorksheet1Component } from './std03-reflexive-pronouns-worksheet1.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03ReflexivePronounsWorksheet1Component
     }
 ];

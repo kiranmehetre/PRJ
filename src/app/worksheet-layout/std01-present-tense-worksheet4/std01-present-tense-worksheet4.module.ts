@@ -5,9 +5,9 @@ import { Std01PresentTenseWorksheet4RoutingModule } from './std01-present-tense-
 import { RouterModule, Routes } from "@angular/router";
 import { Std01PresentTenseWorksheet4Component } from './std01-present-tense-worksheet4.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01PresentTenseWorksheet4Component
     }
 ];

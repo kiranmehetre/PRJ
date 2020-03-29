@@ -13,6 +13,7 @@ export class Std02RhymingWordsWorksheet9Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {

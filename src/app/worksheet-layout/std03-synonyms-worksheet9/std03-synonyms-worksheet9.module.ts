@@ -5,9 +5,9 @@ import { Std03SynonymsWorksheet9RoutingModule } from './std03-synonyms-worksheet
 import { RouterModule, Routes } from "@angular/router";
 import { Std03SynonymsWorksheet9Component } from './std03-synonyms-worksheet9.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03SynonymsWorksheet9Component
     }
 ];

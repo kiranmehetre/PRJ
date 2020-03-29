@@ -5,9 +5,9 @@ import { Std01GenderNounsReferenceListRoutingModule } from './std01-gender-nouns
 import { RouterModule, Routes } from "@angular/router";
 import { Std01GenderNounsReferenceListComponent } from './std01-gender-nouns-reference-list.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01GenderNounsReferenceListComponent
     }
 ];

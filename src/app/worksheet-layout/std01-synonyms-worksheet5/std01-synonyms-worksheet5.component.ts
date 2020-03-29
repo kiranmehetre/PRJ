@@ -12,6 +12,7 @@ export class Std01SynonymsWorksheet5Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
         
       $('.loadingDiv').hide();
       setImages();

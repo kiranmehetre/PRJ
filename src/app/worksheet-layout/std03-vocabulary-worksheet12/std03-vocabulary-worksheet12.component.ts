@@ -13,6 +13,7 @@ export class Std03VocabularyWorksheet12Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
       $('.loadingDiv').hide();
       setImages();
@@ -109,7 +110,7 @@ export class Std03VocabularyWorksheet12Component implements OnInit {
     
         $('.button').click(function () {
             if ($('.button').hasClass('playAgain')) {
-                window.location.reload();
+                globalThis.commonWorksheet.reuseRoute();
             }
             else {
                 var Correct_Answers_Count = 0;

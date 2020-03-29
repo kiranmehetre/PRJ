@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std02AdverbsWorksheet2Component } from './std02-adverbs-worksheet2.component';
 import { Routes, RouterModule } from '@angular/router';
+import {  ClassTwoAuth} from "../Auth/ClassTwoAuth"
 const routes: Routes = [
-  { path: '', component: Std02AdverbsWorksheet2Component }, 
+  { path: '',  canActivate: [ClassTwoAuth], component: Std02AdverbsWorksheet2Component }, 
 
 ];
 @NgModule({

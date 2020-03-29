@@ -13,6 +13,7 @@ export class Std02CapitalLetterWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
         
@@ -83,8 +84,7 @@ export class Std02CapitalLetterWorksheet2Component implements OnInit {
 
     $('.button').click(function () {
       if ($('.button').hasClass('playAgain')) {
-        // globalThis.commonWorksheet.reloadComponent();
-        window.location.reload();
+        globalThis.commonWorksheet.reloadComponent();
       }
       else {
         var underlinedCount = $('.underlined').length;

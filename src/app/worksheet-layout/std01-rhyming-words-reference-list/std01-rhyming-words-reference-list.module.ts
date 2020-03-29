@@ -6,9 +6,9 @@ import { Std01RhymingWordsReferenceListRoutingModule } from './std01-rhyming-wor
 import { RouterModule, Routes } from "@angular/router";
 import { Std01RhymingWordsReferenceListComponent } from './std01-rhyming-words-reference-list.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01RhymingWordsReferenceListComponent
     }
 ];

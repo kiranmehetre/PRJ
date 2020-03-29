@@ -4,9 +4,9 @@ import { Std01PossessivePronounsWorksheet2RoutingModule } from './std01-possessi
 import { RouterModule, Routes } from "@angular/router";
 import { Std01PossessivePronounsWorksheet2Component } from './std01-possessive-pronouns-worksheet2.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01PossessivePronounsWorksheet2Component
     }
 ];

@@ -15,7 +15,7 @@ export class Std01AdjectiveWorksheet1Component implements OnInit {
 
   ngOnInit() {
    this.commonWorksheet.reuseRoute();
-        let globalThis = this;
+    const globalThis = this;
       window.onload = function () { 
          
       }

@@ -13,6 +13,7 @@ export class Std01CollectiveNounWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
     $('.loadingDiv').hide();
     setImages();
@@ -109,7 +110,6 @@ export class Std01CollectiveNounWorksheet2Component implements OnInit {
       if ($('.button').hasClass('playAgain')) {
         $('input').val('');
         globalThis.commonWorksheet.reloadComponent();
-        window.location.reload();
 
       }
       else {

@@ -5,9 +5,9 @@ import { Std01MixedVerbWorksheet1RoutingModule } from './std01-mixed-verb-worksh
 import { RouterModule, Routes } from "@angular/router";
 import { Std01MixedVerbWorksheet1Component } from './std01-mixed-verb-worksheet1.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01MixedVerbWorksheet1Component
     }
 ];

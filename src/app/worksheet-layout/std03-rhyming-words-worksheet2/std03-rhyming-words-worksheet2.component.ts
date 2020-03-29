@@ -15,6 +15,7 @@ export class Std03RhymingWordsWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {

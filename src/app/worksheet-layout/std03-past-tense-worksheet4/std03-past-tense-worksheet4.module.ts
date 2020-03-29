@@ -5,9 +5,9 @@ import { Std03PastTenseWorksheet4RoutingModule } from './std03-past-tense-worksh
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PastTenseWorksheet4Component } from './std03-past-tense-worksheet4.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PastTenseWorksheet4Component
     }
 ];

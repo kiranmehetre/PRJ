@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router'
 import { Std01AdjectiveWorksheet3Component } from './std01-adjective-worksheet3.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-  { path: '', component: Std01AdjectiveWorksheet3Component
+  { path: '', canActivate: [ClassOneAuth], component: Std01AdjectiveWorksheet3Component
   }
 
 ]

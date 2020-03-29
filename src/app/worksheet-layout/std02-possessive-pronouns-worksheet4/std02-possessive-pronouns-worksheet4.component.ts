@@ -13,6 +13,7 @@ export class Std02PossessivePronounsWorksheet4Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
     window.onload = function () {

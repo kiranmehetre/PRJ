@@ -5,9 +5,9 @@ import { Std01HomophonesWorksheet3RoutingModule } from './std01-homophones-works
 import { RouterModule, Routes } from "@angular/router";
 import { Std01HomophonesWorksheet3Component } from './std01-homophones-worksheet3.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01HomophonesWorksheet3Component
     }
 ];

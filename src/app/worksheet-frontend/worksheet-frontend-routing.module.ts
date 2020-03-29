@@ -10,26 +10,26 @@ import { TopicComponent } from 'src/app/worksheet-frontend/topic/topic.component
 import { SubtopicComponent } from 'src/app/worksheet-frontend/subtopic/subtopic.component';
 import { LoginComponent } from 'src/app/worksheet-frontend/login/login.component';
 import { UpdateDetailsComponent } from 'src/app/worksheet-frontend/update-details/update-details.component';
-
+import { MainAuth } from './mainAuth';
 
 const routes: Routes = [
   {
     path: '',
     component: WorksheetFrontendComponent,
-    children:[
-      { path: '', component: MainComponent },
-      { path: 'home', component: MainComponent },
-      { path: 'signup', component: SignupComponent},
-      { path: 'login', component: LoginComponent},
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'dashboard/:grade', component: DashboardComponent },
-      { path: 'change-password', component: ChangePasswordComponent},
-      { path: 'topic/:id', component: TopicComponent},
-      { path: 'subtopic/:id/:subtopic_id', component: SubtopicComponent},
-      { path: 'update-details', component: UpdateDetailsComponent}
+    children: [
+      { path: '', canActivate: [MainAuth], component: MainComponent },
+      { path: 'home', canActivate: [MainAuth], component: MainComponent },
+      { path: 'signup', component: SignupComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'dashboard', canActivate: [MainAuth], component: DashboardComponent },
+      { path: 'dashboard/:grade', canActivate: [MainAuth], component: DashboardComponent },
+      { path: 'change-password', canActivate: [MainAuth], component: ChangePasswordComponent },
+      { path: 'topic/:id', canActivate: [MainAuth], component: TopicComponent },
+      { path: 'subtopic/:id/:subtopic_id', canActivate: [MainAuth], component: SubtopicComponent },
+      { path: 'update-details', canActivate: [MainAuth], component: UpdateDetailsComponent }
     ]
   }
-];    
+];
 
 
 @NgModule({
@@ -38,6 +38,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports:[RouterModule]
+  exports: [RouterModule]
 })
 export class WorksheetFrontendRoutingModule { }

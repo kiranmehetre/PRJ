@@ -5,9 +5,9 @@ import { Std03VocabularyWorksheet12RoutingModule } from './std03-vocabulary-work
 import { RouterModule, Routes } from "@angular/router";
 import { Std03VocabularyWorksheet12Component } from './std03-vocabulary-worksheet12.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03VocabularyWorksheet12Component
     }
 ];

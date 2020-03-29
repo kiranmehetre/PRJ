@@ -2,8 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {Std03CommaWorksheet2Component} from './std03-comma-worksheet2.component'
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-  { path: '', component:Std03CommaWorksheet2Component  }, 
+  { path: '', canActivate: [ClassThreeAuth], component:Std03CommaWorksheet2Component  }, 
 
 ];
 @NgModule({

@@ -5,9 +5,10 @@ import { Std01ConjunctionsWorksheet1RoutingModule } from './std01-conjunctions-w
 import { RouterModule, Routes } from '@angular/router';
 import { Std01ConjunctionsWorksheet1Component } from './std01-conjunctions-worksheet1.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01ConjunctionsWorksheet1Component
   }
 ]

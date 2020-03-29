@@ -5,9 +5,9 @@ import { Std01PersonalPronounsWorksheet4RoutingModule } from './std01-personal-p
 import { RouterModule, Routes } from "@angular/router";
 import { Std01PersonalPronounsWorksheet4Component } from './std01-personal-pronouns-worksheet4.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01PersonalPronounsWorksheet4Component
     }
 ];

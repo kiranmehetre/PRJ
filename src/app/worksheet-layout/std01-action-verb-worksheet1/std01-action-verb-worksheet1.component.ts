@@ -14,6 +14,7 @@ export class Std01ActionVerbWorksheet1Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     window.onload = function () { 
       $('.loadingDiv').hide();
       setImages();

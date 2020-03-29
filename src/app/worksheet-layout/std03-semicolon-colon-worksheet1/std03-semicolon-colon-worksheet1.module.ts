@@ -6,9 +6,9 @@ import { Std03SemicolonColonWorksheet1RoutingModule } from './std03-semicolon-co
 import { RouterModule, Routes } from "@angular/router";
 import { Std03SemicolonColonWorksheet1Component } from './std03-semicolon-colon-worksheet1.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03SemicolonColonWorksheet1Component
     }
 ];

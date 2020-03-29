@@ -12,6 +12,7 @@ export class Std02SynonymsWorksheet5Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     $('.loadingDiv').hide();
     setImages();
 	window.onload = function () { 
@@ -106,7 +107,7 @@ $('.help-box .col-3').each(function () {
 });
 $('.button').click(function () {
   if($(this).hasClass('playAgain')){
-    window.location.href=window.location.href;
+    globalThis.commonWorksheet.reloadComponent();
   }
   else{
     var inputCount = $('input[type="text"]').filter(function () {

@@ -16,6 +16,7 @@ export class Std01ArticlesWorksheet3Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
 
     window.onload = function () {

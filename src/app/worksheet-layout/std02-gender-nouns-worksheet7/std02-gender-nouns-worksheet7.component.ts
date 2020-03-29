@@ -15,6 +15,7 @@ export class Std02GenderNounsWorksheet7Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
     $('.loadingDiv').hide();
     setImages();

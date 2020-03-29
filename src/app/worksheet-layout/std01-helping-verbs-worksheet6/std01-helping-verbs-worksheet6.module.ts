@@ -6,9 +6,9 @@ import { Std01HelpingVerbsWorksheet6RoutingModule } from './std01-helping-verbs-
 import { RouterModule, Routes } from "@angular/router";
 import { Std01HelpingVerbsWorksheet6Component } from './std01-helping-verbs-worksheet6.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01HelpingVerbsWorksheet6Component
     }
 ];

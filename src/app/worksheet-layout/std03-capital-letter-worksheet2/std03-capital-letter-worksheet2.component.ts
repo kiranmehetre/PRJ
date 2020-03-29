@@ -15,6 +15,7 @@ export class Std03CapitalLetterWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
      $('.loadingDiv').hide();
       setImages();
     var theToggle = document.getElementById('toggle');

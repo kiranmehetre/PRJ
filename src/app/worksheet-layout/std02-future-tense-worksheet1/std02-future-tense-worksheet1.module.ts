@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std02FutureTenseWorksheet1Component } from './std02-future-tense-worksheet1.component';
 import { Routes, RouterModule } from '@angular/router';
+import {  ClassTwoAuth} from "../Auth/ClassTwoAuth"
 const routes: Routes = [
-  { path: '', component: Std02FutureTenseWorksheet1Component }, 
+  { path: '',  canActivate: [ClassTwoAuth], component: Std02FutureTenseWorksheet1Component }, 
 
 ];
 @NgModule({

@@ -12,7 +12,8 @@ export class Std02DemonstrativePronounWorksheet3Component implements OnInit {
   constructor(private commonWorksheet: CommonWorksheetService){}
 
   ngOnInit() {
- this.commonWorksheet.reuseRoute(); 
+ this.commonWorksheet.reuseRoute();
+    const globalThis = this; 
     $('.loadingDiv').hide();
         setImages();   
     window.onload = function () { 

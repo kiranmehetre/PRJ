@@ -14,6 +14,7 @@ export class Std01ActionVerbWorksheet2Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
     window.onload = function () { 
         $('.loadingDiv').hide();
@@ -71,7 +72,7 @@ export class Std01ActionVerbWorksheet2Component implements OnInit {
         
         $('.button').click(function(){
             if($(this).hasClass('playAgain')){
-                window.location.href=window.location.href;
+                globalThis.commonWorksheet.reloadComponent();
             }
             else{
                 if($('.underlined').length >= 4){

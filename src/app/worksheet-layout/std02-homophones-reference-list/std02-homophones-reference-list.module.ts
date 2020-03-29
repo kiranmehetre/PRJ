@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std02HomophonesReferenceListComponent } from './std02-homophones-reference-list.component';
 import { Routes, RouterModule } from '@angular/router';
+import {  ClassTwoAuth} from "../Auth/ClassTwoAuth"
 const routes: Routes = [
-  { path: '', component: Std02HomophonesReferenceListComponent }, 
+  { path: '',  canActivate: [ClassTwoAuth], component: Std02HomophonesReferenceListComponent }, 
 
 ];
 @NgModule({

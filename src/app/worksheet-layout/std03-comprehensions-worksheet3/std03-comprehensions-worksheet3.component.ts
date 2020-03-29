@@ -30,6 +30,7 @@ export class Std03ComprehensionsWorksheet3Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
     window.onload = function () {
       setImages();
       $('.loadingDiv').hide();

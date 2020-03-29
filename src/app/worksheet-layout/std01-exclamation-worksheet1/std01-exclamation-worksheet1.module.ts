@@ -5,9 +5,9 @@ import { Std01ExclamationWorksheet1RoutingModule } from './std01-exclamation-wor
 import { RouterModule, Routes } from "@angular/router";
 import { Std01ExclamationWorksheet1Component } from './std01-exclamation-worksheet1.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01ExclamationWorksheet1Component
     }
 ];

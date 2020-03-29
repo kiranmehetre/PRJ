@@ -4,9 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { Std01AntonymsWorksheet3RoutingModule } from './std01-antonyms-worksheet3-routing.module';
 import { Std01AntonymsWorksheet3Component } from './std01-antonyms-worksheet3.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01AntonymsWorksheet3Component
   }
 ]

@@ -4,9 +4,9 @@ import { Std01RhymingWordsWorksheet3RoutingModule } from './std01-rhyming-words-
 import { RouterModule, Routes } from "@angular/router";
 import { Std01RhymingWordsWorksheet3Component } from './std01-rhyming-words-worksheet3.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01RhymingWordsWorksheet3Component
     }
 ];

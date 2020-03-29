@@ -15,6 +15,7 @@ export class Std01SingularPluralNounsWorksheet10Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
         
 	  $('.loadingDiv').hide();
 		  setImages();

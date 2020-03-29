@@ -5,9 +5,9 @@ import { RouterModule, Routes } from "@angular/router";
 import { Std01MixedPunctuationWorksheet2Component } from './std01-mixed-punctuation-worksheet2.component';
 
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01MixedPunctuationWorksheet2Component
     }
 ];

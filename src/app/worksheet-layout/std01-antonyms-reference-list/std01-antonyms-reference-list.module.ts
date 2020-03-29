@@ -4,9 +4,10 @@ import { Std01AntonymsReferenceListRoutingModule } from './std01-antonyms-refere
 import { RouterModule, Routes } from '@angular/router';
 import { Std01AntonymsReferenceListComponent } from './std01-antonyms-reference-list.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01AntonymsReferenceListComponent
   }
 ]

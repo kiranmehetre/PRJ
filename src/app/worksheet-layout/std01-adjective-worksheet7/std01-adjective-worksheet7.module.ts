@@ -4,9 +4,10 @@ import { Std01AdjectiveWorksheet7RoutingModule } from './std01-adjective-workshe
 import { RouterModule, Routes } from '@angular/router';
 import { Std01AdjectiveWorksheet7Component } from './std01-adjective-worksheet7.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01AdjectiveWorksheet7Component
   }
 ];

@@ -5,9 +5,9 @@ import { Std01FutureTenseWorksheet1RoutingModule } from './std01-future-tense-wo
 import { RouterModule, Routes } from "@angular/router";
 import { Std01FutureTenseWorksheet1Component } from './std01-future-tense-worksheet1.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01FutureTenseWorksheet1Component
     }
 ];

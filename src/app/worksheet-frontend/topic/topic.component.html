@@ -10,9 +10,9 @@
                 <div class="col-sm-6 text-right menu display-none">
                     <div class="">
                         <ul>
-                            <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
+                            <li><a style="cursor: pointer;" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
                             <li><a href="https://youtu.be/auYeK07yMyY">Tutorial</a></li>   
-                            <li><a routerLink="/{{localStorageGrade}}">Back</a></li>
+                            <li><a style="cursor: pointer;" routerLink="/{{localStorageGrade}}">Back</a></li>
                             <!-- <li class="toggle_topic">
                                 <a style="cursor:pointer;"><span class="orange_color">Change</span> Topic<img src="assets/frontend_assets/img/down_arrow.svg" alt=""
                                         class="arrow"></a>
@@ -29,7 +29,7 @@
                                 </a>
                                 <ul class="dropdown user_dropdown">
                                     <!-- <li><a href="dashboard/1">Dashboard</a></li>  -->                                   
-                                    <li><a [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
+                                    <li><a style="cursor: pointer;" [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
                                     <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
                                     <!-- <li><a href="change-password">Change Password</a></li> -->
                                 </ul>
@@ -51,9 +51,9 @@
                 <div class="sub_topic_Container">
                     <div class="not_found_message" *ngIf="subTopicNotFound == true"> Subtopic Not available.</div>
                     <!-- <div class="loader"></div> -->
-                    <div class="sub_topic_list scrollbar" id="scrollbar">
-                        <a routerLink="/subtopic/{{id + '/' + subtopic.subtopic_id}}"   *ngFor="let subtopic of subtopic_details">
-                            <div class="sub_topic">
+                    <div class="sub_topic_list scrollbar" id="scrollbar" style="cursor: pointer;">
+                        <a style="cursor: pointer;" routerLink="/subtopic/{{id + '/' + subtopic.subtopic_id}}"   *ngFor="let subtopic of subtopic_details">
+                            <div class="sub_topic" style="cursor: pointer;">
                                 <div class="sub_topic_img"> 
                                     <img src="{{subtopic.subtopic_image}}">
                                 </div>

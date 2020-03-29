@@ -5,9 +5,10 @@ import { Std01DemostrativePronounWorksheet2RoutingModule } from './std01-demostr
 import { RouterModule, Routes } from '@angular/router';
 import { Std01DemostrativePronounWorksheet2Component } from './std01-demostrative-pronoun-worksheet2.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
   {
-    path: "",
+     path: "",canActivate: [ClassOneAuth],
     component: Std01DemostrativePronounWorksheet2Component
   }
 ]

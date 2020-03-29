@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Std02PrepositionsWorksheet10Component } from './std02-prepositions-worksheet10.component';
 import { Routes, RouterModule } from '@angular/router';
+import {  ClassTwoAuth} from "../Auth/ClassTwoAuth"
 const routes: Routes = [
-  { path: '', component: Std02PrepositionsWorksheet10Component }, 
+  { path: '',  canActivate: [ClassTwoAuth], component: Std02PrepositionsWorksheet10Component }, 
 
 ];
 @NgModule({

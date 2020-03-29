@@ -4,9 +4,9 @@ import { Std03SuffixWorksheet2RoutingModule } from './std03-suffix-worksheet2-ro
 import { RouterModule, Routes } from "@angular/router";
 import { Std03SuffixWorksheet2Component } from './std03-suffix-worksheet2.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03SuffixWorksheet2Component
     }
 ];

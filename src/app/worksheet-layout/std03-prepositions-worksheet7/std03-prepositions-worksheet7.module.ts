@@ -5,9 +5,9 @@ import { Std03PrepositionsWorksheet7RoutingModule } from './std03-prepositions-w
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PrepositionsWorksheet7Component } from './std03-prepositions-worksheet7.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PrepositionsWorksheet7Component
     }
 ];

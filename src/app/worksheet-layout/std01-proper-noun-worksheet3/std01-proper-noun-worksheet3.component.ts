@@ -13,6 +13,7 @@ export class Std01ProperNounWorksheet3Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
 
     $('.loadingDiv').hide();
     setImages();
@@ -114,7 +115,7 @@ export class Std01ProperNounWorksheet3Component implements OnInit {
       $('.button').click(function () {
 
         if ($('.button').hasClass('playAgain')) {
-          window.location.reload();
+          globalThis.commonWorksheet.reloadComponent();
         }
         else {
           var Correct_Answers_Count = 0;

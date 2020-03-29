@@ -4,9 +4,9 @@ import { Std01PrepositionsWorksheet8RoutingModule } from './std01-prepositions-w
 import { RouterModule, Routes } from "@angular/router";
 import { Std01PrepositionsWorksheet8Component } from './std01-prepositions-worksheet8.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01PrepositionsWorksheet8Component
     }
 ];

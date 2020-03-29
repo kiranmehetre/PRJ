@@ -5,9 +5,9 @@ import { Std03PrefixReferenceListRoutingModule } from './std03-prefix-reference-
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PrefixReferenceListComponent } from './std03-prefix-reference-list.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PrefixReferenceListComponent
     }
 ];

@@ -2,8 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {Std03CollectiveNounsReferenceListComponent} from './std03-collective-nouns-reference-list.component'
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-  { path: '', component: Std03CollectiveNounsReferenceListComponent }, 
+  { path: '', canActivate: [ClassThreeAuth], component: Std03CollectiveNounsReferenceListComponent }, 
 
 ];
 @NgModule({

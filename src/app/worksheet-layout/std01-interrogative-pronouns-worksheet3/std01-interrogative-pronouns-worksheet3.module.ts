@@ -4,9 +4,9 @@ import { Std01InterrogativePronounsWorksheet3RoutingModule } from './std01-inter
 import { RouterModule, Routes } from "@angular/router";
 import { Std01InterrogativePronounsWorksheet3Component } from './std01-interrogative-pronouns-worksheet3.component';
 
+import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassOneAuth],
         component: Std01InterrogativePronounsWorksheet3Component
     }
 ];

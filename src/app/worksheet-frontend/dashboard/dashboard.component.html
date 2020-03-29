@@ -29,7 +29,7 @@
                                         <img src="assets/frontend_assets/img/down_arrow.svg" alt="" class="arrow">
                                     </a>
                                     <ul class="dropdown user_dropdown">
-                                        <li><a [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
+                                        <li style="cursor: pointer;"><a [routerLink]="['/update-details']" routerLinkActive="router-link-active" >Profile</a></li>
                                         <li><a style="cursor:pointer;" (click)="apiRequest.onLoggedout()">Logout</a></li>
                                         <!-- <li><a href="change-password">Change Password</a></li>-->
                                     </ul> 
@@ -49,10 +49,10 @@
                                 <div id="coverflow">
                                         <div class="loader"></div>
                                         <ul class="flip-items">
-                                            <li *ngFor="let topic of topic_list">
+                                            <li *ngFor="let topic of topic_list" style="cursor: pointer;">
                                                 <div class="flip-img">
                                                     <!-- <a [routerLink]="['/routePath']"  href="{{topic.subtopic == 'yes' ? 'topic/' + topic.topic_id : 'subtopic/' + topic.topic_id + '/0' }}" style="text-decoration:none;"> -->
-                                                        <a (click)="navigateToTopic(topic)" style="text-decoration:none;">
+                                                        <a style="cursor: pointer;" (click)="navigateToTopic(topic)" style="text-decoration:none;">
                                                         <img class="mx-auto d-block" src="{{topic.topic_image}}" alt="" class="topic">
                                                     </a>
                                                 </div>

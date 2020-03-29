@@ -5,9 +5,9 @@ import { Std03MixedVerbWorksheet3RoutingModule } from './std03-mixed-verb-worksh
 import { RouterModule, Routes } from "@angular/router";
 import { Std03MixedVerbWorksheet3Component } from './std03-mixed-verb-worksheet3.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03MixedVerbWorksheet3Component
     }
 ];

@@ -5,9 +5,9 @@ import { Std03PresentTenseWorksheet4RoutingModule } from './std03-present-tense-
 import { RouterModule, Routes } from "@angular/router";
 import { Std03PresentTenseWorksheet4Component } from './std03-present-tense-worksheet4.component';
 
+import {  ClassThreeAuth} from "../Auth/ClassThreeAuth"
 const routes: Routes = [
-    {
-        path: "",
+    { path: "",canActivate: [ClassThreeAuth],
         component: Std03PresentTenseWorksheet4Component
     }
 ];

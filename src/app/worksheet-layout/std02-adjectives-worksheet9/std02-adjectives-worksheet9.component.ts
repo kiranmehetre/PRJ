@@ -12,6 +12,7 @@ export class Std02AdjectivesWorksheet9Component implements OnInit {
 
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
+    const globalThis = this;
         
 	window.onload = function () { 
     $('.loadingDiv').hide()
