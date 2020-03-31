@@ -133,7 +133,7 @@ export class Std02AdverbsWorksheet6Component implements OnInit {
     $('.button').click(function () {
       if ($('.button').hasClass('playAgain')) {
         // alert('click');
-        globalThis.commonWorksheet.reuseRoute();
+        globalThis.commonWorksheet.reloadComponent();
       }
       else {
         var inputCount = 0;

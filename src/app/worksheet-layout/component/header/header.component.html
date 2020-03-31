@@ -5,7 +5,8 @@
             <li><a style="cursor: pointer;" [routerLink]="['../update-details']"  >Profile</a></li>
             <!-- <li><a href="dashboard/1">Dashboard</a></li> -->
             <!-- <li *ngIf="next == true" *ngIf="previous == true"><a href="{{subtopic_url}}">Subtopic</a></li> -->
-            <li *ngIf="topic_video != '#'"><a href="{{topic_video}}">Video</a></li>
+            <!-- <li *ngIf="topic_video != '#'"><a href="{{topic_video}}">Video</a></li> -->
+            <li *ngIf="topic_video != '#'"><a style="cursor: pointer;" (click)="renderVideo(topic_video)">Video</a></li>
             <li *ngIf="topic_referencelist != '#'"><a routerLink="{{'/worksheet-layout/' + topic_referencelist}}">Reference List</a></li>
             <li *ngIf="next == true"><a style="cursor: pointer;" (click)="nextWorkShhet(1)">Next worksheet </a></li>
             <li *ngIf="previous == true"><a style="cursor: pointer;" (click)="nextWorkShhet(2)">Previous worksheet</a></li>

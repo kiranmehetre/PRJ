@@ -73,8 +73,12 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
-
-
+.autocomplete-container .input-container input {
+  font-size: 20px!important;
+}
+app-signup .autocomplete-container .input-container input {
+  font-size: 16px !important;
+}
 // Content grouping
 //
 // 1. Add the correct box sizing in Firefox.

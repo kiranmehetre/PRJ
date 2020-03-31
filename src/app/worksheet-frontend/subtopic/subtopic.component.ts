@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';  
+import * as $ from 'jquery';
 import {ActivatedRoute, Router} from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 
@@ -40,6 +40,12 @@ export class SubtopicComponent implements OnInit {
 
     this.nxtClickCount = 5;
 
+   }
+   renderVideo(url)
+   {
+    $("#btnVideo").trigger( "click" );
+    var $video = $('#divVideo video'),
+    videoSrc = $('source', $video).attr('src', url);
    }
   ngOnInit() {
     this.loadAPI = new Promise((resolve) => {

@@ -2377,7 +2377,7 @@
                                 <!-- <li *ngFor="let grade of gradeArray"> <a href="{{'dashboard/' + grade}}"> {{"Grade " + grade}}</a></li> -->
                             </ul>
                         </li>
-                        <li><a href="https://youtu.be/auYeK07yMyY">Tutorial</a></li>
+                        <li><a style="cursor: pointer;" (click)="renderVideo('https://youtu.be/auYeK07yMyY')">Tutorial</a></li>
                         <li *ngIf="this.menu == false"><a [routerLink]="['/login']"  >Login</a></li> 
                         <li *ngIf="this.menu == true">
                             <a style="cursor:pointer;" class="dropdown_toggle circleprofile">

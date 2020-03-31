@@ -51,7 +51,7 @@
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                         <label class="control-label">First Name</label>
                                         <input maxlength="100" type="text" formControlName="first_name"  required="required"
-                                            class="form-control FirstName" placeholder="rob" value="{{user_details.first_name}}"/>
+                                            class="form-control FirstName" placeholder="rob" value="{{user_details?.first_name}}"/>
 
                                             <div *ngIf="updateForm.controls['first_name'].hasError('required') &&
                                             (updateForm.controls['first_name'].touched )" class="error-container">
@@ -62,7 +62,7 @@
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                         <label class="control-label">Last Name</label>
                                         <input maxlength="100" type="text" formControlName="last_name"  required="required"
-                                            class="form-control LastName" placeholder="lenon" value="{{user_details.last_name}}"/>
+                                            class="form-control LastName" placeholder="lenon" value="{{user_details?.last_name}}"/>
 
                                         <div *ngIf="updateForm.controls['last_name'].hasError('required') &&
                                             (updateForm.controls['last_name'].touched )" class="error-container">
@@ -74,14 +74,53 @@
                                 <div class="row mb-2">
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                         <label class="control-label">Country</label>
-                                        <input maxlength="100" type="text" required="required" formControlName="country" 
-                                            class="form-control Country" placeholder="India"  value={{user_details.country}}/>
+                                        <ng-autocomplete 
+                                      [data]="countryList"
+                                      [initialValue]
+                                      [searchKeyword]="keyword"
+                                      [placeHolder]="countryPlaceHolder" 
+                                      [itemTemplate]="itemTemplate" 
+                                      formControlName="country"
+                                      (inputCleared)="clearCountry(1)"
+                                      [notFoundTemplate]="notFoundTemplate" (selected)="countrySelect($event)">     
+                                                                  
+                                    </ng-autocomplete>
+
+                                    <ng-template #itemTemplate let-item>
+                                    <a [innerHTML]="item.name"></a>
+                                    </ng-template>
+                                     
+                                    <ng-template #notFoundTemplate let-notFound>
+                                    <div [innerHTML]="notFound"></div>
+                                    </ng-template>
+                                        <!-- <input maxlength="100" type="text" required="required" formControlName="country" 
+                                            class="form-control Country" placeholder="India"  value={{user_details.country}}/> -->
                                         <span class="Country hide error-span">Enter Country</span>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                         <label class="control-label">City</label>
-                                        <input maxlength="100" type="text" required="required" formControlName="city" 
-                                            class="form-control City" placeholder="Mumbai"  value={{user_details.city}}/>
+                                        <div class="ng-autocomplete" style="width: 100%;">
+                                            <ng-autocomplete 
+                                              [data]="cityList"
+                                              [searchKeyword]="keyword"
+                                              [placeHolder]="cityPlaceHolder" 
+                                              [itemTemplate]="itemTemplate" 
+                                              (inputCleared)="clearCountry(2)"
+                                              formControlName="city"
+                                              [notFoundTemplate]="notFoundTemplate" 
+                                              (selected)="citySelect($event)">                                 
+                                            </ng-autocomplete>
+                                             
+                                            <ng-template #itemTemplate let-item>
+                                            <a [innerHTML]="item.name"></a>
+                                            </ng-template>
+                                             
+                                            <ng-template #notFoundTemplate let-notFound>
+                                            <div [innerHTML]="notFound"></div>
+                                            </ng-template>
+                                            </div>
+                                        <!-- <input maxlength="100" type="text" required="required" formControlName="city" 
+                                            class="form-control City" placeholder="Mumbai"  value={{user_details.city}}/> -->
                                         <span class="City hide error-span">Enter City</span>
                                     </div>
                                 </div>
@@ -89,14 +128,14 @@
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                         <label class="control-label">Child Name</label>
                                         <input maxlength="100" type="text" required="required" formControlName="child_name" 
-                                            class="form-control child_name" placeholder="Child Name"  value={{user_details.child_name}}/>
+                                            class="form-control child_name" placeholder="Child Name"  value={{user_details?.child_name}}/>
                                         <span class="child_name hide error-span">Enter Child Name</span>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                         <label class="control-label">Birthday</label>
                                         <!-- <input id="datepicker" width="276" /> -->
                                         <input maxlength="100" type="text" id="datepicker" required="required"
-                                        formControlName="birth_day" class="form-control BirthDay" placeholder="MM/DD/YY"  value={{user_details.birth_day}} />
+                                        formControlName="birth_day" class="form-control BirthDay" placeholder="MM/DD/YY"  value={{user_details?.birth_day}} />
                                         <span class="BirthDay hide error-span">Enter Birth Date</span>
                                     </div>
                                 </div>
@@ -111,7 +150,7 @@
                                         <label class="control-label">Gender</label>
                                         <!-- <input id="datepicker" width="276" /> -->
                                         <input maxlength="100" type="text" required="required" formControlName="gender"
-                                            class="form-control gender" placeholder="Gender"  value={{user_details.gender}}/>
+                                            class="form-control gender" placeholder="Gender"  value={{user_details?.gender}}/>
                                         <span class="gender hide error-span">Enter Gender</span>
                                     </div>
                                 </div>

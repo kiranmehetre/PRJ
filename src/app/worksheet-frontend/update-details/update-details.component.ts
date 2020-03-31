@@ -3,6 +3,8 @@ import * as $ from 'jquery';
 import {ActivatedRoute, Router} from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-update-details',
@@ -15,15 +17,51 @@ export class UpdateDetailsComponent implements OnInit {
   user_details:any;
   updateForm: FormGroup;
   displayMessage:any;
-
-  constructor(private fb: FormBuilder, private renderer: Renderer2,  public apiRequest : AppRequestService, private route: ActivatedRoute, private router: Router) { 
+  countryList = []
+  cityList = []
+  countryPlaceHolder = "Select Country"
+  cityPlaceHolder = "Select City"
+  private _jsonURL = 'assets/countryCity.json';
+  keyword = 'name';
+  constructor(private fb: FormBuilder,private httpClient: HttpClient, private renderer: Renderer2,  public apiRequest : AppRequestService, private route: ActivatedRoute, private router: Router) { 
     this.displayMessage = false;
     this.renderer.setStyle(document.body, 'background', 'url("assets/frontend_assets/img/topic-body-background.jpg")');
 
   }
+  public getJSON(): Observable<any> {
+    return this.httpClient.get(this._jsonURL)
+  }
+  countrySelect(item) {
+    this.getJSON().subscribe(data => {
+      let cities = data[item.name];
+      if (cities.length > 0) {
+        cities.forEach(element => {
+          this.cityList.push({
+            id: element,
+            name: element
+          });
+        });
+      }
+    }, error => console.log(error));
+  }
+  clearCountry(index) {
+    this.updateForm.controls['city'].setValue("");
+    if (index == 1) {
+      this.cityList = [];
+    }
+  }
+  citySelect(item) {
 
+  }
   ngOnInit() {
-
+    this.getJSON().subscribe(data => {
+      for (const key in data) {
+        this.countryList.push({
+          id: key,
+          name: key
+        });
+      }
+    }, error => console.log(error));
     this.loadAPI = new Promise((resolve) => {
       this.loadScript();
       resolve(true);
@@ -69,6 +107,8 @@ export class UpdateDetailsComponent implements OnInit {
     this.apiRequest.getRequest('api/student/details/' + profile_pic[0].user_name).then( (res) => {            
       if(res['status'] == 'OK'){           
           this.user_details = res['body'][0];
+          this.updateForm.controls["country"].setValue(this.user_details.country)
+          this.updateForm.controls["city"].setValue(this.user_details.city)
           //console.log(this.user_details.first_name);           
       }else {
         //  this.toastr.error(res['error']);
@@ -118,8 +158,8 @@ export class UpdateDetailsComponent implements OnInit {
     this.updateForm.value.user_name =  this.user_details.user_name;
     this.updateForm.value.first_name =  this.updateForm.value.first_name ? this.updateForm.value.first_name : this.user_details.first_name;
     this.updateForm.value.last_name =  this.updateForm.value.last_name ? this.updateForm.value.last_name : this.user_details.last_name;
-    this.updateForm.value.country =  this.updateForm.value.country ? this.updateForm.value.country : this.user_details.country;
-    this.updateForm.value.city =  this.updateForm.value.city ? this.updateForm.value.city : this.user_details.city;
+    this.updateForm.value.country =  this.updateForm.value.country ? typeof this.updateForm.value.country === 'string' ? this.updateForm.value.country : this.updateForm.value.country["name"] : this.user_details.country;
+    this.updateForm.value.city =  this.updateForm.value.city ? typeof this.updateForm.value.city === 'string' ? this.updateForm.value.city : this.updateForm.value.city["name"]  : this.user_details.city ;
     this.updateForm.value.child_name =  this.updateForm.value.child_name ? this.updateForm.value.child_name : this.user_details.child_name;
     this.updateForm.value.birth_day =  this.updateForm.value.birth_day ? this.updateForm.value.birth_day : this.user_details.birth_day;
     // this.updateForm.value.class =  this.user_details.class;

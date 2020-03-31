@@ -29,7 +29,7 @@ export class Std02AdverbsReferenceListComponent implements OnInit {
   }
 
   ngOnInit() {
- 
+    $('.loadingDiv').hide();
     }
 
 }

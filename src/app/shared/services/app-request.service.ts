@@ -29,6 +29,12 @@ constructor(public http: HttpClient, public router: Router) { this.menu = false;
 
 getRequest(pageUrl) {
   return new Promise((resolve, reject) => {
+    this.config = {
+      headers : {
+        'Content-Type'  : 'application/json',
+        'Authorization' : 'Bearer ' + this.token,
+      }
+    };
     this.http.get(Constants.AppConst.API_END_POINT + pageUrl, this.config_headers).subscribe(data => {
       resolve(data);
     }, err => {

@@ -1,8 +1,8 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import * as $ from 'jquery';  
+// import * as $ from 'jquery';  
 import {ActivatedRoute, Router} from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
-
+import * as $ from 'jquery';  
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -19,7 +19,12 @@ export class DashboardComponent implements OnInit {
     this.route.params.subscribe( params => this.grade = params.grade );
     
    }
-
+   renderVideo(url)
+   {
+    $("#btnVideo").trigger( "click" );
+    var $video = $('#divVideo video'),
+    videoSrc = $('source', $video).attr('src', url);
+   }
   ngOnInit() {
 
     this.loadScript(); 

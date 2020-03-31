@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppRequestService } from '../../../shared/services/app-request.service';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -19,7 +19,12 @@ export class HeaderComponent implements OnInit {
   data_current: any;
 
   constructor(private router: Router, public apiRequest: AppRequestService) { }
-
+  renderVideo(url)
+  {
+   $("#btnVideo").trigger( "click" );
+   var $video = $('#divVideo video'),
+   videoSrc = $('source', $video).attr('src', url);
+  }
   ngOnInit() {
     this.worksheet_url = this.router.url.split("/worksheet-layout/");
     this.loadWorksheet();

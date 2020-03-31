@@ -11,6 +11,7 @@ import { TopicComponent } from './topic/topic.component';
 import { SubtopicComponent } from './subtopic/subtopic.component';
 import { LoginComponent } from './login/login.component';
 import { UpdateDetailsComponent } from './update-details/update-details.component';
+import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 
 @NgModule({
   declarations: [WorksheetFrontendComponent,SignupComponent, MainComponent, DashboardComponent, ChangePasswordComponent, TopicComponent, SubtopicComponent, LoginComponent, UpdateDetailsComponent],
@@ -18,7 +19,7 @@ import { UpdateDetailsComponent } from './update-details/update-details.componen
     CommonModule,
     WorksheetFrontendRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,AutocompleteLibModule
   ]
 })
 export class WorksheetFrontendModule { }

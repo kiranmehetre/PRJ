@@ -1,9 +1,12 @@
 import { Component, OnInit, Renderer2, NgZone } from '@angular/core';
-import * as $ from 'jquery';  
+import * as $ from 'jquery';
 import { Router } from '@angular/router';
 import { AppRequestService } from '../../shared/services/app-request.service';
 import { routerTransition } from '../../router.animations';
 import { FormArray, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -12,8 +15,20 @@ import { FormArray, FormBuilder, FormGroup, FormControl, Validators } from '@ang
 export class SignupComponent implements OnInit {
   loadAPI: Promise<any>;
   signupForm: FormGroup;
+  private _jsonURL = 'assets/countryCity.json';
   submitted = false;
   loginError = false;
+  keyword = 'name';
+  data = [
+    {
+      id: 1,
+      name: 'Usa'
+    },
+    {
+      id: 2,
+      name: 'England'
+    }
+  ];
   displayFirstSteps: any;
   displaySecondSteps: any;
   displayThirdSteps: any;
@@ -25,10 +40,12 @@ export class SignupComponent implements OnInit {
   strClass: any;
   strBirthDate: any;
   filename: any;
+  countryList = []
+  cityList = []
+  countryPlaceHolder = "Select Country"
+  cityPlaceHolder = "Select City"
 
-
-
-  constructor(private fb: FormBuilder, private renderer: Renderer2, public apiRequest: AppRequestService, public router: Router, private _ngZone: NgZone) {
+  constructor(private fb: FormBuilder, private httpClient: HttpClient, private renderer: Renderer2, public apiRequest: AppRequestService, public router: Router, private _ngZone: NgZone) {
     this.renderer.setStyle(document.body, 'background-color', '#68bde3');
     this.renderer.setStyle(document.body, 'margin-top', '30px');
     this.displayFirstSteps = true;
@@ -45,8 +62,44 @@ export class SignupComponent implements OnInit {
       resolve(true);
     });
   }
+  public getJSON(): Observable<any> {
+    return this.httpClient.get(this._jsonURL)
+  }
+  countrySelect(item) {
+    this.getJSON().subscribe(data => {
+      let cities = data[item.name];
+      if (cities.length > 0) {
+        cities.forEach(element => {
+          this.cityList.push({
+            id: element,
+            name: element
+          });
+        });
+      }
+    }, error => console.log(error));
+  }
+  clearCountry(index) {
+    this.signupForm.controls['city'].setValue("");
+    if (index == 1) {
+      this.cityList = [];
+    }
+  }
+  citySelect(item) {
 
+  }
   ngOnInit() {
+    this.getJSON().subscribe(data => {
+      for (const key in data) {
+        this.countryList.push({
+          id: key,
+          name: key
+        });
+      }
+    }, error => console.log(error));
+
+
+
+
     this.signupForm = this.fb.group({
       first_name: ['', Validators.compose([Validators.required])],
       last_name: ['', Validators.required],
@@ -61,6 +114,7 @@ export class SignupComponent implements OnInit {
       //class: ['', Validators.required],
       gender: new FormControl()
     });
+
     $(document).on('click', '.class_Container .grade', function () {
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
@@ -96,105 +150,105 @@ export class SignupComponent implements OnInit {
       $('a[data-toggle="' + tog + '"][data-title="' + sel + '"]').removeClass('notActive').addClass('active');
     });
     $(document).ready(function () {
-  
+
       var isValid = false;
       // Form Validation
-        $(document).on('input','input[type=text],input[type=password],input[type=date]', function() {
-          var input__span=$(this).siblings('span.error-container');
-          var input=$(this);
-          var is_name=input.val();
-          if(is_name){
-            isValid = true;
-            input__span.removeClass("input-error").addClass("hide");
-          }
-          else{
-            isValid = false;
-            input__span.removeClass("hide").addClass("input-error");
-          }
-        });
-        $(document).on('focusout','input[type=text],input[type=password],input[type=date]', function() {
-          var input__span=$(this).siblings('span.error-container');
-          var input=$(this);
-          var is_name=input.val();
-          if(is_name){
-            isValid = true;
-            input__span.removeClass("input-error").addClass("hide");
-            if(input.hasClass('confirm_password') || input.hasClass('password')){
-              var passText=$('.password').val();
-              var confirmedpassText=$('.confirm_password').val();
-              input__span = $('.confirm_password').siblings('span.error-container');
-              if(passText != confirmedpassText){
-                input__span.text("Passwords do not match!");
-                input__span.removeClass("hide").addClass("input-error");
-              }
-              else{
-                input__span.text("");
-                input__span.removeClass("input-error").addClass("hide");
-              }
+      $(document).on('input', 'input[type=text],input[type=password],input[type=date]', function () {
+        var input__span = $(this).siblings('span.error-container');
+        var input = $(this);
+        var is_name = input.val();
+        if (is_name) {
+          isValid = true;
+          input__span.removeClass("input-error").addClass("hide");
+        }
+        else {
+          isValid = false;
+          input__span.removeClass("hide").addClass("input-error");
+        }
+      });
+      $(document).on('focusout', 'input[type=text],input[type=password],input[type=date]', function () {
+        var input__span = $(this).siblings('span.error-container');
+        var input = $(this);
+        var is_name = input.val();
+        if (is_name) {
+          isValid = true;
+          input__span.removeClass("input-error").addClass("hide");
+          if (input.hasClass('confirm_password') || input.hasClass('password')) {
+            var passText = $('.password').val();
+            var confirmedpassText = $('.confirm_password').val();
+            input__span = $('.confirm_password').siblings('span.error-container');
+            if (passText != confirmedpassText) {
+              input__span.text("Passwords do not match!");
+              input__span.removeClass("hide").addClass("input-error");
             }
-            else if(input.hasClass('email_id')){
-              var emailText = "";
-              emailText = is_name.toString();
-              var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-              var res = emailReg.test(emailText);
-              if (!res) {
-                input__span.removeClass("hide").addClass("input-error");
-                input__span.text("Please Enter Valid Email");
-              }
-              else{
-                input__span.removeClass("input-error").addClass("hide");
-              }
+            else {
+              input__span.text("");
+              input__span.removeClass("input-error").addClass("hide");
             }
           }
-          else{
-            if($(this).hasClass('confirm_password')){
-                input__span.text("Enter Confirm Password");
+          else if (input.hasClass('email_id')) {
+            var emailText = "";
+            emailText = is_name.toString();
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var res = emailReg.test(emailText);
+            if (!res) {
+              input__span.removeClass("hide").addClass("input-error");
+              input__span.text("Please Enter Valid Email");
             }
-            else if(input.hasClass('email_id')){
-              input__span.text("Please Enter Email");
+            else {
+              input__span.removeClass("input-error").addClass("hide");
             }
-            isValid = false;
-            input__span.removeClass("hide").addClass("input-error");
           }
-        });
-        // Email Validation
-        $(document).on('input','input[type=email]', function() {
-          var input__span=$(this).siblings('span.error-container');
-          var input=$(this);
-          var is_email=input.val();
-          if(is_email){
-            isValid = true;
-            input__span.removeClass("input-error").addClass("hide");
+        }
+        else {
+          if ($(this).hasClass('confirm_password')) {
+            input__span.text("Enter Confirm Password");
           }
-          else{
-            isValid = false;
-            input__span.removeClass("hide").addClass("input-error");
+          else if (input.hasClass('email_id')) {
             input__span.text("Please Enter Email");
           }
-        });
-        
-      $(document).on('click','#password + .toggle-password', function () {
+          isValid = false;
+          input__span.removeClass("hide").addClass("input-error");
+        }
+      });
+      // Email Validation
+      $(document).on('input', 'input[type=email]', function () {
+        var input__span = $(this).siblings('span.error-container');
+        var input = $(this);
+        var is_email = input.val();
+        if (is_email) {
+          isValid = true;
+          input__span.removeClass("input-error").addClass("hide");
+        }
+        else {
+          isValid = false;
+          input__span.removeClass("hide").addClass("input-error");
+          input__span.text("Please Enter Email");
+        }
+      });
+
+      $(document).on('click', '#password + .toggle-password', function () {
         // $(this).toggleClass('glyphicon-eye-close').toggleClass('glyphicon-eye-open'); // toggle our classes for the eye icon
-        
+
         var x = $("#password");
         if (x.attr("type") === "password") {
           $(this).removeClass('fa-eye');
           $(this).addClass('fa-eye-slash');
-          x.attr("type","text");
+          x.attr("type", "text");
         } else {
-          x.attr("type","password");
+          x.attr("type", "password");
           $(this).removeClass('fa-eye-slash');
           $(this).addClass('fa-eye');
         }
       });
-        
+
     });
-    
+
 
   }
   getToday(): string {
     return new Date().toISOString().split('T')[0]
- }
+  }
 
   public loadScript() {
     let isFound = false;
@@ -243,16 +297,16 @@ export class SignupComponent implements OnInit {
 
   secondstep() {
     var errorCount = 0;
-    if($('#pascheck').hasClass('short')){
+    if ($('#pascheck').hasClass('short')) {
       errorCount++;
     }
-    $('#step-1 input[type=text],#step-1 input[type=password]').each(function(){
-      var input__span=$(this).siblings('span.error-container');
-      var input=$(this);
-      var is_name=input.val();
-      if(is_name){
+    $('#step-1 input[type=text],#step-1 input[type=password]').each(function () {
+      var input__span = $(this).siblings('span.error-container');
+      var input = $(this);
+      var is_name = input.val();
+      if (is_name) {
         input__span.removeClass("input-error").addClass("hide");
-        if(input.hasClass('email_id')){
+        if (input.hasClass('email_id')) {
           var emailText = "";
           emailText = is_name.toString();
           var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
@@ -261,66 +315,66 @@ export class SignupComponent implements OnInit {
             input__span.removeClass("hide").addClass("input-error");
             input__span.text("Please Enter Valid Email");
           }
-          else{
+          else {
             input__span.removeClass("input-error").addClass("hide");
           }
         }
-        else if(input.hasClass('confirm_password') || input.hasClass('password')){
-          var passText=$('.password').val();
-          var confirmedpassText=$('.confirm_password').val();
+        else if (input.hasClass('confirm_password') || input.hasClass('password')) {
+          var passText = $('.password').val();
+          var confirmedpassText = $('.confirm_password').val();
           input__span = $('.confirm_password').siblings('span.error-container');
-          if(passText != confirmedpassText){
+          if (passText != confirmedpassText) {
             input__span.text("Passwords do not match!");
             input__span.removeClass("hide").addClass("input-error");
           }
-          else{
+          else {
             input__span.text("");
             input__span.removeClass("input-error").addClass("hide");
           }
         }
       }
-      else{
-        if(input.hasClass('email_id')){
+      else {
+        if (input.hasClass('email_id')) {
           input__span.text("Please Enter Email");
         }
-        else if($(this).hasClass('confirm_password')){
-            input__span.text("Enter Confirm Password");
+        else if ($(this).hasClass('confirm_password')) {
+          input__span.text("Enter Confirm Password");
         }
         input__span.removeClass("hide").addClass("input-error");
       }
     });
     errorCount = errorCount + $('.Main_Container #step-1 .input-error').length;
     //console.log("Errors : " + errorCount);
-    if(errorCount > 0){
+    if (errorCount > 0) {
       this.displayFirstSteps = true;
       this.displaySecondSteps = false;
       this.displayThirdSteps = false;
     }
-    else{
-        this.displayFirstSteps = false;
-        this.displaySecondSteps = true;
-        this.displayThirdSteps = false;
-    }
-  }
-
-  thirdStep() {
-    $('#step-2 input[type=text],#step-2 input[type=date]').each(function(){
-      var input__span=$(this).siblings('span.error-container');
-      var input=$(this);
-      var is_name=input.val();
-      if(is_name){
-        input__span.removeClass("input-error").addClass("hide");
-      }
-      else{
-        input__span.removeClass("hide").addClass("input-error");
-      }
-    });
-    if($('.Main_Container .input-error').length > 0){
+    else {
       this.displayFirstSteps = false;
       this.displaySecondSteps = true;
       this.displayThirdSteps = false;
     }
-    else{
+  }
+
+  thirdStep() {
+    $('#step-2 input[type=text],#step-2 input[type=date]').each(function () {
+      var input__span = $(this).siblings('span.error-container');
+      var input = $(this);
+      var is_name = input.val();
+      if (is_name) {
+        input__span.removeClass("input-error").addClass("hide");
+      }
+      else {
+        input__span.removeClass("hide").addClass("input-error");
+      }
+    });
+    if ($('.Main_Container .input-error').length > 0) {
+      this.displayFirstSteps = false;
+      this.displaySecondSteps = true;
+      this.displayThirdSteps = false;
+    }
+    else {
       this.displayFirstSteps = false;
       const fd = new FormData();
       //this.displaySecondSteps = false;
@@ -336,8 +390,8 @@ export class SignupComponent implements OnInit {
       fd.append('email_id', this.signupForm.value.email_id);
       fd.append('password', this.signupForm.value.password);
       fd.append('confirm_password', this.signupForm.value.confirm_password);
-      fd.append('country', this.signupForm.value.country);
-      fd.append('city', this.signupForm.value.city);
+      fd.append('country', this.signupForm.value.country["name"]);
+      fd.append('city', this.signupForm.value.city["name"]);
       fd.append('child_name', this.signupForm.value.child_name);
       // fd.append('birth_day', this.signupForm.value.birth_day);
       fd.append('birth_day', this.strBirthDate);
@@ -370,13 +424,13 @@ export class SignupComponent implements OnInit {
         }
 
       })
-      .catch((err) => {
+        .catch((err) => {
 
-        // this.loading.display(false);
-        //this.toastr.error(err['error']['message']);
-      });
+          // this.loading.display(false);
+          //this.toastr.error(err['error']['message']);
+        });
     }
-}
+  }
 
   onFileSelected(event: any): void {
 

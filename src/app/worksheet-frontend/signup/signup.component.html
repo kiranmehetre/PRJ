@@ -115,21 +115,58 @@
                         <div class="row mb-2">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                 <label class="control-label">Country</label>
+                                <div class="ng-autocomplete" style="width: 100%;">
+                                    <ng-autocomplete 
+                                      [data]="countryList"
+                                      [searchKeyword]="keyword"
+                                      [placeHolder]="countryPlaceHolder" 
+                                      [itemTemplate]="itemTemplate" 
+                                      formControlName="country"
+                                      (inputCleared)="clearCountry(1)"
+                                      [notFoundTemplate]="notFoundTemplate" (selected)="countrySelect($event)">     
+                                                                  
+                                    </ng-autocomplete>
 
-                                <input maxlength="100" type="text" class="form-control" placeholder="India" formControlName="country" />
-                                <i class="glyphicon glyphicon-eye-open form-control-feedback"></i>
+                                    <ng-template #itemTemplate let-item>
+                                    <a [innerHTML]="item.name"></a>
+                                    </ng-template>
+                                     
+                                    <ng-template #notFoundTemplate let-notFound>
+                                    <div [innerHTML]="notFound"></div>
+                                    </ng-template>
+                                    </div>
+                                <!-- <input maxlength="100" type="text" class="form-control" />
+                                <i class="glyphicon glyphicon-eye-open form-control-feedback"></i> -->
                                 <!-- <div *ngIf="signupForm.controls['country'].hasError('required') && (signupForm.controls['country'].touched || submitted)" class="error-container">
                                         <span class="input-error">Please Enter Country</span>
                                 </div>                                 -->
                                 
                                 <span class="error-container hide">Please Enter Country</span>
-                                
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 form-group">
                                 <label class="control-label">City</label>
-
-                                <input maxlength="100" type="text" class="form-control" placeholder="Mumbai" formControlName="city" />
-                                <i class="glyphicon glyphicon-eye-open form-control-feedback"></i>
+                                <div class="ng-autocomplete" style="width: 100%;">
+                                    <ng-autocomplete 
+                                      [data]="cityList"
+                                      [searchKeyword]="keyword"
+                                      [placeHolder]="cityPlaceHolder" 
+                                      [itemTemplate]="itemTemplate" 
+                                      (inputCleared)="clearCountry(2)"
+                                      formControlName="city"
+                                      [notFoundTemplate]="notFoundTemplate" 
+                                      (selected)="citySelect($event)">                                 
+                                    </ng-autocomplete>
+                                     
+                                    <ng-template #itemTemplate let-item>
+                                    <a [innerHTML]="item.name"></a>
+                                    </ng-template>
+                                     
+                                    <ng-template #notFoundTemplate let-notFound>
+                                    <div [innerHTML]="notFound"></div>
+                                    </ng-template>
+                                    </div>
+                                <!-- <input maxlength="100" type="text" class="form-control" placeholder="Mumbai" formControlName="city" />
+                                <i class="glyphicon glyphicon-eye-open form-control-feedback"></i> -->
                                 <!-- <div *ngIf="signupForm.controls['city'].hasError('required') && (signupForm.controls['city'].touched || submitted)" class="error-container">
                                         <span class="input-error">Please Enter City</span>
                                 </div>                                  -->
