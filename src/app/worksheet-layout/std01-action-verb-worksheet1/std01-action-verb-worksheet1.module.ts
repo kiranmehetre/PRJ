@@ -5,7 +5,7 @@ import {Std01ActionVerbWorksheet1Component} from './std01-action-verb-worksheet1
 // import { Std01ActionVerbWorksheet1RoutingModule } from './std01-action-verb-worksheet1-routing.module';
 import { ClassOneAuth } from "../Auth/ClassOneAuth"
 const routes: Routes = [
-  { path: '', component: Std01ActionVerbWorksheet1Component }, 
+  { path: '',canActivate: [ClassOneAuth], component: Std01ActionVerbWorksheet1Component }, 
 
 ];
 @NgModule({
