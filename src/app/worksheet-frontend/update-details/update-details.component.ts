@@ -109,6 +109,7 @@ export class UpdateDetailsComponent implements OnInit {
         this.user_details = res['body'][0];
         this.updateForm.controls["country"].setValue(this.user_details.country)
         this.updateForm.controls["city"].setValue(this.user_details.city)
+        this.updateForm.controls["class"].setValue(this.user_details.class)
         //console.log(this.user_details.first_name);           
       } else {
         //  this.toastr.error(res['error']);
@@ -162,6 +163,10 @@ export class UpdateDetailsComponent implements OnInit {
     this.updateForm.value.city = this.updateForm.value.city ? typeof this.updateForm.value.city === 'string' ? this.updateForm.value.city : this.updateForm.value.city["name"] : this.user_details.city;
     this.updateForm.value.child_name = this.updateForm.value.child_name ? this.updateForm.value.child_name : this.user_details.child_name;
     this.updateForm.value.birth_day = this.updateForm.value.birth_day ? this.updateForm.value.birth_day : this.user_details.birth_day;
+    if(this.updateForm.value.birth_day)
+    {
+      this.updateForm.value.birth_day = this.updateForm.value.birth_day.split("T")[0]
+    }
     // this.updateForm.value.class =  this.user_details.class;
     this.updateForm.value.gender = this.updateForm.value.gender ? this.updateForm.value.gender : this.user_details.gender;
 

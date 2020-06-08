@@ -19,12 +19,25 @@ export class DashboardComponent implements OnInit {
     this.route.params.subscribe( params => this.grade = params.grade );
     
    }
-   renderVideo(url)
-   {
-    $("#btnVideo").trigger( "click" );
-    var $video = $('#divVideo video'),
-    videoSrc = $('source', $video).attr('src', url);
-   }
+   renderVideo(url) {
+    if (url) {
+      $("#btnVideo").trigger("click");
+      let $video: any = $('#divVideo')
+      var x = document.createElement("VIDEO");
+      x.setAttribute("src", url);
+      x.setAttribute("autoplay","true")
+      x.setAttribute("controlsList", "nodownload");
+      x.setAttribute("width", "100%");
+      x.setAttribute("height", "100%");
+      x.setAttribute("id", "dynamicVideo");
+      x.setAttribute("controls", "controls");
+      $video.html(x);
+      $("#openVideo").click(function () {
+        let vid: any = document.getElementById("dynamicVideo");
+        vid.pause();
+      });
+    }
+  }
   ngOnInit() {
 
     this.loadScript(); 

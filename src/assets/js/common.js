@@ -1,7 +1,11 @@
     
 	window.onload = function () { 
-		$('.loadingDiv').hide();
-	}
+        $('.loadingDiv').hide();
+
+       
+    }
+    
+   
 	var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {
