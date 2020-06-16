@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
 import { routerTransition } from '../../router.animations';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit {
   submitted = false;
   loginError = false;
 
-  constructor(private fb: FormBuilder,private renderer: Renderer2, public apiRequest : AppRequestService, public router: Router) {
+  constructor(private fb: FormBuilder,private renderer: Renderer2,private ng4LoadingSpinnerService:Ng4LoadingSpinnerService ,public apiRequest : AppRequestService, public router: Router) {
     // this.renderer.setStyle(document.body, 'background-color','#68bde3');
     // this.renderer.setStyle(document.body, 'margin-top','30px');
 
@@ -65,6 +66,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){    
+    this.ng4LoadingSpinnerService.show();
     //console.log(this.loginForm.value);     
     this.apiRequest.postRequest('api/student/login', { 'email_id' : this.loginForm.value.email_id, 'password' : this.loginForm.value.password}).then( (res) => {
        
@@ -83,7 +85,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('user', JSON.stringify(res['body']));
         localStorage.setItem('gradeSelection','0');
 
-
+        this.ng4LoadingSpinnerService.hide();
         this.router.navigate(['/home']);
        
      }else{

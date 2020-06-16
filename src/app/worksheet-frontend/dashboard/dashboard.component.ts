@@ -2,6 +2,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 // import * as $ from 'jquery';  
 import {ActivatedRoute, Router} from '@angular/router';
 import { AppRequestService} from '../../shared/services/app-request.service';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 import * as $ from 'jquery';  
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +15,7 @@ export class DashboardComponent implements OnInit {
   grade:any;
   profile_picture_path:any;
 
-  constructor(private renderer: Renderer2,  public apiRequest : AppRequestService, private route: ActivatedRoute, private router: Router) {
+  constructor(private renderer: Renderer2,private ng4LoadingSpinnerService:Ng4LoadingSpinnerService,  public apiRequest : AppRequestService, private route: ActivatedRoute, private router: Router) {
     this.renderer.setStyle(document.body, 'background', 'url("assets/frontend_assets/img/topic-body-background.jpg")');
     this.route.params.subscribe( params => this.grade = params.grade );
     
@@ -39,7 +40,7 @@ export class DashboardComponent implements OnInit {
     }
   }
   ngOnInit() {
-
+  
     this.loadScript(); 
     // if (typeof $ != 'undefined') {
     //   // jQuery is loaded => print the version
@@ -72,8 +73,9 @@ export class DashboardComponent implements OnInit {
             $('.loader').hide();  
             setTimeout(() => {
               this.topic_list = res['body'];
+              this.ng4LoadingSpinnerService.show();
             this.loadScript(); 
-
+           
             }, 2000);
                            
           }else {
@@ -141,6 +143,9 @@ export class DashboardComponent implements OnInit {
           document.head.appendChild(node);
       }
     }
+    setTimeout(() => {
+      this.ng4LoadingSpinnerService.hide();
+    }, 4000);
   }
 
 

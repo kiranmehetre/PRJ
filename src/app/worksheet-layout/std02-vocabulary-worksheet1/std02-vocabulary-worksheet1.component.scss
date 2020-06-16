@@ -52,7 +52,7 @@ img{
     padding:10px 15px;
 }
 .list-item{
-    background:url(/assets/std02-vocabulary-worksheet1/img/list-item-bg.png) no-repeat;
+     background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet1/img/list-item-bg.png) no-repeat;
     background-size: 100% 100%;
     background-position: 100%;
     width:100%;
@@ -66,7 +66,7 @@ img{
 }
 
 .Answer {
-    background: url(/assets/std02-vocabulary-worksheet1/img/answer.png) no-repeat;
+    background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet1/img/answer.png) no-repeat;
     background-size: 100% 100%;
     background-position: 100%;
     width: 100%;
@@ -92,7 +92,7 @@ img{
     /* border:1px solid #ff0; */
 }
 /* .Correct_Answer{
-    background:url(/assets/std02-vocabulary-worksheet1/img/correct_answer.png) no-repeat;
+     background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet1/img/correct_answer.png) no-repeat;
     background-size: 100% 100%;
     background-position: 100%;
     width: 77%;
@@ -197,7 +197,7 @@ img{
 @media (min-width:100px) and (max-width:639px){
     .bg{
         min-height:100vh;
-        background:url(/assets/std02-vocabulary-worksheet1/img/bg_portrait.jpg) no-repeat;
+         background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet1/img/bg_portrait.jpg) no-repeat;
         background-size: cover;
         background-position: bottom;
         font-size:18px;
@@ -677,7 +677,7 @@ img{
 }
 @media (orientation:landscape){
     .bg{
-        background:url(/assets/std02-vocabulary-worksheet1/img/bg.jpg) no-repeat center bottom fixed,#1fb34b;
+         background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet1/img/bg.jpg) no-repeat center bottom fixed,#1fb34b;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -686,7 +686,7 @@ img{
 }
 @media (orientation:portrait){
     .bg{
-        background:url(/assets/std02-vocabulary-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed,#1fb34b;
+         background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed,#1fb34b;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

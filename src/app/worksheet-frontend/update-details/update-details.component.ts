@@ -5,6 +5,7 @@ import { AppRequestService } from '../../shared/services/app-request.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Component({
   selector: 'app-update-details',
@@ -23,7 +24,7 @@ export class UpdateDetailsComponent implements OnInit {
   cityPlaceHolder = "Select City"
   private _jsonURL = 'assets/countryCity.json';
   keyword = 'name';
-  constructor(private fb: FormBuilder, private httpClient: HttpClient, private renderer: Renderer2, public apiRequest: AppRequestService, private route: ActivatedRoute, private router: Router) {
+  constructor(private fb: FormBuilder,private ng4LoadingSpinnerService:Ng4LoadingSpinnerService, private httpClient: HttpClient, private renderer: Renderer2, public apiRequest: AppRequestService, private route: ActivatedRoute, private router: Router) {
     this.displayMessage = false;
     this.renderer.setStyle(document.body, 'background', 'url("assets/frontend_assets/img/topic-body-background.jpg")');
 
@@ -103,9 +104,11 @@ export class UpdateDetailsComponent implements OnInit {
         $(".display-none").slideToggle();
       });
     })
-
+    this.ng4LoadingSpinnerService.show();
     this.apiRequest.getRequest('api/student/details/' + profile_pic[0].user_name).then((res) => {
       if (res['status'] == 'OK') {
+    this.ng4LoadingSpinnerService.hide();
+
         this.user_details = res['body'][0];
         this.updateForm.controls["country"].setValue(this.user_details.country)
         this.updateForm.controls["city"].setValue(this.user_details.city)
@@ -155,7 +158,7 @@ export class UpdateDetailsComponent implements OnInit {
   }
 
   onSubmit() {
-
+    this.ng4LoadingSpinnerService.show();
     this.updateForm.value.user_name = this.user_details.user_name;
     this.updateForm.value.first_name = this.updateForm.value.first_name ? this.updateForm.value.first_name : this.user_details.first_name;
     this.updateForm.value.last_name = this.updateForm.value.last_name ? this.updateForm.value.last_name : this.user_details.last_name;
@@ -175,7 +178,7 @@ export class UpdateDetailsComponent implements OnInit {
 
 
     this.apiRequest.putRequest('api/student/details/update', this.updateForm.value).then((res) => {
-
+      this.ng4LoadingSpinnerService.hide();
       if (res['status'] == "OK") {
 
         this.displayMessage = true;

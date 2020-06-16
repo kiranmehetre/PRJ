@@ -7,3 +7,16 @@ video::-webkit-media-controls-enclosure {
 video::-webkit-media-controls-panel {
     width: calc(100% + 30px); /* Adjust as needed */
 }
+.close
+{
+    width: 30px;
+    background: #000;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    color: #fff!important;
+    top: 0px;
+    opacity: 1;
+}

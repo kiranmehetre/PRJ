@@ -16,7 +16,7 @@
 
 .bg {
     min-height: 100%;
-    background: url(/assets/std01-articles-worksheet6/img/bg.jpg) no-repeat center bottom fixed;
+    background: url(http://13.233.57.179/grammar/assets/std01-articles-worksheet6/img/bg.jpg) no-repeat center bottom fixed;
     background-size: cover;
     overflow-x: hidden;
     font-family: 'CustomFont', 'Microsoft New Tai Lue', 'Arial';
@@ -35,7 +35,7 @@
 .helpbox {
     width: 13%;
     margin: auto;
-    background: url(/assets/std01-articles-worksheet6/img/helpbox-bg.png);
+    background: url(http://13.233.57.179/grammar/assets/std01-articles-worksheet6/img/helpbox-bg.png);
     background-position: 100%;
     background-size: 100% 100%;
     display: inline-block;
@@ -109,7 +109,7 @@ h2 {
 }
 
 .list-item {
-    background: url(/assets/std01-articles-worksheet6/img/list-item-bg.png) no-repeat;
+    background: url(http://13.233.57.179/grammar/assets/std01-articles-worksheet6/img/list-item-bg.png) no-repeat;
     background-size: 100% 100%;
     background-position: 100%;
     width: 100%;
@@ -168,7 +168,7 @@ input {
 @media (min-width:100px) and (max-width:575px) {
     .bg {
         min-height: 100%;
-        background: url(/assets/std01-articles-worksheet6/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://13.233.57.179/grammar/assets/std01-articles-worksheet6/img/bg_portrait.jpg) no-repeat center bottom fixed;
         background-size: cover;
         font-size: 16px;
     }
@@ -196,7 +196,7 @@ input {
     }
 
     .list-item {
-        background: url(/assets/std01-articles-worksheet6/img/list-item-bg.png) no-repeat;
+        background: url(http://13.233.57.179/grammar/assets/std01-articles-worksheet6/img/list-item-bg.png) no-repeat;
         background-size: 100% 100%;
         background-position: 100%;
         width: 100%;
