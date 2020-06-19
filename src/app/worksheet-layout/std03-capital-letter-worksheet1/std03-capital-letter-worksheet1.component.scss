@@ -1,15 +1,15 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 
 .bg {
     min-height: 100vh;
-    background: url(http://13.233.57.179/grammar/assets/std03-capital-letter-worksheet1/img/bg.jpg) no-repeat, #aee1f4;
+    background: url(http://3.7.85.57/grammar/assets/std03-capital-letter-worksheet1/img/bg.jpg) no-repeat, #aee1f4;
     background-size: 100% 100%;
     background-position: bottom;
     overflow-x: hidden;
@@ -198,7 +198,7 @@ input {
 
 @media (min-width:100px) and (max-width:575px) {
     .bg {
-        background: url(http://13.233.57.179/grammar/assets/std03-capital-letter-worksheet1/img/bg_portrait.jpg) no-repeat;
+        background: url(http://3.7.85.57/grammar/assets/std03-capital-letter-worksheet1/img/bg_portrait.jpg) no-repeat;
         background-size: 100% 100%;
         background-position: bottom;
         font-size: 15px;
@@ -603,7 +603,7 @@ input {
     }
 
     .bg {
-        background: url(http://13.233.57.179/grammar/assets/std03-capital-letter-worksheet1/img/bg_portrait.jpg) no-repeat;
+        background: url(http://3.7.85.57/grammar/assets/std03-capital-letter-worksheet1/img/bg_portrait.jpg) no-repeat;
         background-size: 100% 100%;
         background-position: bottom;
         font-size: 27px;

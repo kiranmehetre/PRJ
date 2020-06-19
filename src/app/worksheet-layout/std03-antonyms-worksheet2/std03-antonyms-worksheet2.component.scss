@@ -1,10 +1,10 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .bg{
     font-family: CustomFont,'Microsoft New Tai Lue';
@@ -81,7 +81,7 @@
     font-family: mt-rounded-bold,'Microsoft New Tai Lue';
 }
 .Question_Container{
-     background: url(http://13.233.57.179/grammar/assets//std03-antonyms-worksheet2/img/Question_container_bg.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std03-antonyms-worksheet2/img/Question_container_bg.png) no-repeat 100% 100%;
     background-size:100% 100%;
     min-height: calc(100vh - 190px);
     position:relative;

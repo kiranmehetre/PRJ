@@ -1,15 +1,15 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
   }
 
 .bg{
     min-height:100vh;
-     background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
+     background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,7 +30,7 @@
     color:#fff;
 }
 .list-item{
-     background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/list-item-bg.png) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/list-item-bg.png) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -54,7 +54,7 @@ span{
     left:30px;
 }
 .Option .col-4 div{
-     background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/option_bg.png) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/option_bg.png) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -127,7 +127,7 @@ span{
     -webkit-filter:drop-shadow(0 4px 5px rgba(0,0,0,.5));
 }
 .Option .col-4 div.click{
-     background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/Right_Option.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/Right_Option.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -136,20 +136,20 @@ span{
     -webkit-filter:drop-shadow(0 2px 0px #fdb64e) drop-shadow(2px 0px 2px #fdb64e) drop-shadow(-2px 0px 5px #fdb64e) drop-shadow(0px -2px 2px #fdb64e); */
 }
 .Option .col-4 div.wrong{
-     background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/Wrong_Option.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/Wrong_Option.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 .Option .col-4 div.right.correct{
-     background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/Right_Option.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/Right_Option.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 @media (min-width:100px) and (max-width:599px){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/bg_portrait.jpg) no-repeat center bottom;
+         background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/bg_portrait.jpg) no-repeat center bottom;
         background-attachment: fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -312,7 +312,7 @@ span{
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
 	.bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-mixed-tense-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-mixed-tense-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

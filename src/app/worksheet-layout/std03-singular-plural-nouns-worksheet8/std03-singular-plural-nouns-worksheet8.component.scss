@@ -3,22 +3,22 @@
 }
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: "rounded-mt-bold";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .comma{
     font-family: rounded-mt-bold,'Microsoft New Tai Lue','Arial';
 }
 .bg{
     min-height:100vh;
-     background: url(http://13.233.57.179/grammar/assets//std03-singular-plural-nouns-worksheet8/img/bg.jpg) no-repeat center center fixed;
+     background: url(http://3.7.85.57/grammar/assets//std03-singular-plural-nouns-worksheet8/img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -171,7 +171,7 @@ input{
 }
 .option_Container{
     max-width:fit-content;
-     background: url(http://13.233.57.179/grammar/assets//std03-singular-plural-nouns-worksheet8/img/helpbox_bg.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std03-singular-plural-nouns-worksheet8/img/helpbox_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -254,7 +254,7 @@ input{
 }
 @media (min-width:100px) and (max-width:575px){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std03-singular-plural-nouns-worksheet8/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://3.7.85.57/grammar/assets//std03-singular-plural-nouns-worksheet8/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

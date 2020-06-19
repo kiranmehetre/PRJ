@@ -3,23 +3,23 @@
 
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 
 
 body{
     min-height:100vh;
-     background: url(http://13.233.57.179/grammar/assets//std01-adjective-worksheet5/img/bg.jpg) no-repeat center center fixed;
+     background: url(http://3.7.85.57/grammar/assets//std01-adjective-worksheet5/img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position: bottom;
 	overflow-x:hidden;
@@ -1568,14 +1568,14 @@ display:none;
 
 @media(orientation:portrait){
     body{
-         background: url(http://13.233.57.179/grammar/assets//std01-adjective-worksheet5/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-adjective-worksheet5/img/bg_portrait.jpg) no-repeat center center fixed;
         background-size: cover;
         background-position: bottom;
     }
 }
 @media(orientation:landscape){
     body{
-         background: url(http://13.233.57.179/grammar/assets//std01-adjective-worksheet5/img/bg.jpg) no-repeat center center fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-adjective-worksheet5/img/bg.jpg) no-repeat center center fixed;
         background-size: cover;
         background-position: bottom;
     }

@@ -69,8 +69,15 @@ export class TopicComponent implements OnInit {
          
       this.apiRequest.getRequest('api/student/subtopic/' + this.id).then( (res) => {            
         if(res['status'] == 'OK'){           
-            this.topic_list = res['topic_data'];    
-            this.subtopic_details = res['body'];  
+            this.topic_list = res['topic_data'];  
+            
+            this.subtopic_details = res['body'];
+            if(this.subtopic_details && this.subtopic_details.length > 0)
+              {
+                this.subtopic_details.forEach(element => {
+                  element.subtopic_image =  element.subtopic_image.replace("http://3.7.85.57", "assets")
+                });
+              }    
         }else {
             this.subTopicNotFound = true;
         }

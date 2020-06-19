@@ -1,14 +1,14 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: "mt-rounded-bold";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .comma,.heading{
     font-family: mt-rounded-bold,'Microsoft New Tai Lue','Arial';
@@ -17,7 +17,7 @@
     padding: 2px 15px 5px;
 }
 .heading{
-    background: url(http://13.233.57.179/grammar/assets/std03-degress-of-comparison-worksheet3/img/heading_bg.jpg) 100% 100%;
+    background: url(http://3.7.85.57/grammar/assets/std03-degress-of-comparison-worksheet3/img/heading_bg.jpg) 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -100,7 +100,7 @@ h2{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    background: url(http://13.233.57.179/grammar/assets/std03-degress-of-comparison-worksheet3/img/number-bg.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std03-degress-of-comparison-worksheet3/img/number-bg.png) no-repeat;
     background-size: 100% 100%;
     text-align: center;
     margin-right: 10px;
@@ -924,7 +924,7 @@ li a:focus {
 }
 @media (orientation:landscape){
     .bg{
-        background: url(http://13.233.57.179/grammar/assets/std03-degress-of-comparison-worksheet3/img/bg.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-degress-of-comparison-worksheet3/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -933,7 +933,7 @@ li a:focus {
 }
 @media (orientation:portrait){
     .bg{
-        background: url(http://13.233.57.179/grammar/assets/std03-degress-of-comparison-worksheet3/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-degress-of-comparison-worksheet3/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

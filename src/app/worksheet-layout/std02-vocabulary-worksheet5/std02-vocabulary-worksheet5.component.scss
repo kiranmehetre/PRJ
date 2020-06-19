@@ -1,19 +1,19 @@
 @font-face {
 	font-family: "CustomFont";
-    src: url("/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
 }
 @font-face {
 	font-family: "CustomFontBold";
-    src: url("/assets/font/ntailub.ttf") format("truetype");	
+    src: url("http://3.7.85.57/grammar/assets/font/ntailub.ttf") format("truetype");	
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
   .bg{
     min-height:100vh;
-     background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet5/img/bg.jpg) no-repeat fixed;
+     background: url(http://3.7.85.57/grammar/assets//std02-vocabulary-worksheet5/img/bg.jpg) no-repeat fixed;
     background-size: cover;
     background-position: center top;
 	overflow-x:hidden;
@@ -130,7 +130,7 @@ input{
 }
 .Question_Container .head div
 {
-	 background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet5/img/bg-col.png) no-repeat;
+	 background: url(http://3.7.85.57/grammar/assets//std02-vocabulary-worksheet5/img/bg-col.png) no-repeat;
     background-size: 100% 100%;
 	text-align:center;
 	white-space: nowrap;
@@ -144,7 +144,7 @@ input{
 	font-size: 1rem;
 	margin-top:3%;
 	line-height:2.9em;
-	 background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet5/img/ques_bg.png) no-repeat;
+	 background: url(http://3.7.85.57/grammar/assets//std02-vocabulary-worksheet5/img/ques_bg.png) no-repeat;
     background-size: 100% 100%;
 	  -moz-box-shadow:  -1px 1px 5px 7px rgba(255,255,255,0.85);
     -webkit-box-shadow:  -1px 1px 5px 7px rgba(255,255,255,0.85);
@@ -152,7 +152,7 @@ input{
 }
 .questions{
 	width:95%;
-	 background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet5/img/table-bg.png) no-repeat;
+	 background: url(http://3.7.85.57/grammar/assets//std02-vocabulary-worksheet5/img/table-bg.png) no-repeat;
 			background-size: 100% 100%;
 			margin-bottom:5%;
 }
@@ -181,7 +181,7 @@ input{
 	.bg
 	{
 		min-height:100vh;
-		 background: url(http://13.233.57.179/grammar/assets//std02-vocabulary-worksheet5/img/bg_portrait.jpg) no-repeat fixed;
+		 background: url(http://3.7.85.57/grammar/assets//std02-vocabulary-worksheet5/img/bg_portrait.jpg) no-repeat fixed;
 		background-size: cover;
 		background-position: center top;
 	}

@@ -1,19 +1,19 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url("/assets/font/ntailub.ttf") format("truetype");	
+    src: url("http://3.7.85.57/grammar/assets/font/ntailub.ttf") format("truetype");	
 }
 @font-face 
 {
     font-family: "ArialRoundedMTBold";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 } 
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 .bg{
@@ -155,7 +155,7 @@ input {
     text-align: center;
     width: 43px;
     height: 43px;
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-verb-worksheet2/img/number.png);
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-verb-worksheet2/img/number.png);
     background-position: 100%;
     background-size: 100% 100%;
 }
@@ -200,7 +200,7 @@ input {
 .text-container{
     padding-left: 10px;
     padding-right: 10px;
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-verb-worksheet2/img/text-container.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-verb-worksheet2/img/text-container.png) no-repeat;
     background-size: 100% 100%;
     width: fit-content;
     width: -moz-fit-content;
@@ -208,7 +208,7 @@ input {
 .answer-heading{
     padding: 0 25px;
     white-space: nowrap;
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-verb-worksheet2/img/verbs.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-verb-worksheet2/img/verbs.png) no-repeat;
     background-size: 100% 100%;
     width: fit-content;
     width: -moz-fit-content;
@@ -249,7 +249,7 @@ input {
     .bg {   
         color:#000;
         font-size:14px;
-        background: url(http://13.233.57.179/grammar/assets/std02-mixed-verb-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std02-mixed-verb-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -573,7 +573,7 @@ input {
     .bg {   
         color:#000;
         font-size:25px;
-        background: url(http://13.233.57.179/grammar/assets/std02-mixed-verb-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std02-mixed-verb-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

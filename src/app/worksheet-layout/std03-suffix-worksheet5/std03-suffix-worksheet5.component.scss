@@ -7,13 +7,13 @@
 
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
   }
 .bg{
     font-family: 'mt-rounded-bold','Microsoft New Tai Lue';
     color:#000;
     font-size:22px;
-    background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet5/img/bg.jpg) no-repeat center bottom fixed;
+    background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet5/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,7 +85,7 @@ h2{
     grid-template-columns: 40px 30% auto;
     grid-gap: 5px;
     margin-bottom: 5px; 
-    background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet5/img/question.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet5/img/question.png) no-repeat;
     background-size: 100% 100%;
     /* width: fit-content;
     width: -moz-fit-content; */
@@ -195,7 +195,7 @@ input {
 @media (min-width:100px) and (max-width:575px){
     .bg {  
         font-size:15px;
-        background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet5/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet5/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -254,7 +254,7 @@ input {
 } 
  @media (min-width: 565px) and (max-width: 575px){
     .bg{
-        background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet5/img/bg.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet5/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -382,7 +382,7 @@ input {
 {
     .bg {  
         font-size:25px;
-        background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet5/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet5/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

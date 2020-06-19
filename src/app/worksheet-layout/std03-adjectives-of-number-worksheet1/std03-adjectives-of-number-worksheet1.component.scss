@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 
 .bg {
@@ -38,7 +38,7 @@ h2 {
 .number {
     width: 45px;
     height: 45px;
-    background: url(http://13.233.57.179/grammar/assets/std03-adjectives-of-number-worksheet1/img/number.png);
+    background: url(http://3.7.85.57/grammar/assets/std03-adjectives-of-number-worksheet1/img/number.png);
     background-size: 100% 100%;
     background-position: 100%;
     text-align: center;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .heading {
-    background: url(http://13.233.57.179/grammar/assets/std03-adjectives-of-number-worksheet1/img/helpbox.png);
+    background: url(http://3.7.85.57/grammar/assets/std03-adjectives-of-number-worksheet1/img/helpbox.png);
     background-position: 100%;
     background-size: 100% 100%;
     padding: 7px 70px;
@@ -972,7 +972,7 @@ li a:focus {
 
 @media (orientation:landscape) {
     .bg {
-        background: url(http://13.233.57.179/grammar/assets/std03-adjectives-of-number-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-adjectives-of-number-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -982,7 +982,7 @@ li a:focus {
 
 @media (orientation:portrait) {
     .bg {
-        background: url(http://13.233.57.179/grammar/assets/std03-adjectives-of-number-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-adjectives-of-number-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

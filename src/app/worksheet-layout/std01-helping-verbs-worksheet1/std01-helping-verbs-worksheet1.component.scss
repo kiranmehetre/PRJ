@@ -1,22 +1,22 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url("/assets/font/ntailub.ttf") format("truetype");	
+    src: url("http://3.7.85.57/grammar/assets/font/ntailub.ttf") format("truetype");	
 }
 
   @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 .bg{
     font-family: 'CustomFont','Microsoft New Tai Lue','Arial';
     color: #000;
     font-size: 24px;
-    background: url(http://13.233.57.179/grammar/assets/std01-helping-verbs-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
+    background: url(http://3.7.85.57/grammar/assets/std01-helping-verbs-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -120,7 +120,7 @@ input{
         
         color: #000;
         font-size: 20px;
-        background: url(http://13.233.57.179/grammar/assets/std01-helping-verbs-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std01-helping-verbs-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -265,7 +265,7 @@ input{
         font-family: Microsoft New Tai lue;
         color: #000;
         font-size: 20px;
-        background: url(http://13.233.57.179/grammar/assets/std01-helping-verbs-worksheet1/img/bg-1.jpg) no-repeat center center fixed;
+        background: url(http://3.7.85.57/grammar/assets/std01-helping-verbs-worksheet1/img/bg-1.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -347,7 +347,7 @@ input{
 }
 @media(min-width:100px) and (max-width:575px) and (orientation:landscape){
     .bg{
-        background: url(http://13.233.57.179/grammar/assets/std01-helping-verbs-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std01-helping-verbs-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

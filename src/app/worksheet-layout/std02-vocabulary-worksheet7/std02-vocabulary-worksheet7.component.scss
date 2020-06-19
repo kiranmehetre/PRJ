@@ -1,22 +1,22 @@
 @font-face 
 {
     font-family: "CustomFont";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url("/assets/font/ntailub.ttf") format("truetype");	
+    src: url("http://3.7.85.57/grammar/assets/font/ntailub.ttf") format("truetype");	
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 .bg{
     font-family: 'mt-rounded-bold','Microsoft New Tai Lue';
     color:#000;
     font-size:22px;
-    background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/bg.jpg) no-repeat center bottom fixed;
+    background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,7 +102,7 @@ h1{
     justify-content: center;
 }
 .text-container{
-    background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/text-container.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/text-container.png) no-repeat;
     background-size: 100% 100%;
     padding: 5px 0 10px;
     text-align: center;
@@ -110,7 +110,7 @@ h1{
 }
 .input-span {
     padding: 5px 15px 10px;
-    background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/text-container.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/text-container.png) no-repeat;
     background-size: 100% 100%;
     text-align: center;
     display: inline-block;
@@ -189,7 +189,7 @@ input {
     background: #e0b66e;
 }
 .number {
-    background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/number.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/number.png) no-repeat;
     width: 36px;
     height: 36px;
     text-align: center;
@@ -230,7 +230,7 @@ input {
     .bg {  
         color:#000;
         font-size:15px;
-        background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -325,7 +325,7 @@ input {
 } 
  @media (min-width: 565px) and (max-width: 575px){
     .bg{
-    background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/bg.jpg) no-repeat center bottom fixed;
+    background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -522,7 +522,7 @@ input {
     .bg {  
         color:#000;
         font-size:25px;
-        background: url(http://13.233.57.179/grammar/assets/std02-vocabulary-worksheet7/img/bg_portrait.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std02-vocabulary-worksheet7/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

@@ -10,13 +10,15 @@ video::-webkit-media-controls-panel {
 .close
 {
     width: 30px;
-    background: #000;
+    background: #134e88;
     border-radius: 50%;
     height: 30px;
     position: absolute;
-    right: 0px;
-    z-index: 999;
-    color: #fff!important;
-    top: 0px;
+    right: -9px;
+    z-index: 999999999999999999999;
+    color: #fff !important;
+    top: -11px;
     opacity: 1;
+    font-weight: bold;
+    font-size: 28px;
 }

@@ -3,22 +3,22 @@
 }
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: "mt-rounded-bold";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .comma{
     font-family: mt-rounded-bold,'Microsoft New Tai Lue','Arial';
 }
 .bg{
     min-height:100vh;
-     background: url(http://13.233.57.179/grammar/assets//std03-interrogative-pronouns-worksheet1/img/bg.jpg) no-repeat center 60% fixed;
+     background: url(http://3.7.85.57/grammar/assets//std03-interrogative-pronouns-worksheet1/img/bg.jpg) no-repeat center 60% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -263,7 +263,7 @@ input{
 }
 @media (min-width:100px) and (max-width:639px){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std03-interrogative-pronouns-worksheet1/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://3.7.85.57/grammar/assets//std03-interrogative-pronouns-worksheet1/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -284,7 +284,7 @@ input{
         line-height: 15px;
     }
     .Question_Container{
-         background: url(http://13.233.57.179/grammar/assets//std03-interrogative-pronouns-worksheet1/img/Question_Container_bg.png) no-repeat 100% 100%;
+         background: url(http://3.7.85.57/grammar/assets//std03-interrogative-pronouns-worksheet1/img/Question_Container_bg.png) no-repeat 100% 100%;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         background-size: 100% 100%;
@@ -698,7 +698,7 @@ input{
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std03-interrogative-pronouns-worksheet1/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://3.7.85.57/grammar/assets//std03-interrogative-pronouns-worksheet1/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -721,7 +721,7 @@ input{
         line-height: 24px;
     }
     .Question_Container{
-         background: url(http://13.233.57.179/grammar/assets//std03-interrogative-pronouns-worksheet1/img/Question_Container_bg.png) no-repeat 100% 100%;
+         background: url(http://3.7.85.57/grammar/assets//std03-interrogative-pronouns-worksheet1/img/Question_Container_bg.png) no-repeat 100% 100%;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         background-size: 100% 100%;
@@ -926,7 +926,7 @@ input{
 }
 @media(min-width:100px) and (max-width:639px) and (orientation:landscape){
     .bg {
-        background: url(http://13.233.57.179/grammar/assets/std03-interrogative-pronouns-worksheet1/img/bg.jpg) no-repeat center center fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-interrogative-pronouns-worksheet1/img/bg.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

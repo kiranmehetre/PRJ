@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CustomFontArial";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .bg{
     font-family:CustomFontArial;
@@ -94,7 +94,7 @@ h2{
     padding-right: 4%;
 }*/
 .number {
-    background: url(http://13.233.57.179/grammar/assets/std01-comma-worksheet1/img/orange.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std01-comma-worksheet1/img/orange.png) no-repeat;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -1019,7 +1019,7 @@ li a:focus {
 }
 @media (orientation:landscape){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-comma-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-comma-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1028,7 +1028,7 @@ li a:focus {
 }
 @media (orientation:portrait){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-comma-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-comma-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

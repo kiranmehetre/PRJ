@@ -73,6 +73,13 @@ export class DashboardComponent implements OnInit {
             $('.loader').hide();  
             setTimeout(() => {
               this.topic_list = res['body'];
+              if(this.topic_list && this.topic_list.length > 0)
+              {
+                this.topic_list.forEach(element => {
+                  element.topic_image =  element.topic_image.replace("http://3.7.85.57", "assets")
+                });
+              }
+             
               this.ng4LoadingSpinnerService.show();
             this.loadScript(); 
            

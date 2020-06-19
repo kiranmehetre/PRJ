@@ -1,11 +1,11 @@
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 
 .bg{
@@ -116,7 +116,7 @@ input{
 
 
 .number {
-    background: url(http://13.233.57.179/grammar/assets/std03-collective-noun-worksheet9/img/orange-box.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std03-collective-noun-worksheet9/img/orange-box.png) no-repeat;
     width: 38px;
     height: 40px;
     text-align: center;
@@ -149,7 +149,7 @@ img.mogli{
 @media (min-width:100px) and (max-width:575px){
     .bg{
         font-size:14px;
-        background: url(http://13.233.57.179/grammar/assets/std03-collective-noun-worksheet9/img/bg.jpg) no-repeat center bottom fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-collective-noun-worksheet9/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

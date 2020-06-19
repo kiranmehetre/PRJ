@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
 }
 
@@ -987,7 +987,7 @@ input {
 }
 @media (orientation:landscape){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-demostrative-pronoun-worksheet3/img/bg.jpg) no-repeat right bottom fixed,#f6c35a;;
+         background: url(http://3.7.85.57/grammar/assets//std01-demostrative-pronoun-worksheet3/img/bg.jpg) no-repeat right bottom fixed,#f6c35a;;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -996,7 +996,7 @@ input {
 }
 @media (orientation:portrait){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-demostrative-pronoun-worksheet3/img/bg_portrait.jpg) no-repeat right bottom fixed,#f6c35a;;
+         background: url(http://3.7.85.57/grammar/assets//std01-demostrative-pronoun-worksheet3/img/bg_portrait.jpg) no-repeat right bottom fixed,#f6c35a;;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

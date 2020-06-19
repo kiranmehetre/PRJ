@@ -1,15 +1,15 @@
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
 }			
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 .bg{
     min-height:100vh;
@@ -81,7 +81,7 @@ input{
     transform:translateY(-95%);
 }
 .content div:first-child{
-     background: url(http://13.233.57.179/grammar/assets//std01-rhyming-words-worksheet9/img/text_bg.jpg) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std01-rhyming-words-worksheet9/img/text_bg.jpg) no-repeat;
     background-size:100% 100%;
     background-position:100%;
     padding-bottom: 3px;
@@ -803,7 +803,7 @@ li a:focus {
 
 @media (orientation:landscape){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-rhyming-words-worksheet9/img/bg.jpg) no-repeat left bottom fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-rhyming-words-worksheet9/img/bg.jpg) no-repeat left bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -812,7 +812,7 @@ li a:focus {
 }
 @media (orientation:portrait){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-rhyming-words-worksheet9/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://3.7.85.57/grammar/assets//std01-rhyming-words-worksheet9/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

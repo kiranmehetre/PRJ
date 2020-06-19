@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: "CustomFontArial";
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .bg{
     font-family: 'CustomFontArial','Microsoft New Tai Lue','Arial';
@@ -571,7 +571,7 @@ input{
 
 @media (orientation:landscape){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std03-gender-nouns-worksheet3/img/bg.jpg) no-repeat center top,#f3eace;
+         background: url(http://3.7.85.57/grammar/assets//std03-gender-nouns-worksheet3/img/bg.jpg) no-repeat center top,#f3eace;
         -webkit-background-size: 100%;
         -moz-background-size: 100%;
         -o-background-size: 100%;
@@ -580,7 +580,7 @@ input{
 }
 @media (orientation:portrait){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std03-gender-nouns-worksheet3/img/bg_portrait.jpg) no-repeat center top,#f3eace;
+         background: url(http://3.7.85.57/grammar/assets//std03-gender-nouns-worksheet3/img/bg_portrait.jpg) no-repeat center top,#f3eace;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

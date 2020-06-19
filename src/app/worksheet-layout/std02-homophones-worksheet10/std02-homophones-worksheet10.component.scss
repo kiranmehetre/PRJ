@@ -1,14 +1,14 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url("/assets/font/ntailub.ttf") format("truetype");	
+    src: url("http://3.7.85.57/grammar/assets/font/ntailub.ttf") format("truetype");	
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
    
   }
@@ -19,7 +19,7 @@
       text-transform: capitalize;
   }
 .bg{
-     background: url(http://13.233.57.179/grammar/assets//std02-homophones-worksheet10/img/bg.jpg) no-repeat fixed;
+     background: url(http://3.7.85.57/grammar/assets//std02-homophones-worksheet10/img/bg.jpg) no-repeat fixed;
     background-size: cover;
     background-position: bottom;
 	// overflow-x:hidden;
@@ -58,7 +58,7 @@ input{
     color:#fff;
 }
 .list-item{
-     background: url(http://13.233.57.179/grammar/assets//std02-homophones-worksheet10/img/list_item_bg.png) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std02-homophones-worksheet10/img/list_item_bg.png) no-repeat;
     background-size: 100% 100%;
     background-position: 100%;
     height: 36px;
@@ -67,7 +67,7 @@ input{
     line-height: 38px;
 }
 .Option{
-     background: url(http://13.233.57.179/grammar/assets//std02-homophones-worksheet10/img/Option_bg.jpg) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std02-homophones-worksheet10/img/Option_bg.jpg) no-repeat;
     background-size: 100% 100%;
     background-position: 100%;
     color:#000;

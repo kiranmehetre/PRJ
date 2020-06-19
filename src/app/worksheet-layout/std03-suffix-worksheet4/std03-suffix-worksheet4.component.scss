@@ -5,15 +5,15 @@
 
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .bg{
     font-family: CustomFont,'Microsoft New Tai Lue';
@@ -269,7 +269,7 @@ input {
 }
 .input-answer-left .question:nth-of-type(odd),.input-answer-right .question:nth-of-type(odd)
 {
- background: url(http://13.233.57.179/grammar/assets//std03-suffix-worksheet4/img/right-side.png);
+ background: url(http://3.7.85.57/grammar/assets//std03-suffix-worksheet4/img/right-side.png);
 background-position: 100%;
 background-size: 100% 100%;
 padding: 8px;
@@ -278,7 +278,7 @@ padding-left: 13% !important;
         
 .input-answer-left .question:nth-of-type(even),.input-answer-right .question:nth-of-type(even)
  {
-     background: url(http://13.233.57.179/grammar/assets//std03-suffix-worksheet4/img/left-side.png);
+     background: url(http://3.7.85.57/grammar/assets//std03-suffix-worksheet4/img/left-side.png);
     background-position: 100%;
     background-size: 100% 100%;
     padding: 8px;
@@ -309,7 +309,7 @@ padding-left: 13% !important;
     .bg {
         color:#000;
         font-size:15px;
-        background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet4/img/bg_portrait.jpg) no-repeat center center fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet4/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -481,7 +481,7 @@ padding-left: 13% !important;
     .bg {   
         color:#000;
         font-size:24px;
-        background: url(http://13.233.57.179/grammar/assets/std03-suffix-worksheet4/img/bg_portrait.jpg) no-repeat center center fixed;
+        background: url(http://3.7.85.57/grammar/assets/std03-suffix-worksheet4/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

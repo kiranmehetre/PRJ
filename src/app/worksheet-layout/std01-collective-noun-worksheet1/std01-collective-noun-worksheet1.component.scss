@@ -1,19 +1,19 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 .bg{
     min-height:100%;
-     background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat center bottom,#8cc349;
+     background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat center bottom,#8cc349;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -101,7 +101,7 @@ input{
     height:70px;
 }
 .helpbox{
-     background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/helpbox.png) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/helpbox.png) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -110,7 +110,7 @@ input{
     padding: 5px 10px 25px;
 }
 .helpbox.geese{
-     background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/helpbox1.png) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/helpbox1.png) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -133,7 +133,7 @@ span{
 }
 @media (min-width:100px) and (max-width:639px) and (orientation:portrait){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/bg_portrait.jpg) no-repeat,#8cc349;
+         background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/bg_portrait.jpg) no-repeat,#8cc349;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         -o-background-size: 100% 100%;
@@ -246,7 +246,7 @@ span{
 }
 @media (min-width:100px) and (max-width:639px) and (orientation:landscape){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat 40% center,#8cc349;
+         background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat 40% center,#8cc349;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -343,7 +343,7 @@ span{
 }
 @media (min-width: 640px) and (max-width: 767px){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat 40% center,#8cc349;
+         background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat 40% center,#8cc349;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -419,7 +419,7 @@ span{
 }
 @media (min-width: 768px) and (max-width: 991px){
     .bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat center center,#8cc349;
+         background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/bg.jpg) no-repeat center center,#8cc349;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -570,7 +570,7 @@ span{
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
 	.bg{
-         background: url(http://13.233.57.179/grammar/assets//std01-collective-noun-worksheet1/img/bg_portrait.jpg) no-repeat center bottom,#8cc349;
+         background: url(http://3.7.85.57/grammar/assets//std01-collective-noun-worksheet1/img/bg_portrait.jpg) no-repeat center bottom,#8cc349;
         -webkit-background-size: 100% ;
         -moz-background-size: 100% ;
         -o-background-size: 100% ;

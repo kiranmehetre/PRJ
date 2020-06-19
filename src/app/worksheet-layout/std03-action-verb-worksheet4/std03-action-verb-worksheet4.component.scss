@@ -1,14 +1,14 @@
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .bg{
     min-height:100vh !important;
-     background: url(http://13.233.57.179/grammar/assets//std03-action-verb-worksheet4/img/bg.jpg) no-repeat;
+     background: url(http://3.7.85.57/grammar/assets//std03-action-verb-worksheet4/img/bg.jpg) no-repeat;
     background-size: 100% 100%;
     background-position: bottom;
     font-family: 'CustomFontBold','Microsoft New Tai Lue','Arial';
@@ -157,7 +157,7 @@ input{
 @media (min-width:100px) and (max-width:575px){
     .bg{
         min-height:100%;
-         background: url(http://13.233.57.179/grammar/assets//std03-action-verb-worksheet4/img/bg_portrait.jpg) no-repeat;
+         background: url(http://3.7.85.57/grammar/assets//std03-action-verb-worksheet4/img/bg_portrait.jpg) no-repeat;
         background-size: 100% 100%;
         background-position: bottom;
         font-size:15px;
@@ -328,7 +328,7 @@ input{
 @media (min-width:565px) and (max-width:575px){
     .bg {
         min-height: 100%;
-        background: url(http://13.233.57.179/grammar/assets/std03-action-verb-worksheet4/img/bg.jpg) no-repeat;
+        background: url(http://3.7.85.57/grammar/assets/std03-action-verb-worksheet4/img/bg.jpg) no-repeat;
         background-size: 100% 100%;
         background-position: bottom;
         font-size: 14px;
@@ -514,7 +514,7 @@ input{
 
     .bg {
         min-height:100%;
-         background: url(http://13.233.57.179/grammar/assets//std03-action-verb-worksheet4/img/bg_portrait.jpg) no-repeat;
+         background: url(http://3.7.85.57/grammar/assets//std03-action-verb-worksheet4/img/bg_portrait.jpg) no-repeat;
         background-size: 100% 140%;
         background-position: 100% 80%;
         font-size:27px; 

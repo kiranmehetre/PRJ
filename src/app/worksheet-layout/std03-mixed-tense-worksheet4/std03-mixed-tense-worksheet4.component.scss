@@ -3,20 +3,20 @@
 }
 @font-face {
     font-family: "CustomFont";
-    src: url(/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
 }
   
 .bg{
     min-height:100vh !important;
-     background: url(http://13.233.57.179/grammar/assets//std03-mixed-tense-worksheet4/img/bg.jpg) no-repeat center center fixed;
+     background: url(http://3.7.85.57/grammar/assets//std03-mixed-tense-worksheet4/img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,7 +89,7 @@ input{
 	border-bottom:2px solid #20bb15;
 }
 .Option_Container{
-     background: url(http://13.233.57.179/grammar/assets//std03-mixed-tense-worksheet4/img/helpbox_bg.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std03-mixed-tense-worksheet4/img/helpbox_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -126,7 +126,7 @@ input{
     display:grid;
 }
 .Answer_Block.first{
-     background: url(http://13.233.57.179/grammar/assets//std03-mixed-tense-worksheet4/img/green.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std03-mixed-tense-worksheet4/img/green.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -135,7 +135,7 @@ input{
     -webkit-filter:drop-shadow(0 8px 8px rgba(0,0,0,.5));
 }
 .Answer_Block.second{
-     background: url(http://13.233.57.179/grammar/assets//std03-mixed-tense-worksheet4/img/yellow.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std03-mixed-tense-worksheet4/img/yellow.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -144,7 +144,7 @@ input{
     -webkit-filter:drop-shadow(0 8px 8px rgba(0,0,0,.5));
 }
 .Answer_Block.third{
-     background: url(http://13.233.57.179/grammar/assets//std03-mixed-tense-worksheet4/img/red.png) no-repeat 100% 100%;
+     background: url(http://3.7.85.57/grammar/assets//std03-mixed-tense-worksheet4/img/red.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -210,7 +210,7 @@ input{
     }
     
     .Option_Container{
-         background: url(http://13.233.57.179/grammar/assets//std03-mixed-tense-worksheet4/img/helpbox_bg_portrait.png) no-repeat 100% 100%;
+         background: url(http://3.7.85.57/grammar/assets//std03-mixed-tense-worksheet4/img/helpbox_bg_portrait.png) no-repeat 100% 100%;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         -o-background-size: 100% 100%;
@@ -433,7 +433,7 @@ input{
         display: none;
     }
     .Option_Container {
-        background: url(http://13.233.57.179/grammar/assets/std03-mixed-tense-worksheet4/img/helpbox_bg_portrait.png) no-repeat 100% 100%;
+        background: url(http://3.7.85.57/grammar/assets/std03-mixed-tense-worksheet4/img/helpbox_bg_portrait.png) no-repeat 100% 100%;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         -o-background-size: 100% 100%;
@@ -520,7 +520,7 @@ input{
         font-size: 14px;
     }
     .Option_Container {
-        background: url(http://13.233.57.179/grammar/assets/std03-mixed-tense-worksheet4/img/helpbox_bg.png) no-repeat 100% 100%;
+        background: url(http://3.7.85.57/grammar/assets/std03-mixed-tense-worksheet4/img/helpbox_bg.png) no-repeat 100% 100%;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         -o-background-size: 100% 100%;

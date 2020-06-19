@@ -1,14 +1,14 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url("/assets/font/ntailub.ttf") format("truetype");
+    src: url("http://3.7.85.57/grammar/assets/font/ntailub.ttf") format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 .bg{
@@ -101,7 +101,7 @@ input {
     line-height: 1.5em;
 }
 .yellow-shirt{
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-punctuation-worksheet3/img/yellow.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-punctuation-worksheet3/img/yellow.png) no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -113,7 +113,7 @@ input {
     margin-left: 10px;
 }
 .purple-shirt{
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-punctuation-worksheet3/img/purple.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-punctuation-worksheet3/img/purple.png) no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -125,7 +125,7 @@ input {
     margin-left: 10px;
 }
 .green-shirt{
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-punctuation-worksheet3/img/green.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-punctuation-worksheet3/img/green.png) no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -189,7 +189,7 @@ input {
     color: #ffd700;
     font-weight: 600;
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-    background: url(http://13.233.57.179/grammar/assets/std02-mixed-punctuation-worksheet3/img/optionContainer_bg.png) no-repeat;
+    background: url(http://3.7.85.57/grammar/assets/std02-mixed-punctuation-worksheet3/img/optionContainer_bg.png) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -225,7 +225,7 @@ input {
     .bg {  
         color:#000;
         font-size:14px;
-        background: url(http://13.233.57.179/grammar/assets/std02-mixed-punctuation-worksheet3/img/bg_portrait.jpg) no-repeat center center fixed;
+        background: url(http://3.7.85.57/grammar/assets/std02-mixed-punctuation-worksheet3/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -635,7 +635,7 @@ input {
 }
 @media only screen and (min-width: 768px) and (orientation: portrait) {
 	.bg{
-         background: url(http://13.233.57.179/grammar/assets//std02-mixed-punctuation-worksheet3/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://3.7.85.57/grammar/assets//std02-mixed-punctuation-worksheet3/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
