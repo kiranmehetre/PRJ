@@ -39,14 +39,14 @@
 
 @font-face {
     font-family: "CustomFontArial";
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .comma,.result .TextBox h1{
     font-family: "CustomFontArial",sans-serif;
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailub.ttf) format("truetype");
 }
 .bg{
     min-height:100vh;
@@ -126,7 +126,7 @@ input{
     width:-moz-fit-content;
     margin:auto;
     grid-template-columns:auto auto auto;
-     background: url(http://3.7.85.57/grammar/assets//std01-mixed-noun-worksheet3/img/helpbox_bg.png) no-repeat 100% 100%;
+     background: url(http://completegrammar.com/assets/std01-mixed-noun-worksheet3/img/helpbox_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -160,7 +160,7 @@ input{
 }
 .Answer_Block{
     padding:50px 25px 60px;
-     background: url(http://3.7.85.57/grammar/assets//std01-mixed-noun-worksheet3/img/answer_bg.png) no-repeat 100% 100%;
+     background: url(http://completegrammar.com/assets/std01-mixed-noun-worksheet3/img/answer_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -511,7 +511,7 @@ input{
 
 @media (orientation:landscape){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std01-mixed-noun-worksheet3/img/bg.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std01-mixed-noun-worksheet3/img/bg.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -520,7 +520,7 @@ input{
 }
 @media (orientation:portrait){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std01-mixed-noun-worksheet3/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std01-mixed-noun-worksheet3/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

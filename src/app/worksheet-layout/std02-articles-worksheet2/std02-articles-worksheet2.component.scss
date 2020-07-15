@@ -2,17 +2,17 @@
 
   @font-face {
     font-family: 'mt-rounded-bold';
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
   @font-face {
     font-family: Microsoft New Tai lue;
-    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://completegrammar.com/assets/font/ntailu.ttf") format("truetype");
     font-weight: bold;
   }
 .bg{
     min-height:100vh;
-     background: url(http://3.7.85.57/grammar/assets//std02-articles-worksheet2/img/bg.jpg) no-repeat center bottom fixed;
+     background: url(http://completegrammar.com/assets/std02-articles-worksheet2/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -69,7 +69,7 @@ input{
 	filter: drop-shadow(0 2px 2px rgba(0,0,0,.5));
 }
 .number{
-	 background: url(http://3.7.85.57/grammar/assets//std02-articles-worksheet2/img/list-item-bg.png) no-repeat;
+	 background: url(http://completegrammar.com/assets/std02-articles-worksheet2/img/list-item-bg.png) no-repeat;
 	background-position: 100%;
 	background-size:100% 100%;
 	text-align:center;
@@ -113,7 +113,7 @@ input{
 }
 @media (min-width:100px) and (max-width:575px){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std02-articles-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std02-articles-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

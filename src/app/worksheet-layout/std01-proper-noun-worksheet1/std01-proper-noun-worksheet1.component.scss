@@ -1,18 +1,18 @@
 @font-face {
     font-family: "CustomFontBold";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailub.ttf) format("truetype");
 }
   
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
   }
 #menu,.TextBox{
     font-family: mt-rounded-bold,'Microsoft New Tai Lue','sans-serif';
 }
 .bg{
     min-height:100vh;
-     background: url(http://3.7.85.57/grammar/assets//std01-proper-noun-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
+     background: url(http://completegrammar.com/assets/std01-proper-noun-worksheet1/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -210,7 +210,7 @@ span.input.bd::before {
 }
 @media (min-width:100px) and (max-width:575px){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std01-proper-noun-worksheet1/img/bg_portrait.jpg) no-repeat;
+         background: url(http://completegrammar.com/assets/std01-proper-noun-worksheet1/img/bg_portrait.jpg) no-repeat;
         background-attachment: fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;

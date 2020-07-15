@@ -1,21 +1,21 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .comma{
     font-family: mt-rounded-bold,'Microsoft New Tai Lue','Arial';
 }
 .bg{
     min-height:100vh;
-     background: url(http://3.7.85.57/grammar/assets//std03-gender-nouns-worksheet2/img/bg.jpg) no-repeat center bottom fixed;
+     background: url(http://completegrammar.com/assets/std03-gender-nouns-worksheet2/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -170,7 +170,7 @@ img.boy{
 }
 @media (min-width:100px) and (max-width:575px){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-gender-nouns-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std03-gender-nouns-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -360,7 +360,7 @@ img.boy{
 }
 @media only screen and (min-width: 768px) and (orientation: portrait) {
 	.bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-gender-nouns-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std03-gender-nouns-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

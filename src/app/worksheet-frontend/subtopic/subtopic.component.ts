@@ -161,7 +161,7 @@ export class SubtopicComponent implements OnInit {
   }
   fetchData(data) {
     let c = "worksheet-layout/" + data.worksheet_link;
-    //console.log(c)
+    console.log(c)
     this.router.navigate([c])
   }
   public ButtonToggle(type: string) {

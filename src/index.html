@@ -12,7 +12,56 @@
     .footer {
     position: fixed!important;
       bottom: 0!important;
+      font-size: 9px!important;
     }
+    .modal {
+  text-align: center;
+}
+.social_media ul li a img {
+    height: 20px!important;
+}
+.social_media ul li a img.linkedin {
+    height: 17px!important;
+}
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 10px!important;
+    height: 10px!important;
+    color: red;
+    border-radius: 50%;
+    background: #FF9800!important;
+    margin: -5px 0 0 -5px!important;
+}
+.hidden {
+    background: #ff000000!important;
+    opacity: 1!important;
+}
+.spinner 
+  {
+    opacity: 1!important;
+    background: none!important;
+  }
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 64px!important;
+    height: 64px !important;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
     </style>
 </head>
 <body>

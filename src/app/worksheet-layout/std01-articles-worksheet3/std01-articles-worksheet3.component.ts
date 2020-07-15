@@ -17,11 +17,11 @@ export class Std01ArticlesWorksheet3Component implements OnInit {
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
+    $('.loadingDiv').hide();
 
-
-    window.onload = function () {
-      $('.loadingDiv').hide();
-    }
+    // window.onload = function () {
+    //   $('.loadingDiv').hide();
+    // }
     var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {

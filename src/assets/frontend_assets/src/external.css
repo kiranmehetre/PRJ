@@ -38,11 +38,11 @@ body {
 }
 
 .Main_Container {
-    background-color: #d2d9f3;
+    /* background-color: #d2d9f3;
     margin-top: 25px;
     border-radius: 25px;
     box-shadow: 7px 10px 10px rgba(0, 0, 0, .5);
-    padding-bottom: 6%;
+    padding-bottom: 6%; */
 }
 .Main_Container.topic_container{
     background: url(../img/subtopic-bg.png) no-repeat center bottom;
@@ -411,7 +411,7 @@ img.lion {
 }
 
 .footer {
-    font-size: 14px;
+    font-size: 9px;
     font-weight: bold;
     text-align: center;
     margin: 25px 0 10px;
@@ -445,11 +445,11 @@ img.lion {
 }
 
 .social_media ul li a img {
-    height: 30px;
+    height: 20px;
     filter: drop-shadow(2px 0px 2px rgba(0, 0, 0, .3));
 }
 .social_media ul li a img.linkedin {
-    height: 25px;
+    height: 17px;
 }
 
 .toggle {

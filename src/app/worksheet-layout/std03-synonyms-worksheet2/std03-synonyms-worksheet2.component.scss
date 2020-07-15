@@ -3,15 +3,15 @@
 }
 @font-face {
     font-family: "CustomFont";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailu.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFontBold";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailub.ttf) format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .bg{
     min-height:100vh;
@@ -146,7 +146,7 @@ input{
     display:none;
 }
 .Question_Container{
-     background: url(http://3.7.85.57/grammar/assets//std03-synonyms-worksheet2/img/Question_Container_bg.png) no-repeat 100% 100%;
+     background: url(http://completegrammar.com/assets/std03-synonyms-worksheet2/img/Question_Container_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -231,7 +231,7 @@ img.lens{
     z-index:10;
 }
 .Answer_Block .number{
-     background: url(http://3.7.85.57/grammar/assets//std03-synonyms-worksheet2/img/number_bg.png) no-repeat 100% 100%;
+     background: url(http://completegrammar.com/assets/std03-synonyms-worksheet2/img/number_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -240,7 +240,7 @@ img.lens{
     padding:2px 0;
 }
 .Answer_Block .input-div{
-     background: url(http://3.7.85.57/grammar/assets//std03-synonyms-worksheet2/img/input_bg.png) no-repeat 100% 100%;
+     background: url(http://completegrammar.com/assets/std03-synonyms-worksheet2/img/input_bg.png) no-repeat 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -992,7 +992,7 @@ h1 {
 }
 @media (orientation:landscape){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-synonyms-worksheet2/img/bg.jpg) no-repeat center right fixed;
+         background: url(http://completegrammar.com/assets/std03-synonyms-worksheet2/img/bg.jpg) no-repeat center right fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1001,7 +1001,7 @@ h1 {
 }
 @media (orientation:portrait){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-synonyms-worksheet2/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://completegrammar.com/assets/std03-synonyms-worksheet2/img/bg_portrait.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -1011,7 +1011,7 @@ h1 {
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-synonyms-worksheet2/img/bg.jpg) no-repeat center right fixed;
+         background: url(http://completegrammar.com/assets/std03-synonyms-worksheet2/img/bg.jpg) no-repeat center right fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

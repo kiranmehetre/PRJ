@@ -1,23 +1,23 @@
 @font-face {
     font-family: "CustomFont";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailu.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailu.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "CustomFontBold";
-    src: url(http://3.7.85.57/grammar/assets/font/ntailub.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ntailub.ttf) format("truetype");
 }
 
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
 }
 
 .bg {
     font-family: CustomFont, 'Microsoft New Tai Lue', 'Arial';
     color: #000;
     font-size: 24px;
-    background: url(http://3.7.85.57/grammar/assets/std03-collective-noun-worksheet7/img/bg.jpg) no-repeat center top;
+    background: url(http://completegrammar.com/assets/std03-collective-noun-worksheet7/img/bg.jpg) no-repeat center top;
     background-size: 100%;
     min-height: 100vh;
     background-attachment: fixed;
@@ -49,7 +49,7 @@
 }
 
 .input-span {
-    background: url(http://3.7.85.57/grammar/assets/std03-collective-noun-worksheet7/img/input.png) no-repeat;
+    background: url(http://completegrammar.com/assets/std03-collective-noun-worksheet7/img/input.png) no-repeat;
     background-size: 100% 100%;
     padding-bottom: 5px;
     width: 178px;
@@ -168,7 +168,7 @@ img.mogli {
 @media (min-width:100px) and (max-width:575px) {
     .bg {
         min-height: 100%;
-        background: url(http://3.7.85.57/grammar/assets/std03-collective-noun-worksheet7/img/bg_portrait.jpg) no-repeat center top;
+        background: url(http://completegrammar.com/assets/std03-collective-noun-worksheet7/img/bg_portrait.jpg) no-repeat center top;
         background-size: 100%;
         font-size: 15px;
         background-attachment: fixed;
@@ -462,7 +462,7 @@ img.mogli {
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     .bg {
         min-height: 100%;
-        background: url(http://3.7.85.57/grammar/assets/std03-collective-noun-worksheet7/img/bg_portrait.jpg) no-repeat center top;
+        background: url(http://completegrammar.com/assets/std03-collective-noun-worksheet7/img/bg_portrait.jpg) no-repeat center top;
         background-size: 100%;
         font-size: 25px;
         background-attachment: fixed;

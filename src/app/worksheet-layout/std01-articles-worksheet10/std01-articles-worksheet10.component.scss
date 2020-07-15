@@ -1,6 +1,6 @@
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
     // font-weight: bold;
   }
 .comma{
@@ -8,7 +8,7 @@
 }
 .bg{
     min-height:100vh;
-     background: url(http://3.7.85.57/grammar/assets//std01-articles-worksheet10/img/bg.jpg) no-repeat center center fixed;
+     background: url(http://completegrammar.com/assets/std01-articles-worksheet10/img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position:bottom;
 	overflow-x:hidden;
@@ -199,7 +199,7 @@ input{
 @media (min-width:100px) and (max-width:575px){
     .bg{
         min-height:100%;
-         background: url(http://3.7.85.57/grammar/assets//std01-articles-worksheet10/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://completegrammar.com/assets/std01-articles-worksheet10/img/bg_portrait.jpg) no-repeat center center fixed;
         background-size: cover;
         background-position: bottom;
         font-size:14px;
@@ -813,7 +813,7 @@ input{
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     .bg {
         min-height:100%;
-         background: url(http://3.7.85.57/grammar/assets//std01-articles-worksheet10/img/bg_portrait.jpg) no-repeat center center fixed;
+         background: url(http://completegrammar.com/assets/std01-articles-worksheet10/img/bg_portrait.jpg) no-repeat center center fixed;
         background-size: cover;
         background-position: bottom;
         font-size: 25px;

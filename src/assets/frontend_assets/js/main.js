@@ -1699,7 +1699,8 @@ $(function () {
 });
 $(function () {
   $(".btn-forgot-password").on('click', function () {
-    $(".open_model").click();
+	$(".open_model").click();
+	$("#myModal").modal("show");
     $(".signup-now").addClass("hide");
     $(".modal-title").text("Just provide your email address.");
     $(".modal-body").removeClass("hide");

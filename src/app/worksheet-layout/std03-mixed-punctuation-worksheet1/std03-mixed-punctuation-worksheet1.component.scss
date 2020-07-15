@@ -5,14 +5,14 @@
 }
 @font-face {
     font-family: CustomFont;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
 }
 .hide{
     display:none;
 }
 .bg{
     min-height:100vh;
-     background: url(http://3.7.85.57/grammar/assets//std03-mixed-punctuation-worksheet1/img/bg.jpg) no-repeat 10% bottom fixed;
+     background: url(http://completegrammar.com/assets/std03-mixed-punctuation-worksheet1/img/bg.jpg) no-repeat 10% bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -106,7 +106,7 @@ h1{
 }
 @media (min-width:100px) and (max-width:575px){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-mixed-punctuation-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std03-mixed-punctuation-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -243,7 +243,7 @@ h1{
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std03-mixed-punctuation-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std03-mixed-punctuation-worksheet1/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

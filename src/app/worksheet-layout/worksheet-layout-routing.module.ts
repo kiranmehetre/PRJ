@@ -22,10 +22,20 @@ const routes: Routes = [
       { path: 'std01/adjective/worksheet5', loadChildren: () => import('./std01-adjective-worksheet5/std01-adjective-worksheet5.module').then(m => m.Std01AdjectiveWorksheet5Module)},
 
       // { path: 'std01/action-verb/worksheet1', component: Std01ActionVerbWorksheet1Component},
+      { path: 'std01/action-verb/worksheet1', loadChildren: () => import('./std01-action-verb-worksheet1/std01-action-verb-worksheet1.module').then(m => m.Std01ActionVerbWorksheet1Module)},
+
       // { path: 'std01/action-verb/worksheet2', component: Std01ActionVerbWorksheet2Component},
+      { path: 'std01/action-verb/worksheet2', loadChildren: () => import('./std01-action-verb-worksheet2/std01-action-verb-worksheet2.module').then(m => m.Std01ActionVerbWorksheet2Module)},
+
       // { path: 'std01/action-verb/worksheet3', component: Std01ActionVerbWorksheet3Component},
+      { path: 'std01/action-verb/worksheet3', loadChildren: () => import('./std01-action-verb-worksheet3/std01-action-verb-worksheet3.module').then(m => m.Std01ActionVerbWorksheet3Module)},
+
       // { path: 'std01/action-verb/worksheet5', component: Std01ActionVerbWorksheet5Component},
+      { path: 'std01/action-verb/worksheet4', loadChildren: () => import('./std01-action-verb-worksheet4/std01-action-verb-worksheet4.module').then(m => m.Std01ActionVerbWorksheet4Module)},
+
       // { path: 'std01/action-verb/worksheet4', component: Std01ActionVerbWorksheet4Component},
+      { path: 'std01/action-verb/worksheet5', loadChildren: () => import('./std01-action-verb-worksheet5/std01-action-verb-worksheet5.module').then(m => m.Std01ActionVerbWorksheet5Module)},
+
 
       { path: 'std01/antonyms/worksheet7', loadChildren: () => import('./std01-antonyms-worksheet7/std01-antonyms-worksheet7.module').then(m => m.Std01AntonymsWorksheet7Module)},
       // { path: 'std01/antonyms/worksheet7', component: Std01AntonymsWorksheet7Component},
@@ -429,13 +439,13 @@ const routes: Routes = [
       { path: 'std01/past-tense/worksheet4', loadChildren: () => import('./std01-past-tense-worksheet4/std01-past-tense-worksheet4.module').then(m => m.Std01PastTenseWorksheet4Module)},
       // { path: 'std01/past-tense/worksheet4', component: Std01PastTenseWorksheet4Component},
 
-      { path: 'std01/present-tense/worksheet1', loadChildren: () => import('./std01-past-tense-worksheet1/std01-past-tense-worksheet1.module').then(m => m.Std01PastTenseWorksheet1Module)},    
+      { path: 'std01/present-tense/worksheet1', loadChildren: () => import('./std01-present-tense-worksheet1/std01-present-tense-worksheet1.module').then(m => m.Std01PresentTenseWorksheet1Module)},    
       // { path: 'std01/present-tense/worksheet1', component: Std01PresentTenseWorksheet1Component},
-      { path: 'std01/present-tense/worksheet2', loadChildren: () => import('./std01-past-tense-worksheet2/std01-past-tense-worksheet2.module').then(m => m.Std01PastTenseWorksheet2Module)},    
+      { path: 'std01/present-tense/worksheet2', loadChildren: () => import('./std01-present-tense-worksheet2/std01-present-tense-worksheet2.module').then(m => m.Std01PresentTenseWorksheet2Module)},    
       // { path: 'std01/present-tense/worksheet2', component: Std01PresentTenseWorksheet2Component},
-      { path: 'std01/present-tense/worksheet3', loadChildren: () => import('./std01-past-tense-worksheet3/std01-past-tense-worksheet3.module').then(m => m.Std01PastTenseWorksheet3Module)},
+      { path: 'std01/present-tense/worksheet3', loadChildren: () => import('./std01-present-tense-worksheet3/std01-present-tense-worksheet3.module').then(m => m.Std01PresentTenseWorksheet3Module)},
       // { path: 'std01/present-tense/worksheet3', component: Std01PresentTenseWorksheet3Component},
-      { path: 'std01/present-tense/worksheet4', loadChildren: () => import('./std01-past-tense-worksheet4/std01-past-tense-worksheet4.module').then(m => m.Std01PastTenseWorksheet4Module)},
+      { path: 'std01/present-tense/worksheet4', loadChildren: () => import('./std01-present-tense-worksheet4/std01-present-tense-worksheet4.module').then(m => m.Std01PresentTenseWorksheet4Module)},
       // { path: 'std01/present-tense/worksheet4', component: Std01PresentTenseWorksheet4Component},
 
       { path: 'std01/comma/worksheet1', loadChildren: () => import('./std01-comma-worksheet1/std01-comma-worksheet1.module').then(m => m.Std01CommaWorksheet1Module)},
@@ -760,16 +770,16 @@ const routes: Routes = [
 
 
       // { path: 'std02/mixed-tense/worksheet1', component: Std02MixedTenseWorksheet1Component},
-      { path: 'std02/mixed-tense/worksheet1', loadChildren: () => import('./std02-mixed-nouns-worksheet1/std02-mixed-nouns-worksheet1.module').then(m => m.Std02MixedNounsWorksheet1Module)},
+      { path: 'std02/mixed-tense/worksheet1', loadChildren: () => import('./std02-mixed-tense-worksheet1/std02-mixed-tense-worksheet1.module').then(m => m.Std02MixedTenseWorksheet1Module)},
 
       // { path: 'std02/mixed-tense/worksheet2', component: Std02MixedTenseWorksheet2Component},
-      { path: 'std02/mixed-tense/worksheet2', loadChildren: () => import('./std02-mixed-nouns-worksheet2/std02-mixed-nouns-worksheet2.module').then(m => m.Std02MixedNounsWorksheet2Module)},
+      { path: 'std02/mixed-tense/worksheet2', loadChildren: () => import('./std02-mixed-tense-worksheet2/std02-mixed-tense-worksheet2.module').then(m => m.Std02MixedTenseWorksheet2Module)},
 
       // { path: 'std02/mixed-tense/worksheet3', component: Std02MixedTenseWorksheet3Component},
-      { path: 'std02/mixed-tense/worksheet3', loadChildren: () => import('./std02-mixed-nouns-worksheet3/std02-mixed-nouns-worksheet3.module').then(m => m.Std02MixedNounsWorksheet3Module)},
+      { path: 'std02/mixed-tense/worksheet3', loadChildren: () => import('./std02-mixed-tense-worksheet3/std02-mixed-tense-worksheet3.module').then(m => m.Std02MixedTenseWorksheet3Module)},
 
       // { path: 'std02/mixed-tense/worksheet4', component: Std02MixedTenseWorksheet4Component},
-      { path: 'std02/mixed-tense/worksheet4', loadChildren: () => import('./std02-mixed-nouns-worksheet4/std02-mixed-nouns-worksheet4.module').then(m => m.Std02MixedNounsWorksheet4Module)},
+      { path: 'std02/mixed-tense/worksheet4', loadChildren: () => import('./std02-mixed-tense-worksheet4/std02-mixed-tense-worksheet4.module').then(m => m.Std02MixedTenseWorksheet4Module)},
       
 
 
@@ -792,7 +802,7 @@ const routes: Routes = [
       { path: 'std02/helping-verbs/worksheet1', loadChildren: () => import('./std02-helping-verbs-worksheet1/std02-helping-verbs-worksheet1.module').then(m => m.Std02HelpingVerbsWorksheet1Module)},
 
       // { path: 'std02/helping-verbs/worksheet2', component: Std02HelpingVerbsWorksheet2Component},
-      { path: 'std02/helping-verbs/worksheet2', loadChildren: () => import('./std02-helping-verbs-worksheet2/std02-helping-verbs-worksheet2.module').then(m => m.Std02HelpingVerbsWorksheet2Module)},
+      { path: 'std02/helping-verbs/worksheet2 ', loadChildren: () => import('./std02-helping-verbs-worksheet2/std02-helping-verbs-worksheet2.module').then(m => m.Std02HelpingVerbsWorksheet2Module)},
 
       // { path: 'std02/helping-verbs/worksheet3', component: Std02HelpingVerbsWorksheet3Component},
       { path: 'std02/helping-verbs/worksheet3', loadChildren: () => import('./std02-helping-verbs-worksheet3/std02-helping-verbs-worksheet3.module').then(m => m.Std02HelpingVerbsWorksheet3Module)},
@@ -1736,28 +1746,28 @@ const routes: Routes = [
 
       
       // { path: 'std02/homophones/worksheet1', component:Std02HomophonesWorksheet1Component },
-      { path: 'std02/homophones/worksheet1', loadChildren: () => import('./std01-homophones-worksheet1/std01-homophones-worksheet1.module').then(m => m.Std01HomophonesWorksheet1Module)},
+      { path: 'std02/homophones/worksheet1', loadChildren: () => import('./std02-homophones-worksheet1/std02-homophones-worksheet1.module').then(m => m.Std02HomophonesWorksheet1Module)},
 
       // { path: 'std02/homophones/worksheet2', component:Std02HomophonesWorksheet2Component },
-      { path: 'std02/homophones/worksheet2', loadChildren: () => import('./std01-homophones-worksheet2/std01-homophones-worksheet2.module').then(m => m.Std01HomophonesWorksheet2Module)},
+      { path: 'std02/homophones/worksheet2', loadChildren: () => import('./std02-homophones-worksheet2/std02-homophones-worksheet2.module').then(m => m.Std02HomophonesWorksheet2Module)},
 
       // { path: 'std02/homophones/worksheet3', component:Std02HomophonesWorksheet3Component },
-      { path: 'std02/homophones/worksheet3', loadChildren: () => import('./std01-homophones-worksheet3/std01-homophones-worksheet3.module').then(m => m.Std01HomophonesWorksheet3Module)},
+      { path: 'std02/homophones/worksheet3', loadChildren: () => import('./std02-homophones-worksheet3/std02-homophones-worksheet3.module').then(m => m.Std02HomophonesWorksheet3Module)},
 
       // { path: 'std02/homophones/worksheet4', component:Std02HomophonesWorksheet4Component },
-      { path: 'std02/homophones/worksheet4', loadChildren: () => import('./std01-homophones-worksheet4/std01-homophones-worksheet4.module').then(m => m.Std01HomophonesWorksheet4Module)},
+      { path: 'std02/homophones/worksheet4', loadChildren: () => import('./std02-homophones-worksheet4/std02-homophones-worksheet4.module').then(m => m.Std02HomophonesWorksheet4Module)},
 
       // { path: 'std02/homophones/worksheet5', component:Std02HomophonesWorksheet5Component },
-      { path: 'std02/homophones/worksheet5', loadChildren: () => import('./std01-homophones-worksheet5/std01-homophones-worksheet5.module').then(m => m.Std01HomophonesWorksheet5Module)},
+      { path: 'std02/homophones/worksheet5', loadChildren: () => import('./std02-homophones-worksheet5/std02-homophones-worksheet5.module').then(m => m.Std02HomophonesWorksheet5Module)},
 
       // { path: 'std02/homophones/worksheet6', component:Std02HomophonesWorksheet6Component },
-      { path: 'std02/homophones/worksheet6', loadChildren: () => import('./std01-homophones-worksheet6/std01-homophones-worksheet6.module').then(m => m.Std01HomophonesWorksheet6Module)},
+      { path: 'std02/homophones/worksheet6', loadChildren: () => import('./std02-homophones-worksheet6/std02-homophones-worksheet6.module').then(m => m.Std02HomophonesWorksheet6Module)},
 
       // { path: 'std02/homophones/worksheet7', component:Std02HomophonesWorksheet7Component },
-      { path: 'std02/homophones/worksheet7', loadChildren: () => import('./std01-homophones-worksheet7/std01-homophones-worksheet7.module').then(m => m.Std01HomophonesWorksheet7Module)},
+      { path: 'std02/homophones/worksheet7', loadChildren: () => import('./std02-homophones-worksheet7/std02-homophones-worksheet7.module').then(m => m.Std02HomophonesWorksheet7Module)},
 
       // { path: 'std02/homophones/worksheet8', component:Std02HomophonesWorksheet8Component },
-      { path: 'std02/homophones/worksheet8', loadChildren: () => import('./std01-homophones-worksheet8/std01-homophones-worksheet8.module').then(m => m.Std01HomophonesWorksheet8Module)},
+      { path: 'std02/homophones/worksheet8', loadChildren: () => import('./std02-homophones-worksheet8/std02-homophones-worksheet8.module').then(m => m.Std02HomophonesWorksheet8Module)},
 
       // { path: 'std02/homophones/worksheet9', component:Std02HomophonesWorksheet9Component },
       // { path: 'std02/homophones/worksheet9', loadChildren: () => import('./std01-homophones-worksheet').then(m => m.Std02ArticlesWorksheet10Module)},

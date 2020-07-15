@@ -1,19 +1,19 @@
 @font-face {
     font-family: "CustomFontArial";
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
 }
 @font-face {
     font-family: "CustomFont";
-    src: url("http://3.7.85.57/grammar/assets/font/ntailu.ttf") format("truetype");
+    src: url("http://completegrammar.com/assets/font/ntailu.ttf") format("truetype");
 }
 @font-face {
     font-family: mt-rounded-bold;
-    src: url(http://3.7.85.57/grammar/assets/font/ARLRDBD.ttf) format("truetype");
+    src: url(http://completegrammar.com/assets/font/ARLRDBD.ttf) format("truetype");
     font-weight: bold;
   }
 .bg{
     min-height:100vh;
-     background: url(http://3.7.85.57/grammar/assets//std02-homophones-worksheet2/img/bg.jpg) no-repeat center bottom fixed;
+     background: url(http://completegrammar.com/assets/std02-homophones-worksheet2/img/bg.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,7 +85,7 @@ input{
     width:50%;
 }
 .number,.first,.second{
-     background: url(http://3.7.85.57/grammar/assets//std02-homophones-worksheet2/img/list-item-bg.png) no-repeat;
+     background: url(http://completegrammar.com/assets/std02-homophones-worksheet2/img/list-item-bg.png) no-repeat;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -113,7 +113,7 @@ input{
 }
 @media (min-width:100px) and (max-width:575px){
     .bg{
-         background: url(http://3.7.85.57/grammar/assets//std02-homophones-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
+         background: url(http://completegrammar.com/assets/std02-homophones-worksheet2/img/bg_portrait.jpg) no-repeat center bottom fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

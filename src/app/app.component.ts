@@ -7,6 +7,7 @@ import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+    template: string =`<img src="assets/images/12.gif" />`
     constructor(router:Router,private ng4LoadingSpinnerService :Ng4LoadingSpinnerService) {
         router.events.subscribe(e => {
             if(e instanceof NavigationStart) {

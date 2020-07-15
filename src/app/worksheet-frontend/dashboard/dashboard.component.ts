@@ -40,6 +40,7 @@ export class DashboardComponent implements OnInit {
     }
   }
   ngOnInit() {
+    
   
     this.loadScript(); 
     // if (typeof $ != 'undefined') {
@@ -82,7 +83,7 @@ export class DashboardComponent implements OnInit {
              
               this.ng4LoadingSpinnerService.show();
             this.loadScript(); 
-           
+        
             }, 2000);
                            
           }else {
@@ -151,7 +152,9 @@ export class DashboardComponent implements OnInit {
       }
     }
     setTimeout(() => {
-      this.ng4LoadingSpinnerService.hide();
+     this.ng4LoadingSpinnerService.hide();
+
+      $("#demo-default").css("visibility","visible");
     }, 4000);
   }
 
