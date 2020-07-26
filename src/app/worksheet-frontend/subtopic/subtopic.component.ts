@@ -48,7 +48,7 @@ export class SubtopicComponent implements OnInit {
       let $video: any = $('#divVideo')
       var x = document.createElement("VIDEO");
       x.setAttribute("src", url);
-      x.setAttribute("autoplay","true")
+      x.setAttribute("autoplay", "true")
       x.setAttribute("controlsList", "nodownload");
       x.setAttribute("width", "100%");
       x.setAttribute("height", "100%");
@@ -68,7 +68,7 @@ export class SubtopicComponent implements OnInit {
       let $video: any = $('#divVideo')
       var x = document.createElement("VIDEO");
       x.setAttribute("src", url);
-      x.setAttribute("autoplay","true")
+      x.setAttribute("autoplay", "true")
       x.setAttribute("controlsList", "nodownload");
       x.setAttribute("width", "100%");
       x.setAttribute("height", "100%");
@@ -161,7 +161,8 @@ export class SubtopicComponent implements OnInit {
   }
   fetchData(data) {
     let c = "worksheet-layout/" + data.worksheet_link;
-    console.log(c)
+    if (c == "worksheet-layout/std02/rhyming-words/worksheet1")
+        localStorage.setItem("isFlag","1")
     this.router.navigate([c])
   }
   public ButtonToggle(type: string) {

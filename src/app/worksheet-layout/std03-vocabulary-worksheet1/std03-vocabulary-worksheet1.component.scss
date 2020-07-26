@@ -117,7 +117,7 @@ input{
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0 0 0 2px #000;
-    display: inline-block;
+    // display: inline-block;
     position: absolute;
 }
 .input_div {
@@ -1153,5 +1153,15 @@ li a:focus {
 @media(min-width:1900px){
     #toggle{
         padding: 6px;
+    }
+}
+
+@media (orientation:landscape){
+    .bg{
+        background: url(http://completegrammar.com/assets/frontend_assets/img/bg2.jpg) no-repeat right bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }

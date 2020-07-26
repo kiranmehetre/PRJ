@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import * as $ from 'jquery';  
  import { CommonWorksheetService } from '../common-worksheet.service';
 
@@ -7,18 +7,22 @@ import * as $ from 'jquery';
   templateUrl: './std02-rhyming-words-worksheet1.component.html',
   styleUrls: ['./std02-rhyming-words-worksheet1.component.scss']
 })
-export class Std02RhymingWordsWorksheet1Component implements OnInit {
+export class Std02RhymingWordsWorksheet1Component implements OnInit ,OnDestroy{
 
-  constructor(private commonWorksheet: CommonWorksheetService){}
-
+  constructor(private commonWorksheet: CommonWorksheetService,private changeDetectorRef: ChangeDetectorRef){}
+ngOnDestroy()
+{
+  localStorage.setItem("isFlag","1");
+}
   ngOnInit() {
- this.commonWorksheet.reuseRoute();
+    if(localStorage.getItem("isFlag") == "1"){
+      localStorage.setItem("isFlag","2");
+      location.reload();
+  }
     const globalThis = this;
     $('.loadingDiv').hide();
       setImages();
-    window.onload = function () {
-      
-    }
+      this.commonWorksheet.reuseRoute();
     var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {
@@ -52,6 +56,7 @@ export class Std02RhymingWordsWorksheet1Component implements OnInit {
         elem.className += ' ' + className;
       }
     }
+
     theToggle.onclick = function () {
       toggleClass(this, 'on');
       $('.menu-block #menu').show();

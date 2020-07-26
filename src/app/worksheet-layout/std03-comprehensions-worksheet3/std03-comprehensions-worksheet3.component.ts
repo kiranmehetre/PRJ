@@ -31,9 +31,10 @@ export class Std03ComprehensionsWorksheet3Component implements OnInit {
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
+    setImages();
+    $('.loadingDiv').hide();
     window.onload = function () {
-      setImages();
-      $('.loadingDiv').hide();
+     
     }
     var theToggle = document.getElementById('toggle');
     // hasClass

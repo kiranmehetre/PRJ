@@ -587,12 +587,13 @@ input {
 
     .bottom {
         bottom: 0;
+        height: 300px;
     }
 
     .top,
     .bottom {
         z-index: -1;
-        width: 100vw;
+        width: auto;
         position: fixed;
         left: 0;
     }

@@ -16,7 +16,7 @@ export class Std03DegressOfComparisonWorksheet1Component implements OnInit {
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
-    window.onload = function () {
+    //window.onload = function () {
       $('.loadingDiv').hide();
       setImages();
 
@@ -60,7 +60,7 @@ export class Std03DegressOfComparisonWorksheet1Component implements OnInit {
         return false;
       }
 
-    }
+    
     $(document).ready(function () {
       var imgUrl = "";
       $('.option').click(function () {

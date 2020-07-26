@@ -14,9 +14,10 @@ export class Std03CompoundWordWorksheet5Component implements OnInit {
     ngOnInit() {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
+    $('.loadingDiv').hide();
+    setImages()
         window.onload = function () {
-            $('.loadingDiv').hide();
-            setImages()
+         
         }
         var theToggle = document.getElementById('toggle');
         // hasClass

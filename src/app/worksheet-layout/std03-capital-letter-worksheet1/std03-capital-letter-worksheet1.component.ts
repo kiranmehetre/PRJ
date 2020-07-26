@@ -17,10 +17,11 @@ export class Std03CapitalLetterWorksheet1Component implements OnInit {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
     window.onload = function () {
-      $('.loadingDiv').hide();
-      setImages();
-
+     
     }
+    $('.loadingDiv').hide();
+    setImages();
+
     var theToggle = document.getElementById('toggle');
     // hasClass
     function hasClass(elem, className) {

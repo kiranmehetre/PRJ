@@ -13,8 +13,9 @@ export class Std02AdjectivesWorksheet8Component implements OnInit {
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
+    $('.loadingDiv').hide();
     window.onload = function () { 
-      $('.loadingDiv').hide();
+    
       setImages();
   }
   var theToggle = document.getElementById('toggle');

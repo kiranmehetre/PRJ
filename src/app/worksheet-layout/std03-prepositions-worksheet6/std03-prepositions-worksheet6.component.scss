@@ -975,3 +975,13 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+@media (orientation:landscape){
+    .bg{
+        background: url(http://completegrammar.com/assets/frontend_assets/img/bg2.jpg) no-repeat right bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

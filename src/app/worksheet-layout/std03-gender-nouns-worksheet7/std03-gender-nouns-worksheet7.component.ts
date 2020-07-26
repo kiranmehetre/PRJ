@@ -14,10 +14,12 @@ export class Std03GenderNounsWorksheet7Component implements OnInit {
   ngOnInit() {
  this.commonWorksheet.reuseRoute();
     const globalThis = this;
+    $('.loadingDiv').hide();
+    setImages();
     $(document).ready(function () {
+     
       window.onload = function () {
-        $('.loadingDiv').hide();
-        setImages();
+     
       }
       var theToggle = document.getElementById('toggle');
       // hasClass

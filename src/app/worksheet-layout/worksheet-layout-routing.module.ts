@@ -802,7 +802,7 @@ const routes: Routes = [
       { path: 'std02/helping-verbs/worksheet1', loadChildren: () => import('./std02-helping-verbs-worksheet1/std02-helping-verbs-worksheet1.module').then(m => m.Std02HelpingVerbsWorksheet1Module)},
 
       // { path: 'std02/helping-verbs/worksheet2', component: Std02HelpingVerbsWorksheet2Component},
-      { path: 'std02/helping-verbs/worksheet2 ', loadChildren: () => import('./std02-helping-verbs-worksheet2/std02-helping-verbs-worksheet2.module').then(m => m.Std02HelpingVerbsWorksheet2Module)},
+      { path: 'std02/helping-verbs/worksheet2', loadChildren: () => import('./std02-helping-verbs-worksheet2/std02-helping-verbs-worksheet2.module').then(m => m.Std02HelpingVerbsWorksheet2Module)},
 
       // { path: 'std02/helping-verbs/worksheet3', component: Std02HelpingVerbsWorksheet3Component},
       { path: 'std02/helping-verbs/worksheet3', loadChildren: () => import('./std02-helping-verbs-worksheet3/std02-helping-verbs-worksheet3.module').then(m => m.Std02HelpingVerbsWorksheet3Module)},
@@ -1770,10 +1770,10 @@ const routes: Routes = [
       { path: 'std02/homophones/worksheet8', loadChildren: () => import('./std02-homophones-worksheet8/std02-homophones-worksheet8.module').then(m => m.Std02HomophonesWorksheet8Module)},
 
       // { path: 'std02/homophones/worksheet9', component:Std02HomophonesWorksheet9Component },
-      // { path: 'std02/homophones/worksheet9', loadChildren: () => import('./std01-homophones-worksheet').then(m => m.Std02ArticlesWorksheet10Module)},
+      { path: 'std02/homophones/worksheet9', loadChildren: () => import('./std02-homophones-worksheet9/std02-homophones-worksheet9.module').then(m => m.Std02HomophonesWorksheet9Module)},
 
       // { path: 'std02/homophones/worksheet10', component:Std02HomophonesWorksheet10Component },
-      // { path: 'std02/homophones/worksheet10', loadChildren: () => import('./std01-homophones-worksheet10/std01-homophones-worksheet10.module').then(m => m.Std02ArticlesWorksheet10Module)},
+      { path: 'std02/homophones/worksheet10', loadChildren: () => import('./std02-homophones-worksheet10/std02-homophones-worksheet10.module').then(m => m.Std02HomophonesWorksheet10Module)},
 
       
       // { path: 'std02/mixed-noun/worksheet1', component:Std02MixedNounsWorksheet1Component },

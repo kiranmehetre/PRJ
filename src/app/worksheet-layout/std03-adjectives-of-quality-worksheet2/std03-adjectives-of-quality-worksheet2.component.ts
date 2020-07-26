@@ -56,6 +56,7 @@ export class Std03AdjectivesOfQualityWorksheet2Component implements OnInit {
       return false;
     }
     $(document).ready(function () {
+      setImages();
       var inputField;
       var inputValue;
       var ClickAnswer = [];

@@ -918,3 +918,14 @@ li a:focus {
 .font-weight-bold{
     font-weight: normal !important;
 }
+
+
+@media (orientation:landscape){
+    .bg{
+        background: url(http://completegrammar.com/assets/frontend_assets/img/bg2.jpg) no-repeat right bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
